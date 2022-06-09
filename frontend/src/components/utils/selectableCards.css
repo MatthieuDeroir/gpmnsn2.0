@@ -1,0 +1,123 @@
+body {
+    background: #e2e1e0;
+}
+
+/* Card */
+.minicard {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: #fff;
+    cursor: pointer;
+    margin: 0px;
+    border: 0;
+    /*border-radius: 10%;*/
+    position: relative;
+}
+.minicard:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Selectable */
+.minicard .selectable {
+
+    position: initial;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 2px solid rgb(33,37,41);
+    /*border-radius: 10%;*/
+
+}
+.minicard .selectable .check {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+}
+.minicard .selectable .check:before {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    content: "";
+    border: 20px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.minicard .selectable .check .checkmark {
+    display: block;
+    font: 20px sans-serif;
+    line-height: 20px;
+    text-align: center;
+    color: transparent;
+}
+.minicard .selectable.selected {
+    border-color: #ff6900;
+}
+.minicard .selectable.selected .check:before {
+    border-color: #ff6900 #ff6900 rgba(0, 0, 255, 0) rgba(255, 0, 0, 0);
+}
+.minicard .selectable.selected .check .checkmark {
+    color: #d4d4d4;
+}
+
+.content {
+    /*padding: 24px;*/
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-content: center;
+    align-items: center;
+}
+.content .title, .content .description {
+    margin: 0;
+
+}
+
+.column {
+    float: left;
+}
+.column > .title {
+    text-align: center;
+}
+
+button.minicard {
+    display: block;
+    cursor: pointer;
+    width: 180px;
+    margin: 20px auto;
+    text-align: center;
+
+    border-color: transparent;
+    /*border-radius: 10px;*/
+    background: #44aadd !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+}
+button.minicard:focus {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.cardlist {
+    display: flex;
+    background-color: #d2d2d2;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.carousel {
+    width:624px;
+    height:416px;
+    margin: auto;
+}
+
+@media (max-width: 1100px) {
+    .carousel {
+        width:auto;
+        height:auto;
+    }
+}
