@@ -78,18 +78,17 @@ exports.signin = (req, res) => {
         .populate("roles", "-__v")
         .exec((err, user) => {
             if (err) {
+                console.log(err)
+                console.log(req.body)
                 res.status(500).send({message: err});
                 console.log('server error')
-
                 return;
             }
 
             if (!user) {
                 return res.status(404).send({ message: "User Not Found."});
                 console.log('user not found')
-
             }
-
 
             let passwordIsValid = bcrypt.compareSync(
                 req.body.password,

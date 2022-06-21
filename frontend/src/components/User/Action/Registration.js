@@ -101,8 +101,8 @@ export default class Register extends Component {
 
     render() {
         return (
-            <div style={{margin:"10px", maxWidth:"350px", justifyContent:"center", color:"white", textAlign:"center", marginLeft:"auto", marginRight:"auto"}}>
-                <div className="card card-container flex-column" style={{borderRadius:"0", justifyContent:"center", textAlign:"center", backgroundColor:"#203038"}}>
+            <div style={{margin:"10px", maxWidth:"350px", justifyContent:"center", textAlign:"center", marginLeft:"auto", marginRight:"auto"}}>
+                <div className="card card-container flex-column" style={{borderRadius:"0", justifyContent:"center", textAlign:"center", backgroundColor:"#fefefe"}}>
                     <Form
                         onSubmit={this.handleRegister}
                         ref={c => {

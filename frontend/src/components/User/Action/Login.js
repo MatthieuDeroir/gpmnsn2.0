@@ -223,8 +223,8 @@ export default class Login extends Component {
 
     render() {
         return (
-            <Col className="center" style={{margin:"10px", maxWidth:"350px", justifyContent:"center", color:"white", textAlign:"center", marginLeft:"auto", marginRight:"auto"}}>
-                <div className="card card-container flex-column" style={{borderRadius:"0", justifyContent:"center", textAlign:"center", backgroundColor:"#203038"}}>
+            <Col className="center" style={{margin:"10px", maxWidth:"350px", justifyContent:"center", textAlign:"center", marginLeft:"auto", marginRight:"auto"}}>
+                <div className="card card-container flex-column" style={{borderRadius:"0", justifyContent:"center", textAlign:"center", backgroundColor:"#fefefe"}}>
                     <Form
                         onSubmit={this.handleLogin}
                         ref={c => {

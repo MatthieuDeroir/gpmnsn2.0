@@ -13,6 +13,8 @@ import LoginIcon from '@mui/icons-material/Login';
 import PersonAddAlt from '@mui/icons-material/PersonAddAlt';
 import Image from '@mui/icons-material/Image';
 import PermMedia from '@mui/icons-material/PermMedia';
+import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
+import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 
 import Paper from '@mui/material/Paper';
 
@@ -44,6 +46,9 @@ import FileForm from './File/FileForm';
 import EventList from './Event/EventList';
 import EventSingle from './Event/EventSingle';
 import EventForm from './Event/EventForm';
+
+import ControlPanel from './Control Panel/ControlPanel'
+import Logs from './Logs/Logs'
 
 import BottomNavigation from '@mui/material/BottomNavigation'
 import BottomNavigationAction from '@mui/material/BottomNavigationAction'
@@ -404,7 +409,7 @@ class App extends React.Component {
                 <div>
                     <Box sx={{flexGrow: 1}}>
                         <AppBar style={{justifyContent: "center", position: "sticky", top: "0", marginBottom:"2vh"}}>
-                            <Toolbar style={{backgroundColor: "#203038", justifyContent: "center", padding: "0"}}>
+                            <Toolbar style={{backgroundColor: "#ffffff", justifyContent: "center", padding: "0"}}>
                                 <IconButton
                                     size="large"
                                     edge="start"
@@ -417,11 +422,11 @@ class App extends React.Component {
                                 >
                                     { detectMob() ?
                                         <img style={{width: "60vw", justifyContent: "center", padding: "0"}}
-                                             src="../assets/img/STRAMATEL-LOGO-dark.png"
+                                             src="../assets/img/STRAMATEL-LOGO.png"
                                              alt=""/>
                                         :
-                                        <img style={{height: "12vh", justifyContent: "center"}}
-                                             src="../assets/img/STRAMATEL-LOGO-dark.png"
+                                        <img style={{height: "10vh", justifyContent: "center", paddingTop: "5px", paddingBottom: "5px"}}
+                                             src="../assets/img/STRAMATEL-LOGO.png"
                                              alt=""/>
                                     }
                                 </IconButton>
@@ -429,18 +434,16 @@ class App extends React.Component {
                         </AppBar>
                     </Box>
                     <Switch>
-                        {/*<Route exact path={["/", "/home"]} component={Home}/>*/}
+                        <Route exact path="/controlpanel" component={ControlPanel}/>
+                        <Route exact path="/logs" component={Logs}/>
                         <Route exact path="/login" component={Login}/>
                         <Route exact path="/register" component={Registration}/>
                         <Route exact path="/profile" component={Profile}/>
-                        <Route path="/user" component={BoardUser}/>
-                        <Route path="/admin" component={BoardAdmin}/>
-                        <Route path="/superuser" component={BoardSuperuser}/>
                     </Switch>
                     <Paper sx={{position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: "1000"}}>
                         <BottomNavigation
                             showLabels
-                            style={{backgroundColor: "#203038"}}
+                            style={{backgroundColor: "#ffffff"}}
                             // value={value}
                             // onChange={(event, newValue) => {
                             //     setValue(newValue);
@@ -464,30 +467,30 @@ class App extends React.Component {
                             {/*</a>*/}
                             {currentUser ?
                                 <div>
-                                    <Link to={"/"}>
-                                        <BottomNavigationAction label="Évenements"
-                                                                icon={<PermMedia sx={{color: "white"}} onClick={this.displayEventList} />}/>
+                                    <Link to={"/controlpanel"}>
+                                        <BottomNavigationAction label="Tableau de bord"
+                                                                icon={<DisplaySettingsIcon />}/>
                                     </Link>
-                                    <Link to={"/"}>
-                                        <BottomNavigationAction label="Médias" onClick={this.displayFileList}
-                                                                icon={<Image sx={{color: "white"}}/>}/>
+                                    <Link to={"/logs"}>
+                                        <BottomNavigationAction label="Logs"
+                                                                icon={<TextSnippetIcon />}/>
                                     </Link>
                                     <Link to={"/profile"}>
                                         <BottomNavigationAction label="Profil"
-                                                                icon={<AccountCircle sx={{color: "white"}} onClick={this.noDisplay}/>}/>
+                                                                icon={<AccountCircle  onClick={this.noDisplay}/>}/>
                                     </Link>
-                                    <Link to={"/login"} onClick={this.noDisplay}>
+                                    <Link to={"/"} onClick={this.noDisplay}>
                                         <BottomNavigationAction label="Déconnexion"
-                                                                icon={<LogoutIcon sx={{color: "white"}} onClick={this.logOut}/>}/>
+                                                                icon={<LogoutIcon  onClick={this.logOut}/>}/>
                                     </Link>
                                 </div>
                                 :
                                 <div>
                                     <Link to={"/login"} onClick={this.noDisplay}>
-                                        <BottomNavigationAction label="Profil" icon={<LoginIcon sx={{color: "white"}}/>}/>
+                                        <BottomNavigationAction label="Profil" icon={<LoginIcon />}/>
                                     </Link>
                                     <Link to={"/register"}>
-                                        <BottomNavigationAction label="Créer un compte" icon={<PersonAddAlt sx={{color: "white"}}/>}/>
+                                        <BottomNavigationAction label="Créer un compte" icon={<PersonAddAlt />}/>
                                     </Link>
                                 </div>
                             }
@@ -498,7 +501,7 @@ class App extends React.Component {
                 {/*<div style={{display: 'flex'}}>*/}
                 {/*    <div>*/}
                 {/*        <CDBSidebar style={{position: "sticky", top: "0", height: "100vh"}} textColor="#fff"*/}
-                {/*                    backgroundColor="#203038">*/}
+                {/*                    backgroundColor="#fefee2">*/}
                 {/*            <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>*/}
                 {/*                <a href="/" className="text-decoration-none" style={{color: 'inherit'}}*/}
                 {/*                   onClick={this.noDisplay}>*/}
@@ -546,7 +549,7 @@ class App extends React.Component {
                 {/*    <div className="container-fluid" style={{padding: "0"}}>*/}
                 {/*        /!*<ResponsiveAppBar />*!/*/}
                 {/*        <nav className="navbar navbar-expand navbar-dark"*/}
-                {/*             style={{backgroundColor: "#203038", justifyContent: "right"}}>*/}
+                {/*             style={{backgroundColor: "#fefee2", justifyContent: "right"}}>*/}
 
                 {/*            {currentUser ? (*/}
                 {/*                <div className="navbar-nav w-100" style={{justifyContent: "center"}}>*/}

@@ -57,21 +57,21 @@ export default class Profile extends Component {
                 <Row>
                     <Col>
                         <header className="jumbotron">
-                            <h3 style={{color:"white"}}>
+                            <h3>
                                 <strong >{currentUser.username}</strong> Profile
                             </h3>
                         </header>
-                        <p style={{color:"white"}}>
+                        <p >
                             <strong >Token:</strong>{" "}
                             {currentUser.accessToken.substring(0, 20)} ...{" "}
                             {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
                         </p>
-                        <p style={{color:"white"}}>
+                        <p >
                             <strong>Id:</strong>{" "}
                             {currentUser.id}
                         </p>
-                        <strong style={{color:"white"}} >Authorities:</strong>
-                        <ul style={{color:"white"}}>
+                        <strong  >Authorities:</strong>
+                        <ul >
                             {currentUser.roles &&
                             currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
                         </ul>
@@ -84,24 +84,24 @@ export default class Profile extends Component {
 
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
-                                    style={{backgroundColor: "#203038"}}>
+                                    style={{backgroundColor: "#fefefe"}}>
                                     <IconButton >
-                                        <AccountCircle sx={{ color: "white"}}/>
+                                        <AccountCircle />
                                     </IconButton>
-                                    <Typography color={"white"} style={{padding:"8px"}}>Gestion des Utilisateurs</Typography></AccordionSummary>
+                                    <Typography style={{padding:"8px"}}>Gestion des Utilisateurs</Typography></AccordionSummary>
                                 <AccordionDetails style={{
                                     width: "100%",
                                     maxHeight: "63vh",
                                     overflowY: "scroll",
                                     justifyContent: "center",
-                                    backgroundColor: "#203038"
+                                    backgroundColor: "fefefe"
                                 }}>
                                     {this.state.users.map((item) => (
                                         AuthService.getCurrentUser() ?
                                             <ButtonGroup style={{width: "inherit"}}
                                                            className={"p-1"}>
                                                 <Col>
-                                                    <p style={{color: "white", padding: "5px", margin: "0"}}>{item.username}</p>
+                                                    <p style={{padding: "5px", margin: "0"}}>{item.username}</p>
                                                 </Col>
                                                 <Col className={"justify-content-right"}>
                                                     <Select
