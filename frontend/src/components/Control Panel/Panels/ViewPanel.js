@@ -22,6 +22,7 @@ const ViewPanel = (props) => {
                             <p>État : {item.state? "Allumé" : "Éteint"}</p>
                             <p>Statut : {item.power? "En ligne" : "Hors ligne"}</p>
                             <p>Intégrité de l'écran : {item.screen? "Complète" : "Partielle"}</p>
+                            <p>Portes : {item.isOpen ? "Ouvertes" : "Fermées"}</p>
                             <p>Temperature CPU : {item.temperature}</p>
                         </Card>
 

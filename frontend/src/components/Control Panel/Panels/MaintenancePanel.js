@@ -40,10 +40,9 @@ const MaintenancePanel = (props) => {
                             <p>Intégrité de l'écran : {item.screen ? "Complète" : "Partielle"}</p>
                             <p>Portes : {item.isOpen ? "Ouvertes" : "Fermées"}</p>
                             <p>Temperature CPU : {item.temperature}</p>
-                            Off
-                            <Switch checked={!!props.panelInstruction[item.index - 1].instruction}
-                                    onChange={props.switchPanelbyIndex.bind(this, item.index, 'ok')}/>
-                            On
+                            <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
+                            {item.state ? "Éteindre" : "Allumer" }
+                            </Button>
                         </Card>
                     </Col>
                 ))}
@@ -52,8 +51,9 @@ const MaintenancePanel = (props) => {
                 <Card style={{maxWidth: "16vw"}}>
                     Off
                     <Switch
-                        checked={!!props.panelInstruction[0].instruction && !!props.panelInstruction[1].instruction && !!props.panelInstruction[2].instruction}
-                        onChange={props.switchPanels.bind(this)}/>
+                        checked={props.panelInstruction[0].instruction && !!props.panelInstruction[1].instruction && !!props.panelInstruction[2].instruction}
+                        onChange={props.switchPanels.bind(this)}
+                        />
                     On
                 </Card>
                 <Card style={{maxWidth: "16vw"}}>
