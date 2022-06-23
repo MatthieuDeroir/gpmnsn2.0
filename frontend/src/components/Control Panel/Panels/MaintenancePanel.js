@@ -58,7 +58,7 @@ const MaintenancePanel = (props) => {
                     On
                 </Card>
                 <Card style={{ maxWidth: "16vw" }}>
-                    {/*TODO: force actualisation */}
+                    {/* TODO: force actualisation */}
                     <Button onClick={props.actualize} href={"/controlpanel"}>
                         Actualiser
                     </Button>

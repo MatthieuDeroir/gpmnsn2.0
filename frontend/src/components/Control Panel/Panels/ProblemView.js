@@ -7,7 +7,7 @@ const ProblemView = (props) => {
         <div>
             <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px", paddingBottom: "10px" }}>
                 <Card style={{ maxWidth: "16vw" }}>
-                    Visualisation
+                    ERREUR
                 </Card>
             </Row>
             <Row>
@@ -34,7 +34,7 @@ const ProblemView = (props) => {
                                     <img src="../assets/img/panneau-indret-amont-allumé.png" alt="" style={{ maxHeight: "139px" }} />
                                     : <img src="../assets/img/panneau-indret-amon-eteint.png" alt="" style={{ maxHeight: "139px" }} />}
                                 <p>État : {item.state ? "Allumé" : "Éteint"}</p>
-                                <p>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
+                                <p>Statut : {item.online ? "En ligne" : '<b>HorsLigne</b>'}</p>
                                 <p>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
                                 <p>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
                                 <p>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
