@@ -28,7 +28,6 @@ import authService from "../../services/authService";
 import { runInThisContext } from 'vm';
 
 import Ping from 'ping.js';
-import { exec } from 'child_process';
 
 export default class ControlPanel extends Component {
     constructor(props) {
