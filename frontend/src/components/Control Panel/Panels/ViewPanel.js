@@ -5,24 +5,25 @@ import { Row, Col } from 'react-bootstrap'
 const ViewPanel = (props) => {
     return (
         <div>
-            <Row style={{textAlign:"center", justifyContent:"center", margin: 0,padding: 0, paddingTop: "10px", paddingBottom: "10px"}}>
-                <Card style={{maxWidth:"16vw"}}>
+            <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px", paddingBottom: "10px" }}>
+                <Card style={{ maxWidth: "16vw" }}>
                     Visualisation
                 </Card>
             </Row>
             <Row>
                 {props.panels.map((item) => (
                     <Col>
-                        <Card style={{textAlign:"center", justifyContent:"center"}}>
+                        <Card style={{ textAlign: "center", justifyContent: "center" }}>
                             <p>{"Panneau " + item.name}</p>
 
-                            {item.state?
-                                <img src="../assets/img/panneau-indret-amont-allumé.png" alt=""/>
-                                : <img src="../assets/img/panneau-indret-amon-eteint.png" alt=""/> }
-                            <p>État : {item.state? "Allumé" : "Éteint"}</p>
-                            <p>Statut : {item.power? "En ligne" : "Hors ligne"}</p>
-                            <p>Intégrité de l'écran : {item.screen? "Complète" : "Partielle"}</p>
-                            <p>Portes : {item.isOpen ? "Ouvertes" : "Fermées"}</p>
+                            {item.state ?
+                                <img src="../assets/img/panneau-indret-amont-allumé.png" alt="" style={{ maxHeight: "139px" }} />
+                                : <img src="../assets/img/panneau-indret-amon-eteint.png" alt="" style={{ maxHeight: "139px" }} />}
+                            <p>État : {item.state ? "Allumé" : "Éteint"}</p>
+                            <p>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
+                            <p>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
+                            <p>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                            <p>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                             <p>Temperature CPU : {item.temperature}</p>
                         </Card>
 
