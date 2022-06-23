@@ -27,7 +27,7 @@ app.use(fileupload());
 app.use(express.static("medias"));
 
 // bodyparser setup
-app.use(bodyparser.urlencoded({extended: true}));
+app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 
 // CORS setup
@@ -42,23 +42,23 @@ app.post("/upload", (req, res) => {
     const format = req.body.format
     console.log(hashedName)
     file.mv(`${newpath}${hashedName}.${format}`, (err) => {
-            if (err) {
-                res.status(500).send({message: "File upload failed", code: 500});
-            } else {
-                res.status(200).send({message: "File Uploaded", code: 200});
-            }
-        });
+        if (err) {
+            res.status(500).send({ message: "File upload failed", code: 500 });
+        } else {
+            res.status(200).send({ message: "File Uploaded", code: 200 });
+        }
+    });
 });
 
 //routes
 routes(app);
 
 app.get('/', (req, res) =>
-    res.send(`Le serveur G552 fonctionne sur le port : ${PORT}`)
+    res.send(`Le serveur fonctionne sur le port : ${PORT}`)
 )
 
 app.listen(PORT, () =>
-    console.log(`Le serveur G552 fonctionne sur le port : ${PORT}`)
+    console.log(`Le serveur fonctionne sur le port : ${PORT}`)
 )
 
 // Fonction pour ajouter des roles dans la base de donnée

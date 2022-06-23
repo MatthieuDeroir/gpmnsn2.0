@@ -11,11 +11,15 @@ const PanelLogs = mongoose.model(
             type: String,
             require: true
         },
-        isOpen: {
+        door_1: {
             type: Boolean,
             require: true,
         },
-        power: {
+        door_2: {
+            type: Boolean,
+            require: true,
+        },
+        online: {
             type: Boolean,
             require: true,
         },
