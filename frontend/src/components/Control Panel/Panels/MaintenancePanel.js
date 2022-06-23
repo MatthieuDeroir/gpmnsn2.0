@@ -22,7 +22,7 @@ const MaintenancePanel = (props) => {
             </Row>
             <Row style={{ textAlign: "center", justifyContent: "center" }}>
                 {props.panels.map((item) => (
-                    <Col style={{ textAlign: "center", justifyContent: "center", height: "65vh", margin: 0, padding: 0 }}>
+                    <Col style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0 }}>
                         <Card style={{
                             textAlign: "center",
                             justifyContent: "center",
@@ -30,17 +30,17 @@ const MaintenancePanel = (props) => {
                             margin: 0,
                             padding: 0
                         }}>
-                            <p>{"Panneau " + item.name}</p>
+                            <p style={{ margin: "0" }}>{"Panneau " + item.name}</p>
 
                             {item.state ?
-                                <img src="../assets/img/panneau-indret-amont-allumé.png" alt="" style={{ maxHeight: "139px" }} />
-                                : <img src="../assets/img/panneau-indret-amon-eteint.png" alt="" style={{ maxHeight: "139px" }} />}
-                            <p>État : {item.state ? "Allumé" : "Éteint"}</p>
-                            <p>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
-                            <p>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
-                            <p>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
-                            <p>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
-                            <p>Temperature CPU : {item.temperature}</p>
+                                <img src="../assets/img/fleche-c.png" alt="" />
+                                : <img src="../assets/img/fleche-s.png" alt="" />}
+                            <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
+                            <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
+                            <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
+                            <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                            <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                            <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
                             <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
                                 {item.state ? "Éteindre" : "Allumer"}
                             </Button>
@@ -51,10 +51,9 @@ const MaintenancePanel = (props) => {
             <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px" }}>
                 <Card style={{ maxWidth: "16vw" }}>
                     Off
-                    <Switch
-                        checked={props.panelInstruction[0].instruction && !!props.panelInstruction[1].instruction && !!props.panelInstruction[2].instruction}
-                        onChange={props.switchPanels.bind(this)}
-                    />
+                    <Button onClick={props.switchPanels.bind(this, true, true, 'ok')}>
+                        {true ? "Éteindre" : "Allumer"}
+                    </Button>
                     On
                 </Card>
                 <Card style={{ maxWidth: "16vw" }}>

@@ -446,7 +446,7 @@ export default class ControlPanel extends Component {
         // let { stdout, stderr } = await exec('ping -c 1 192.167.100.185')
         // console.log(stdout, stderr)
 
-        // p.ping("google.com")
+        // p.ping("192.167.100.185")
         //     .then(data => {
         //         console.log("Successful ping: " + data);
         //     })
