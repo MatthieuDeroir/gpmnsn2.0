@@ -89,15 +89,15 @@ export default class ControlPanel extends Component {
             this.ping()
         }, 1000);
 
-        await axios.put(url + this.state.panelInstruction[0]._id, {
-            instruction: this.state.panelInstructions[0].instruction
-        })
-            .then((Reponse) => {
-                console.log(Reponse.data.instruction)
-            })
-            .catch((error) => {
-                console.log(error)
-            });
+        // await axios.put(url + this.state.panelInstruction[0]._id, {
+        //     instruction: this.state.panelInstructions[0].instruction
+        // })
+        //     .then((Reponse) => {
+        //         console.log(Reponse.data.instruction)
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //     });
 
         await axios.put(url + this.state.panelInstruction[0]._id, {
             instruction: this.state.panelInstructions[0].instruction
