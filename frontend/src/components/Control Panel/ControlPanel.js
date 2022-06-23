@@ -99,35 +99,35 @@ export default class ControlPanel extends Component {
         //         console.log(error)
         //     });
 
-        await axios.put(url + this.state.panelInstruction[0]._id, {
-            instruction: this.state.panelInstructions[0].instruction
-        })
-            .then((Reponse) => {
-                console.log(Reponse.data.instruction)
-            })
-            .catch((error) => {
-                console.log(error)
-            });
+        // await axios.put(url + this.state.panelInstruction[0]._id, {
+        //     instruction: this.state.panelInstructions[0].instruction
+        // })
+        //     .then((Reponse) => {
+        //         console.log(Reponse.data.instruction)
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //     });
 
 
-        await axios.put(url + this.state.panelInstruction[1]._id, {
-            instruction: this.state.panelInstructions[1].instruction
-        })
-            .then((Reponse) => {
-                console.log(Reponse.data.instruction)
-            })
-            .catch((error) => {
-                console.log(error)
-            });
-        await axios.put(url + this.state.panelInstruction[2]._id, {
-            instruction: this.state.panelInstructions[2].instruction
-        })
-            .then((Reponse) => {
-                console.log(Reponse.data.instruction)
-            })
-            .catch((error) => {
-                console.log(error)
-            });
+        // await axios.put(url + this.state.panelInstruction[1]._id, {
+        //     instruction: this.state.panelInstructions[1].instruction
+        // })
+        //     .then((Reponse) => {
+        //         console.log(Reponse.data.instruction)
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //     });
+        // await axios.put(url + this.state.panelInstruction[2]._id, {
+        //     instruction: this.state.panelInstructions[2].instruction
+        // })
+        //     .then((Reponse) => {
+        //         console.log(Reponse.data.instruction)
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //     });
     }
 
     async switchPanelbyIndex(sw, str, i, a, b, c) {
