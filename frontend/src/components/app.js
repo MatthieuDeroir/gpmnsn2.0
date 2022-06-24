@@ -28,7 +28,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ResponsiveAppBar from './Navigation/Navbar';
 
 
-import {Switch, Route, Link} from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import AuthService from "../services/authService";
 import Login from "./User/Action/Login";
 import Registration from "./User/Action/Registration";
@@ -74,8 +74,8 @@ import {
     CDBNavbarNav,
     CDBContainer,
 } from 'cdbreact';
-import {NavLink} from 'react-router-dom';
-import {Col, Row} from "react-bootstrap";
+import { NavLink } from 'react-router-dom';
+import { Col, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 
 
@@ -150,37 +150,12 @@ class App extends React.Component {
         //users
         this.logOut = this.logOut.bind(this);
         //files
-        // this.updateCurrentFile = this.updateCurrentFile.bind(this);
-        // this.updateCurrentEvent = this.updateCurrentEvent.bind(this);
-        //triggers
-        //importation
-        this.importFile = this.importFile.bind(this);
-        this.importEvent = this.importEvent.bind(this);
-        //selection
-        this.updateCurrentFile = this.updateCurrentFile.bind(this);
-        this.updateCurrentEvent = this.updateCurrentEvent.bind(this);
 
-        //modification
-        this.modifyCurrentEvent = this.modifyCurrentEvent.bind(this);
-        this.modifyCurrentFile = this.modifyCurrentFile.bind(this);
-
-        //deletion
-        this.deleteCurrentEvent = this.deleteCurrentEvent.bind(this);
-        this.deleteCurrentFile = this.deleteCurrentFile.bind(this);
-
-        //display lists
-        this.displayFileList = this.displayFileList.bind(this)
-        this.displayEventList = this.displayEventList.bind(this)
-        this.noDisplay = this.noDisplay.bind(this)
-
-        //trigger display event
-        this.displayEvent = this.displayEvent.bind(this);
-        this.convertToJSON = this.convertToJSON.bind(this);
 
     }
 
     componentDidMount() {
-//users
+        //users
         const user = AuthService.getCurrentUser();
         if (user) {
             this.setState({
@@ -190,182 +165,6 @@ class App extends React.Component {
                 // displayEventList: true
             });
         }
-
-//files
-        let url = 'http://localhost:4000/files'
-
-        axios.get(url)
-            .then((Reponse) => {
-                this.setState({
-                    files: Reponse.data,
-                    currentFile: Reponse.data[0]
-                })
-            })
-            .catch((error) => {
-                console.log(error)
-            });
-
-        url = 'http://localhost:4000/events'
-
-        axios.get(url)
-            .then((Reponse) => {
-                this.setState({
-                    events: Reponse.data
-                })
-            })
-            .catch((error) => {
-                console.log(error)
-            });
-    }
-
-    //files
-    importFile() {
-        this.setState({
-            importFile: true,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: false,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-        })
-    }
-
-    //Update current file
-    updateCurrentFile(item) {
-        this.setState({
-            currentFile: item,
-            importFile: false,
-            importEvent: false,
-            isFileSelected: true,
-            isEventSelected: false,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-
-        })
-    }
-
-    modifyCurrentFile(item) {
-        this.setState({
-            currentFile: item,
-            importFile: false,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: false,
-            isFileSelectedForModification: true,
-            isEventSelectedForModification: false,
-        })
-    }
-
-    deleteCurrentFile(item) {
-        this.setState({
-            currentFile: item,
-            importFile: false,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: false,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-        })
-    }
-
-    displayFileList() {
-        this.setState({
-            importFile: false,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: false,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-            displayFileList: true,
-            displayEventList: false,
-        })
-    }
-
-    //event
-    importEvent() {
-        this.setState({
-            importFile: false,
-            importEvent: true,
-            isFileSelected: false,
-            isEventSelected: false,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-        })
-    }
-
-    updateCurrentEvent(item) {
-        this.setState({
-            currentEvent: item,
-            importFile: false,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: true,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-        })
-    }
-
-    modifyCurrentEvent(item) {
-        this.setState({
-            isEventSelectedForModification: false,
-        })
-        this.m(item)
-    }
-
-    m(item) {
-        this.setState({
-            currentEvent: item,
-            importFile: false,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: false,
-            isEventSelectedForModification: true,
-            isFileSelectedForModification: false,
-        })
-    }
-
-    deleteCurrentEvent(item) {
-        this.setState({
-            currentEvent: item,
-            importFile: false,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: false,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-        })
-
-
-        axios.delete("http://localhost:4000/event/" + item._id)
-        window.location.reload()
-    }
-
-    displayEventList() {
-        this.setState({
-            importFile: false,
-            importEvent: false,
-            isFileSelected: false,
-            isEventSelected: false,
-            isEventSelectedForModification: false,
-            isFileSelectedForModification: false,
-            displayFileList: false,
-            displayEventList: true,
-        })
-    }
-
-    convertToJSON(item) {
-        console.log(item)
-    }
-
-    displayEvent(item) {
-        this.convertToJSON(item);
-    }
-
-    noDisplay() {
-        this.setState({
-            displayFileList: false,
-            displayEventList: false,
-        })
     }
 
 
@@ -374,7 +173,7 @@ class App extends React.Component {
 
     //user
     logOut() {
-        document.location.href="localhost:3000/login";
+        document.location.href = "localhost:3000/login";
         AuthService.logout();
         window.location.reload(true);
     }
@@ -396,7 +195,7 @@ class App extends React.Component {
 
 
     render() {
-        const {currentUser, showSuperuserBoard, showAdminBoard} = this.state;
+        const { currentUser, showSuperuserBoard, showAdminBoard } = this.state;
 
 
         function detectMob() {
@@ -407,47 +206,47 @@ class App extends React.Component {
             <div>
                 {/*{detectMob() ?*/}
                 <div>
-                    <Box sx={{flexGrow: 1}}>
-                        <AppBar style={{justifyContent: "center", position: "sticky", top: "0", marginBottom:"2vh"}}>
-                            <Toolbar style={{backgroundColor: "#ffffff", justifyContent: "center", padding: "0"}}>
+                    <Box sx={{ flexGrow: 1 }}>
+                        <AppBar style={{ justifyContent: "center", position: "sticky", top: "0", marginBottom: "2vh" }}>
+                            <Toolbar style={{ backgroundColor: "#ffffff", justifyContent: "center", padding: "0" }}>
                                 <IconButton
                                     size="large"
                                     edge="start"
                                     color="inherit"
                                     aria-label="menu"
-                                    sx={{mr: 2}}
-                                    style={{padding: "0", justifyContent: "center"}}
+                                    sx={{ mr: 2 }}
+                                    style={{ padding: "0", justifyContent: "center" }}
 
 
                                 >
-                                    { detectMob() ?
-                                        <img style={{width: "60vw", justifyContent: "center", padding: "0"}}
-                                             src="../assets/img/STRAMATEL-LOGO.png"
-                                             alt=""/>
+                                    {detectMob() ?
+                                        <img style={{ width: "60vw", justifyContent: "center", padding: "0" }}
+                                            src="../assets/img/STRAMATEL-LOGO.png"
+                                            alt="" />
                                         :
-                                        <img style={{height: "10vh", justifyContent: "center", paddingTop: "5px", paddingBottom: "5px"}}
-                                             src="../assets/img/STRAMATEL-LOGO.png"
-                                             alt=""/>
+                                        <img style={{ height: "10vh", justifyContent: "center", paddingTop: "5px", paddingBottom: "5px" }}
+                                            src="../assets/img/STRAMATEL-LOGO.png"
+                                            alt="" />
                                     }
                                 </IconButton>
                             </Toolbar>
                         </AppBar>
                     </Box>
                     <Switch>
-                        <Route exact path="/controlpanel" component={ControlPanel}/>
-                        <Route exact path="/logs" component={Logs}/>
-                        <Route exact path="/login" component={Login}/>
-                        <Route exact path="/register" component={Registration}/>
-                        <Route exact path="/profile" component={Profile}/>
+                        <Route exact path="/controlpanel" component={ControlPanel} />
+                        <Route exact path="/logs" component={Logs} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/register" component={Registration} />
+                        <Route exact path="/profile" component={Profile} />
                     </Switch>
-                    <Paper sx={{position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: "1000"}}>
+                    <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: "1000" }}>
                         <BottomNavigation
                             showLabels
-                            style={{backgroundColor: "#ffffff"}}
-                            // value={value}
-                            // onChange={(event, newValue) => {
-                            //     setValue(newValue);
-                            // }}
+                            style={{ backgroundColor: "#ffffff" }}
+                        // value={value}
+                        // onChange={(event, newValue) => {
+                        //     setValue(newValue);
+                        // }}
                         >
                             {/*<a className="" href="/" onClick={this.noDisplay} style={{right: "100%"}}>*/}
                             {/*    <IconButton*/}
@@ -469,28 +268,28 @@ class App extends React.Component {
                                 <div>
                                     <Link to={"/controlpanel"}>
                                         <BottomNavigationAction label="Tableau de bord"
-                                                                icon={<DisplaySettingsIcon />}/>
+                                            icon={<DisplaySettingsIcon />} />
                                     </Link>
                                     <Link to={"/logs"}>
                                         <BottomNavigationAction label="Logs"
-                                                                icon={<TextSnippetIcon />}/>
+                                            icon={<TextSnippetIcon />} />
                                     </Link>
                                     <Link to={"/profile"}>
                                         <BottomNavigationAction label="Profil"
-                                                                icon={<AccountCircle  onClick={this.noDisplay}/>}/>
+                                            icon={<AccountCircle onClick={this.noDisplay} />} />
                                     </Link>
                                     <Link to={"/"} onClick={this.noDisplay}>
                                         <BottomNavigationAction label="Déconnexion"
-                                                                icon={<LogoutIcon  onClick={this.logOut}/>}/>
+                                            icon={<LogoutIcon onClick={this.logOut} />} />
                                     </Link>
                                 </div>
                                 :
                                 <div>
                                     <Link to={"/login"} onClick={this.noDisplay}>
-                                        <BottomNavigationAction label="Profil" icon={<LoginIcon />}/>
+                                        <BottomNavigationAction label="Profil" icon={<LoginIcon />} />
                                     </Link>
                                     <Link to={"/register"}>
-                                        <BottomNavigationAction label="Créer un compte" icon={<PersonAddAlt />}/>
+                                        <BottomNavigationAction label="Créer un compte" icon={<PersonAddAlt />} />
                                     </Link>
                                 </div>
                             }
@@ -649,12 +448,12 @@ class App extends React.Component {
                 {/*            )}*/}
                 {/*        </nav>*/}
                 {/*        /!*<Col>*!/*/}
-                            {this.state.displayFileList ?
-                                <Home displayFileList={this.state.displayFileList} displayEventList={this.state.displayEventList}/>
-                            : null }
-                            { this.state.displayEventList ?
-                                <Home displayEventList={this.state.displayEventList} displayFileList={this.state.displayFileList}/>
-                                : null }
+                {this.state.displayFileList ?
+                    <Home displayFileList={this.state.displayFileList} displayEventList={this.state.displayEventList} />
+                    : null}
+                {this.state.displayEventList ?
+                    <Home displayEventList={this.state.displayEventList} displayFileList={this.state.displayFileList} />
+                    : null}
 
                 {/*        /!*</Col>*!/*/}
                 {/*        <Switch>*/}
@@ -670,7 +469,7 @@ class App extends React.Component {
 
                 {/*</div>*/}
                 {/*}*/}
-                <div style={{height: "70px"}}>
+                <div style={{ height: "70px" }}>
 
                 </div>
 

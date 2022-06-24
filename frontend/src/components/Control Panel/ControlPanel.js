@@ -28,6 +28,7 @@ import authService from "../../services/authService";
 import { runInThisContext } from 'vm';
 
 import Ping from 'ping.js';
+import { config } from '../../config'
 
 export default class ControlPanel extends Component {
     constructor(props) {
@@ -54,7 +55,7 @@ export default class ControlPanel extends Component {
         this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
 
 
-        let url = 'http://localhost:4000/instructions'
+        let url = 'http://' + config.ip + ':' + config.port + '/instructions'
         setInterval(() => {
             axios.get(url)
                 .then((Reponse) => {
@@ -69,7 +70,7 @@ export default class ControlPanel extends Component {
 
             1000);
 
-        url = 'http://localhost:4000/panels'
+        url = 'http://' + config.ip + ':' + config.port + '/panels'
 
         setInterval(() => {
             axios.get(url)
@@ -139,7 +140,7 @@ export default class ControlPanel extends Component {
         console.log("str :" + str)
 
 
-        let url = 'http://localhost:4000/instruction/'
+        let url = "http://" + config.ip + ":" + config.port + "/instruction/"
 
         await axios.put(url + this.state.panelInstruction[str - 1]._id, {
             instruction: sw
@@ -151,7 +152,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/instructions/'
+        url = "http://" + config.ip + ":" + config.port + "/instructions/"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -163,7 +164,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/panels'
+        url = "http://" + config.ip + ":" + config.port + "/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -174,7 +175,7 @@ export default class ControlPanel extends Component {
             .catch((error) => {
                 console.log(error)
             });
-        url = 'http://localhost:4000/instruction/'
+        url = "http://" + config.ip + ":" + config.port + "/instruction/"
 
         await axios.put(url + this.state.panelInstruction[str - 1]._id, {
             instruction: sw
@@ -186,7 +187,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/instructions/'
+        url = "http://" + config.ip + ":" + config.port + "/instructions/"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -198,7 +199,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/panels'
+        url = "http://" + config.ip + ":" + config.port + "/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -216,7 +217,7 @@ export default class ControlPanel extends Component {
     }
 
     async totalShutDown() {
-        let url = 'http://localhost:4000/instructions'
+        let url = "http://" + config.ip + ":" + config.port + "/instructions"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -228,7 +229,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/panels'
+        url = "http://" + config.ip + ":" + config.port + "/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -240,7 +241,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/instruction/'
+        url = "http://" + config.ip + ":" + config.port + "/instruction/"
 
         await axios.put(url + this.state.panelInstruction[0]._id, {
             instruction: false
@@ -346,7 +347,7 @@ export default class ControlPanel extends Component {
         }
 
 
-        let url = 'http://localhost:4000/instruction/'
+        let url = "http://" + config.ip + ":" + config.port + "/instruction/"
 
         await axios.put(url + this.state.panelInstructions[0]._id, {
             test: this.state.panelInstructions[0].instruction
@@ -387,7 +388,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/instructions'
+        url = "http://" + config.ip + ":" + config.port + "/instructions"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -399,7 +400,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = 'http://localhost:4000/panels'
+        url = "http://" + config.ip + ":" + config.port + "/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -414,7 +415,7 @@ export default class ControlPanel extends Component {
     }
 
     async setPanelStatus(online, id) {
-        const url = 'http://localhost:4000/panel/'
+        const url = "http://" + config.ip + ":" + config.port + "/panel/"
         if (online) {
             await axios.put(url + id, {
                 online: true

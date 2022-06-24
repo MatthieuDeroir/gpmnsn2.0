@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { config } from '../config'
 import authHeader from "./authHeader";
-const API_URL = 'http://localhost:4000/';
+const API_URL = 'http://' + config.ip + ':' + config.port;
 
 class UserService {
     getPublicContent() {
