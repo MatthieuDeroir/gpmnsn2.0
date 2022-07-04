@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyparser from "body-parser";
 import bcrypt from 'bcryptjs';
+// import initialization from 'initialization'
 
 const fileupload = require("express-fileupload");
 import cors from 'cors';
@@ -12,7 +13,7 @@ import path from "path";
 import fs from "fs";
 
 const app = express();
-const PORT = 4000;
+const PORT = 5000;
 
 // disabling mention
 app.disable('x-powered-by')
@@ -60,28 +61,5 @@ app.get('/', (req, res) =>
 app.listen(PORT, () =>
     console.log(`Le serveur fonctionne sur le port : ${PORT}`)
 )
-
-// Fonction pour ajouter des roles dans la base de donnée
-
-// initial();
-
-// import Role from './models/login/roleModel'
-//
-// function initial() {
-//     new Role({
-//         name: "user"
-//     }).save(err => {
-//         if (err) {
-//             console.log("error", err);
-//         }
-//         console.log("added user to role collection");
-//     })
-//     new Role({
-//         name: "admin"
-//     }).save(err => {
-//         if (err) {
-//             console.log("error", err);
-//         }
-//         console.log("added user to role collection");
-//     })
-// }
+//initialisation de la BDD
+//initialization();

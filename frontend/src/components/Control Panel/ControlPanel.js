@@ -1,20 +1,4 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Row, Col } from 'react-bootstrap'
 
 import ViewPanel from './Panels/ViewPanel';
 import ProblemView from './Panels/ProblemView';
@@ -24,8 +8,6 @@ import MaintenancePanel from './Panels/MaintenancePanel';
 import AuthService from '../../services/authService'
 import { Component } from "react";
 import axios from "axios";
-import authService from "../../services/authService";
-import { runInThisContext } from 'vm';
 
 import Ping from 'ping.js';
 import { config } from '../../config'
@@ -48,6 +30,7 @@ export default class ControlPanel extends Component {
         this.switchPanelbyIndex = this.switchPanelbyIndex.bind(this)
         this.actualize = this.actualize.bind(this)
         this.setPanelStatus = this.setPanelStatus.bind(this)
+        this.sendUserLogs = this.sendUserLogs.bind(this)
 
     }
 
@@ -86,9 +69,7 @@ export default class ControlPanel extends Component {
 
             1000);
 
-        setInterval(() => {
-            this.ping()
-        }, 1000);
+
 
         // await axios.put(url + this.state.panelInstruction[0]._id, {
         //     instruction: this.state.panelInstructions[0].instruction
@@ -210,6 +191,9 @@ export default class ControlPanel extends Component {
             .catch((error) => {
                 console.log(error)
             });
+
+        this.sendUserLogs(this.state.panels[str - 1].name, sw)
+
     }
 
     componentWillUnmount() {
@@ -326,6 +310,8 @@ export default class ControlPanel extends Component {
                     instruction: true,
                 }]
             })
+            this.sendUserLogs("ALL", true)
+
         } else {
             this.setState({
                 panelInstructions: [{
@@ -344,6 +330,7 @@ export default class ControlPanel extends Component {
                     instruction: false,
                 }]
             })
+            this.sendUserLogs("ALL", false)
         }
 
 
@@ -438,37 +425,18 @@ export default class ControlPanel extends Component {
 
     }
 
-    async ping() {
-        var p = new Ping();
 
-        let ip_panel_2 = "127.0.0.1"
-        let ip_panel_3 = "127.0.0.1"
-
-        // let { stdout, stderr } = await exec('ping -c 1 192.167.100.185')
-        // console.log(stdout, stderr)
-
-        // p.ping("192.167.100.185")
-        //     .then(data => {
-        //         console.log("Successful ping: " + data);
-        //     })
-        //     .catch(data => {
-        //         console.error("Ping failed: " + data);
-        //     })
-
-        // p.ping(ip_panel_2)
-        //     .then(data => {
-        //         console.log("Successful ping: " + data);
-        //     })
-        //     .catch(data => {
-        //         console.error("Ping failed: " + data);
-        //     })
-        // p.ping(ip_panel_3)
-        //     .then(data => {
-        //         console.log("Successful ping: " + data);
-        //     })
-        //     .catch(data => {
-        //         console.error("Ping failed: " + data);
-        //     })
+    async sendUserLogs(name, state) {
+        const url = "http://" + config.ip + ":" + config.port + "/userLogs"
+        await axios.post(url, {
+            name: AuthService.getCurrentUser().name,
+            message: `a actionné les panneaux`,
+        })
+            .then((Reponse) => {
+            })
+            .catch((error) => {
+                console.log(error)
+            });
     }
 
     hasProblem() {
@@ -512,7 +480,8 @@ export default class ControlPanel extends Component {
 
                         <CommandPanel actualize={this.actualize} panels={this.state.panels}
                             panelInstruction={this.state.panelInstruction ? this.state.panelInstruction : this.state.default}
-                            switchPanels={this.switchAllPanels.bind(this)} />
+                            switchPanels={this.switchAllPanels.bind(this)}
+                        />
                     </div>
                 )
             } else if (AuthService.getCurrentUser()['roles'][0] === 'ROLE_SUPERUSER') {
@@ -521,7 +490,8 @@ export default class ControlPanel extends Component {
                         <MaintenancePanel actualize={this.actualize.bind(this)} panels={this.state.panels}
                             panelInstruction={this.state.panelInstruction ? this.state.panelInstruction : this.state.default}
                             switchPanels={this.switchAllPanels.bind(this)}
-                            switchPanelbyIndex={this.switchPanelbyIndex.bind(this)} />
+                            switchPanelbyIndex={this.switchPanelbyIndex.bind(this)}
+                        />
 
                     </div>
 

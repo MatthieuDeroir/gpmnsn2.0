@@ -38,8 +38,8 @@ const MaintenancePanel = (props) => {
                             <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
                             <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
                             <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
-                            <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
-                            <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                            <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                            <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                             <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
                             <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
                                 {item.state ? "Éteindre" : "Allumer"}
