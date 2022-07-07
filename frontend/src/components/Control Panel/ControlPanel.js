@@ -31,6 +31,7 @@ export default class ControlPanel extends Component {
         this.actualize = this.actualize.bind(this)
         this.setPanelStatus = this.setPanelStatus.bind(this)
         this.sendUserLogs = this.sendUserLogs.bind(this)
+        this.totalShutDown = this.totalShutDown.bind(this)
 
     }
 
@@ -200,8 +201,12 @@ export default class ControlPanel extends Component {
         clearInterval(this.interval);
     }
 
-    async totalShutDown() {
+    async totalShutDown(state = false) {
         let url = "http://" + config.ip + ":" + config.port + "/instructions"
+
+        if (state != false) {
+            state = !(state[0].state)
+        }
 
         await axios.get(url)
             .then((Reponse) => {
@@ -227,8 +232,9 @@ export default class ControlPanel extends Component {
 
         url = "http://" + config.ip + ":" + config.port + "/instruction/"
 
+
         await axios.put(url + this.state.panelInstruction[0]._id, {
-            instruction: false
+            instruction: state
         })
             .then((Reponse) => {
                 console.log(Reponse.data.instruction)
@@ -239,7 +245,7 @@ export default class ControlPanel extends Component {
 
 
         await axios.put(url + this.state.panelInstruction[1]._id, {
-            instruction: false
+            instruction: state
         })
             .then((Reponse) => {
                 console.log(Reponse.data.instruction)
@@ -248,7 +254,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
         await axios.put(url + this.state.panelInstruction[2]._id, {
-            instruction: false
+            instruction: state
         })
             .then((Reponse) => {
                 console.log(Reponse.data.instruction)
@@ -258,7 +264,7 @@ export default class ControlPanel extends Component {
             });
 
         await axios.put(url + this.state.panelInstruction[0]._id, {
-            instruction: false
+            instruction: state
         })
             .then((Reponse) => {
                 console.log(Reponse.data.instruction)
@@ -269,7 +275,7 @@ export default class ControlPanel extends Component {
 
 
         await axios.put(url + this.state.panelInstruction[1]._id, {
-            instruction: false
+            instruction: state
         })
             .then((Reponse) => {
                 console.log(Reponse.data.instruction)
@@ -278,7 +284,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
         await axios.put(url + this.state.panelInstruction[2]._id, {
-            instruction: false
+            instruction: state
         })
             .then((Reponse) => {
                 console.log(Reponse.data.instruction)
@@ -290,86 +296,98 @@ export default class ControlPanel extends Component {
 
     }
 
-    async switchAllPanels(sw) {
+    async switchAllPanels(a, b, c, d) {
 
-        if (sw.target.checked) {
-            this.setState({
-                panelInstructions: [{
-                    index: 0,
-                    name: "Indret",
-                    instruction: true,
-                },
-                {
-                    index: 1,
-                    name: "UB Aval",
-                    instruction: true,
-                },
-                {
-                    index: 2,
-                    name: "UB Amont",
-                    instruction: true,
-                }]
-            })
-            this.sendUserLogs("ALL", true)
+        console.log("a : ", a)
+        console.log("b : ", b)
+        console.log("c : ", c)
+        console.log("d : ", d)
 
-        } else {
-            this.setState({
-                panelInstructions: [{
-                    index: 0,
-                    name: "Indret",
-                    instruction: false,
-                },
-                {
-                    index: 1,
-                    name: "UB Aval",
-                    instruction: false,
-                },
-                {
-                    index: 2,
-                    name: "UB Amont",
-                    instruction: false,
-                }]
-            })
-            this.sendUserLogs("ALL", false)
-        }
+
+
+        this.setState({
+            panelInstructions: [{
+                index: 0,
+                name: "Indret",
+                instruction: !b[0].state,
+            },
+            {
+                index: 1,
+                name: "UB Aval",
+                instruction: !b[1].state,
+            },
+            {
+                index: 2,
+                name: "UB Amont",
+                instruction: !b[2].state,
+            }]
+        })
+        this.sendUserLogs("ALL", true)
+
+
+        console.log(this.state.panelInstructions)
 
 
         let url = "http://" + config.ip + ":" + config.port + "/instruction/"
 
-        await axios.put(url + this.state.panelInstructions[0]._id, {
-            test: this.state.panelInstructions[0].instruction
-        })
-            .then((Reponse) => {
-            })
-            .catch((error) => {
-                console.log(error)
-            });
+        console.log(url + this.state.panelInstruction[0]._id)
 
-        await axios.put(url + this.state.panelInstructions[0]._id, {
+        await axios.put(url + this.state.panelInstruction[0]._id, {
             instruction: this.state.panelInstructions[0].instruction
         })
             .then((Reponse) => {
-                console.log(Reponse.data.instruction)
+                console.log(Reponse)
+            })
+            .catch((error) => {
+                console.log(error)
+            });
+
+        await axios.put(url + this.state.panelInstruction[0]._id, {
+            instruction: this.state.panelInstructions[0].instruction
+        })
+            .then((Reponse) => {
+                console.log(Reponse)
             })
             .catch((error) => {
                 console.log(error)
             });
 
 
-        await axios.put(url + this.state.panelInstructions[1]._id, {
+        await axios.put(url + this.state.panelInstruction[1]._id, {
             instruction: this.state.panelInstructions[1].instruction
         })
             .then((Reponse) => {
-                console.log(Reponse.data.instruction)
+                console.log(Reponse)
             })
             .catch((error) => {
                 console.log(error)
             });
-        await axios.put(url + this.state.panelInstructions[2]._id, {
+
+        await axios.put(url + this.state.panelInstruction[1]._id, {
+            instruction: this.state.panelInstructions[1].instruction
+        })
+            .then((Reponse) => {
+                console.log(Reponse)
+            })
+            .catch((error) => {
+                console.log(error)
+            });
+
+        await axios.put(url + this.state.panelInstruction[2]._id, {
             instruction: this.state.panelInstructions[2].instruction
         })
             .then((Reponse) => {
-                console.log(Reponse.data.instruction)
+                console.log(Reponse)
+            })
+            .catch((error) => {
+                console.log(error)
+            });
+
+        await axios.put(url + this.state.panelInstruction[2]._id, {
+            instruction: this.state.panelInstructions[2].instruction
+        })
+            .then(Reponse => {
+                console.log(Reponse)
             })
             .catch((error) => {
                 console.log(error)
@@ -491,6 +509,7 @@ export default class ControlPanel extends Component {
                             panelInstruction={this.state.panelInstruction ? this.state.panelInstruction : this.state.default}
                             switchPanels={this.switchAllPanels.bind(this)}
                             switchPanelbyIndex={this.switchPanelbyIndex.bind(this)}
+                            totalShutDown={this.totalShutDown.bind(this)}
                         />
 
                     </div>

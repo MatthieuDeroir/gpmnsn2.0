@@ -6,65 +6,75 @@ import { Button } from "@mui/material";
 
 
 const MaintenancePanel = (props) => {
-    return (
-        <div style={{ margin: "0px", padding: "0px", textAlign: "center", justifyContent: "center" }}>
-            <Row style={{
-                textAlign: "center",
-                justifyContent: "center",
-                margin: 0,
-                padding: 0,
-                paddingTop: "10px",
-                paddingBottom: "10px"
-            }}>
-                <Card style={{ maxWidth: "16vw" }}>
-                    Maintenance
-                </Card>
-            </Row>
-            <Row style={{ textAlign: "center", justifyContent: "center" }}>
-                {props.panels.map((item) => (
-                    <Col style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0 }}>
-                        <Card style={{
-                            textAlign: "center",
-                            justifyContent: "center",
-                            height: "63vh",
-                            margin: 0,
-                            padding: 0
-                        }}>
-                            <p style={{ margin: "0" }}>{"Panneau " + item.name}</p>
 
-                            {item.state ?
-                                <img src="../assets/img/fleche-c.png" alt="" />
-                                : <img src="../assets/img/fleche-s.png" alt="" />}
-                            <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
-                            <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
-                            <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
-                            <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
-                            <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
-                            <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
-                            <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
-                                {item.state ? "Éteindre" : "Allumer"}
-                            </Button>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
-            <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px" }}>
-                <Card style={{ maxWidth: "16vw" }}>
-                    Off
-                    <Button onClick={props.switchPanels.bind(this, true, true, 'ok')}>
-                        {true ? "Éteindre" : "Allumer"}
-                    </Button>
-                    On
-                </Card>
-                <Card style={{ maxWidth: "16vw" }}>
-                    {/* TODO: force actualisation */}
-                    <Button onClick={props.actualize} href={"/controlpanel"}>
-                        Actualiser
-                    </Button>
-                </Card>
-            </Row>
-        </div>
-    )
+    if (props.panels != []) {
+        return (
+            <div style={{ margin: "0px", padding: "0px", textAlign: "center", justifyContent: "center" }}>
+                <Row style={{
+                    textAlign: "center",
+                    justifyContent: "center",
+                    margin: 0,
+                    padding: 0,
+                    paddingTop: "10px",
+                    paddingBottom: "10px"
+                }}>
+                    <Card style={{ maxWidth: "16vw" }}>
+                        Maintenance
+                    </Card>
+                </Row>
+                <Row style={{ textAlign: "center", justifyContent: "center" }}>
+                    {props.panels.map((item) => (
+                        <Col style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0 }}>
+                            <Card style={{
+                                textAlign: "center",
+                                justifyContent: "center",
+                                height: "63vh",
+                                margin: 0,
+                                padding: 0
+                            }}>
+                                <p style={{ margin: "0" }}>{"Panneau " + item.name}</p>
+
+                                {item.state ?
+                                    <img src="../assets/img/fleche-c.png" alt="" />
+                                    : <img src="../assets/img/fleche-s.png" alt="" />}
+                                <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
+                                <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
+                                <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
+                                <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                                <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                                <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
+                                <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
+                                    {item.state ? "Éteindre" : "Allumer"}
+                                </Button>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+                <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px" }}>
+                    <Card style={{ maxWidth: "16vw" }}>
+                        Off
+                        <Button onClick={props.totalShutDown.bind(this, props.panels)}>
+                            {true ? "Éteindre" : "Allumer"}
+                        </Button>
+                        On
+                    </Card>
+                    <Card style={{ maxWidth: "16vw" }}>
+                        {/* TODO: force actualisation */}
+                        <Button onClick={props.actualize} href={"/controlpanel"}>
+                            Actualiser
+                        </Button>
+                    </Card>
+                </Row>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div> WAITING </div>
+        )
+
+    }
+
 }
 
 export default MaintenancePanel

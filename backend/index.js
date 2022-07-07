@@ -1,19 +1,16 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyparser from "body-parser";
-import bcrypt from 'bcryptjs';
-// import initialization from 'initialization'
+import initialization from './initialization'
 
 const fileupload = require("express-fileupload");
 import cors from 'cors';
 
 import routes from './routes/appRoutes';
 
-import path from "path";
-import fs from "fs";
 
 const app = express();
-const PORT = 5000;
+const PORT = 4000;
 
 // disabling mention
 app.disable('x-powered-by')

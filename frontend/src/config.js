@@ -1,6 +1,6 @@
 const config = {
     ip: 'localhost',
-    port: '5000'
+    port: '4000'
 }
 
 export { config }
