@@ -11,7 +11,7 @@ const UserLogs = mongoose.model(
             type: String,
             require: true,
         },
-        date:{
+        date: {
             type: Date,
             default: Date.now()
         },
@@ -19,3 +19,4 @@ const UserLogs = mongoose.model(
 );
 
 module.exports = UserLogs;
+//dummy

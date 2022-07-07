@@ -36,7 +36,7 @@ const Panel = mongoose.model(
             type: Number,
             require: true,
         },
-        bug : {
+        bug: {
             type: Boolean,
             require: true,
         }
@@ -46,3 +46,4 @@ const Panel = mongoose.model(
 );
 
 module.exports = Panel;
+//dummy
