@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyparser from "body-parser";
-import initialization from './initialization'
+import { initialization } from './initialization'
 
 const fileupload = require("express-fileupload");
 import cors from 'cors';
