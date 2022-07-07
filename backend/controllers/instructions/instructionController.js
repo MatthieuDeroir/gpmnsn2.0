@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import {InstructionSchema} from '../../models/instructions/instructionModel';
+import { InstructionSchema } from '../../models/instructions/instructionModel';
 
 const Instruction = mongoose.model('Instruction', InstructionSchema);
 
@@ -33,7 +33,7 @@ export const getInstructionWithId = (req, res) => {
 }
 
 export const updateInstruction = (req, res) => {
-    Instruction.findOneAndUpdate({_id: req.params.InstructionId}, req.body, {new: true}, (err, Instruction) => {
+    Instruction.findOneAndUpdate({ _id: req.params.InstructionId }, req.body, { new: true }, (err, Instruction) => {
         if (err) {
             res.send(err);
         }
@@ -42,11 +42,11 @@ export const updateInstruction = (req, res) => {
 }
 
 export const deleteInstruction = (req, res) => {
-    Instruction.deleteOne({_id: req.params.InstructionId}, (err, Instruction) => {
+    Instruction.deleteOne({ _id: req.params.InstructionId }, (err, Instruction) => {
         if (err) {
             res.send(err);
         }
-        res.json({message: 'Successfully deleted Instruction'});
+        res.json({ message: 'Successfully deleted Instruction' });
     })
 }
 

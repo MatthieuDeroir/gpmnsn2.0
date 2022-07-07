@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import {UserLogsSchema} from '../../models/logs/userLogsModel';
+import { UserLogsSchema } from '../../models/logs/userLogsModel';
 
 const UserLogs = mongoose.model('UserLogs', UserLogsSchema);
 
@@ -33,7 +33,7 @@ export const getUserLogsWithId = (req, res) => {
 }
 
 export const updateUserLogs = (req, res) => {
-    UserLogs.findOneAndUpdate({_id: req.params.UserLogsId}, req.body, {new: true}, (err, UserLogs) => {
+    UserLogs.findOneAndUpdate({ _id: req.params.UserLogsId }, req.body, { new: true }, (err, UserLogs) => {
         if (err) {
             res.send(err);
         }
@@ -42,11 +42,11 @@ export const updateUserLogs = (req, res) => {
 }
 
 export const deleteUserLogs = (req, res) => {
-    UserLogs.deleteOne({_id: req.params.UserLogsId}, (err, UserLogs) => {
+    UserLogs.deleteOne({ _id: req.params.UserLogsId }, (err, UserLogs) => {
         if (err) {
             res.send(err);
         }
-        res.json({message: 'Successfully deleted UserLogs'});
+        res.json({ message: 'Successfully deleted UserLogs' });
     })
 }
 

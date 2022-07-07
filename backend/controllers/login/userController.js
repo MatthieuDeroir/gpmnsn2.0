@@ -1,8 +1,6 @@
 import mongoose from 'mongoose';
-import {UserSchema} from '../../models/login/userModel';
-import fs from "fs";
-import bcrypt from "bcryptjs";
-import {RoleSchema} from "../../models/login/roleModel";
+import { UserSchema } from '../../models/login/userModel';
+import { RoleSchema } from "../../models/login/roleModel";
 
 const User = mongoose.model('User', UserSchema);
 const Role = mongoose.model('Role', RoleSchema);
@@ -50,7 +48,7 @@ export const getUserWithId = (req, res) => {
 }
 
 export const updateUser = (req, res) => {
-    User.findOneAndUpdate({_id: req.params.UserId}, (err, User) => {
+    User.findOneAndUpdate({ _id: req.params.UserId }, (err, User) => {
         console.log(User)
         if (err) {
             res.send(err);
@@ -59,7 +57,7 @@ export const updateUser = (req, res) => {
         if (req.body.roles) {
             Role.find(
                 {
-                    name: {$in: req.body.roles}
+                    name: { $in: req.body.roles }
                 },
                 (err, roles) => {
                     User.roles = req.body.roles[0];
@@ -67,14 +65,15 @@ export const updateUser = (req, res) => {
                     res.json(User)
                 }
             );
-    }
-})}
+        }
+    })
+}
 
 export const deleteUser = (req, res) => {
-    User.remove({_id: req.params.UserId}, (err, User) => {
+    User.remove({ _id: req.params.UserId }, (err, User) => {
         if (err) {
             res.send(err);
         }
-        res.json({ message: 'Successfully deleted User'});
+        res.json({ message: 'Successfully deleted User' });
     })
 }

@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
-import bcrypt from "bcryptjs";
-import {RoleSchema} from "../../models/login/roleModel";
+import { RoleSchema } from "../../models/login/roleModel";
 
 const Role = mongoose.model('Role', RoleSchema);
 
@@ -47,7 +46,7 @@ export const getRoleWithId = (req, res) => {
 }
 
 export const updateRole = (req, res) => {
-    Role.findOneAndUpdate({_id: req.params.RoleId}, (err, Role) => {
+    Role.findOneAndUpdate({ _id: req.params.RoleId }, (err, Role) => {
         console.log(Role)
         if (err) {
             res.send(err);
@@ -56,7 +55,7 @@ export const updateRole = (req, res) => {
         if (req.body.roles) {
             Role.find(
                 {
-                    name: {$in: req.body.roles}
+                    name: { $in: req.body.roles }
                 },
                 (err, roles) => {
                     Role.roles = req.body.roles[0];
@@ -65,13 +64,14 @@ export const updateRole = (req, res) => {
                 }
             );
         }
-    })}
+    })
+}
 
 export const deleteRole = (req, res) => {
-    Role.remove({_id: req.params.RoleId}, (err, Role) => {
+    Role.remove({ _id: req.params.RoleId }, (err, Role) => {
         if (err) {
             res.send(err);
         }
-        res.json({ message: 'Successfully deleted Role'});
+        res.json({ message: 'Successfully deleted Role' });
     })
 }

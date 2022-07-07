@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import {PanelSchema} from '../../models/panel/panelModel';
+import { PanelSchema } from '../../models/panel/panelModel';
 
 const Panel = mongoose.model('Panel', PanelSchema);
 
@@ -33,7 +33,7 @@ export const getPanelWithId = (req, res) => {
 }
 
 export const updatePanel = (req, res) => {
-    Panel.findOneAndUpdate({_id: req.params.PanelId}, req.body, {new: true}, (err, Panel) => {
+    Panel.findOneAndUpdate({ _id: req.params.PanelId }, req.body, { new: true }, (err, Panel) => {
         if (err) {
             res.send(err);
         }
@@ -42,11 +42,11 @@ export const updatePanel = (req, res) => {
 }
 
 export const deletePanel = (req, res) => {
-    Panel.deleteOne({_id: req.params.PanelId}, (err, Panel) => {
+    Panel.deleteOne({ _id: req.params.PanelId }, (err, Panel) => {
         if (err) {
             res.send(err);
         }
-        res.json({message: 'Successfully deleted Panel'});
+        res.json({ message: 'Successfully deleted Panel' });
     })
 }
 
