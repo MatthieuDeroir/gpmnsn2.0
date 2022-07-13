@@ -40,13 +40,13 @@ const ProblemView = (props) => {
                             </div>
                             <div>
                                 {
-                                    !item.door_1 ? <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                                    item.door_1 ? <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
                                         : null
                                 }
                             </div>
                             <div>
                                 {
-                                    !item.door_2 ? <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                                    item.door_2 ? <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                                         : null
                                 }
                             </div>
