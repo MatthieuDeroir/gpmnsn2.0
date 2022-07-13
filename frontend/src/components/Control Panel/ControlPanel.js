@@ -545,7 +545,7 @@ export default class ControlPanel extends Component {
                 if (error == true) {
 
                 }
-                else {
+                else if (error == false) {
                     this.hasProblem()
                 }
                 error = true
