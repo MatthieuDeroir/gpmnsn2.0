@@ -415,7 +415,7 @@ export default class ControlPanel extends Component {
     async sendUserLogs(name, state) {
         const url = "http://" + config.ip + ":" + config.port + "/userLogs"
         await axios.post(url, {
-            name: AuthService.getCurrentUser().name,
+            username: AuthService.getCurrentUser().name,
             message: `a actionné les panneaux`,
         })
             .then((Reponse) => {

@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 
 const MaintenancePanel = (props) => {
 
-    if (props.panels != []) {
+    if (props.panels) {
         return (
             <div style={{ margin: "0px", padding: "0px", textAlign: "center", justifyContent: "center" }}>
                 <Row style={{
@@ -52,11 +52,9 @@ const MaintenancePanel = (props) => {
                 </Row>
                 <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px" }}>
                     <Card style={{ maxWidth: "16vw" }}>
-                        Off
                         <Button onClick={props.totalShutDown.bind(this, props.panels)}>
-                            {true ? "Éteindre" : "Allumer"}
+                            Actionner
                         </Button>
-                        On
                     </Card>
                     <Card style={{ maxWidth: "16vw" }}>
                         {/* TODO: force actualisation */}
