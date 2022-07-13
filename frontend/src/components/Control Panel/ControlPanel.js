@@ -427,8 +427,11 @@ export default class ControlPanel extends Component {
     }
 
     hasProblem() {
+        let ret = false
         this.state.panels.map((panel) => {
             if (panel.bug) {
+
+                ret = true
                 this.state.panels.map((panel) => {
                     if (panel.state) {
                         this.totalShutDown()
