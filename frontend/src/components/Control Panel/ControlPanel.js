@@ -434,7 +434,7 @@ export default class ControlPanel extends Component {
                 ret = true
                 this.state.panels.map((panel) => {
                     if (panel.state) {
-                        this.totalShutDown()
+                        this.switchPanelbyIndex.bind(panel._id)
                     }
                 })
             }
@@ -450,8 +450,14 @@ export default class ControlPanel extends Component {
 
 
     render() {
-        let error = this.hasProblem()
+        let error = false
+        this.state.panels.map((panel) => {
+            if (panel.bug) {
+                error = true
+            }
+        })
         if (error) {
+            this.hasProblem()
             return (
                 <ProblemView panels={this.state.panels} />
             )
