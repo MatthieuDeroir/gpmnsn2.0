@@ -39,7 +39,6 @@ export default class ControlPanel extends Component {
         this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
 
 
-
         let url = 'http://' + config.ip + ':' + config.port + '/instructions'
         setInterval(() => {
             axios.get(url)
@@ -70,12 +69,6 @@ export default class ControlPanel extends Component {
         },
 
             1000);
-
-        this.state.panels.map((panel) => {
-            if (panel.bug == true) {
-                this.hasProblem.bind()
-            }
-        })
 
 
 
@@ -552,6 +545,7 @@ export default class ControlPanel extends Component {
             }
         })
         if (error) {
+            this.hasProblem()
             return (
                 <ProblemView panels={this.state.panels} />
             )
