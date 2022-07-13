@@ -43,7 +43,7 @@ const Panel = mongoose.model(
         },
         date: {
             type: String,
-            default: today.getDay() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
+            default: today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
         }
     })
 );
