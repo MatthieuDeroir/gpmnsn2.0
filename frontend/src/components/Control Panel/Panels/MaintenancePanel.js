@@ -28,7 +28,7 @@ const MaintenancePanel = (props) => {
                             <Card style={{
                                 textAlign: "center",
                                 justifyContent: "center",
-                                height: "63vh",
+                                height: "65vh",
                                 margin: 0,
                                 padding: 0
                             }}>
