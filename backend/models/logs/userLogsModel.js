@@ -14,7 +14,7 @@ const UserLogs = mongoose.model(
         },
         date: {
             type: Date,
-            default: today.getDay() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear + " " + today.getHours + ":" + today.getMinutes + ":" + today.getSeconds
+            default: today.getDay() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
         },
     })
 );
