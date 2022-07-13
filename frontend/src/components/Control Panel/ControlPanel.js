@@ -455,9 +455,17 @@ export default class ControlPanel extends Component {
             if (panel.bug) {
                 error = true
             }
+            else {
+                this.setState({
+                    bugAcknoledge: false,
+                })
+            }
         })
-        if (error) {
+        if (error && !this.state.bugAcknoledge) {
             this.hasProblem()
+            this.setState({
+                bugAcknoledge: true,
+            })
             return (
                 <ProblemView panels={this.state.panels} />
             )
