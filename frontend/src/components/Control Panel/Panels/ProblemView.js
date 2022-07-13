@@ -19,12 +19,31 @@ const ProblemView = (props) => {
                             {item.state ?
                                 <img src="../assets/img/fleche-c.png" alt="" />
                                 : <img src="../assets/img/fleche-s.png" alt="" />}
-                            <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
-                            <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
-                            <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
-                            <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
-                            <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
-                            <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
+                            <p style={{ margin: "0" }}>Date dernier log : {item.date}</p>
+                            {
+                                !item.state ? <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
+                                    : null
+                            }
+                            {
+                                !item.online ? <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
+                                    : null
+                            }
+                            {
+                                !item.screen ? <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
+                                    : null
+                            }
+                            {
+                                !item.door_1 ? <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                                    : null
+                            }
+                            {
+                                !item.door_2 ? <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                                    : null
+                            }
+                            {
+                                item.temperature > 80 ? <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
+                                    : null
+                            }
                         </Card>
                             :
                             <Card style={{ textAlign: "center", justifyContent: "center" }}>
@@ -33,6 +52,7 @@ const ProblemView = (props) => {
                                 {item.state ?
                                     <img src="../assets/img/fleche-c.png" alt="" />
                                     : <img src="../assets/img/fleche-s.png" alt="" />}
+                                <p style={{ margin: "0" }}>Date dernier log : {item.date}</p>
                                 <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
                                 <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
                                 <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
