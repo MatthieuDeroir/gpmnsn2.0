@@ -430,11 +430,10 @@ export default class ControlPanel extends Component {
         let ret = false
         this.state.panels.map((panel) => {
             if (panel.bug) {
-
                 ret = true
                 this.state.panels.map((panel) => {
                     if (panel.state) {
-                        this.switchPanelbyIndex.bind(panel._id)
+                        this.switchPanelbyIndex.bind(this, false, item.index, 'ok')
                     }
                 })
             }
