@@ -540,12 +540,19 @@ export default class ControlPanel extends Component {
     render() {
         let error = false
         this.state.panels.map((panel) => {
+
             if (panel.bug) {
+                if (error == true) {
+
+                }
+                else {
+                    this.hasProblem()
+                }
                 error = true
             }
         })
         if (error) {
-            this.hasProblem()
+
             return (
                 <ProblemView panels={this.state.panels} />
             )
