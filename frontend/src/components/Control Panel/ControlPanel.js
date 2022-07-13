@@ -453,15 +453,17 @@ export default class ControlPanel extends Component {
         let error = false
         this.state.panels.map((panel) => {
             if (panel.bug) {
-                error = true
-            }
-            else {
-                this.setState({
-                    bugAcknoledge: false,
-                })
+                if (error == true) {
+                    this.setState({
+                        bugAcknoledge: false,
+
+                    }),
+                        error = true
+                }
+
             }
         })
-        if (error && !this.state.bugAcknoledge) {
+        if (error && this.state.bugAcknoledge == false) {
             this.hasProblem()
             this.setState({
                 bugAcknoledge: true,
