@@ -20,12 +20,8 @@ const ProblemView = (props) => {
                                 <img src="../assets/img/fleche-c.png" alt="" />
                                 : <img src="../assets/img/fleche-s.png" alt="" />}
                             <p style={{ margin: "0" }}>Date dernier log : {item.date}</p>
-                            <div>
-                                {
-                                    !item.state ? <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
-                                        : null
-                                }
-                            </div>
+                            <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
+
                             <div>
                                 {
                                     !item.online ? <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
@@ -40,13 +36,13 @@ const ProblemView = (props) => {
                             </div>
                             <div>
                                 {
-                                    item.door_1 ? <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                                    item.door_1 ? <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
                                         : null
                                 }
                             </div>
                             <div>
                                 {
-                                    item.door_2 ? <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                                    item.door_2 ? <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                                         : null
                                 }
                             </div>
@@ -64,12 +60,12 @@ const ProblemView = (props) => {
                                 {item.state ?
                                     <img src="../assets/img/fleche-c.png" alt="" />
                                     : <img src="../assets/img/fleche-s.png" alt="" />}
-                                <p style={{ margin: "0" }}>Date dernier log : {item.date}</p>
+                                <p style={{ margin: "0" }}>Dernier log : {item.date}</p>
                                 <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
                                 <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
                                 <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
-                                <p style={{ margin: "0" }}>Portes 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
-                                <p style={{ margin: "0" }}>Portes 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                                <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                                <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                                 <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
                             </Card>
                         }
