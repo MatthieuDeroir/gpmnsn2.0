@@ -413,6 +413,7 @@ export default class ControlPanel extends Component {
 
 
     async sendUserLogs(name, state) {
+        console.log("SENDING USER LOGS...")
         const url = "http://" + config.ip + ":" + config.port + "/userLogs"
         await axios.post(url, {
             username: AuthService.getCurrentUser().name,
