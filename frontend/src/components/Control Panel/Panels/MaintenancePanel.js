@@ -37,6 +37,7 @@ const MaintenancePanel = (props) => {
                                 {item.state ?
                                     <img src="../assets/img/fleche-c.png" alt="" />
                                     : <img src="../assets/img/fleche-s.png" alt="" />}
+                                <p style={{ margin: "0" }}>Date dernier log : {item.date}</p>
                                 <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
                                 <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
                                 <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
