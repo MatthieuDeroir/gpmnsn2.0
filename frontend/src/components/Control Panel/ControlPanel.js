@@ -433,7 +433,7 @@ export default class ControlPanel extends Component {
 
                 ret = true
                 this.state.panels.map((panel) => {
-                    if (panel.state) {
+                    if (panel.state != false) {
                         this.totalShutDown()
                     }
                 })
