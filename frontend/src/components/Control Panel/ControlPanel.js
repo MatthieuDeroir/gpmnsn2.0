@@ -23,6 +23,7 @@ export default class ControlPanel extends Component {
             }],
             problem: false,
             time: Date.now(),
+            bugAcknoledge: false,
 
         }
 
@@ -463,17 +464,18 @@ export default class ControlPanel extends Component {
 
             }
         })
-        if (error) {
-            return (
-                <ProblemView panels={this.state.panels} />
-            )
-        }
         if (error && this.state.bugAcknoledge == false) {
             this.hasProblem()
             this.setState({
                 bugAcknoledge: true,
             })
         }
+        if (error) {
+            return (
+                <ProblemView panels={this.state.panels} />
+            )
+        }
+
         else {
             if (AuthService.getCurrentUser()['roles'][0] === 'ROLE_USER') {
                 return (
