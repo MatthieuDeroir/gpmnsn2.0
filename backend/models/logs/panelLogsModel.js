@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const today = new Date()
+var today = new Date()
 
 
 const PanelLogs = mongoose.model(
