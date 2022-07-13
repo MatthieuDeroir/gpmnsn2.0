@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const today = new Date()
 
 const UserLogs = mongoose.model(
     "UserLogs",
@@ -13,7 +14,7 @@ const UserLogs = mongoose.model(
         },
         date: {
             type: Date,
-            default: Date.now()
+            default: today.getDay() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear + " " + today.getHours + ":" + today.getMinutes + ":" + today.getSeconds
         },
     })
 );

@@ -33,7 +33,7 @@ const PanelLogs = mongoose.model(
         },
         date: {
             type: Date,
-            default: Date.now()
+            default: today.getDay() + "/" + today.getMonth() + "/" + today.getFullYear + " " + today.getHours + ":" + today.getMinutes + ":" + today.getSeconds
         },
     })
 );
