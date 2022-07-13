@@ -262,6 +262,36 @@ export default class ControlPanel extends Component {
             .catch((error) => {
                 console.log(error)
             });
+
+        axios.put(url + this.state.panelInstruction[0]._id, {
+            instruction: state
+        })
+            .then((Reponse) => {
+                console.log(Reponse.data.instruction)
+            })
+            .catch((error) => {
+                console.log(error)
+            });
+
+
+        axios.put(url + this.state.panelInstruction[1]._id, {
+            instruction: state
+        })
+            .then((Reponse) => {
+                console.log(Reponse.data.instruction)
+            })
+            .catch((error) => {
+                console.log(error)
+            });
+        axios.put(url + this.state.panelInstruction[2]._id, {
+            instruction: state
+        })
+            .then((Reponse) => {
+                console.log(Reponse.data.instruction)
+            })
+            .catch((error) => {
+                console.log(error)
+            });
     }
 
     async switchAllPanels(a, b, c, d) {
