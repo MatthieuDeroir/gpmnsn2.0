@@ -19,6 +19,7 @@ class AuthService {
     register(username, password, role) {
         let roles = [];
         roles[0] = role;
+        console.log('services/register');
         return axios.post("http://" + config.ip + ":" + config.port + "/auth/signup", {
             username,
             password,

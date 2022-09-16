@@ -2,7 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card'
 import { Col, Row } from "react-bootstrap";
 import Switch from "@mui/material/Switch";
-import { Button } from "@mui/material";
+import { Button, Stack, Typography, FormControl, FormControlLabel } from "@mui/material";
 
 
 const MaintenancePanel = (props) => {
@@ -44,9 +44,12 @@ const MaintenancePanel = (props) => {
                                 <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
                                 <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                                 <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
-                                <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
+                                {/* <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
                                     {item.state ? "Éteindre" : "Allumer"}
-                                </Button>
+                                </Button> */}
+                                Off
+                                <Switch checked={item.state} inputProps={{ 'aria-label': 'ant design' }} onChange={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')} />
+                                On
                             </Card>
                         </Col>
                     ))}
@@ -56,6 +59,11 @@ const MaintenancePanel = (props) => {
                         <Button onClick={props.totalShutDown.bind(this, props.panels)}>
                             Actionner
                         </Button>
+                        {/* <Stack direction="row" spacing={1} alignItems="center">
+                            Off
+                            <Switch inputProps={{ 'aria-label': 'ant design' }} onChange={props.totalShutDown.bind(this, props.panels)} />
+                            On
+                        </Stack> */}
                     </Card>
                     <Card style={{ maxWidth: "16vw" }}>
                         {/* TODO: force actualisation */}

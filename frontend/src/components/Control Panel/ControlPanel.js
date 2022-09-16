@@ -531,9 +531,9 @@ export default class ControlPanel extends Component {
         return ret
     }
 
-    actualize() {
+    actualize(checked) {
 
-        console.log('page actualized !')
+        console.log(checked)
     }
 
 
@@ -547,19 +547,21 @@ export default class ControlPanel extends Component {
         if (error) {
             this.hasProblem()
             return (
-                <ProblemView panels={this.state.panels} />
+                <div>
+                    <ProblemView panels={this.state.panels} />
+                </div>
             )
         }
         else {
             if (AuthService.getCurrentUser()['roles'][0] === 'ROLE_USER') {
                 return (
-                    <div>
+                    <div >
                         <ViewPanel panels={this.state.panels} />
                     </div>
                 )
             } else if (AuthService.getCurrentUser()['roles'][0] === 'ROLE_ADMIN') {
                 return (
-                    <div>
+                    <div >
 
                         <CommandPanel actualize={this.actualize} panels={this.state.panels}
                             panelInstruction={this.state.panelInstruction ? this.state.panelInstruction : this.state.default}
@@ -569,7 +571,7 @@ export default class ControlPanel extends Component {
                 )
             } else if (AuthService.getCurrentUser()['roles'][0] === 'ROLE_SUPERUSER') {
                 return (
-                    <div>
+                    <div >
                         <MaintenancePanel actualize={this.actualize.bind(this)} panels={this.state.panels}
                             panelInstruction={this.state.panelInstruction ? this.state.panelInstruction : this.state.default}
                             switchPanels={this.switchAllPanels.bind(this)}
