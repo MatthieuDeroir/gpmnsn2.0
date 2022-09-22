@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import AuthService from "../../services/authService";
 import UserList from './UserList'
 import axios from "axios";
-import {ButtonGroup, Col, Row} from 'react-bootstrap'
+import { ButtonGroup, Col, Row } from 'react-bootstrap'
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import IconButton from "@mui/material/IconButton";
-import {AccountCircle} from "@mui/icons-material";
+import { AccountCircle } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import {MenuItem, Select} from "@mui/material";
+import { MenuItem, Select } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SaveIcon from '@mui/icons-material/Save'
 
@@ -41,7 +41,7 @@ export default class Profile extends Component {
 
     onChangeRoles(_id, e) {
         this.setState({
-            _id : _id,
+            _id: _id,
             roles: e.target.value
         });
         console.log(_id)
@@ -58,7 +58,7 @@ export default class Profile extends Component {
                     <Col>
                         <header className="jumbotron">
                             <h3>
-                                <strong >{currentUser.username}</strong> Profile
+                                Profil <strong >{currentUser.username}</strong>
                             </h3>
                         </header>
                         <p >
@@ -70,13 +70,20 @@ export default class Profile extends Component {
                             <strong>Id:</strong>{" "}
                             {currentUser.id}
                         </p>
-                        <strong  >Authorities:</strong>
+                        <strong  >Role:</strong>
+                        {/* currentUser.roles && currentUser.roles.map((role, index) => <li key={index}>{role}</li>) */}
                         <ul >
-                            {currentUser.roles &&
-                            currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
+                            {currentUser.roles == "ROLE_SUPERUSER" ?
+                                "Maintenance" :
+                                currentUser.roles == "ROLE_ADMIN" ?
+                                    "Opérateur Capitainerie" :
+                                    currentUser.roles == "ROLE_USER" ?
+                                        "Restreint" : ""}
+
                         </ul>
                     </Col>
-                    <Col sm={5} style={{padding: "10px"}}>
+                    {/* Gestion des utilisateurs */}
+                    {/* <Col sm={5} style={{padding: "10px"}}>
                         <div>
                             <Accordion defaultExpanded={true}>
                                 <AccordionSummary
@@ -152,7 +159,7 @@ export default class Profile extends Component {
                             </Accordion>
                         </div>
 
-                    </Col>
+                    </Col> */}
                 </Row>
             </div>
         );

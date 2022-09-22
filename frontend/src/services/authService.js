@@ -1,6 +1,7 @@
 import axios from "axios";
 import { config } from '../config'
 
+
 class AuthService {
     login(username, password) {
         return axios.post("http://" + config.ip + ":" + config.port + "/auth/signin", {
@@ -9,12 +10,15 @@ class AuthService {
         }).then(response => {
             if (response.data.accessToken) {
                 localStorage.setItem("user", JSON.stringify(response.data));
+
             }
             return response.data;
         });
     }
     logout() {
         localStorage.removeItem("user");
+        window.location.reload();
+        window.location.href("/login");
     }
     register(username, password, role) {
         let roles = [];

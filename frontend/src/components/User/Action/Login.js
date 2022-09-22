@@ -141,7 +141,7 @@
 //     }
 // }
 
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Form from "react-validation/build/form"
 import { Box, Input, Button } from "@mui/material"
 import { Col, Row } from 'react-bootstrap'
@@ -197,8 +197,8 @@ export default class Login extends Component {
             AuthService.login(this.state.username, this.state.password).then(
                 () => {
                     console.log('OK')
-                    this.props.history.push("/home");
-                    window.location.reload();
+                    this.props.history.push("/controlpanel");
+                    window.location.reload(true);
                 },
                 error => {
                     const resMessage =
@@ -223,22 +223,22 @@ export default class Login extends Component {
 
     render() {
         return (
-            <Col className="center" style={{margin:"10px", maxWidth:"350px", justifyContent:"center", textAlign:"center", marginLeft:"auto", marginRight:"auto"}}>
-                <div className="card card-container flex-column" style={{borderRadius:"0", justifyContent:"center", textAlign:"center", backgroundColor:"#fefefe"}}>
+            <Col className="center" style={{ margin: "10px", maxWidth: "350px", justifyContent: "center", textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
+                <div className="card card-container flex-column" style={{ borderRadius: "0", justifyContent: "center", textAlign: "center", backgroundColor: "#fefefe" }}>
                     <Form
                         onSubmit={this.handleLogin}
                         ref={c => {
                             this.form = c;
                         }}
-                        style={{justifyContent:"center"}}
+                        style={{ justifyContent: "center" }}
                     >
                         Se connecter
-                        <div className="form-group" style={{justifyContent:"center"}}>
+                        <div className="form-group" style={{ justifyContent: "center" }}>
                             <Row>
                                 <label htmlFor="username">Nom d'utilisateur</label>
                             </Row>
 
-                            <Row style={{width:"inherit", marginRight:"auto", marginLeft:"auto"}}>
+                            <Row style={{ width: "inherit", marginRight: "auto", marginLeft: "auto" }}>
                                 <Input
                                     type="text"
                                     className="form-control"
@@ -254,7 +254,7 @@ export default class Login extends Component {
                                 <label htmlFor="password">Mot de passe</label>
 
                             </Row>
-                            <Row style={{width:"inherit", marginRight:"auto", marginLeft:"auto"}}>
+                            <Row style={{ width: "inherit", marginRight: "auto", marginLeft: "auto" }}>
                                 <Input
                                     type="password"
                                     className="form-control"
@@ -267,7 +267,7 @@ export default class Login extends Component {
                             </Row>
 
                         </div>
-                        <div className="form-group" style={{justifyContent:"center", textAlign:"center"}}>
+                        <div className="form-group" style={{ justifyContent: "center", textAlign: "center" }}>
                             <button
                                 className="btn btn-primary btn-block"
                                 disabled={this.state.loading}
@@ -286,7 +286,7 @@ export default class Login extends Component {
                             </div>
                         )}
                         <CheckButton
-                            style={{display: "none"}}
+                            style={{ display: "none" }}
                             ref={c => {
                                 this.checkBtn = c;
                             }}

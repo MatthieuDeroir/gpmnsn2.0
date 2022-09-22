@@ -67,13 +67,13 @@ export default class Logs extends React.Component {
                                         <TableCell align="right">Statut</TableCell>
                                         <TableCell align="right">Porte 1</TableCell>
                                         <TableCell align="right">Porte 2</TableCell>
-                                        <TableCell align="right">Intégrité de l'écran</TableCell>
-                                        <TableCell align="right">Temperature CPU</TableCell>
+                                        <TableCell align="right">Écran</TableCell>
+                                        <TableCell align="right">Température CPU</TableCell>
                                         <TableCell align="right">Index</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody style={{ overflowY: "scroll" }}>
-                                    {this.state.panelLogs.map((row) => (
+                                    {this.state.panelLogs.slice(0, 20).map((row) => (
                                         row.power || !row.screen || row.door_1 || row.door_2 || row.temperature > 90 ?
 
                                             <TableRow
@@ -91,8 +91,8 @@ export default class Logs extends React.Component {
                                                 <TableCell align="right">{row.date}</TableCell>
                                                 <TableCell align="right">{row.state ? "Allumé" : "Éteint"}</TableCell>
                                                 <TableCell align="right">{!row.power ? "En ligne" : "Hors ligne"}</TableCell>
-                                                <TableCell align="right">{row.door_1 ? "Ouverte" : "Fermée"}</TableCell>
-                                                <TableCell align="right">{row.door_2 ? "Ouverte" : "Fermée"}</TableCell>
+                                                <TableCell align="right">{row.door_1 ? "Ouvertes" : "Fermées"}</TableCell>
+                                                <TableCell align="right">{row.door_2 ? "Ouvertes" : "Fermées"}</TableCell>
                                                 <TableCell align="right">{row.screen ? "En état" : "Défaut Alimentation"}</TableCell>
                                                 <TableCell align="right">{row.temperature}</TableCell>
                                                 <TableCell align="right">{row.index}</TableCell>
@@ -130,12 +130,12 @@ export default class Logs extends React.Component {
                                     </TableRow>
                                 </TableHead>
                                 <TableBody style={{ overflowY: "scroll" }}>
-                                    {this.state.userLogs.map((row) => (
+                                    {this.state.userLogs.slice(0, 20).map((row) => (
                                         <TableRow
-                                            key={row.username}
+                                            // key={row.username}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
-                                            <TableCell component="th" scope="row">
+                                            <TableCell scope="row">
                                                 {row.username}
                                             </TableCell>
                                             <TableCell align="right">{row.date}</TableCell>

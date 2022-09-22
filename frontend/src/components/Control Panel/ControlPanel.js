@@ -23,6 +23,7 @@ export default class ControlPanel extends Component {
             }],
             problem: false,
             time: Date.now(),
+            date: Date()
 
         }
 
@@ -352,6 +353,12 @@ export default class ControlPanel extends Component {
             });
     }
 
+    // async totalShutDown() {
+    //     this.switchPanelbyIndex.bind(this, true, 2, 'ok')
+    //     this.switchPanelbyIndex.bind(this, true, 1, 'ok')
+    //     this.switchPanelbyIndex.bind(this, true, 3, 'ok')
+    // }
+
     async switchAllPanels(a, b, c, d) {
 
         console.log("a : ", a)
@@ -504,8 +511,9 @@ export default class ControlPanel extends Component {
         console.log("SENDING USER LOGS...")
         const url = "http://" + config.ip + ":" + config.port + "/userLogs"
         await axios.post(url, {
-            username: AuthService.getCurrentUser().name,
+            username: AuthService.getCurrentUser().username,
             message: `a actionné les panneaux`,
+            date: this.state.date
         })
             .then((Reponse) => {
             })
@@ -566,6 +574,7 @@ export default class ControlPanel extends Component {
                         <CommandPanel actualize={this.actualize} panels={this.state.panels}
                             panelInstruction={this.state.panelInstruction ? this.state.panelInstruction : this.state.default}
                             switchPanels={this.switchAllPanels.bind(this)}
+                            totalShutDown={this.totalShutDown.bind(this)}
                         />
                     </div>
                 )

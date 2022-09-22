@@ -19,7 +19,7 @@ const MaintenancePanel = (props) => {
                     paddingBottom: "10px"
                 }}>
                     <Card style={{ maxWidth: "16vw" }}>
-                        Maintenance
+                        Opérateur
                     </Card>
                 </Row>
                 <Row style={{ textAlign: "center", justifyContent: "center" }}>

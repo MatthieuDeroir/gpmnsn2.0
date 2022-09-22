@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Form from "react-validation/build/form"
 import { Box, Input, Button } from "@mui/material"
 import { Col, Row } from 'react-bootstrap'
@@ -54,7 +54,7 @@ export default class Login extends Component {
             AuthService.login(this.state.username, this.state.password).then(
                 () => {
                     console.log('OK')
-                    this.props.history.push("/home");
+                    this.props.history.push("/");
                     window.location.reload();
                 },
                 error => {
@@ -80,8 +80,8 @@ export default class Login extends Component {
 
     render() {
         return (
-            <Col style={{margin:"10px", maxWidth:"350px", justifyContent:"center", color:"white"}}>
-                <div className="card card-container" style={{borderRadius:"0", justifyContent:"center", textAlign:"center", backgroundColor:"#203038"}}>
+            <Col style={{ margin: "10px", maxWidth: "350px", justifyContent: "center", color: "white" }}>
+                <div className="card card-container" style={{ borderRadius: "0", justifyContent: "center", textAlign: "center", backgroundColor: "#203038" }}>
                     <Form
                         onSubmit={this.handleLogin}
                         ref={c => {
@@ -100,7 +100,7 @@ export default class Login extends Component {
                                     className="form-control"
                                     name="username"
                                     value={this.state.username}
-                                    style={{maxWidth:"80%"}}
+                                    style={{ maxWidth: "80%" }}
                                     onChange={this.onChangeUsername}
                                     validations={[required]}
                                 />
@@ -116,7 +116,7 @@ export default class Login extends Component {
                                     type="password"
                                     className="form-control"
                                     name="password"
-                                    style={{justifyContent:"center", textAlign:"center", maxWidth:"80%"}}
+                                    style={{ justifyContent: "center", textAlign: "center", maxWidth: "80%" }}
                                     value={this.state.password}
                                     onChange={this.onChangePassword}
                                     validations={[required]}
@@ -124,7 +124,7 @@ export default class Login extends Component {
                             </Row>
 
                         </div>
-                        <div className="form-group" style={{justifyContent:"center", textAlign:"center"}}>
+                        <div className="form-group" style={{ justifyContent: "center", textAlign: "center" }}>
                             <button
                                 className="btn btn-primary btn-block"
                                 disabled={this.state.loading}
@@ -143,7 +143,7 @@ export default class Login extends Component {
                             </div>
                         )}
                         <CheckButton
-                            style={{display: "none"}}
+                            style={{ display: "none" }}
                             ref={c => {
                                 this.checkBtn = c;
                             }}

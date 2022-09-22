@@ -29,6 +29,7 @@ import Registration from "./User/Action/Registration";
 import Profile from "./User/Profile"
 
 import ControlPanel from './Control Panel/ControlPanel'
+
 import Logs from './Logs/Logs'
 
 import BottomNavigation from '@mui/material/BottomNavigation'
@@ -75,13 +76,11 @@ class App extends React.Component {
 
     //user
     logOut() {
-        document.location.href = "localhost:3000/login";
         AuthService.logout();
-        window.location.reload(true);
     }
 
 
-    //files
+    //filesn
     //Update current file
     updateCurrentFile(item) {
         this.setState({
@@ -135,11 +134,21 @@ class App extends React.Component {
                         </AppBar>
                     </Box>
                     <Switch>
-                        <Route exact path="/controlpanel" component={ControlPanel} />
-                        <Route exact path="/logs" component={Logs} />
+                        {currentUser ?
+                            <Route exact path="/controlpanel" component={ControlPanel} />
+                            : <Route exact path="/controlpanel" component={Login} />
+                        }
+                        {currentUser ?
+                            <Route exact path="/logs" component={Logs} />
+                            : <Route exact path="/logs" component={Login} />
+                        }
                         <Route exact path="/login" component={Login} />
                         <Route exact path="/register" component={Registration} />
-                        <Route exact path="/profile" component={Profile} />
+                        {currentUser ?
+                            <Route exact path="/profile" component={Profile} />
+                            : <Route exact path="/profile" component={Login} />}
+
+                        <Route exact path="/logout" component={Profile} />
                     </Switch>
                     <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: "1000" }}>
                         <BottomNavigation
@@ -164,9 +173,9 @@ class App extends React.Component {
                                         <BottomNavigationAction label="Profil"
                                             icon={<AccountCircle onClick={this.noDisplay} />} />
                                     </Link>
-                                    <Link to={"/"} onClick={this.noDisplay}>
+                                    <Link to={"/login"} onClick={this.logOut}>
                                         <BottomNavigationAction label="Déconnexion"
-                                            icon={<LogoutIcon onClick={this.logOut} />} />
+                                            icon={<LogoutIcon />} />
                                     </Link>
                                 </div>
                                 :

@@ -7,7 +7,7 @@ const ProblemView = (props) => {
         <div>
             <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px", paddingBottom: "10px" }}>
                 <Card style={{ maxWidth: "16vw" }}>
-                    ERREUR
+                    Erreur
                 </Card>
             </Row>
             <Row>
