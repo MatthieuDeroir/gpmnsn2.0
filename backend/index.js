@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser");
-const { initialization } = require('./initialization')
+import { initialization } from './initialization'
 
 const fileupload = require("express-fileupload");
 const cors = require('cors');

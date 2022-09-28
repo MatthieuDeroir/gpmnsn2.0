@@ -16,9 +16,17 @@ const ProblemView = (props) => {
                         {item.bug ? <Card style={{ textAlign: "center", justifyContent: "center", color: "white", backgroundColor: "red" }}>
                             <p style={{ margin: "0" }}><strong>{"Panneau " + item.name}</strong></p>
 
-                            {item.state ?
-                                <img src="../assets/img/fleche-c.png" alt="" />
-                                : <img src="../assets/img/fleche-s.png" alt="" />}
+                            {item.name == "UB Aval" ?
+                                item.state ?
+                                    <img src="../assets/img/fleche-i-c.png" alt="" />
+                                    : <img src="../assets/img/fleche-i-s.png" alt="" />
+                                :
+
+                                item.state ?
+                                    <img src="../assets/img/fleche-c.png" alt="" />
+                                    : <img src="../assets/img/fleche-s.png" alt="" />
+
+                            }
                             <p style={{ margin: "0" }}>Dernier log : {item.date}</p>
                             <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
 
@@ -57,9 +65,17 @@ const ProblemView = (props) => {
                             <Card style={{ textAlign: "center", justifyContent: "center" }}>
                                 <p style={{ margin: "0" }}><strong>{"Panneau " + item.name}</strong></p>
 
-                                {item.state ?
-                                    <img src="../assets/img/fleche-c.png" alt="" />
-                                    : <img src="../assets/img/fleche-s.png" alt="" />}
+                                {item.name == "UB Aval" ?
+                                    item.state ?
+                                        <img src="../assets/img/fleche-i-c.png" alt="" />
+                                        : <img src="../assets/img/fleche-i-s.png" alt="" />
+                                    :
+
+                                    item.state ?
+                                        <img src="../assets/img/fleche-c.png" alt="" />
+                                        : <img src="../assets/img/fleche-s.png" alt="" />
+
+                                }
                                 <p style={{ margin: "0" }}>Dernier log : {item.date}</p>
                                 <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
                                 <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>

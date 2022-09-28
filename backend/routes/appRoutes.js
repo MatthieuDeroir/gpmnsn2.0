@@ -114,9 +114,6 @@ const routes = (app) => {
         .get(getRoles)
         .post(addNewRole)
 
-
-
-
     app.post(
         "/auth/signup",
         [
