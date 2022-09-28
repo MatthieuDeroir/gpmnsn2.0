@@ -1,5 +1,6 @@
-import mongoose from 'mongoose';
-import { UserLogsSchema } from '../../models/logs/userLogsModel';
+const mongoose = require('mongoose');
+
+const { UserLogsSchema } = require('../../models/logs/userLogsModel');
 
 const UserLogs = mongoose.model('UserLogs', UserLogsSchema);
 

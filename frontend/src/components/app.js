@@ -96,7 +96,7 @@ class App extends React.Component {
 
 
     render() {
-        const { currentUser, showSuperuserBoard, showAdminBoard } = this.state;
+        const { currentUser } = this.state;
 
 
         function detectMob() {
@@ -129,6 +129,9 @@ class App extends React.Component {
                                             src="../assets/img/STRAMATEL-LOGO.png"
                                             alt="" />
                                     }
+                                    <img style={{ height: "10vh", justifyContent: "center", paddingTop: "5px", paddingBottom: "5px" }}
+                                        src="../favicon.ico"
+                                        alt="" />
                                 </IconButton>
                             </Toolbar>
                         </AppBar>

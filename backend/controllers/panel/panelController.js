@@ -1,5 +1,6 @@
-import mongoose from 'mongoose';
-import { PanelSchema } from '../../models/panel/panelModel';
+const mongoose = require('mongoose');
+
+const { PanelSchema } = require('../../models/panel/panelModel');
 
 const Panel = mongoose.model('Panel', PanelSchema);
 

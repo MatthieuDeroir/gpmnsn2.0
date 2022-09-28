@@ -4,9 +4,9 @@
 
 
 
-import Role from './models/login/roleModel'
-import Panel from './models/panel/panelModel'
-import Instruction from './models/instructions/instructionModel';
+const Role = require('./models/login/roleModel');
+const Panel = require('./models/panel/panelModel');
+const Instruction = require('./models/instructions/instructionModel');
 
 export function initialization() {
 

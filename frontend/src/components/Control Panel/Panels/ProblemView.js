@@ -14,7 +14,7 @@ const ProblemView = (props) => {
                 {props.panels.map((item) => (
                     <Col>
                         {item.bug ? <Card style={{ textAlign: "center", justifyContent: "center", color: "white", backgroundColor: "red" }}>
-                            <p style={{ margin: "0" }}>{"Panneau " + item.name}</p>
+                            <p style={{ margin: "0" }}><strong>{"Panneau " + item.name}</strong></p>
 
                             {item.state ?
                                 <img src="../assets/img/fleche-c.png" alt="" />
@@ -55,7 +55,7 @@ const ProblemView = (props) => {
                         </Card>
                             :
                             <Card style={{ textAlign: "center", justifyContent: "center" }}>
-                                <p style={{ margin: "0" }}>{"Panneau " + item.name}</p>
+                                <p style={{ margin: "0" }}><strong>{"Panneau " + item.name}</strong></p>
 
                                 {item.state ?
                                     <img src="../assets/img/fleche-c.png" alt="" />

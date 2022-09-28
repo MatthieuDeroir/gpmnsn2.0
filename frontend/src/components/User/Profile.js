@@ -70,7 +70,7 @@ export default class Profile extends Component {
                             <strong>Id:</strong>{" "}
                             {currentUser.id}
                         </p>
-                        <strong  >Role:</strong>
+                        <strong>Role:</strong>
                         {/* currentUser.roles && currentUser.roles.map((role, index) => <li key={index}>{role}</li>) */}
                         <ul >
                             {currentUser.roles == "ROLE_SUPERUSER" ?

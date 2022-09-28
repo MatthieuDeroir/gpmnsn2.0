@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import { InstructionSchema } from '../../models/instructions/instructionModel';
+const mongoose = require('mongoose');
+const { InstructionSchema } = require('../../models/instructions/instructionModel');
 
 const Instruction = mongoose.model('Instruction', InstructionSchema);
 

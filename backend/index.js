@@ -1,16 +1,18 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import bodyparser from "body-parser";
-import { initialization } from './initialization'
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyparser = require("body-parser");
+const { initialization } = require('./initialization')
 
 const fileupload = require("express-fileupload");
-import cors from 'cors';
+const cors = require('cors');
 
 import routes from './routes/appRoutes';
 
 
 const app = express();
 const PORT = 4000;
+
+process.env.NODE_ENV
 
 // disabling mention
 app.disable('x-powered-by')

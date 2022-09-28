@@ -1,5 +1,6 @@
-import mongoose from 'mongoose';
-import { RoleSchema } from "../../models/login/roleModel";
+const mongoose = require('mongoose');
+
+const { RoleSchema } = require("../../models/login/roleModel");
 
 const Role = mongoose.model('Role', RoleSchema);
 

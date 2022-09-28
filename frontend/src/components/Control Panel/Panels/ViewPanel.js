@@ -32,7 +32,7 @@ const MaintenancePanel = (props) => {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <p style={{ margin: "0" }}>{"Panneau " + item.name}</p>
+                                <p style={{ margin: "0" }}><strong>{"Panneau " + item.name}</strong></p>
 
                                 {item.state ?
                                     <img src="../assets/img/fleche-c.png" alt="" />

@@ -19,7 +19,7 @@ const MaintenancePanel = (props) => {
                     paddingBottom: "10px"
                 }}>
                     <Card style={{ maxWidth: "16vw" }}>
-                        Maintenance
+                        <strong>Maintenance</strong>
                     </Card>
                 </Row>
                 <Row style={{ textAlign: "center", justifyContent: "center" }}>
@@ -32,7 +32,7 @@ const MaintenancePanel = (props) => {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <p style={{ margin: "0" }}>{"Panneau " + item.name}</p>
+                                <p style={{ margin: "0" }}><strong>{"Panneau " + item.name}</strong></p>
 
                                 {item.state ?
                                     <img src="../assets/img/fleche-c.png" alt="" />
@@ -56,8 +56,8 @@ const MaintenancePanel = (props) => {
                 </Row>
                 <Row style={{ textAlign: "center", justifyContent: "center", margin: 0, padding: 0, paddingTop: "10px" }}>
                     <Card style={{ maxWidth: "16vw" }}>
-                        <Button onClick={props.totalShutDown.bind(this, props.panels)}>
-                            Actionner
+                        <Button onClick={props.ShutDownByState.bind(this, true)}>
+                            Allumer
                         </Button>
                         {/* <Stack direction="row" spacing={1} alignItems="center">
                             Off
@@ -66,9 +66,9 @@ const MaintenancePanel = (props) => {
                         </Stack> */}
                     </Card>
                     <Card style={{ maxWidth: "16vw" }}>
-                        {/* TODO: force actualisation */}
-                        <Button onClick={props.actualize} href={"/controlpanel"}>
-                            Actualiser
+
+                        <Button onClick={props.ShutDownByState.bind(this, false)}>
+                            Éteindre
                         </Button>
                     </Card>
                 </Row>
