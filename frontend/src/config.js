@@ -1,5 +1,5 @@
 const config = {
-    ip: 'localhost',
+    ip: '192.168.100.62',
     port: '4000'
 }
 

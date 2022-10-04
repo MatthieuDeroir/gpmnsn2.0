@@ -186,9 +186,9 @@ class App extends React.Component {
                                     <Link to={"/login"} onClick={this.noDisplay}>
                                         <BottomNavigationAction label="Profil" icon={<LoginIcon />} />
                                     </Link>
-                                    {/* <Link to={"/register"}>
+                                    <Link to={"/register"}>
                                         <BottomNavigationAction label="Créer un compte" icon={<PersonAddAlt />} />
-                                    </Link> */}
+                                    </Link>
                                 </div>
                             }
                         </BottomNavigation>

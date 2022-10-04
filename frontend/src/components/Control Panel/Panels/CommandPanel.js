@@ -5,7 +5,7 @@ import Switch from "@mui/material/Switch";
 import { Button } from "@mui/material";
 
 
-const MaintenancePanel = (props) => {
+const CommandPanel = (props) => {
 
     if (props.panels) {
         return (
@@ -52,6 +52,7 @@ const MaintenancePanel = (props) => {
                                 <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
                                 <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                                 <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
+
                             </Card>
                         </Col>
                     ))}
@@ -81,4 +82,4 @@ const MaintenancePanel = (props) => {
 
 }
 
-export default MaintenancePanel
+export default CommandPanel

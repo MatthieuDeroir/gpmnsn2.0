@@ -2,7 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card'
 import { Col, Row } from "react-bootstrap";
 import Switch from "@mui/material/Switch";
-import { Button, Stack, Typography, FormControl, FormControlLabel } from "@mui/material";
+import { Button } from "@mui/material";
 
 
 const MaintenancePanel = (props) => {
@@ -19,7 +19,7 @@ const MaintenancePanel = (props) => {
                     paddingBottom: "10px"
                 }}>
                     <Card style={{ maxWidth: "16vw" }}>
-                        <strong>Maintenance</strong>
+                        Maintenance
                     </Card>
                 </Row>
                 <Row style={{ textAlign: "center", justifyContent: "center" }}>
@@ -33,6 +33,7 @@ const MaintenancePanel = (props) => {
                                 padding: 0
                             }}>
                                 <p style={{ margin: "0" }}><strong>{"Panneau " + item.name}</strong></p>
+
                                 {item.name == "UB Aval" ?
                                     item.state ?
                                         <img src="../assets/img/fleche-i-c.png" alt="" />
@@ -51,9 +52,6 @@ const MaintenancePanel = (props) => {
                                 <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
                                 <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
                                 <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
-                                {/* <Button onClick={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')}>
-                                    {item.state ? "Éteindre" : "Allumer"}
-                                </Button> */}
                                 Off
                                 <Switch checked={item.state} inputProps={{ 'aria-label': 'ant design' }} onChange={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')} />
                                 On
@@ -66,14 +64,9 @@ const MaintenancePanel = (props) => {
                         <Button onClick={props.ShutDownByState.bind(this, true)}>
                             Allumer
                         </Button>
-                        {/* <Stack direction="row" spacing={1} alignItems="center">
-                            Off
-                            <Switch inputProps={{ 'aria-label': 'ant design' }} onChange={props.totalShutDown.bind(this, props.panels)} />
-                            On
-                        </Stack> */}
                     </Card>
                     <Card style={{ maxWidth: "16vw" }}>
-
+                        {/* TODO: force actualisation */}
                         <Button onClick={props.ShutDownByState.bind(this, false)}>
                             Éteindre
                         </Button>
