@@ -48,9 +48,9 @@ const MaintenancePanel = (props) => {
                                 <p style={{ margin: "0" }}>Date dernier log : {item.date}</p>
                                 <p style={{ margin: "0" }}>État : {item.state ? "Allumé" : "Éteint"}</p>
                                 <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
-                                <p style={{ margin: "0" }}>Écran : {item.screen ? "En état" : "Défaut Alimentation"}</p>
-                                <p style={{ margin: "0" }}>Porte 1 : {item.door_1 ? "Ouverte" : "Fermée"}</p>
-                                <p style={{ margin: "0" }}>Porte 2 : {item.door_2 ? "Ouverte" : "Fermée"}</p>
+                                <p style={{ margin: "0" }}>Consommation : {item.screen ? "OK" : "Défaut Consommation"}</p>
+                                <p style={{ margin: "0" }}>Porte Coffret : {item.door_1 ? "Ouverte" : "Fermée"}</p>
+                                <p style={{ margin: "0" }}>Alimentation : {item.door_2 ? "Défaut Secteur" : "OK"}</p>
                                 <p style={{ margin: "0" }}>Temperature CPU : {item.temperature}</p>
                                 Off
                                 <Switch checked={item.state} inputProps={{ 'aria-label': 'ant design' }} onChange={props.switchPanelbyIndex.bind(this, !(item.state), item.index, 'ok')} />

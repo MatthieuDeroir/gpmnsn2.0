@@ -31,10 +31,11 @@
     "poppers": "^0.1.2",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
+    "react-datepicker": "^4.8.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-dnd-touch-backend": "^16.0.1",
-    "react-dom": "^18.1.0",
+    "react-dom": "^18.2.0",
     "react-material-ui-carousel": "^3.3.3",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.2.0",
@@ -45,7 +46,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=2000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -67,11 +68,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "overrides": {
-    "react-material-ui-carousel": {
-      "react": "^18.0.0",
-      "react-dom": "^18.0.0"
-    }
   }
 }

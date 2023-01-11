@@ -1,0 +1,103 @@
+.date-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.date-picker-container input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.date-picker-container .react-datepicker-wrapper {
+    width: 200px;
+}
+
+.date-picker-container .react-datepicker__input-container {
+    width: 100%;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.pagination-controls button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination-controls button:hover {
+    background-color: #444;
+}
+
+.pagination-controls button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.table {
+    /* Other styles for the table */
+    transition: opacity 0.5s;
+    /*border-radius: 6px;*/
+    box-shadow: 0 0 1px black;
+}
+
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #ffffff;
+    width: 60px;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle; /* Align the table headers vertically */
+    transition: background-color 0.3s ease;
+
+}
+
+.table th:hover {
+    background-color: #dddddd;
+    box-shadow: 0 0 1px black;
+}
+
+.table tr{
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    vertical-align: middle; /* Align the table headers vertically */
+}
+
+.table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.table tr:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0 0 1px black;
+}
+
+.searching {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.table-container {
+    max-width: 95%;
+    margin: 10px auto;
+}

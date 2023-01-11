@@ -3,7 +3,9 @@ import { Card } from '@mui/material';
 import axios from "axios";
 import { Row, Col } from 'react-bootstrap'
 
+import STable from './Table/STable';
 import Table from '@mui/material/Table';
+import DataTable from './Sortable';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
@@ -22,32 +24,38 @@ export default class Logs extends React.Component {
             panelLogs: [],
             userLogs: [],
         }
+
     }
 
     componentDidMount() {
-        let url = "http://" + config.ip + ":" + config.port + "/panelLogs"
+        // this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
 
-        axios.get(url)
-            .then((Reponse) => {
-                this.setState({
-                    panelLogs: Reponse.data.reverse(),
-                })
-            })
-            .catch((error) => {
-                console.log(error)
-            });
 
-        url = "http://" + config.ip + ":" + config.port + "/userLogs"
 
-        axios.get(url)
-            .then((Reponse) => {
-                this.setState({
-                    userLogs: Reponse.data.reverse(),
-                })
-            })
-            .catch((error) => {
-                console.log(error)
-            });
+
+
+
+        // axios.get(url)
+        //     .then((Reponse) => {
+        //         this.setState({
+        //             panelLogs: Reponse.data.reverse(),
+        //         })
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //     });
+        //
+        // url = "http://" + config.ip + ":" + config.port + "/userLogs"
+        //
+        // axios.get(url)
+        //     .then((Reponse) => {
+        //         this.setState({
+        //             userLogs: Reponse.data.reverse(),
+        //         })
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //     });
 
     }
 
@@ -57,6 +65,9 @@ export default class Logs extends React.Component {
             <div>
                 <Row>
                     <Col>
+                        <STable panel={this.state.panelLogs} user={this.state.userLogs} />
+                    </Col>
+                    {/* <Col>
                         <TableContainer component={Paper} style={{ maxHeight: "74vh" }}>
                             <Table sx={{ maxWidth: 650 }} size="small" aria-label="a dense table">
                                 <TableHead >
@@ -65,8 +76,8 @@ export default class Logs extends React.Component {
                                         <TableCell align="right">Date</TableCell>
                                         <TableCell align="right">État</TableCell>
                                         <TableCell align="right">Statut</TableCell>
-                                        <TableCell align="right">Porte 1</TableCell>
-                                        <TableCell align="right">Porte 2</TableCell>
+                                        <TableCell align="right">Porte Coffret</TableCell>
+                                        <TableCell align="right">Porte Vidéo</TableCell>
                                         <TableCell align="right">Écran</TableCell>
                                         <TableCell align="right">Température CPU</TableCell>
                                         <TableCell align="right">Index</TableCell>
@@ -74,19 +85,16 @@ export default class Logs extends React.Component {
                                 </TableHead>
                                 <TableBody style={{ overflowY: "scroll" }}>
                                     {this.state.panelLogs.slice(0, 20).map((row) => (
-                                        row.power || !row.screen || row.door_1 || row.door_2 || row.temperature > 90 ?
-
+                                        row.power || !row.screen || row.temperature > 90 ?
                                             <TableRow
                                                 key={row.name}
                                                 sx={{
                                                     '&:last-child td, &:last-child th': { border: 0 }
                                                 }}
                                                 style={{ color: "white", backgroundColor: "red" }}
-
                                             >
                                                 <TableCell component="th" scope="row" >
                                                     {row.name}
-
                                                 </TableCell>
                                                 <TableCell align="right">{row.date}</TableCell>
                                                 <TableCell align="right">{row.state ? "Allumé" : "Éteint"}</TableCell>
@@ -145,7 +153,7 @@ export default class Logs extends React.Component {
                                 </TableBody>
                             </Table>
                         </TableContainer>
-                    </Col>
+                    </Col> */}
                 </Row>
             </div >
 

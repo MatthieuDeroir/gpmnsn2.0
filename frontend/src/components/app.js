@@ -22,11 +22,13 @@ import Toolbar from '@mui/material/Toolbar';
 
 
 
-import { Switch, Route, Link } from "react-router-dom";
 import AuthService from "../services/authService";
 import Login from "./User/Action/Login";
+import Sortable from "./Logs/Sortable"
 import Registration from "./User/Action/Registration";
 import Profile from "./User/Profile"
+import { Switch, Route, Link } from "react-router-dom";
+
 
 import ControlPanel from './Control Panel/ControlPanel'
 
@@ -145,7 +147,9 @@ class App extends React.Component {
                             <Route exact path="/logs" component={Logs} />
                             : <Route exact path="/logs" component={Login} />
                         }
-                        <Route exact path="/login" component={Login} />
+                        {currentUser ?
+                            <Route exact path="/login" component={ControlPanel} /> :
+                            <Route exact path="/login" component={Login} />}
                         <Route exact path="/register" component={Registration} />
                         {currentUser ?
                             <Route exact path="/profile" component={Profile} />
