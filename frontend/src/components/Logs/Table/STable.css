@@ -40,10 +40,10 @@
     background-color: #444;
 }
 
-.pagination-controls button[disabled] {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
+/*.pagination-controls button[disabled] {*/
+/*    background-color: #ccc;*/
+/*    cursor: not-allowed;*/
+/*}*/
 
 .table {
     /* Other styles for the table */
@@ -79,9 +79,12 @@
     vertical-align: middle; /* Align the table headers vertically */
 }
 
-.table tr:nth-child(even) {
-    background-color: #ffffff;
+.table tr:nth-child(6n+1),
+.table tr:nth-child(6n+2),
+.table tr:nth-child(6n+3) {
+    background-color: #ededed;
 }
+
 
 .table tr:hover {
     background-color: #e5e5e5;
@@ -101,3 +104,21 @@
     max-width: 95%;
     margin: 10px auto;
 }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+

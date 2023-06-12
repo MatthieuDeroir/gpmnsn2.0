@@ -1,0 +1,56 @@
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+}
+
+.blink {
+    animation: blink 1s linear infinite;
+}
+
+.panel-info {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    padding: 0 8px;
+}
+
+.panel-info span {
+    font-weight: 600;
+}
+
+.panel-info span.value {
+    font-weight: 400;
+    color: #1a73e8;
+}
+
+.info-container {
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.panel-info .label,
+.panel-info .value {
+    width: 48%;
+}
+
+.panel-info .label {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+.panel-info .value {
+    color: #666;
+    text-align: left;
+}

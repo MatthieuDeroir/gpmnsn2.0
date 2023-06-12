@@ -19,34 +19,55 @@ class Table extends React.Component {
             search: '',
             currentPage: 1,
             pageSize: 15,
-            startDate: new Date('00:00:00 10/01/2022'),
+            startDate: new Date(moment().subtract(1, 'days').toDate()),
             endDate: new Date(),
+            loading: false, // Ajout de l'état loading
         };
     }
 
+
     async actualize() {
-        let url = "http://" + config.ip + ":" + config.port + "/panelLogs";
+        this.setState({loading: true});
+        let url = config.domain_name +"/panelLogs?startDate=" + moment(this.state.startDate).format('DD/MM/YY HH:mm:ss') + "&endDate=" + moment(this.state.endDate).format('DD/MM/YY HH:mm:ss') + '&page=' + this.state.currentPage + '&pageSize=' + this.state.pageSize;
+        console.log(moment(this.state.startDate).format('DD/MM/YY HH:mm:ss'));
 
         await axios.get(url)
             .then((Reponse) => {
                 this.setState({
                     panelLogs: Reponse.data,
+
                 });
             })
             .catch((error) => {
                 console.log(error);
             });
-        url = "http://" + config.ip + ":" + config.port + "/userLogs";
-
+        url = config.domain_name +"/userLogs?startDate=" + moment(this.state.startDate).format('DD/MM/YY HH:mm:ss') + "&endDate=" + moment(this.state.endDate).format('DD/MM/YY HH:mm:ss');
+        console.log(moment(this.state.startDate).format('DD/MM/YY HH:mm:ss'));
         await axios.get(url)
             .then((Reponse) => {
                 this.setState({
                     userLogs: Reponse.data,
+                    // loading: false, // Mettre l'état loading à false
                 });
             })
             .catch((error) => {
                 console.log(error);
             });
+
+        // Merge panelLogs and userLogs
+        const mergedValues = [...this.state.panelLogs, ...this.state.userLogs];
+
+        // Sort mergedValues by date
+        mergedValues.sort((a, b) => {
+            const dateA = moment(a.date, 'DD/MM/YY HH:mm:ss');
+            const dateB = moment(b.date, 'DD/MM/YY HH:mm:ss');
+            return dateA.isBefore(dateB) ? 1 : -1;
+        });
+
+        await this.setState({
+            tableData: mergedValues,
+            loading: false, // Mettre l'état loading à false
+        });
 
 
     }
@@ -59,8 +80,8 @@ class Table extends React.Component {
                 //
                 // // Sort mergedValues by date
                 // mergedValues.sort((a, b) => {
-                //     const dateA = moment(a.date, 'hh:mm:ss DD/MM/YYYY');
-                //     const dateB = moment(b.date, 'hh:mm:ss DD/MM/YYYY');
+                //     const dateA = moment(a.date, 'HH:mm:ss DD/MM/YYYY');
+                //     const dateB = moment(b.date, 'HH:mm:ss DD/MM/YYYY');
                 //     return dateA.isBefore(dateB) ? -1 : 1;
                 // });
                 //
@@ -76,8 +97,8 @@ class Table extends React.Component {
 
         // Sort mergedValues by date
         mergedValues.sort((a, b) => {
-            const dateA = moment(a.date, 'hh:mm:ss DD/MM/YYYY');
-            const dateB = moment(b.date, 'hh:mm:ss DD/MM/YYYY');
+            const dateA = moment(a.date, 'DD/MM/YY HH:mm:ss');
+            const dateB = moment(b.date, 'DD/MM/YY HH:mm:ss');
             return dateA.isBefore(dateB) ? 1 : -1;
         });
 
@@ -86,23 +107,34 @@ class Table extends React.Component {
         });
     }
 
+    ObjectToString(o) {
+        Object.keys(o).forEach(k => {
+            if (typeof o[k] === 'object') {
+                return toString(o[k]);
+            }
+
+            o[k] = '' + o[k];
+        });
+
+        return o;
+    }
+
     applyDateFilter = (data) => {
+
         const start = moment(this.state.startDate);
         const end = moment(this.state.endDate);
         return data.filter(log => {
-            const date = moment(log.date, 'hh:mm:ss DD/MM/YYYY');
+            const date = moment(log.date, 'DD/MM/YY HH:mm:ss');
             return date.isBetween(start, end);
         });
     }
 
     handleSorting = (sortField, sortOrder) => {
-        this.actualize();
-
         const mergedValues = [...this.state.panelLogs, ...this.state.userLogs];
         // Sort mergedValues by date
         mergedValues.sort((a, b) => {
-            const dateA = moment(a.date, 'hh:mm:ss DD/MM/YYYY');
-            const dateB = moment(b.date, 'hh:mm:ss DD/MM/YYYY');
+            const dateA = moment(a.date, 'DD/MM/YY HH:mm:ss');
+            const dateB = moment(b.date, 'DD/MM/YY HH:mm:ss');
             return dateA.isBefore(dateB) ? 1 : -1;
         });
         console.log('mergedValues', mergedValues);
@@ -118,11 +150,11 @@ class Table extends React.Component {
                 });
             } else if (sortField === "date") {
                 sorted = [...filteredData].sort((a, b) => {
-                    const valueA = a && a[sortField] ? moment(a[sortField], 'hh:mm:ss DD/MM/YYYY') : "";
-                    const valueB = b && b[sortField] ? moment(b[sortField], 'hh:mm:ss DD/MM/YYYY') : "";
+                    const valueA = a && a[sortField] ? moment(a[sortField], 'DD/MM/YY HH:mm:ss') : "";
+                    const valueB = b && b[sortField] ? moment(b[sortField], 'DD/MM/YY HH:mm:ss') : "";
                     return valueA - valueB * (sortOrder === "asc" ? 1 : -1);
                 });
-            } else if (sortField === "bug" || sortField === "online" || sortField === "door_1" || sortField === "door_2" || sortField === "screen") {
+            } else if (sortField === "bug" || sortField === "online" || sortField === "door_1" || sortField === "door_2" || sortField === "screen" || sortField === "state") {
                 sorted = [...filteredData].sort((a, b) => {
                     const valueA = a && a[sortField] ? a[sortField] : "";
                     const valueB = b && b[sortField] ? b[sortField] : "";
@@ -160,25 +192,50 @@ class Table extends React.Component {
         if (e.target.value) {
             this.element.classList.toggle('hidden');
         }
+
     }
 
-    handleStartDateChange = (date) => {
+    handleStartDateChange = async (date) => {
         this.setState({
             startDate: date,
             currentPage: 1
         });
+        await this.actualize();
     }
-    handleEndDateChange = (date) => {
+    handleEndDateChange = async (date) => {
         this.setState({
             endDate: date,
             currentPage: 1
         });
+        await this.actualize();
     }
 
     handlePageChange = (pageNumber) => {
         this.setState({
             currentPage: pageNumber,
         });
+        let url = config.domain_name +"/panelLogs?startDate=" + moment(this.state.startDate).format('DD/MM/YY HH:mm:ss') + "&endDate=" + moment(this.state.endDate).format('DD/MM/YY HH:mm:ss') + '&page=' + this.state.currentPage + '&pageSize=' + this.state.pageSize;
+        axios.get(url)
+            .then((Reponse) => {
+                this.setState({
+                    panelLogs: Reponse.data,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+        url = config.domain_name +"/userLogs?startDate=" + moment(this.state.startDate).format('DD/MM/YY HH:mm:ss ') + "&endDate=" + moment(this.state.endDate).format('DD/MM/YY HH:mm:ss');
+
+        axios.get(url)
+            .then((Reponse) => {
+                this.setState({
+                    userLogs: Reponse.data,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
     }
 
     handlePageSizeChange = (e) => {
@@ -193,8 +250,8 @@ class Table extends React.Component {
         const columns = [
             {label: "Panneau", accessor: "name"},
             {label: "Utilisateur", accessor: "username"},
+            {label: "État", accessor: "state"},
             {label: "Date", accessor: "date"},
-            {label: "État", accessor: "bug"},
             {label: "Statut", accessor: "online"},
             {label: "Porte Coffret", accessor: "door_1"},
             {label: "Consommation", accessor: "door_2"},
@@ -207,17 +264,18 @@ class Table extends React.Component {
 
 
         let filteredData = this.state.tableData.length > 0 ? this.state.tableData.filter(log => {
+            log.state && console.log(log.state.toString())
             return (
-                ('name' in log && log.name.toLowerCase().includes(search.toLowerCase())) ||
-                ('username' in log && log.username.toLowerCase().includes(search.toLowerCase())) ||
+                ('name' in log && log.name.includes(search)) ||
+                ('username' in log && log.username.includes(search)) ||
+                ('state' in log && log.state.toString().includes(search)) ||
                 ('date' in log && log.date.includes(search)) ||
-                ('bug' in log && log.bug.toLowerCase().includes(search.toLowerCase())) ||
-                ('online' in log && log.online.toLowerCase().includes(search.toLowerCase())) ||
-                ('door_1' in log && log.door_1.toLowerCase().includes(search.toLowerCase())) ||
-                ('door_2' in log && log.door_2.toLowerCase().includes(search.toLowerCase())) ||
-                ('screen' in log && log.screen.toLowerCase().includes(search.toLowerCase())) ||
-                ('temperature' in log && log.temperature.toLowerCase().includes(search.toLowerCase())) ||
-                ('message' in log && log.message.toLowerCase().includes(search.toLowerCase()))
+                ('online' in log && log.online.toString().includes(search)) ||
+                ('door_1' in log && log.door_1.toString().includes(search)) ||
+                ('door_2' in log && log.door_2.toString().includes(search)) ||
+                ('screen' in log && log.screen.toString().includes(search)) ||
+                ('temperature' in log && log.temperature.toString().includes(search)) ||
+                ('message' in log && log.message.includes(search))
             );
         }) : this.state.tableData;
 
@@ -228,11 +286,13 @@ class Table extends React.Component {
 
         const startIndex = (currentPage - 1) * pageSize;
         const endIndex = startIndex + pageSize;
-        const currentPageData = filteredData.slice(startIndex, endIndex);
+        let currentPageData = filteredData.slice(startIndex, endIndex);
+        currentPageData = this.ObjectToString(currentPageData)
+
 
         const oldestDate = filteredData.length > 0 ? filteredData.reduce((acc, log) => {
-            return moment(log.date, 'HH:mm:ss DD/MM/YYYY').isBefore(acc) ? log.date : acc;
-        }, moment(filteredData[0].date), 'HH:mm:ss DD/MM/YYYY') : moment(new Date(), 'HH:mm:ss DD/MM/YYYY');
+            return moment(log.date, 'DD/MM/YYYY HH:mm:ss').isBefore(acc) ? log.date : acc;
+        }, moment(filteredData[0].date), 'DD/MM/YYYY HH:mm:ss ') : moment(new Date(), ' DD/MM/YYYY HH:mm:ss');
 
         return (
             <div className="table-container">
@@ -245,44 +305,69 @@ class Table extends React.Component {
                     <input type="text" value={search} placeholder="Rechercher un log"
                            onChange={this.handleSearchChange}/>
                     <DatePicker
+                        showTimeSelect
+                        timeFormat="HH:mm"
+                        timeIntervals={15}
+                        timeCaption="Horaire"
                         selected={this.state.startDate}
                         onChange={this.handleStartDateChange}
-                        dateFormat='hh:mm:ss dd/MM/yyyy'
+                        dateFormat='dd/MM/yyyy HH:mm'
                         minDate={oldestDate}
                         defaultValue={oldestDate}
                         maxDate={new Date()}
                     />
+                    {/*<button onClick={async () => {*/}
+                    {/*    this.setState({loading: true});*/}
+                    {/*    await this.actualize();*/}
+                    {/*    await this.actualize();*/}
+                    {/*    this.setState({loading: false});*/}
+                    {/*}}>Rechercher</button>*/}
+
                     <DatePicker
                         selected={this.state.endDate}
                         onChange={this.handleEndDateChange}
-                        dateFormat='hh:mm:ss dd/MM/yyyy'
+                        dateFormat='dd/MM/yyyy HH:mm'
+                        showTimeSelect
+                        timeFormat="HH:mm"
+                        timeIntervals={15}
+                        timeCaption="Horaire"
                         // minDate={oldestDate}
                         // onChange={date => this.handleDateChange(this.state.startDate, this.target.value)}
                         maxDate={new Date()}
                     />
                     <input type="text" value={pageSize} onChange={this.handlePageSizeChange}/>
 
-                        <div className="pagination-controls">
-                            <button onClick={() => this.handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
-                                Page suivante
-                            </button>
-                        </div>
-                </div>
-                <table className={`table`}>
-                    <TableHead columns={columns} handleSorting={this.handleSorting}/>
-                    <TableBody columns={columns} tableData={currentPageData}/>
-                </table>
                     <div className="pagination-controls">
-                        <button onClick={() => this.handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
-                            Page précédente
-                        </button>
-                        <p>
-                            Page {currentPage} sur {totalPages}
-                        </p>
-                        <button onClick={() => this.handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+                        <button onClick={() => this.handlePageChange(currentPage + 1)}
+                                disabled={currentPage === totalPages}>
                             Page suivante
                         </button>
                     </div>
+                </div>
+
+                {this.state.loading ? (
+                    <p style={{textAlign: "center"}} className="blinking loader">Chargement des logs... veuillez
+                        patienter.</p>
+                ) : (
+                    <table className={`table`}>
+
+                        <TableHead columns={columns} handleSorting={this.handleSorting}/>
+                        <TableBody columns={columns} tableData={currentPageData}/>
+                    </table>
+
+                )}
+                <div className="pagination-controls">
+                    <button onClick={() => this.handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
+                        Page précédente
+                    </button>
+                    <p>
+                        Page {currentPage} sur {totalPages}
+                    </p>
+                    <button onClick={() => this.handlePageChange(currentPage + 1)}
+                            disabled={currentPage === totalPages}>
+                        Page suivante
+                    </button>
+                </div>
             </div>
         );
     }

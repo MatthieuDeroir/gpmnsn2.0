@@ -4,7 +4,7 @@ import { config } from '../config'
 
 class AuthService {
     login(username, password) {
-        return axios.post("http://" + config.ip + ":" + config.port + "/auth/signin", {
+        return axios.post(config.domain_name +"/auth/signin", {
             username,
             password
         }).then(response => {
@@ -24,7 +24,7 @@ class AuthService {
         let roles = [];
         roles[0] = role;
         console.log('services/register');
-        return axios.post("http://" + config.ip + ":" + config.port + "/auth/signup", {
+        return axios.post(config.domain_name +"/auth/signup", {
             username,
             password,
             roles
@@ -35,7 +35,7 @@ class AuthService {
         let roles = [];
         console.log(_id)
         roles[0] = role;
-        return axios.put("http://" + config.ip + ":" + config.port + "/user/" + _id, {
+        return axios.put(config.domain_name +"/user/" + _id, {
             roles
         });
     }

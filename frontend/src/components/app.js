@@ -37,8 +37,6 @@ import Logs from './Logs/Logs'
 import BottomNavigation from '@mui/material/BottomNavigation'
 import BottomNavigationAction from '@mui/material/BottomNavigationAction'
 
-
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -187,12 +185,12 @@ class App extends React.Component {
                                 </div>
                                 :
                                 <div>
-                                    <Link to={"/login"} onClick={this.noDisplay}>
-                                        <BottomNavigationAction label="Profil" icon={<LoginIcon />} />
-                                    </Link>
-                                    <Link to={"/register"}>
-                                        <BottomNavigationAction label="Créer un compte" icon={<PersonAddAlt />} />
-                                    </Link>
+                                    {/*<Link to={"/login"} onClick={this.noDisplay}>*/}
+                                    {/*    <BottomNavigationAction label="Profil" icon={<LoginIcon />} />*/}
+                                    {/*</Link>*/}
+                                    {/*<Link to={"/register"}>*/}
+                                    {/*    <BottomNavigationAction label="Créer un compte" icon={<PersonAddAlt />} />*/}
+                                    {/*</Link>*/}
                                 </div>
                             }
                         </BottomNavigation>

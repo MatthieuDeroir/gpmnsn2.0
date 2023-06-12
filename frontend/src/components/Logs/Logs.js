@@ -45,7 +45,7 @@ export default class Logs extends React.Component {
         //         console.log(error)
         //     });
         //
-        // url = "http://" + config.ip + ":" + config.port + "/userLogs"
+        // url = config.domain_name +"/userLogs"
         //
         // axios.get(url)
         //     .then((Reponse) => {

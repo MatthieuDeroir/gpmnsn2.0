@@ -40,7 +40,7 @@ export default class ControlPanel extends Component {
         this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
 
 
-        let url = 'http://' + config.ip + ':' + config.port + '/instructions'
+        let url = config.domain_name + "/instructions"
         setInterval(() => {
             axios.get(url)
                 .then((Reponse) => {
@@ -55,7 +55,7 @@ export default class ControlPanel extends Component {
 
             1000);
 
-        url = 'http://' + config.ip + ':' + config.port + '/panels'
+        url = config.domain_name +  '/panels'
 
         setInterval(() => {
             axios.get(url)
@@ -123,7 +123,7 @@ export default class ControlPanel extends Component {
         console.log("str :" + str)
 
 
-        let url = "http://" + config.ip + ":" + config.port + "/instruction/"
+        let url = config.domain_name +"/instruction/"
 
         await axios.put(url + this.state.panelInstruction[str - 1]._id, {
             instruction: sw
@@ -135,7 +135,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/instructions/"
+        url = config.domain_name +"/instructions/"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -147,7 +147,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/panels"
+        url = config.domain_name +"/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -158,7 +158,7 @@ export default class ControlPanel extends Component {
             .catch((error) => {
                 console.log(error)
             });
-        url = "http://" + config.ip + ":" + config.port + "/instruction/"
+        url = config.domain_name +"/instruction/"
 
         await axios.put(url + this.state.panelInstruction[str - 1]._id, {
             instruction: sw
@@ -170,7 +170,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/instructions/"
+        url = config.domain_name +"/instructions/"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -182,7 +182,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/panels"
+        url = config.domain_name +"/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -203,7 +203,7 @@ export default class ControlPanel extends Component {
     }
 
     async totalShutDown(state = false) {
-        let url = "http://" + config.ip + ":" + config.port + "/instructions"
+        let url = config.domain_name +"/instructions"
 
         if (state != false) {
             state = !(state[0].state)
@@ -219,7 +219,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/panels"
+        url = config.domain_name +"/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -231,7 +231,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/instruction/"
+        url = config.domain_name +"/instruction/"
 
 
         await axios.put(url + this.state.panelInstruction[0]._id, {
@@ -356,7 +356,7 @@ export default class ControlPanel extends Component {
         this.sendUserLogs(2, "ok", "A actionné le panneau UB Amont")
     }
     async ShutDownByState(state = false) {
-        let url = "http://" + config.ip + ":" + config.port + "/instructions"
+        let url = config.domain_name +"/instructions"
 
 
         await axios.get(url)
@@ -369,7 +369,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/panels"
+        url = config.domain_name +"/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -381,7 +381,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/instruction/"
+        url = config.domain_name +"/instruction/"
 
 
         await axios.put(url + this.state.panelInstruction[0]._id, {
@@ -543,7 +543,7 @@ export default class ControlPanel extends Component {
         console.log(this.state.panelInstructions)
 
 
-        let url = "http://" + config.ip + ":" + config.port + "/instruction/"
+        let url = config.domain_name +"/instruction/"
 
         console.log(url + this.state.panelInstruction[0]._id)
 
@@ -608,7 +608,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/instructions"
+        url = config.domain_name +"/instructions"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -620,7 +620,7 @@ export default class ControlPanel extends Component {
                 console.log(error)
             });
 
-        url = "http://" + config.ip + ":" + config.port + "/panels"
+        url = config.domain_name +"/panels"
 
         await axios.get(url)
             .then((Reponse) => {
@@ -637,7 +637,7 @@ export default class ControlPanel extends Component {
     }
 
     async setPanelStatus(online, id) {
-        const url = "http://" + config.ip + ":" + config.port + "/panel/"
+        const url = config.domain_name +"/panel/"
         if (online) {
             await axios.put(url + id, {
                 online: true
@@ -665,7 +665,7 @@ export default class ControlPanel extends Component {
 
     async sendUserLogs(name, state, message = "a actionné les panneaux") {
         console.log("SENDING USER LOGS...")
-        const url = "http://" + config.ip + ":" + config.port + "/userLogs"
+        const url = config.domain_name +"/userLogs"
         await axios.post(url, {
             username: AuthService.getCurrentUser().username,
             message: message,
