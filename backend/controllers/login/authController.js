@@ -1,10 +1,12 @@
 const config = require("../../authConfig");
-const db = require("../../models/login");
+const db = require("../../Models/Login");
 const User = db.user;
 const Role = db.role;
 var jwt = require("jsonwebtoken");
 const fs = require('fs');
 var bcrypt = require("bcryptjs");
+const handleDatabaseOperation = require('../../Database/Operation');
+
 
 exports.signup = (req, res) => {
     const folderName = `../frontend/public/medias/${req.body.username}`;
@@ -15,7 +17,7 @@ exports.signup = (req, res) => {
     });
     user.save((err, user) => {
         if (err) {
-            res.status(500).send({ message: err });
+            res.status(500).send({ message: "Error while saving user :", err });
             return;
         }
         if (req.body.roles) {
@@ -25,13 +27,13 @@ exports.signup = (req, res) => {
                 },
                 (err, roles) => {
                     if (err) {
-                        res.status(500).send({ message: err });
+                        res.status(500).send({ message: "Error while looking for roles :", err });
                         return;
                     }
                     user.roles = roles.map(role => role._id);
                     user.save(err => {
                         if (err) {
-                            res.status(500).send({ message: err });
+                            res.status(500).send({ message: "Error after validating role while saving user : ", err });
                             return;
                         }
                         try {
@@ -39,7 +41,7 @@ exports.signup = (req, res) => {
                                 fs.mkdirSync(folderName);
                             }
                         } catch (err) {
-                            console.error(err);
+                            res.status(500).send({ message: "Error while creating folder for user : ", err });
                         }
                         res.send({ message: "User was registered successfully !" });
                     });

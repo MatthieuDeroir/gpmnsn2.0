@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 var today = new Date()
 
-const UserLogs = mongoose.model(
+const UserLogsSchema = mongoose.model(
     "UserLogs",
     new mongoose.Schema({
         username: {
@@ -13,11 +13,12 @@ const UserLogs = mongoose.model(
             require: true,
         },
         date: {
-            type: String,
-            default: today.getDay() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
-        },
+            type: Date,
+            default: Date.now,
+            description: "Universal datetime format"
+        }
     })
 );
 
-module.exports = UserLogs;
+module.exports = UserLogsSchema;
 //dummy

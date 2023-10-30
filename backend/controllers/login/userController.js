@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 
-const { UserSchema } = require('../../models/login/userModel');
-const { RoleSchema } = require("../../models/login/roleModel");
+const { UserSchema } = require('../../Models/Login/userModel');
+const { RoleSchema } = require("../../Models/Login/roleModel");
 
 const User = mongoose.model('User', UserSchema);
 const Role = mongoose.model('Role', RoleSchema);
+
+const handleDatabaseOperation = require('../../Database/Operation');
+
 
 exports.allAccess = (req, res) => {
     res.status(200).send("Public Content")

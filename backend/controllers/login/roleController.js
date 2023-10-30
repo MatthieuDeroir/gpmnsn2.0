@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-const { RoleSchema } = require("../../models/login/roleModel");
+const { RoleSchema } = require("../../Models/Login/roleModel");
+const handleDatabaseOperation = require('../../Database/Operation');
+
 
 const Role = mongoose.model('Role', RoleSchema);
 

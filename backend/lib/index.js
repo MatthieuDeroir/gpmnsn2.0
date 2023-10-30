@@ -2,7 +2,7 @@
 
 var _initialization = require('./initialization');
 
-var _appRoutes = require('./routes/appRoutes');
+var _appRoutes = require('./Routes/appRoutes');
 
 var _appRoutes2 = _interopRequireDefault(_appRoutes);
 
@@ -71,7 +71,7 @@ app.post("/upload", function (req, res) {
     });
 });
 
-//routes
+//Routes
 (0, _appRoutes2.default)(app);
 
 app.get('/', function (req, res) {

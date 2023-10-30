@@ -1,52 +1,64 @@
-const mongoose = require("mongoose");
-var today = new Date()
+import mongoose from "mongoose";
 
-const Panel = mongoose.model(
-    "Panel",
-    new mongoose.Schema({
-        index: {
-            type: Number,
-            require: true,
-        },
-        name: {
-            type: String,
-            require: true
-        },
-        state: {
-            type: Boolean,
-            require: true,
-        },
+const PanelSchema = new mongoose.Schema({
+    index: {
+        type: Number,
+        required: true,
+        enum: [1, 2, 3] // ensures the index is between 1 and 3
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    state: {
+        type: Boolean,
+        required: true,
+        default: false,
+        description: "On or Off"
+    },
+    isOnline: {
+        type: Boolean,
+        required: true,
+        default: false,
+        description: "Connectivity status"
+    },
+    isDoorOpen: {
+        type: Boolean,
+        required: true,
+        default: false,
+        description: "Door open or not"
+    },
+    isSectorNominal: {
+        type: Boolean,
+        required: true,
+        default: true,
+        description: "Sector sensor status"
+    },
+    isAlimentationNominal: {
+        type: Boolean,
+        required: true,
+        default: true,
+        description: "Alimentation sensor status"
+    },
+    temperature: {
+        type: Number,
+        required: true,
+        description: "Current CPU temperature"
+    },
+    hasBugs: {
+        type: Boolean,
+        required: true,
+        default: false,
+        description: "Flag indicating if there is a problem"
+    },
+    date: {
+        type: Date,
+        default: Date.now,
+        description: "Universal datetime format"
+    }
+});
 
-        door_1: {
-            type: Boolean,
-            require: true,
-        },
-        door_2: {
-            type: Boolean,
-            require: true,
-        },
-        online: {
-            type: Boolean,
-            require: true,
-        },
-        screen: {
-            type: Boolean,
-            require: true,
-        },
-        temperature: {
-            type: Number,
-            require: true,
-        },
-        bug: {
-            type: Boolean,
-            require: true,
-        },
-        date: {
-            type: String,
-            default: today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
-        }
-    })
-);
+const Panel = mongoose.model("Panel", PanelSchema);
+const PanelLogs = mongoose.model("PanelLogs", PanelSchema);
 
-module.exports = Panel;
-//dummy
+export { Panel, PanelLogs };

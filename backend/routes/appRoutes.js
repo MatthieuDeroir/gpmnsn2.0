@@ -4,13 +4,13 @@ import {
     getUserWithId,
     updateUser,
     deleteUser
-} from '../controllers/login/userController';
+} from '../Controllers/login/userController';
 import {
     allAccess,
     userBoard,
     adminBoard,
     superuserBoard
-} from '../controllers/login/userController'
+} from '../Controllers/login/userController'
 
 import {
     addNewUserLogs,
@@ -18,7 +18,7 @@ import {
     getUserLogsWithId,
     updateUserLogs,
     deleteUserLogs
-} from '../controllers/logs/userLogsController'
+} from '../Controllers/logs/userLogsController'
 
 import {
     addNewPanelLogs,
@@ -26,7 +26,7 @@ import {
     getPanelLogsWithId,
     updatePanelLogs,
     deletePanelLogs
-} from '../controllers/logs/panelLogsController'
+} from '../Controllers/logs/panelLogsController'
 
 import {
     addNewPanel,
@@ -34,7 +34,7 @@ import {
     getPanelWithId,
     updatePanel,
     deletePanel
-} from '../controllers/panel/panelController'
+} from '../Controllers/panel/panelController'
 
 import {
     addNewInstruction,
@@ -42,15 +42,15 @@ import {
     getInstructionWithId,
     updateInstruction,
     deleteInstruction
-} from '../controllers/instructions/instructionController'
+} from '../Controllers/instructions/instructionController'
 
 import {
     addNewRole,
     getRoles,
-} from "../controllers/login/roleController";
+} from "../Controllers/login/roleController";
 
-const controller = require("../controllers/login/authController");
-import { verifySignUp } from "../middleware";
+const controller = require("../Controllers/login/authController");
+import { verifySignUp } from "../Middlewares";
 
 const routes = (app) => {
     app.route('/users')
@@ -102,7 +102,7 @@ const routes = (app) => {
         .put(updatePanel)
         .delete(deletePanel)
 
-    app.route("/instructions")
+    app.route("/Instructions")
         .get(getInstruction)
         .post(addNewInstruction)
     app.route("/instruction/:InstructionId")

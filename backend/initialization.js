@@ -4,9 +4,9 @@
 
 
 
-const Role = require('./models/login/roleModel');
-const Panel = require('./models/panel/panelModel');
-const Instruction = require('./models/instructions/instructionModel');
+const Role = require('./Models/Login/RoleModel');
+const Panel = require('./Models/panel/PanelModel');
+const Instruction = require('./Models/Instructions/InstructionModel');
 
 export function initialization() {
 

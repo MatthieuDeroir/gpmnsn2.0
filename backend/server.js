@@ -4,20 +4,26 @@ import bodyparser from 'body-parser';
 import cors from 'cors';
 import routes from './Routes';
 import wss from './websocket';
+import Database from './Database/Database';
+
+require('dotenv').config()
 
 const app = express();
-const PORT = 4000;
 
 app.disable('x-powered-by');
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1/portNS');
+Database.Connect().then(() => {
+    console.log('Connected to database');
+    wss();
+}).catch((err) => {
+    console.error('Error connecting to database:', err);
+});
 
 app.use(express.static("medias"));
-app.use(bodyparser.urlencoded({ extended: true }));
+app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 app.use(cors());
 
 routes(app);
-app.get('/', (req, res) => res.send(`Le serveur fonctionne sur le port : ${PORT}`));
+app.get('/', (req, res) => res.send(`Le serveur fonctionne sur le port : ${process.env.PORT}`));
 
-app.listen(PORT, () => console.log(`Le serveur fonctionne sur le port : ${PORT}`));
+app.listen(PORT, () => console.log(`Le serveur fonctionne sur le port : ${process.env.PORT}`));

@@ -5,7 +5,7 @@ const Instruction = mongoose.model(
     new mongoose.Schema({
         index: {
             type: Number,
-            require: true,
+            required: true,
             default: 0
         },
         name: {
@@ -14,7 +14,8 @@ const Instruction = mongoose.model(
         },
         instruction: {
             type: Boolean,
-            require: true,
+            required: true,
+            description: "true = on, false = off"
         }
     })
 );
