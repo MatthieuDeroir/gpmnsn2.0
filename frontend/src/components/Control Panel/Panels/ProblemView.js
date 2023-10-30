@@ -32,8 +32,8 @@ const ProblemView = (props) => {
 
                             <div>
                                 {
-                                    item.online ? <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
-                                        : <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne"}</p>
+                                    item.online ? <p style={{ margin: "0" }}>Statut : {item.online ?  "En ligne": "Hors ligne" }</p>
+                                        : <p style={{ margin: "0" }}>Statut : {item.online ? "En ligne" : "Hors ligne" }</p>
                                 }
                             </div>
                             <div>

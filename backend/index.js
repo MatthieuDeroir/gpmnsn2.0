@@ -1,5 +1,5 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')//.Mongoose;
 const bodyparser = require("body-parser");
 import { initialization } from './initialization'
 
@@ -12,8 +12,6 @@ import routes from './routes/appRoutes';
 const app = express();
 const PORT = 4000;
 
-process.env.NODE_ENV
-
 // disabling mention
 app.disable('x-powered-by')
 
@@ -21,6 +19,22 @@ app.disable('x-powered-by')
 mongoose.Promise = global.Promise;
 mongoose.connect(`mongodb://127.0.0.1/portNS`)
 
+// mongoose.connect(
+//     'mongodb://user:pass@myhost:27017/my-db?authSource=admin',
+//     {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true,
+//     },
+//     (err) => {
+//         if (err) {
+//             console.error('FAILED TO CONNECT TO MONGODB');
+//             console.error(err);
+//         } else {
+//             console.log('CONNECTED TO MONGODB');
+//             app.listen(80);
+//         }
+//     }
+// );
 
 // file upload setup
 app.use(fileupload());

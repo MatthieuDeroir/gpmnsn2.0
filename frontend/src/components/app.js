@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './App.css';
 
@@ -50,15 +50,25 @@ class App extends React.Component {
         }
 
 
+
         //users
         this.logOut = this.logOut.bind(this);
         //files
 
 
     }
+    checkTokenExpiration = () => {
+        const tokenExpirationTime = localStorage.getItem("tokenExpiration");
+        if (Date.now() >= tokenExpirationTime && AuthService.getCurrentUser()) {
+            AuthService.logout();
+        }
+    }
 
     componentDidMount() {
-        //users
+        this.checkTokenExpiration();
+
+
+    //users
         const user = AuthService.getCurrentUser();
         if (user) {
             this.setState({
@@ -72,6 +82,9 @@ class App extends React.Component {
 
 
     componentWillUnmount() {
+        if (this.intervalId) {
+            clearInterval(this.intervalId);
+        }
     }
 
     //user
@@ -152,6 +165,9 @@ class App extends React.Component {
                         {currentUser ?
                             <Route exact path="/profile" component={Profile} />
                             : <Route exact path="/profile" component={Login} />}
+                        {currentUser ?
+                        <Route exact path="/" component={ControlPanel}/> :
+                            <Route exact path="/" component={Login}/>}
 
                         <Route exact path="/logout" component={Profile} />
                     </Switch>
