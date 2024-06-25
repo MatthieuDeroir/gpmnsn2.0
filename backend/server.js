@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyparser from 'body-parser';
 import cors from 'cors';
-import routes from './Routes';
+import routes from './routes';
 import wss from './websocket';
 import Database from './Database/Database';
 
