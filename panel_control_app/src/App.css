@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App h1 {
+  margin-bottom: 20px;
+}
+
+.panel-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.panel-control {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.panel-control.problem {
+  background-color: #ffe6e6;
+}
+
+img.greyed-out {
+  filter: grayscale(80%);
+}
+
+.blinking-text {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.all-control {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
