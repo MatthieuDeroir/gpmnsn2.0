@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useWebSocket } from './WebSocketContext';
 import './PanelControl.css';
 
-const PanelControl = ({ name }) => {
+const PanelControl = ({ name, heartbeatTimer }) => {
   const { socket, panelStatus } = useWebSocket();
   const [pendingState, setPendingState] = useState(null);
 
@@ -52,7 +52,8 @@ const PanelControl = ({ name }) => {
         type: "instruction",
         to: "panel",
         name: name,
-        instruction: instruction
+        instruction: instruction,
+        heartbeatTimer: heartbeatTimer  // Envoyer la valeur du timer
       };
       socket.send(JSON.stringify(message));
       setPendingState(instruction);
@@ -85,11 +86,12 @@ const PanelControl = ({ name }) => {
       {maintenanceMode && <div className="maintenance-banner">MODE MAINTENANCE</div>}
       {(!isConnected || !sectorStatus) && <div className="dysfunction-banner">DYSFONCTIONNEMENT</div>}
       {(!isConnected) && <div className="dysfunction-banner">CONNEXION {name.toUpperCase()} PERDUE</div>}
-      {!sectorStatus && <div className="dysfunction-banner">ALIMENTATION DEFAILLANTE</div>}
-      {lastHeartbeat > 15 && <div className="dysfunction-banner">ATTENTION LATENCE</div>}
+      {!sectorStatus && isConnected && <div className="dysfunction-banner">ALIMENTATION DEFAILLANTE</div>}
+      {lastHeartbeat > heartbeatTimer * 2 && <div className="dysfunction-banner">ATTENTION LATENCE</div>}
 
       {isDoorOpen && <div className="door-open-banner">PORTE OUVERTE</div>}
       {panelInfo  && (
+        
         <div className="panel-info">
           <img
             src={imageSrc}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useWebSocket } from './WebSocketContext';
 import './PanelControl.css';
 
-const AllPanel = () => {
+const AllPanel = ({ heartbeatTimer, setHeartbeatTimer}) => {
   const { socket, panelStatus } = useWebSocket();
   const [pendingState, setPendingState] = useState(null);
 
@@ -12,7 +12,8 @@ const AllPanel = () => {
         type: "instruction",
         to: "panel",
         name: "all",
-        instruction: instruction
+        instruction: instruction,
+        heartbeatTimer: heartbeatTimer,
       };
       socket.send(JSON.stringify(message));
       setPendingState(instruction);
@@ -29,7 +30,17 @@ const AllPanel = () => {
 
   return (
     <div className="panel-control">
+       <label>
+                    Set Global Heartbeat Timer (seconds):
+                    <input
+                        type="number"
+                        value={heartbeatTimer}
+                        onChange={(e) => setHeartbeatTimer(Number(e.target.value))}
+                        min="1"
+                    />
+                </label>
       <div className="button-group">
+     
         <button
           className={`btn btn-green ${isBlinking('on') ? 'blinking-text-green' : ''}`}
           onClick={() => sendInstruction('on')}

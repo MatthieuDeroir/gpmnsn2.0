@@ -5,6 +5,8 @@ const DATABASE_PORT = 27017;
 const HEARTBEAT_INTERVAL = 5000;  // 5 seconds
 
 class HealthChecker {
+
+
   static async checkFrontend() {
     return new Promise((resolve, reject) => {
       const req = http.get(`http://localhost:${FRONTEND_PORT}`, res => {
@@ -63,7 +65,7 @@ class HealthChecker {
       broadcastToAppropriateClients(JSON.stringify({ type: 'instruction', to: 'panel', instruction: 'off' }), 'panel');
     }
 
-    console.log(`Check result - Frontend: ${frontendOk}, Database: ${databaseOk}, Panel Problems: ${JSON.stringify(problems)}`);
+    // console.log(`Check result - Frontend: ${frontendOk}, Database: ${databaseOk}, Panel Problems: ${JSON.stringify(problems)}`);
     return frontendOk && databaseOk && allPanelsOk;
   }
 }

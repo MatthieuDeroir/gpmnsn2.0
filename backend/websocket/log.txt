@@ -2940,3 +2940,696 @@
 2024-06-25T00:34:04.940Z - New client connected
 2024-06-25T00:34:04.940Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
 2024-06-25T00:34:05.030Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:06:15.642Z - New client connected
+2024-06-26T08:06:15.644Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T08:06:15.655Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T08:06:17.047Z - New client connected
+2024-06-26T08:06:17.047Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T08:06:17.061Z - New client connected
+2024-06-26T08:06:17.062Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:06:17.078Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:06:17.273Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T08:06:33.532Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:06:33.532Z - New client connected
+2024-06-26T08:06:33.555Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:06:34.563Z - New client connected
+2024-06-26T08:06:34.563Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:06:34.567Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:06:42.135Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:06:50.555Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:07:00.978Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:07:02.448Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:07:04.066Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:07:05.577Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:07:07.562Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:09:52.128Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:09:56.985Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:09:59.449Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:11:16.663Z - New client connected
+2024-06-26T08:11:16.663Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:11:16.678Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:11:25.379Z - Client disconnected
+2024-06-26T08:11:48.001Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:13:26.792Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:13:26.792Z - New client connected
+2024-06-26T08:13:26.806Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:13:36.445Z - Client disconnected
+2024-06-26T08:14:56.455Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on"}
+2024-06-26T08:27:02.621Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:27:05.102Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:28:22.779Z - Client disconnected
+2024-06-26T08:28:22.779Z - Client disconnected
+2024-06-26T08:28:23.143Z - New client connected
+2024-06-26T08:28:23.143Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:28:23.162Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:28:24.172Z - New client connected
+2024-06-26T08:28:24.172Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:28:24.175Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:29:17.291Z - Client disconnected
+2024-06-26T08:29:17.291Z - Client disconnected
+2024-06-26T08:29:17.649Z - New client connected
+2024-06-26T08:29:17.649Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:29:17.668Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:29:18.711Z - New client connected
+2024-06-26T08:29:18.711Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:29:18.714Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:29:19.552Z - Client disconnected
+2024-06-26T08:29:19.552Z - Client disconnected
+2024-06-26T08:29:19.721Z - New client connected
+2024-06-26T08:29:19.721Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:29:19.730Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:29:20.741Z - New client connected
+2024-06-26T08:29:20.741Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:29:20.745Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:29:30.223Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:29:31.742Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:29:33.558Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:29:35.093Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:30:22.149Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on"}
+2024-06-26T08:30:22.725Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on"}
+2024-06-26T08:30:25.172Z - {"type":"instruction","to":"panel","name":"indret","instruction":"off"}
+2024-06-26T08:30:25.852Z - {"type":"instruction","to":"panel","name":"aval","instruction":"off"}
+2024-06-26T08:30:26.566Z - {"type":"instruction","to":"panel","name":"amont","instruction":"off"}
+2024-06-26T08:30:27.589Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on"}
+2024-06-26T08:30:28.358Z - {"type":"instruction","to":"panel","name":"aval","instruction":"on"}
+2024-06-26T08:30:28.990Z - {"type":"instruction","to":"panel","name":"amont","instruction":"on"}
+2024-06-26T08:32:27.430Z - Client disconnected
+2024-06-26T08:32:27.430Z - Client disconnected
+2024-06-26T08:32:27.570Z - New client connected
+2024-06-26T08:32:27.570Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:32:27.597Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:32:28.604Z - New client connected
+2024-06-26T08:32:28.604Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:32:28.607Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:32:29.054Z - Client disconnected
+2024-06-26T08:32:29.055Z - Client disconnected
+2024-06-26T08:32:29.237Z - New client connected
+2024-06-26T08:32:29.237Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:32:29.239Z - Client disconnected
+2024-06-26T08:32:29.451Z - New client connected
+2024-06-26T08:32:29.451Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:32:29.453Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:32:30.140Z - Client disconnected
+2024-06-26T08:32:30.307Z - New client connected
+2024-06-26T08:32:30.307Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:32:30.309Z - Client disconnected
+2024-06-26T08:32:30.543Z - New client connected
+2024-06-26T08:32:30.543Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:32:30.547Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:32:31.328Z - New client connected
+2024-06-26T08:32:31.328Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:32:31.333Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:34:18.245Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":7}
+2024-06-26T08:34:54.730Z - {"type":"instruction","to":"panel","name":"indret","instruction":"off","heartbeatTimer":15}
+2024-06-26T08:34:56.862Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":15}
+2024-06-26T08:35:13.329Z - Client disconnected
+2024-06-26T08:35:13.333Z - New client connected
+2024-06-26T08:35:13.333Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:35:13.339Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:35:14.351Z - New client connected
+2024-06-26T08:35:14.351Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:35:14.358Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:37:20.033Z - Client disconnected
+2024-06-26T08:37:20.040Z - New client connected
+2024-06-26T08:37:20.040Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:37:20.043Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:37:21.045Z - New client connected
+2024-06-26T08:37:21.045Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:37:21.050Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:37:21.054Z - New client connected
+2024-06-26T08:37:21.055Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:37:21.058Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:39:25.476Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:39:39.996Z - {"type":"instruction","to":"panel","name":"all","instruction":"off"}
+2024-06-26T08:40:25.067Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:25.613Z - New client connected
+2024-06-26T08:40:25.613Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:40:25.663Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:40:40.868Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:41.827Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:42.276Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:42.476Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:42.667Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:42.836Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:43.003Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:43.171Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:43.340Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:43.508Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:43.692Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:43.860Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:44.020Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:44.211Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:44.396Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:44.597Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:44.779Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:44.964Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:45.146Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:45.339Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:45.525Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:45.716Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:45.906Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:46.100Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:46.284Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:46.476Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:46.669Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:46.836Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:40:47.021Z - {"type":"instruction","to":"panel","name":"all","instruction":"on"}
+2024-06-26T08:41:11.135Z - New client connected
+2024-06-26T08:41:11.137Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:41:11.142Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:41:11.146Z - New client connected
+2024-06-26T08:41:11.147Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:41:11.150Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:41:11.156Z - New client connected
+2024-06-26T08:41:11.156Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:41:11.159Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:41:11.162Z - New client connected
+2024-06-26T08:41:11.162Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:41:11.166Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:41:11.170Z - New client connected
+2024-06-26T08:41:11.171Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:41:11.173Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:41:15.135Z - New client connected
+2024-06-26T08:41:15.136Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:41:15.139Z - New client connected
+2024-06-26T08:41:15.139Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T08:41:15.145Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:41:15.167Z - New client connected
+2024-06-26T08:41:15.167Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T08:41:15.168Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T08:41:15.177Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T08:41:17.492Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":19}
+2024-06-26T08:41:18.475Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":19}
+2024-06-26T08:41:19.163Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":19}
+2024-06-26T08:41:25.148Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1}
+2024-06-26T08:41:34.106Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:45.594Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:47.180Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:47.969Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:48.298Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:48.475Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:48.652Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:48.802Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:48.962Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:49.100Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:42:49.234Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:45:20.729Z - Client disconnected
+2024-06-26T08:45:21.773Z - New client connected
+2024-06-26T08:45:21.773Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:45:21.788Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:45:30.877Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":1000}
+2024-06-26T08:45:30.986Z - Client disconnected
+2024-06-26T08:45:32.754Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1000}
+2024-06-26T08:45:36.027Z - New client connected
+2024-06-26T08:45:36.028Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:45:36.043Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:45:46.764Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":18000}
+2024-06-26T08:45:46.927Z - Client disconnected
+2024-06-26T08:45:52.217Z - New client connected
+2024-06-26T08:45:52.218Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:45:52.231Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:46:08.099Z - Client disconnected
+2024-06-26T08:46:08.790Z - New client connected
+2024-06-26T08:46:08.791Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:46:08.799Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:46:14.087Z - Client disconnected
+2024-06-26T08:46:18.667Z - New client connected
+2024-06-26T08:46:18.668Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:46:18.674Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:46:56.334Z - Client disconnected
+2024-06-26T08:47:07.673Z - New client connected
+2024-06-26T08:47:07.674Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:47:07.685Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:47:30.693Z - Client disconnected
+2024-06-26T08:47:32.121Z - New client connected
+2024-06-26T08:47:32.121Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:47:32.128Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:47:33.235Z - Client disconnected
+2024-06-26T08:47:40.489Z - New client connected
+2024-06-26T08:47:40.489Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:47:40.512Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:47:40.671Z - Client disconnected
+2024-06-26T08:47:45.883Z - New client connected
+2024-06-26T08:47:45.883Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:47:45.900Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:47:51.313Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":18000}
+2024-06-26T08:47:51.367Z - Client disconnected
+2024-06-26T08:47:56.805Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:47:56.805Z - New client connected
+2024-06-26T08:47:56.828Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:47:58.054Z - Client disconnected
+2024-06-26T08:48:38.057Z - New client connected
+2024-06-26T08:48:38.057Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:48:38.073Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:48:47.368Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":18000}
+2024-06-26T08:54:57.913Z - New client connected
+2024-06-26T08:54:57.914Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:54:57.916Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:54:57.918Z - New client connected
+2024-06-26T08:54:57.918Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:54:57.921Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:54:57.924Z - New client connected
+2024-06-26T08:54:57.924Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:54:57.926Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:54:57.929Z - New client connected
+2024-06-26T08:54:57.929Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:54:57.932Z - New client connected
+2024-06-26T08:54:57.932Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:54:57.933Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:54:57.934Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:55:01.443Z - New client connected
+2024-06-26T08:55:01.443Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T08:55:01.446Z - New client connected
+2024-06-26T08:55:01.446Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:55:01.449Z - New client connected
+2024-06-26T08:55:01.449Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T08:55:01.461Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T08:55:01.461Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:55:01.469Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T08:55:13.226Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":20000}
+2024-06-26T08:55:16.747Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":29000}
+2024-06-26T08:55:18.050Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":29000}
+2024-06-26T08:56:11.565Z - New client connected
+2024-06-26T08:56:11.567Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:56:11.569Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:56:11.572Z - New client connected
+2024-06-26T08:56:11.573Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:56:11.576Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:56:11.580Z - New client connected
+2024-06-26T08:56:11.580Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:56:11.584Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:56:11.589Z - New client connected
+2024-06-26T08:56:11.589Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:56:11.593Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:56:11.597Z - New client connected
+2024-06-26T08:56:11.597Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T08:56:11.600Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T08:56:15.537Z - New client connected
+2024-06-26T08:56:15.537Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T08:56:15.542Z - New client connected
+2024-06-26T08:56:15.542Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:56:15.544Z - New client connected
+2024-06-26T08:56:15.544Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T08:56:15.554Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T08:56:15.557Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:56:15.559Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T08:56:18.244Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":29000}
+2024-06-26T08:57:21.304Z - Client disconnected
+2024-06-26T08:57:23.408Z - New client connected
+2024-06-26T08:57:23.408Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T08:57:23.417Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T08:57:45.306Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":29000}
+2024-06-26T08:57:47.364Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":29000}
+2024-06-26T08:57:48.100Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":29000}
+2024-06-26T09:11:48.072Z - {"type":"instruction","to":"panel","name":"indret","instruction":"off","heartbeatTimer":29}
+2024-06-26T09:11:53.448Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":29}
+2024-06-26T09:15:03.526Z - Client disconnected
+2024-06-26T09:15:34.065Z - New client connected
+2024-06-26T09:15:34.066Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:15:34.079Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:15:41.511Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":29}
+2024-06-26T09:15:51.568Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":7000}
+2024-06-26T09:15:57.896Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":7000}
+2024-06-26T09:15:59.616Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":7000}
+2024-06-26T09:15:59.775Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":7000}
+2024-06-26T09:15:59.936Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":7000}
+2024-06-26T09:16:00.095Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":7000}
+2024-06-26T09:16:00.815Z - {"type":"instruction","to":"panel","name":"indret","instruction":"off","heartbeatTimer":7}
+2024-06-26T09:16:02.416Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":7}
+2024-06-26T09:16:03.217Z - {"type":"instruction","to":"panel","name":"aval","instruction":"off","heartbeatTimer":7}
+2024-06-26T09:16:03.769Z - {"type":"instruction","to":"panel","name":"aval","instruction":"on","heartbeatTimer":7}
+2024-06-26T09:16:04.504Z - {"type":"instruction","to":"panel","name":"aval","instruction":"on","heartbeatTimer":7}
+2024-06-26T09:16:05.409Z - {"type":"instruction","to":"panel","name":"aval","instruction":"off","heartbeatTimer":7}
+2024-06-26T09:16:15.736Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":10}
+2024-06-26T09:16:44.537Z - {"type":"instruction","to":"panel","name":"indret","instruction":"off","heartbeatTimer":5}
+2024-06-26T09:17:49.718Z - Client disconnected
+2024-06-26T09:18:04.017Z - New client connected
+2024-06-26T09:18:04.018Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:18:04.027Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:18:07.814Z - {"type":"instruction","to":"panel","name":"indret","instruction":"off","heartbeatTimer":5}
+2024-06-26T09:18:31.071Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":5000}
+2024-06-26T09:18:54.022Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":10000}
+2024-06-26T09:19:08.784Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":10000}
+2024-06-26T09:23:55.213Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":10}
+2024-06-26T09:25:50.430Z - Client disconnected
+2024-06-26T09:25:56.607Z - New client connected
+2024-06-26T09:25:56.608Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:25:56.626Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:27:00.497Z - Client disconnected
+2024-06-26T09:27:11.839Z - New client connected
+2024-06-26T09:27:11.839Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:27:11.853Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:27:57.958Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":10}
+2024-06-26T09:28:19.278Z - {"type":"instruction","to":"panel","name":"indret","instruction":"on","heartbeatTimer":24}
+2024-06-26T09:29:28.727Z - Client disconnected
+2024-06-26T09:30:02.063Z - New client connected
+2024-06-26T09:30:02.063Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:30:02.074Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:30:10.845Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":24000}
+2024-06-26T09:32:01.257Z - Client disconnected
+2024-06-26T09:32:01.257Z - Client disconnected
+2024-06-26T09:32:01.257Z - Client disconnected
+2024-06-26T09:32:01.257Z - Client disconnected
+2024-06-26T09:32:01.257Z - Client disconnected
+2024-06-26T09:32:01.463Z - New client connected
+2024-06-26T09:32:01.463Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:32:01.485Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:32:02.511Z - New client connected
+2024-06-26T09:32:02.511Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:32:02.513Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:32:03.813Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T09:32:21.647Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T09:35:15.320Z - New client connected
+2024-06-26T09:35:15.322Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:35:15.325Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:35:15.327Z - New client connected
+2024-06-26T09:35:15.327Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:35:15.331Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:35:18.648Z - New client connected
+2024-06-26T09:35:18.649Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:35:18.656Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:35:18.675Z - New client connected
+2024-06-26T09:35:18.675Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T09:35:18.682Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T09:35:19.568Z - New client connected
+2024-06-26T09:35:19.568Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T09:35:19.575Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T09:35:23.535Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T09:35:31.141Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":15}
+2024-06-26T09:35:38.018Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T09:35:45.534Z - New client connected
+2024-06-26T09:35:45.536Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:35:45.538Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:35:46.072Z - New client connected
+2024-06-26T09:35:46.073Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:35:46.078Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:35:47.034Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T09:35:49.089Z - New client connected
+2024-06-26T09:35:49.090Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:35:49.098Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:35:49.143Z - New client connected
+2024-06-26T09:35:49.143Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T09:35:49.144Z - New client connected
+2024-06-26T09:35:49.145Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T09:35:49.161Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T09:35:49.165Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T09:36:26.324Z - New client connected
+2024-06-26T09:36:26.327Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:36:26.329Z - New client connected
+2024-06-26T09:36:26.329Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T09:36:26.330Z - New client connected
+2024-06-26T09:36:26.330Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T09:36:26.342Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T09:36:26.341Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T09:36:26.342Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:36:30.241Z - New client connected
+2024-06-26T09:36:30.241Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:36:30.249Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:36:31.230Z - New client connected
+2024-06-26T09:36:31.230Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:36:31.241Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:36:31.776Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T09:36:35.263Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":4}
+2024-06-26T09:37:04.068Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1}
+2024-06-26T09:37:14.221Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":2}
+2024-06-26T09:37:25.124Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":3}
+2024-06-26T09:37:29.252Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":11}
+2024-06-26T09:39:58.180Z - Client disconnected
+2024-06-26T09:40:03.597Z - New client connected
+2024-06-26T09:40:03.597Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:40:03.610Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:41:32.581Z - Client disconnected
+2024-06-26T09:41:37.172Z - New client connected
+2024-06-26T09:41:37.172Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:41:37.184Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:41:47.612Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":11}
+2024-06-26T09:42:38.638Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":11}
+2024-06-26T09:43:30.852Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":12}
+2024-06-26T09:44:20.237Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":80}
+2024-06-26T09:44:34.977Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1}
+2024-06-26T09:44:57.393Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1}
+2024-06-26T09:45:03.101Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":1}
+2024-06-26T09:45:09.612Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":2}
+2024-06-26T09:45:39.838Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":3}
+2024-06-26T09:45:41.036Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":4}
+2024-06-26T09:45:41.156Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":4}
+2024-06-26T09:45:44.307Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":8}
+2024-06-26T09:46:01.347Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":3}
+2024-06-26T09:46:08.683Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1}
+2024-06-26T09:46:56.050Z - Client disconnected
+2024-06-26T09:47:44.783Z - New client connected
+2024-06-26T09:47:44.783Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T09:47:44.806Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T09:48:13.062Z - New client connected
+2024-06-26T09:48:13.063Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T09:48:13.071Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T09:48:22.388Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":1}
+2024-06-26T09:48:27.836Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":1}
+2024-06-26T09:48:32.124Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":5}
+2024-06-26T09:49:03.580Z - Client disconnected
+2024-06-26T09:49:05.422Z - Client disconnected
+2024-06-26T09:49:16.789Z - Client disconnected
+2024-06-26T09:49:24.875Z - New client connected
+2024-06-26T09:49:24.875Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T09:49:24.887Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T09:49:26.746Z - {"type":"instruction","to":"panel","name":"amont","instruction":"on","heartbeatTimer":5}
+2024-06-26T09:49:34.610Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":5}
+2024-06-26T09:49:54.733Z - New client connected
+2024-06-26T09:49:54.734Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T09:49:54.777Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T09:52:19.611Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":5}
+2024-06-26T09:55:55.426Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":5}
+2024-06-26T09:55:58.420Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":5}
+2024-06-26T09:57:37.622Z - New client connected
+2024-06-26T09:57:37.623Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:57:37.625Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:57:37.627Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:57:37.627Z - New client connected
+2024-06-26T09:57:37.629Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:57:41.094Z - New client connected
+2024-06-26T09:57:41.095Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T09:57:41.096Z - New client connected
+2024-06-26T09:57:41.096Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:57:41.105Z - New client connected
+2024-06-26T09:57:41.105Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T09:57:41.121Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T09:57:41.121Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T09:57:41.122Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:57:51.014Z - Client disconnected
+2024-06-26T09:58:00.537Z - New client connected
+2024-06-26T09:58:00.537Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T09:58:00.555Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T09:58:19.501Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":5}
+2024-06-26T09:58:32.507Z - Client disconnected
+2024-06-26T09:58:33.657Z - Client disconnected
+2024-06-26T09:58:34.543Z - Client disconnected
+2024-06-26T09:58:41.513Z - New client connected
+2024-06-26T09:58:41.513Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:58:41.528Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:58:45.220Z - Client disconnected
+2024-06-26T09:59:17.590Z - New client connected
+2024-06-26T09:59:17.592Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:59:17.596Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:59:17.599Z - New client connected
+2024-06-26T09:59:17.599Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:59:17.601Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:59:20.222Z - New client connected
+2024-06-26T09:59:20.223Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:59:20.229Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T09:59:54.665Z - New client connected
+2024-06-26T09:59:54.667Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:59:54.670Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:59:54.674Z - New client connected
+2024-06-26T09:59:54.674Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T09:59:54.677Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T09:59:55.557Z - New client connected
+2024-06-26T09:59:55.558Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T09:59:55.566Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T10:00:29.640Z - New client connected
+2024-06-26T10:00:29.643Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T10:00:29.658Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T10:00:32.233Z - New client connected
+2024-06-26T10:00:32.233Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T10:00:32.239Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T10:00:32.248Z - New client connected
+2024-06-26T10:00:32.248Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T10:00:32.251Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T10:04:40.745Z - New client connected
+2024-06-26T10:04:40.748Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T10:04:40.748Z - Sent initial instructions to client
+2024-06-26T10:04:40.761Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T10:05:00.926Z - New client connected
+2024-06-26T10:05:00.926Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T10:05:00.927Z - Sent initial instructions to client
+2024-06-26T10:05:00.937Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T10:05:02.706Z - New client connected
+2024-06-26T10:05:02.706Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T10:05:02.707Z - Sent initial instructions to client
+2024-06-26T10:05:02.718Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T10:05:22.447Z - New client connected
+2024-06-26T10:05:22.447Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T10:05:22.448Z - Sent initial instructions to client
+2024-06-26T10:05:22.453Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T10:05:22.455Z - New client connected
+2024-06-26T10:05:22.455Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T10:05:22.455Z - Sent initial instructions to client
+2024-06-26T10:05:22.466Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T10:05:50.563Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T10:06:08.646Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T10:06:50.569Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T10:06:56.249Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":10}
+2024-06-26T10:06:57.777Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":10}
+2024-06-26T10:07:25.696Z - Client disconnected
+2024-06-26T10:07:34.729Z - New client connected
+2024-06-26T10:07:34.729Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T10:07:34.729Z - Sent initial instructions to client
+2024-06-26T10:07:34.752Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T10:12:35.491Z - New client connected
+2024-06-26T10:12:35.493Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T10:12:35.493Z - Sent initial instructions to client
+2024-06-26T10:12:35.493Z - New client connected
+2024-06-26T10:12:35.494Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T10:12:35.494Z - Sent initial instructions to client
+2024-06-26T10:12:35.495Z - New client connected
+2024-06-26T10:12:35.495Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T10:12:35.495Z - Sent initial instructions to client
+2024-06-26T10:12:35.506Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T10:12:35.525Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T10:12:35.527Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T10:13:36.005Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T10:13:36.003Z - New client connected
+2024-06-26T10:13:36.005Z - Sent initial instructions to client
+2024-06-26T10:13:36.006Z - New client connected
+2024-06-26T10:13:36.006Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T10:13:36.006Z - Sent initial instructions to client
+2024-06-26T10:13:36.011Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T10:13:36.026Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T10:13:36.055Z - New client connected
+2024-06-26T10:13:36.055Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T10:13:36.056Z - Sent initial instructions to client
+2024-06-26T10:13:36.071Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T10:13:52.541Z - Client disconnected
+2024-06-26T10:13:53.830Z - New client connected
+2024-06-26T10:13:53.831Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T10:13:53.831Z - Sent initial instructions to client
+2024-06-26T10:13:53.839Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T10:14:05.207Z - New client connected
+2024-06-26T10:14:05.207Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T10:14:05.207Z - Sent initial instructions to client
+2024-06-26T10:14:05.213Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T10:14:05.216Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T10:14:05.215Z - New client connected
+2024-06-26T10:14:05.216Z - Sent initial instructions to client
+2024-06-26T10:14:05.217Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T10:14:10.968Z - {"type":"instruction","to":"panel","name":"all","instruction":"off","heartbeatTimer":10}
+2024-06-26T10:14:13.201Z - {"type":"instruction","to":"panel","name":"aval","instruction":"on","heartbeatTimer":10}
+2024-06-26T10:14:14.856Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":10}
+2024-06-26T10:14:25.961Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":10}
+2024-06-26T10:15:28.359Z - Client disconnected
+2024-06-26T10:15:28.360Z - Client disconnected
+2024-06-26T11:25:40.731Z - New client connected
+2024-06-26T11:25:40.733Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:25:40.733Z - Sent initial instructions to client
+2024-06-26T11:25:40.735Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:25:40.737Z - New client connected
+2024-06-26T11:25:40.737Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:25:40.737Z - Sent initial instructions to client
+2024-06-26T11:25:40.739Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:25:49.068Z - New client connected
+2024-06-26T11:25:49.068Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:25:49.068Z - Sent initial instructions to client
+2024-06-26T11:25:49.090Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:25:50.123Z - New client connected
+2024-06-26T11:25:50.123Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:25:50.123Z - Sent initial instructions to client
+2024-06-26T11:25:50.125Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:26:01.177Z - Client disconnected
+2024-06-26T11:26:01.177Z - Client disconnected
+2024-06-26T11:26:01.338Z - New client connected
+2024-06-26T11:26:01.338Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:26:01.338Z - Sent initial instructions to client
+2024-06-26T11:26:01.365Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:26:02.378Z - New client connected
+2024-06-26T11:26:02.378Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:26:02.379Z - Sent initial instructions to client
+2024-06-26T11:26:02.385Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:27:34.258Z - New client connected
+2024-06-26T11:27:34.258Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T11:27:34.258Z - Sent initial instructions to client
+2024-06-26T11:27:34.294Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T11:27:45.215Z - New client connected
+2024-06-26T11:27:45.215Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T11:27:45.215Z - Sent initial instructions to client
+2024-06-26T11:27:45.228Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T11:27:59.802Z - New client connected
+2024-06-26T11:27:59.803Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T11:27:59.803Z - Sent initial instructions to client
+2024-06-26T11:27:59.832Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T11:28:50.087Z - Client disconnected
+2024-06-26T11:29:00.586Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T11:29:00.586Z - New client connected
+2024-06-26T11:29:00.587Z - Sent initial instructions to client
+2024-06-26T11:29:00.596Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T11:29:03.592Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T11:29:22.974Z - {"type":"instruction","to":"panel","name":"all","instruction":"on","heartbeatTimer":15}
+2024-06-26T11:30:12.965Z - New client connected
+2024-06-26T11:30:12.968Z - Sent initial instructions to client
+2024-06-26T11:30:12.968Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:30:12.971Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:30:12.975Z - New client connected
+2024-06-26T11:30:12.975Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:30:12.975Z - Sent initial instructions to client
+2024-06-26T11:30:12.978Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:30:13.432Z - New client connected
+2024-06-26T11:30:13.432Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:30:13.433Z - Sent initial instructions to client
+2024-06-26T11:30:13.441Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:30:13.447Z - New client connected
+2024-06-26T11:30:13.447Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:30:13.447Z - Sent initial instructions to client
+2024-06-26T11:30:13.454Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:30:16.664Z - New client connected
+2024-06-26T11:30:16.665Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T11:30:16.665Z - Sent initial instructions to client
+2024-06-26T11:30:16.669Z - New client connected
+2024-06-26T11:30:16.670Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T11:30:16.670Z - Sent initial instructions to client
+2024-06-26T11:30:16.686Z - New client connected
+2024-06-26T11:30:16.684Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T11:30:16.687Z - Sent initial instructions to client
+2024-06-26T11:30:16.686Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T11:30:16.696Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T11:30:16.704Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T11:32:32.968Z - New client connected
+2024-06-26T11:32:32.971Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:32:32.971Z - Sent initial instructions to client
+2024-06-26T11:32:32.977Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:32:32.979Z - New client connected
+2024-06-26T11:32:32.980Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:32:32.980Z - Sent initial instructions to client
+2024-06-26T11:32:32.982Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:32:33.494Z - New client connected
+2024-06-26T11:32:33.494Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:32:33.495Z - Sent initial instructions to client
+2024-06-26T11:32:33.498Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:32:33.503Z - New client connected
+2024-06-26T11:32:33.503Z - Sent IP address to client: {"message":"Client IP address: ::ffff:127.0.0.1"}
+2024-06-26T11:32:33.503Z - Sent initial instructions to client
+2024-06-26T11:32:33.506Z - {"type":"register","clientType":"user","name":"frontend"}
+2024-06-26T11:32:36.960Z - New client connected
+2024-06-26T11:32:36.960Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T11:32:36.961Z - Sent initial instructions to client
+2024-06-26T11:32:36.962Z - New client connected
+2024-06-26T11:32:36.962Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.98.24.84"}
+2024-06-26T11:32:36.963Z - Sent initial instructions to client
+2024-06-26T11:32:36.964Z - New client connected
+2024-06-26T11:32:36.965Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.73.174.57"}
+2024-06-26T11:32:36.965Z - Sent initial instructions to client
+2024-06-26T11:32:36.972Z - {"type":"register","clientType":"panel","name":"aval"}
+2024-06-26T11:32:36.974Z - {"type":"register","clientType":"panel","name":"indret"}
+2024-06-26T11:32:36.975Z - {"type":"register","clientType":"panel","name":"amont"}
+2024-06-26T11:35:00.373Z - Client disconnected
+2024-06-26T11:35:08.627Z - New client connected
+2024-06-26T11:35:08.627Z - Sent IP address to client: {"message":"Client IP address: ::ffff:100.91.190.62"}
+2024-06-26T11:35:08.627Z - Sent initial instructions to client
+2024-06-26T11:35:08.637Z - {"type":"register","clientType":"panel","name":"indret"}

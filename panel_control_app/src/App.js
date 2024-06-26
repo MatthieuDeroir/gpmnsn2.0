@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { WebSocketProvider } from './WebSocketContext';
 import PanelControl from './PanelControl';
 import HealthControl from './HealthControl';
-import AllPanel from './AllPanel'; // Importer le nouveau composant
+import AllPanel from './AllPanel';
 
 function App() {
-
+    const [heartbeatTimer, setHeartbeatTimer] = useState(15); // Initial state for the heartbeat timer
 
     return (
         <WebSocketProvider>
@@ -16,13 +16,12 @@ function App() {
                     <HealthControl />
                 </div>
                 <div className="panel-controls">
-                    {}
-                    <PanelControl name="indret" />
-                    <PanelControl name="aval" />
-                    <PanelControl name="amont" />
+                    <PanelControl name="indret" heartbeatTimer={heartbeatTimer} />
+                    <PanelControl name="aval" heartbeatTimer={heartbeatTimer} />
+                    <PanelControl name="amont" heartbeatTimer={heartbeatTimer} />
                 </div>
                 <div className="all-control">
-                    <AllPanel /> {/* Utiliser le nouveau composant */}
+                    <AllPanel heartbeatTimer={heartbeatTimer} setHeartbeatTimer={setHeartbeatTimer} />
                 </div>
             </div>
         </WebSocketProvider>

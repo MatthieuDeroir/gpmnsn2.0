@@ -4,7 +4,7 @@ const Logger = require('./logger');
 const HealthChecker = require('./healthChecker');
 const moment = require('moment');
 
-const HEARTBEAT_INTERVAL = 30000;  // 30 seconds
+const HEARTBEAT_INTERVAL = 5000;
 const STATUS_UPDATE_INTERVAL = 1000; // 1 second for status updates
 
 class WebSocketServer {
@@ -12,13 +12,14 @@ class WebSocketServer {
     this.expectedPanels = ['indret', 'aval', 'amont'];
     this.wss = new WebSocket.Server({ port: 8080 });
     this.clientManager = new ClientManager(WebSocket);
+    this.heartbeatInterval = HEARTBEAT_INTERVAL;
     this.setupServer();
   }
 
   setupServer() {
     this.wss.on('listening', () => {
       console.log('Server is running on port 8080');
-      setInterval(() => this.checkProblems(), HEARTBEAT_INTERVAL);
+      this.healthCheckIntervalId = setInterval(() => this.checkProblems(), this.heartbeatInterval);
       setInterval(() => this.sendStatusUpdates(), STATUS_UPDATE_INTERVAL);
     });
 
@@ -35,7 +36,23 @@ class WebSocketServer {
     const clientAddressMessage = JSON.stringify({ message: 'Client IP address: ' + ws._socket.remoteAddress });
     ws.send(clientAddressMessage);
     Logger.appendLog(`Sent IP address to client: ${clientAddressMessage}`);
-  }
+
+    // Send initial instructions immediately after the connection is established
+    this.sendInitialInstructions(ws);
+}
+
+
+sendInitialInstructions(ws) {
+  const panelSettings = this.clientManager.getPanelSettings();
+  const instructions = {
+      type: 'instruction',
+      panels: panelSettings
+  };
+  ws.send(JSON.stringify(instructions));
+  console.log(`Sent initial instructions to client: ${JSON.stringify(instructions)}`);
+  Logger.appendLog(`Sent initial instructions to client`);
+}
+
 
   handleMessage(ws, message) {
     console.log('Received from client: %s', message);
@@ -46,6 +63,10 @@ class WebSocketServer {
       ws.send(JSON.stringify({ error: 'Invalid JSON' }));
       Logger.appendLog('Invalid JSON received');
       return;
+    }
+
+    if (message.type === 'instruction' && message.heartbeatTimer) {
+      this.updateHeartbeatInterval(message.heartbeatTimer * 1000); // Convertir en millisecondes
     }
 
     if (message.type === 'register' || message.type === 'instruction' || message.type === 'maintenanceMode') {
@@ -62,14 +83,7 @@ class WebSocketServer {
         ws.send(JSON.stringify({ message: 'Registration successful' }));
         break;
       case 'heartbeat':
-        this.clientManager.updateClient(ws, {
-          lastHeartbeat: Date.now(),
-          state: message.state,
-          cpuTemp: message.cpuTemp,
-          isDoorOpen: message.isDoorOpen,
-          sectorStatus: message.sectorStatus,
-          maintenanceMode: message.maintenanceMode
-        });
+        this.clientManager.updateHeartbeat(ws, message);
         break;
       case 'maintenanceMode':
         this.clientManager.updateClient(ws, { maintenanceMode: message.state });
@@ -79,7 +93,8 @@ class WebSocketServer {
           this.clientManager.broadcastToAppropriateClients(JSON.stringify({
             type: 'instruction',
             to: 'panel',
-            instruction: message.instruction
+            instruction: message.instruction,
+            heartbeatTimer: message.heartbeatTimer,
           }), 'panel', message.name);
         } else {
           console.log('Invalid instruction');
@@ -96,6 +111,13 @@ class WebSocketServer {
     Logger.appendLog('Client disconnected');
   }
 
+  updateHeartbeatInterval(newInterval) {
+    clearInterval(this.healthCheckIntervalId); // Arrête l'ancien intervalle
+    this.heartbeatInterval = newInterval;
+    this.healthCheckIntervalId = setInterval(() => this.checkProblems(), this.heartbeatInterval); // Démarre un nouvel intervalle
+    console.log(`Heartbeat interval updated to ${this.heartbeatInterval}ms`);
+  }
+
   async checkProblems() {
     const allOk = await HealthChecker.checkProblems(this.clientManager.getClients(), this.clientManager.broadcastToAppropriateClients.bind(this.clientManager), this.expectedPanels);
     if (!allOk) {
@@ -108,7 +130,7 @@ class WebSocketServer {
 
     // Utilisez les dernières données des clients stockées dans ClientManager
     this.clientManager.getLastClientData().forEach(clientInfo => {
-      const isConnected = Date.now() - clientInfo.lastHeartbeat <= HEARTBEAT_INTERVAL * 2;
+      const isConnected = Date.now() - clientInfo.lastHeartbeat <= this.heartbeatInterval* 2;
       const lastHeartbeatTime = moment(clientInfo.lastHeartbeat);
       panelStatus[clientInfo.name] = {
         connected: isConnected,
@@ -154,6 +176,7 @@ class WebSocketServer {
     });
 
     const statusMessage = JSON.stringify({ type: 'status', panelStatus });
+    console.log(statusMessage)
     this.clientManager.broadcast(statusMessage);
   }
 }

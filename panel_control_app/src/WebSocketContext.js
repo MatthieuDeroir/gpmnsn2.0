@@ -31,7 +31,6 @@ export const WebSocketProvider = ({ children }) => {
             };
 
             ws.onmessage = (message) => {
-                console.log('WebSocket message received', message);
                 const data = JSON.parse(message.data);
                 if (data.type === 'status') {
                     setPanelStatus(data.panelStatus);

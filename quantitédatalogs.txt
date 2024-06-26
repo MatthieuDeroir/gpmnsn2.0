@@ -1,0 +1,9 @@
+Une entrées logs se produit dans plusieurs cas de figures :
+- 2 fois par jour (à 8h et 20h) afin de faire l'état  des panneaux ;
+- à chaque fois qu'il y a un changement d'état du capteur ouverture porte ;
+- à chaque fois qu'il y a un changement d'état du capteur secteur ;
+- à chaque fois qu'il y a un changement d'état du bouton de maintenance ;
+- à chaque fois qu'un des panneau est allumé ou éteint ;
+- à chaque fois qu'il y a une connexion ou déconnexion d'un panneau ou d'un utilisateur ;
+
+
