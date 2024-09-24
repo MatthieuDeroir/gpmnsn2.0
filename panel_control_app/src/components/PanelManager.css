@@ -1,0 +1,30 @@
+/* Styling for the panel control area */
+.panel-controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background for the panel area */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between this and the all-control area */
+}
+
+/* Styling for the all-control area */
+.all-control {
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* General styling when loading card is displayed */
+.loading-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; /* Larger padding for emphasis on the loading state */
+    background-color: #ececec; /* Slightly different grey to indicate loading state */
+    border-radius: 8px;
+    font-size: 18px; /* Larger font for visibility */
+    color: #333; /* Dark grey text for readability */
+}

@@ -1,0 +1,136 @@
+/* LogPage.css */
+
+.log-page {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .log-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Updated the container to include both search and panel selector */
+  .control-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Same style for search input */
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the panel selector */
+  .panel-selector {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .log-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  .log-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .log-table th, .log-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .log-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .log-table td {
+    text-align: left;
+    word-wrap: break-word;
+  }
+  
+  /* Row colors based on conditions */
+.log-red {
+  background-color: #ff3f3f; /*  Red */
+}
+
+.log-light-red {
+  background-color: #ffcccc; /* Light Red */
+}
+
+.log-orange {
+  background-color: #ffcc99; /* Light Orange */
+}
+
+.log-blue {
+  background-color: #cce5ff; /* Light Blue */
+}
+
+.log-green {
+  background-color: #ccffcc; /* Light Green */
+}
+
+.log-grey {
+  background-color: #f0f0f0; /* Light Grey */
+}
+/* Toggle Container */
+.date-toggle-container {
+  margin-bottom: 20px;
+}
+
+.date-toggle-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.date-toggle-header span {
+  font-size: 1.2rem;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.arrow-down {
+  transform: rotate(0deg);
+}
+
+/* Hidden Date Picker */
+.date-picker-container {
+  margin-top: 10px;
+}

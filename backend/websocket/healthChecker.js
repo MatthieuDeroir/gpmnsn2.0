@@ -37,7 +37,7 @@ class HealthChecker {
     clients.forEach(clientInfo => {
       if (clientInfo.clientType === 'panel') {
         connectedPanels.add(clientInfo.name);
-        if (now - clientInfo.lastHeartbeat > HEARTBEAT_INTERVAL * 2 || !clientInfo.sectorStatus || !clientInfo.state) {
+        if (now - clientInfo.lastHeartbeat > HEARTBEAT_INTERVAL * 6 || !clientInfo.sectorStatus || !clientInfo.state) {
           problems[clientInfo.name] = false;
           allPanelsOk = false;
         } else {
@@ -65,7 +65,7 @@ class HealthChecker {
       broadcastToAppropriateClients(JSON.stringify({ type: 'instruction', to: 'panel', instruction: 'off' }), 'panel');
     }
 
-    // console.log(`Check result - Frontend: ${frontendOk}, Database: ${databaseOk}, Panel Problems: ${JSON.stringify(problems)}`);
+
     return frontendOk && databaseOk && allPanelsOk;
   }
 }

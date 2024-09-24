@@ -1,0 +1,457 @@
+.panel-controls {
+  background-color: #333;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Adjust gap as needed */
+}
+
+/* General Panel Control Styles */
+.panel-control {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 27vw; /* Increased width to accommodate buttons */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+/* Flex container for button alignment */
+.button-group {
+  display: flex;
+  margin-top: 20px;  
+  justify-content: space-between;
+  gap: 10px; /* Space between buttons */
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 14px; /* Adjusted font size */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0; /* Remove margins to avoid overflow */
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+  border-radius: 5px;
+  max-width: 3vw;
+}
+
+.btn-green {
+  color: green;
+  border-color: green;
+  background-color: white;
+}
+
+.btn-green:hover {
+  color: rgb(252, 252, 252);
+  border-color: green;
+  background-color: green;
+}
+
+.btn-green-active {
+  background-color: green;
+  color: white;
+}
+
+.btn-green-active:hover {
+  color: green;
+  border-color: green;
+  background-color: white;
+}
+
+.btn-red {
+  color: rgb(138, 0, 0);
+  border-color: rgb(138, 0, 0);
+  background-color: white;
+}
+
+.btn-red:hover {
+  color: rgb(255, 255, 255);
+  border-color: rgb(138, 0, 0);
+  background-color: rgb(138, 0, 0);
+}
+
+.btn-red-active {
+  background-color: rgb(128, 0, 0);
+  color: white;
+}
+
+.btn-red-active:hover {
+  border-color: rgb(128, 0, 0);
+  background-color: white;
+  color: rgb(128, 0, 0);
+}
+
+.btn-yellow {
+  color: black;
+  border-color: yellow;
+  background-color: yellow;
+}
+
+.btn-blue {
+  color: white;
+  border-color: blue;
+  background-color: blue;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  background-color: #f8f8f8
+}
+
+.icon-button {
+  background: none;
+  border: 2px solid;
+  border-radius: 5px;
+  max-width: 3vw;
+  height: auto;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+/* .restart-button, .refresh-button {
+  width: 40px; /* Adjust width */
+/*  height: 40px; /* Adjust height */
+/*} */
+
+.restart-button {
+  border-color: orange;
+  color: orange;
+  background-color: rgb(255, 255, 255);
+}
+
+.restart-button:hover {
+  background-color: orange;
+  color: black;
+}
+
+.refresh-button {
+  border-color: blue;
+  color: blue;
+  background-color: white;
+}
+
+.refresh-button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.green-circle, .red-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-circle {
+  color: green;
+}
+
+.red-circle {
+  color: red;
+}
+
+
+/* Other existing CSS remains unchanged */
+.panel-control.red {
+  background-color: red;
+}
+
+.panel-control.dark {
+  background-color: #a0a0a0;
+}
+
+.panel-control.bright {
+  background-color: #fff;
+  animation: blink-green 2s linear infinite;
+}
+
+.panel-on {
+  animation: blink-green 2s linear infinite;
+}
+
+.panel-control.maintenance {
+  background-color: orange;
+  animation: blink-slow 2s linear infinite;
+}
+
+.panel-control.problem {
+  background-color: #ffe6e6;
+}
+
+.panel-control.dysfunction {
+  background-color: #ff4c4c;
+  animation: blink-red 1.5s linear infinite;
+}
+
+/* Banner Styles */
+.maintenance-banner,
+.dysfunction-banner,
+.rebooting-banner,
+.off-banner,
+.door-open-banner {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.on-banner {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.on-banner {
+  background-color: rgb(0, 255, 64);
+  animation: blink-green-f 5s linear infinite;
+}
+
+.off-banner {
+  background-color: rgb(90, 0, 0);
+}
+
+.maintenance-banner {
+  background-color: rgb(184, 110, 0);
+  animation: blink-slow 1.6s linear infinite;
+}
+
+.dysfunction-banner {
+  background-color: rgba(255, 76, 76, 0.85);
+  animation: blink-red 1.7s linear infinite;
+}
+
+.rebooting-banner {
+  background-color: rgba(70, 70, 70, 0.85);
+  animation: blink-grey 1.7s linear infinite;
+}
+
+.door-open-banner {
+  background-color: #59c8ff;
+  animation: blink-blue 2s ease-in-out infinite;
+}
+
+/* Keyframes for Blinking Effects */
+@keyframes blink-slow {
+  0% { background-color: rgb(255, 203, 107); }
+  50% { background-color: orange; }
+  100% { background-color: rgb(255, 203, 107) }
+}
+
+@keyframes blink-d-red {
+  0% { background-color: #ff8181; }
+  50% { background-color: #ff4c4c; }
+  100% { background-color: #ff8181; }
+}
+
+@keyframes blink-blue {
+  0% { background-color: #cceeff; }
+  50% { background-color: #99ddff; }
+  100% { background-color: #cceeff; }
+}
+
+@keyframes blink-blue {
+  0% { background-color: #c9c9c9; }
+  50% { background-color: #6e6e6e; }
+  100% { background-color: #d6d6d6; }
+}
+
+@keyframes blink-green {
+  0% { background-color: white; color: rgba(0, 255, 0, 0.2); }
+  50% { background-color: rgba(21, 255, 0, 0.2); color: white; }
+  100% { background-color: white; color: rgba(0, 255, 0, 0.2); }
+}
+
+@keyframes blink-green-f {
+  0% { background-color: white; color: rgba(0, 136, 0, 1); }
+  50% { background-color: rgba(12, 122, 0, 1); color: white; }
+  100% { background-color: white; color: rgba(0, 143, 0, 1); }
+}
+
+@keyframes blink-green-circle {
+  0% { color: rgba(0, 136, 0); }
+  50% { color: rgb(0, 197, 0); }
+  100% { color: rgba(0, 143, 0); }
+}
+
+@keyframes blink-red {
+  0% { background-color: white; color: red; }
+  50% { background-color: red; color: white; }
+  100% { background-color: white; color: red; }
+}
+
+/* Blinking Text Classes */
+.blinking-text-green {
+  animation: blink-green 1s linear infinite;
+}
+
+.blinking-text-red {
+  animation: blink-red 1s linear infinite;
+}
+
+/* Focus and Hover Effects */
+.panel-control:focus-within,
+.panel-control:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .panel-control {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Accessibility Improvements for Focusable Elements */
+.panel-control *:focus {
+  outline: 2px solid blue;
+}
+
+/* Image Style */
+img.greyed-out {
+  filter: grayscale(80%);
+}
+
+/* Style pour panel-info pour améliorer la présentation sous forme de tableau */
+/* Style for panel-info to improve tabular presentation */
+ .panel-info {
+  background-color: #e6e6e6;  /* Slightly darker background color */
+  border-radius: 8px;         /* Rounded corners for style */
+  padding: 20px;    
+  margin-bottom: 20px;          /* Increased padding for better space around the text */
+           /* Increased top margin to separate from button group */
+  display: grid;              /* Using Grid for tabular layout */
+  grid-template-columns: 1fr 2fr; /* Two columns, one for labels, one for values */
+  gap: 10px;                  /* Spacing between lines */
+  font-size: 14px;            /* Adjusted font size */
+} 
+
+/* Style pour les éléments <p> dans .panel-info pour mieux aligner les textes */
+.panel-info p {
+  margin: 0;                  /* Enlever la marge par défaut des <p> */
+  display: contents;  
+  color: black;        /* Permet aux éléments enfants de s'afficher comme contenu direct */
+}
+
+/* Augmenter la visibilité des titres forts */
+.panel-info strong {
+  color: #333;                /* Couleur plus sombre pour les titres */
+  font-weight: bold;          /* Rendre le texte en gras */
+}
+
+/* Améliorer la lisibilité avec l'espacement des lignes */
+.panel-info p {
+  line-height: 1.5;           /* Espacement des lignes pour une meilleure lecture */
+}
+
+/* Exemple d'utilisation de grille pour les valeurs et les étiquettes */
+.panel-info p::before {
+  content: attr(data-label); /* Utiliser l'attribut data-label pour générer des étiquettes automatiques */
+  font-weight: bold;         /* En gras pour les étiquettes */
+  margin-right: 5px;         /* Espace entre l'étiquette et la valeur */
+}
+
+/* Utilisation de la grille pour l'alignement */
+.panel-info img {
+  grid-column: 1 / span 2; /* Faire en sorte que l'image s'étende sur deux colonnes */
+  justify-self: center;    /* Centrer l'image horizontalement */
+}
+
+.panel-info h3 {
+  grid-column: 1 / span 2; /* Faire en sorte que l'image s'étende sur deux colonnes */
+  justify-self: center;    /* Centrer l'image horizontalement */
+}
+
+/* Style pour le titre du panneau */
+.panel-control h3 {
+  font-size: 20px;            /* Taille de la police plus grande */
+  font-weight: bold;          /* Rendre le texte en gras */
+  color: #333;                /* Couleur foncée pour un contraste élevé */
+  padding: 10px;              /* Padding pour plus de respiration */
+  border-radius: 5px;         /* Bordures arrondies */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile pour le relief */
+  text-align: center;         /* Centrage du texte */
+  margin: -20px -20px 10px -20px; /* Marge négative pour chevaucher sur le fond de la carte */
+}
+
+/* Style pour l'indicateur de l'état (cercle) */
+.green-circle, .red-circle {
+  font-size: 32px;            /* Taille de police ajustée pour l'icône */
+  vertical-align: middle;     /* Alignement vertical avec le texte */
+  margin-right: 5px;          /* Espace entre l'icône et le texte */
+}
+
+.panel-info {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel-info:hover {
+  transform: translateY(-4px);
+  background: #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-header h3 {
+  flex: 1;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.panel-image {
+  width: 40px;
+  height: 40px;
+}
+
+.panel-image.greyed-out {
+  opacity: 0.5;
+}
+
+.panel-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-item {
+  flex: 1 1 50%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-item span:first-child {
+  font-weight: bold;
+}
+
+.blinking-green {
+  animation: blinkingGreen 1s infinite;
+}
+
+@keyframes blinkingGreen {
+  0% { color: #000; }
+  50% { color: #00ff00; }
+  100% { color: #000; }
+}
+

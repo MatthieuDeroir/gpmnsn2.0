@@ -27,94 +27,151 @@ class WebSocketServer {
   }
 
   handleConnection(ws) {
-    console.log('New client connected');
-    Logger.appendLog('New client connected');
 
-    ws.on('message', message => this.handleMessage(ws, message));
+
+    ws.on('message', (message) => {
+      this.handleMessage(ws, message); // Use handleMessage to process the message
+    
+    });
+    
     ws.on('close', () => this.handleClose(ws));
 
     const clientAddressMessage = JSON.stringify({ message: 'Client IP address: ' + ws._socket.remoteAddress });
     ws.send(clientAddressMessage);
-    Logger.appendLog(`Sent IP address to client: ${clientAddressMessage}`);
-
     // Send initial instructions immediately after the connection is established
     this.sendInitialInstructions(ws);
-}
-
-
-sendInitialInstructions(ws) {
-  const panelSettings = this.clientManager.getPanelSettings();
-  const instructions = {
-      type: 'instruction',
-      panels: panelSettings
-  };
-  ws.send(JSON.stringify(instructions));
-  console.log(`Sent initial instructions to client: ${JSON.stringify(instructions)}`);
-  Logger.appendLog(`Sent initial instructions to client`);
-}
-
+  }
 
   handleMessage(ws, message) {
-    console.log('Received from client: %s', message);
     try {
-      message = JSON.parse(message);
+        message = JSON.parse(message);
     } catch (e) {
-      console.log('Invalid JSON');
-      ws.send(JSON.stringify({ error: 'Invalid JSON' }));
-      Logger.appendLog('Invalid JSON received');
-      return;
+        console.log('Invalid JSON');
+        ws.send(JSON.stringify({ error: 'Invalid JSON' }));
+        Logger.appendLog('Unknown Panel', 'Error', { error: 'Invalid JSON' });
+        return;
     }
 
-    if (message.type === 'instruction' && message.heartbeatTimer) {
-      this.updateHeartbeatInterval(message.heartbeatTimer * 1000); // Convertir en millisecondes
+    // Process the message types
+    if (message.type != 'heartbeat') {
+        console.log('Received message:', message);
     }
-
-    if (message.type === 'register' || message.type === 'instruction' || message.type === 'maintenanceMode') {
-      Logger.appendLog(`${JSON.stringify(message)}`);
-    }
-
+    
     switch (message.type) {
-      case 'register':
-        this.clientManager.addClient(ws, {
-          clientType: message.clientType,
-          name: message.name,
-          lastHeartbeat: Date.now()
-        });
-        ws.send(JSON.stringify({ message: 'Registration successful' }));
-        break;
-      case 'heartbeat':
-        this.clientManager.updateHeartbeat(ws, message);
-        break;
-      case 'maintenanceMode':
-        this.clientManager.updateClient(ws, { maintenanceMode: message.state });
-        break;
-      case 'instruction':
-        if (message.to === 'panel' && (message.instruction === 'on' || message.instruction === 'off')) {
-          this.clientManager.broadcastToAppropriateClients(JSON.stringify({
-            type: 'instruction',
-            to: 'panel',
-            instruction: message.instruction,
-            heartbeatTimer: message.heartbeatTimer,
-          }), 'panel', message.name);
-        } else {
-          console.log('Invalid instruction');
-        }
-        break;
-      default:
-        console.log('Unknown message type');
+        case 'reboot':
+          if (message.to === 'panel') {
+            this.clientManager.broadcastToAppropriateClients(JSON.stringify({
+                type: 'instruction',
+                to: 'panel',
+                instruction: message.instruction,
+                heartbeatTimer: message.heartbeatTimer,
+            }), 'panel', message.name);
+
+            // Log the instruction with role and panel information
+            Logger.appendLog(message.name, 'Instruction Sent', {
+                instruction: "reboot",
+                role: message.from,  // Include user role
+                heartbeatTimer: message.heartbeatTimer,
+            });
+            } else {
+                console.log('Invalid instruction');
+            }
+            break;
+        case 'refresh':
+          if (message.to === 'panel') {
+            this.clientManager.broadcastToAppropriateClients(JSON.stringify({
+                type: 'instruction',
+                to: 'panel',
+                instruction: message.instruction,
+                heartbeatTimer: message.heartbeatTimer,
+            }), 'panel', message.name);
+
+            // Log the instruction with role and panel information
+            Logger.appendLog(message.name, 'Instruction Sent', {
+                instruction: "refresh",
+                role: message.from,  // Include user role
+                heartbeatTimer: message.heartbeatTimer,
+            });
+            } else {
+                console.log('Invalid instruction');
+            }
+            break;
+        case 'instruction':
+            if (message.to === 'panel') {
+                this.clientManager.broadcastToAppropriateClients(JSON.stringify({
+                    type: 'instruction',
+                    to: 'panel',
+                    instruction: message.instruction,
+                    heartbeatTimer: message.heartbeatTimer,
+                }), 'panel', message.name);
+
+                // Log the instruction with role and panel information
+                Logger.appendLog(message.name, 'Instruction Sent', {
+                    instruction: message.instruction,
+                    role: message.from,  // Include user role
+                    heartbeatTimer: message.heartbeatTimer,
+                });
+            } else {
+                console.log('Invalid instruction');
+            }
+            break;
+        case 'register':
+            console.log('Received registration:', message);
+            this.clientManager.addClient(ws, {
+                clientType: message.clientType,
+                name: message.name,
+                lastHeartbeat: Date.now()
+            });
+            this.clientManager.broadcastToAppropriateClients(JSON.stringify({
+                type: 'panel_registered',
+                name: message.name
+            }), 'user', "frontend");
+
+            // Log registration event
+            Logger.appendLog(message.name, 'Register', { panelName: message.name, role: message.from });
+            break;
+        case 'heartbeat':
+            this.clientManager.updateHeartbeat(ws, message);
+            // console.log(this.clientManager.getClients())
+
+            Logger.appendLog(message.name, 'Heartbeat', message);
+            break;
+        case 'maintenanceMode':
+            this.clientManager.updateClient(ws, { maintenanceMode: message.state });
+            Logger.appendLog(message.name, 'Maintenance Mode', { state: message.state, role: message.from });
+            break;
+        case 'logs':
+            const logs = Logger.getLogs();
+            ws.send(JSON.stringify({ type: 'logs', logs }));
+            break;
+        default:
+            console.log('Unknown message type: ', message.type);
+            Logger.appendLog(message.name || 'Unknown Panel', `Unknown Event: ${message.type}`, message);
     }
-  }
+
+
+}
+
 
   handleClose(ws) {
     this.clientManager.removeClient(ws);
     console.log('Client disconnected');
-    Logger.appendLog('Client disconnected');
+    Logger.appendLog('Unknown Panel', 'Client disconnected');
+  }
+
+  sendInitialInstructions(ws) {
+    const panelSettings = this.clientManager.getPanelSettings();
+    const instructions = {
+      type: 'instruction',
+      panels: panelSettings
+    };
+    ws.send(JSON.stringify(instructions));
   }
 
   updateHeartbeatInterval(newInterval) {
-    clearInterval(this.healthCheckIntervalId); // Arrête l'ancien intervalle
+    clearInterval(this.healthCheckIntervalId); // Stop the old interval
     this.heartbeatInterval = newInterval;
-    this.healthCheckIntervalId = setInterval(() => this.checkProblems(), this.heartbeatInterval); // Démarre un nouvel intervalle
+    this.healthCheckIntervalId = setInterval(() => this.checkProblems(), this.heartbeatInterval); // Start a new interval
     console.log(`Heartbeat interval updated to ${this.heartbeatInterval}ms`);
   }
 
@@ -128,9 +185,8 @@ sendInitialInstructions(ws) {
   sendStatusUpdates() {
     const panelStatus = {};
 
-    // Utilisez les dernières données des clients stockées dans ClientManager
     this.clientManager.getLastClientData().forEach(clientInfo => {
-      const isConnected = Date.now() - clientInfo.lastHeartbeat <= this.heartbeatInterval* 2;
+      const isConnected = Date.now() - clientInfo.lastHeartbeat <= this.heartbeatInterval * 6;
       const lastHeartbeatTime = moment(clientInfo.lastHeartbeat);
       panelStatus[clientInfo.name] = {
         connected: isConnected,
@@ -139,12 +195,11 @@ sendInitialInstructions(ws) {
         isDoorOpen: clientInfo.isDoorOpen,
         sectorStatus: clientInfo.sectorStatus,
         maintenanceMode: clientInfo.maintenanceMode,
-        lastHeartbeat:Math.floor((Date.now() - lastHeartbeatTime) / 1000), // Relative time
-        lastHeartbeatTimestamp: lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss') // Full timestamp
+        lastHeartbeat: Math.floor((Date.now() - lastHeartbeatTime) / 1000),
+        lastHeartbeatTimestamp: lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss')
       };
     });
 
-    // Initialisez les panneaux attendus avec les dernières données connues ou avec des valeurs par défaut uniquement s'ils ne sont pas déjà définis
     this.expectedPanels.forEach(panel => {
       if (!panelStatus[panel]) {
         const lastClientInfo = this.clientManager.getLastClientData().find(info => info.name === panel);
@@ -157,8 +212,8 @@ sendInitialInstructions(ws) {
             isDoorOpen: lastClientInfo.isDoorOpen,
             sectorStatus: lastClientInfo.sectorStatus,
             maintenanceMode: lastClientInfo.maintenanceMode,
-            lastHeartbeat: Math.floor((Date.now() - lastHeartbeatTime) / 1000), // Relative time
-            lastHeartbeatTimestamp: lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss') // Full timestamp
+            lastHeartbeat: Math.floor((Date.now() - lastHeartbeatTime) / 1000),
+            lastHeartbeatTimestamp: lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss')
           };
         } else {
           panelStatus[panel] = {
@@ -176,8 +231,8 @@ sendInitialInstructions(ws) {
     });
 
     const statusMessage = JSON.stringify({ type: 'status', panelStatus });
-    console.log(statusMessage)
     this.clientManager.broadcast(statusMessage);
+
   }
 }
 

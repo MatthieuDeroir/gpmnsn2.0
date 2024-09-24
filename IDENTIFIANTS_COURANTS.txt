@@ -1,0 +1,10 @@
+identifiants serveur et cartes :
+
+* Raspberry Pi 3/4/5
+mderoir:mderoir
+STRAMATEL:stramatel
+stramatel:stramatel
+* Asus Tinkerboard 2S
+linaro:linaro
+
+
