@@ -34,27 +34,44 @@ app.get('/logs/:type/:value', (req, res) => {
     const limit = parseInt(req.query.limit) || 100;
     const startDate = req.query.startDate ? new Date(req.query.startDate) : new Date(0);
     const endDate = req.query.endDate ? new Date(req.query.endDate) : new Date();
+    const searchQuery = req.query.search || ''; // Search query from frontend
     endDate.setHours(23, 59, 59, 999); // Ensure we include the full day
-
+  
     if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
-        return res.status(400).json({ error: "Invalid date format" });
+      return res.status(400).json({ error: "Invalid date format" });
     }
-
+  
     try {
-        let logData;
-        if (type === 'panel') {
-            logData = Logger.getPanelLogs(value, page, limit, startDate, endDate);
-        } else if (type === 'role') {
-            logData = Logger.getRoleLogs(value, page, limit, startDate, endDate);
-        } else {
-            return res.status(400).json({ error: 'Invalid type, must be "panel" or "role"' });
-        }
-        res.json(logData);
+      let logData;
+      if (type === 'panel') {
+        logData = Logger.getPanelLogs(value, page, limit, startDate, endDate, searchQuery);
+      } else if (type === 'role') {
+        logData = Logger.getRoleLogs(value, page, limit, startDate, endDate, searchQuery);
+      } else {
+        return res.status(400).json({ error: 'Invalid type, must be "panel" or "role"' });
+      }
+      res.json(logData);
     } catch (error) {
-        console.error('Error fetching logs:', error);
-        res.status(500).json({ error: 'Internal server error' });
+      console.error('Error fetching logs:', error);
+      res.status(500).json({ error: 'Internal server error' });
     }
-});
+  });
+
+  app.get('/logs/search', (req, res) => {
+    const query = req.query.query.toLowerCase(); // Get the search query
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 100;
+  
+    try {
+      const logData = Logger.searchLogs(query, page, limit);
+      res.json(logData);
+    } catch (error) {
+      console.error('Error searching logs:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+  
+  
 
 
 

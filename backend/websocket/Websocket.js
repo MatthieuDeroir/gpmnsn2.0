@@ -13,6 +13,10 @@ class WebSocketServer {
     this.wss = new WebSocket.Server({ port: 8080 });
     this.clientManager = new ClientManager(WebSocket);
     this.heartbeatInterval = HEARTBEAT_INTERVAL;
+    this.panelPreviousStatus = {}; // Initialize previous status tracking
+    this.expectedPanels.forEach(panel => {
+      this.panelPreviousStatus[panel] = 'offline';
+    });
     this.setupServer();
   }
 
@@ -27,133 +31,110 @@ class WebSocketServer {
   }
 
   handleConnection(ws) {
-
-
     ws.on('message', (message) => {
-      this.handleMessage(ws, message); // Use handleMessage to process the message
-    
+      this.handleMessage(ws, message);
     });
-    
+
     ws.on('close', () => this.handleClose(ws));
 
     const clientAddressMessage = JSON.stringify({ message: 'Client IP address: ' + ws._socket.remoteAddress });
     ws.send(clientAddressMessage);
+
     // Send initial instructions immediately after the connection is established
     this.sendInitialInstructions(ws);
   }
 
   handleMessage(ws, message) {
     try {
-        message = JSON.parse(message);
+      message = JSON.parse(message);
     } catch (e) {
-        console.log('Invalid JSON');
-        ws.send(JSON.stringify({ error: 'Invalid JSON' }));
-        Logger.appendLog('Unknown Panel', 'Error', { error: 'Invalid JSON' });
-        return;
+      console.log('Invalid JSON');
+      ws.send(JSON.stringify({ error: 'Invalid JSON' }));
+      Logger.appendLog('Unknown Panel', 'Error', { error: 'Invalid JSON' });
+      return;
     }
 
     // Process the message types
     if (message.type != 'heartbeat') {
-        console.log('Received message:', message);
+      console.log('Received message:', message);
     }
-    
+
     switch (message.type) {
-        case 'reboot':
-          if (message.to === 'panel') {
-            this.clientManager.broadcastToAppropriateClients(JSON.stringify({
-                type: 'instruction',
-                to: 'panel',
-                instruction: message.instruction,
-                heartbeatTimer: message.heartbeatTimer,
-            }), 'panel', message.name);
+      case 'reboot':
+        // ... existing code ...
+        break;
+      case 'refresh':
+        // ... existing code ...
+        break;
+      case 'instruction':
+        // ... existing code ...
+        break;
+      case 'register':
+        console.log('Received registration:', message);
 
-            // Log the instruction with role and panel information
-            Logger.appendLog(message.name, 'Instruction Sent', {
-                instruction: "reboot",
-                role: message.from,  // Include user role
-                heartbeatTimer: message.heartbeatTimer,
-            });
-            } else {
-                console.log('Invalid instruction');
-            }
-            break;
-        case 'refresh':
-          if (message.to === 'panel') {
-            this.clientManager.broadcastToAppropriateClients(JSON.stringify({
-                type: 'instruction',
-                to: 'panel',
-                instruction: message.instruction,
-                heartbeatTimer: message.heartbeatTimer,
-            }), 'panel', message.name);
+        // Check if the clientType is "user"
+        if (message.clientType === 'user') {
+          console.log('Removing all other user clients before registering the new user');
+          this.clientManager.removeClientsByType('user', ws);
+        }
 
-            // Log the instruction with role and panel information
-            Logger.appendLog(message.name, 'Instruction Sent', {
-                instruction: "refresh",
-                role: message.from,  // Include user role
-                heartbeatTimer: message.heartbeatTimer,
-            });
-            } else {
-                console.log('Invalid instruction');
-            }
-            break;
-        case 'instruction':
-            if (message.to === 'panel') {
-                this.clientManager.broadcastToAppropriateClients(JSON.stringify({
-                    type: 'instruction',
-                    to: 'panel',
-                    instruction: message.instruction,
-                    heartbeatTimer: message.heartbeatTimer,
-                }), 'panel', message.name);
+        // Register the new client
+        this.clientManager.addClient(ws, {
+          clientType: message.clientType,
+          name: message.name,
+          lastHeartbeat: Date.now()
+        });
 
-                // Log the instruction with role and panel information
-                Logger.appendLog(message.name, 'Instruction Sent', {
-                    instruction: message.instruction,
-                    role: message.from,  // Include user role
-                    heartbeatTimer: message.heartbeatTimer,
-                });
-            } else {
-                console.log('Invalid instruction');
-            }
-            break;
-        case 'register':
-            console.log('Received registration:', message);
-            this.clientManager.addClient(ws, {
-                clientType: message.clientType,
-                name: message.name,
-                lastHeartbeat: Date.now()
-            });
-            this.clientManager.broadcastToAppropriateClients(JSON.stringify({
-                type: 'panel_registered',
-                name: message.name
-            }), 'user', "frontend");
+        // Set initial status to 'online' and log the status change
+        const previousStatus = this.panelPreviousStatus[message.name];
+        if (previousStatus !== 'online') {
+          Logger.appendLog(message.name, 'Status Change', { status: 'online' });
+          this.panelPreviousStatus[message.name] = 'online';
+        }
 
-            // Log registration event
-            Logger.appendLog(message.name, 'Register', { panelName: message.name, role: message.from });
-            break;
-        case 'heartbeat':
-            this.clientManager.updateHeartbeat(ws, message);
-            // console.log(this.clientManager.getClients())
+        this.clientManager.broadcastToAppropriateClients(JSON.stringify({
+          type: 'panel_registered',
+          name: message.name
+        }), 'user', "frontend");
 
-            Logger.appendLog(message.name, 'Heartbeat', message);
-            break;
-        case 'maintenanceMode':
-            this.clientManager.updateClient(ws, { maintenanceMode: message.state });
-            Logger.appendLog(message.name, 'Maintenance Mode', { state: message.state, role: message.from });
-            break;
-        case 'logs':
-            const logs = Logger.getLogs();
-            ws.send(JSON.stringify({ type: 'logs', logs }));
-            break;
-        default:
-            console.log('Unknown message type: ', message.type);
-            Logger.appendLog(message.name || 'Unknown Panel', `Unknown Event: ${message.type}`, message);
+        // Log registration event
+        Logger.appendLog(message.name, 'Register', { panelName: message.name, role: message.from });
+        break;
+
+      case 'heartbeat':
+        this.clientManager.updateHeartbeat(ws, message);
+        Logger.appendLog(message.name, 'Heartbeat', message);
+        break;
+      case 'maintenanceMode':
+        this.clientManager.updateClient(ws, { maintenanceMode: message.state });
+        Logger.appendLog(message.name, 'Maintenance Mode', { state: message.state, role: message.from });
+        break;
+      case 'logs':
+        const logs = Logger.getLogs();
+        ws.send(JSON.stringify({ type: 'logs', logs }));
+        break;
+      case 'ping':
+        ws.send(JSON.stringify({ type: 'pong' }));
+        break;
+      default:
+        console.log('Unknown message type: ', message.type);
+        Logger.appendLog(message.name || 'Unknown Panel', `Unknown Event: ${message.type}`, message);
     }
-
-
-}
-
+  }
 
   handleClose(ws) {
+    const clientInfo = this.clientManager.getClientInfo(ws);
+    if (clientInfo && clientInfo.name) {
+      const panelName = clientInfo.name;
+
+      // Update status to 'offline' and log the status change
+      const previousStatus = this.panelPreviousStatus[panelName];
+      if (previousStatus !== 'offline') {
+        Logger.appendLog(panelName, 'Status Change', { status: 'offline' });
+        this.panelPreviousStatus[panelName] = 'offline';
+      }
+    }
+
     this.clientManager.removeClient(ws);
     console.log('Client disconnected');
     Logger.appendLog('Unknown Panel', 'Client disconnected');
@@ -186,9 +167,24 @@ class WebSocketServer {
     const panelStatus = {};
 
     this.clientManager.getLastClientData().forEach(clientInfo => {
+      const panelName = clientInfo.name;
       const isConnected = Date.now() - clientInfo.lastHeartbeat <= this.heartbeatInterval * 6;
       const lastHeartbeatTime = moment(clientInfo.lastHeartbeat);
-      panelStatus[clientInfo.name] = {
+
+      // Determine the current status
+      const currentStatus = isConnected ? 'online' : 'offline';
+
+      // Check if the status has changed
+      const previousStatus = this.panelPreviousStatus[panelName];
+      if (previousStatus !== currentStatus) {
+        // Status has changed, log it
+        Logger.appendLog(panelName, 'Status Change', { status: currentStatus });
+        // Update the previous status
+        this.panelPreviousStatus[panelName] = currentStatus;
+      }
+
+      panelStatus[panelName] = {
+        status: currentStatus, // Include the status field
         connected: isConnected,
         state: clientInfo.state,
         cpuTemp: clientInfo.cpuTemp,
@@ -200,39 +196,40 @@ class WebSocketServer {
       };
     });
 
+    // Handle expected panels that might not be in the clientManager
     this.expectedPanels.forEach(panel => {
       if (!panelStatus[panel]) {
         const lastClientInfo = this.clientManager.getLastClientData().find(info => info.name === panel);
-        if (lastClientInfo) {
-          const lastHeartbeatTime = moment(lastClientInfo.lastHeartbeat);
-          panelStatus[panel] = {
-            connected: false,
-            state: lastClientInfo.state,
-            cpuTemp: lastClientInfo.cpuTemp,
-            isDoorOpen: lastClientInfo.isDoorOpen,
-            sectorStatus: lastClientInfo.sectorStatus,
-            maintenanceMode: lastClientInfo.maintenanceMode,
-            lastHeartbeat: Math.floor((Date.now() - lastHeartbeatTime) / 1000),
-            lastHeartbeatTimestamp: lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss')
-          };
-        } else {
-          panelStatus[panel] = {
-            connected: false,
-            state: null,
-            cpuTemp: null,
-            isDoorOpen: null,
-            sectorStatus: null,
-            maintenanceMode: null,
-            lastHeartbeat: null,
-            lastHeartbeatTimestamp: null
-          };
+        const lastHeartbeatTime = lastClientInfo ? moment(lastClientInfo.lastHeartbeat) : null;
+
+        // Determine the current status
+        const currentStatus = 'offline';
+
+        // Check if the status has changed
+        const previousStatus = this.panelPreviousStatus[panel];
+        if (previousStatus !== currentStatus) {
+          // Status has changed, log it
+          Logger.appendLog(panel, 'Status Change', { status: currentStatus });
+          // Update the previous status
+          this.panelPreviousStatus[panel] = currentStatus;
         }
+
+        panelStatus[panel] = {
+          status: currentStatus, // Include the status field
+          connected: false,
+          state: lastClientInfo ? lastClientInfo.state : null,
+          cpuTemp: lastClientInfo ? lastClientInfo.cpuTemp : null,
+          isDoorOpen: lastClientInfo ? lastClientInfo.isDoorOpen : null,
+          sectorStatus: lastClientInfo ? lastClientInfo.sectorStatus : null,
+          maintenanceMode: lastClientInfo ? lastClientInfo.maintenanceMode : null,
+          lastHeartbeat: lastHeartbeatTime ? Math.floor((Date.now() - lastHeartbeatTime) / 1000) : null,
+          lastHeartbeatTimestamp: lastHeartbeatTime ? lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss') : null
+        };
       }
     });
 
     const statusMessage = JSON.stringify({ type: 'status', panelStatus });
     this.clientManager.broadcast(statusMessage);
-
   }
 }
 
