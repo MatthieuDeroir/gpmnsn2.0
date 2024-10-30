@@ -15,3 +15,9 @@
 2024-10-02T07:44:29.044Z,all,Instruction Sent,instruction=refresh,role=Operateur,heartbeatTimer=5
 2024-10-02T07:44:32.213Z,all,Instruction Sent,instruction=refresh,role=Operateur,heartbeatTimer=5
 2024-10-02T07:44:35.296Z,all,Instruction Sent,instruction=refresh,role=Operateur,heartbeatTimer=5
+2024-10-03T06:42:08.039Z,all,Instruction Sent,instruction=on,role=Operateur,heartbeatTimer=5
+2024-10-03T06:42:21.075Z,all,Instruction Sent,instruction=off,role=Operateur,heartbeatTimer=5
+2024-10-03T06:45:10.234Z,all,Instruction Sent,instruction=on,role=Operateur,heartbeatTimer=5
+2024-10-03T14:58:23.097Z,all,Operateur a envoyé l'instruction on,instruction=on,role=Operateur,heartbeatTimer=5
+2024-10-03T14:58:24.697Z,all,Operateur a envoyé l'instruction off,instruction=off,role=Operateur,heartbeatTimer=5
+2024-10-03T14:59:10.838Z,all,Operateur a envoyé l'instruction on,instruction=on,role=Operateur,heartbeatTimer=5

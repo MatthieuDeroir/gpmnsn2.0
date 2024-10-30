@@ -5,3 +5,5 @@
 2024-10-01T12:36:53.441Z,all,Instruction Sent,instruction=refresh,role=Visualisation,heartbeatTimer=5
 2024-10-01T16:08:51.877Z,all,Instruction Sent,instruction=refresh,role=Visualisation,heartbeatTimer=5
 2024-10-01T16:44:22.227Z,all,Instruction Sent,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-10-03T14:58:08.973Z,aval,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-10-03T14:58:09.480Z,indret,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5

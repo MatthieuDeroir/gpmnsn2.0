@@ -36,14 +36,22 @@ const permissions = {
 };
 
 export const AuthorizationProvider = ({ children }) => {
-    const [role, setRole] = useState("Maintenance"); // Maintenance // Operateur // Visualisation
+    const [role, setRole] = useState("Maintenance");
+    const [token, setToken] = useState(null);
 
     const getPermissions = (role) => {
         return permissions[role] || {};
     };
 
+    const isAuthenticated = !!token;
+
+    const logout = () => {
+        setToken(null);
+        setRole(null);
+    };
+
     return (
-        <AuthorizationContext.Provider value={{ role, setRole, permissions: getPermissions(role) }}>
+        <AuthorizationContext.Provider value={{ role, setRole, permissions: getPermissions(role), logout, token, isAuthenticated}}>
             {children}
         </AuthorizationContext.Provider>
     );

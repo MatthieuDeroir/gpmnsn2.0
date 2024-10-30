@@ -1,4 +1,4 @@
-import userModel from "./Login/userModel.js";
+import userModel from "./userModel.js";
 
 module.exports = {
     userModel

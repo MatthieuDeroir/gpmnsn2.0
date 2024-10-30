@@ -1,46 +1,105 @@
+// clientManager.js
+const WebSocket = require('ws');
+
 class ClientManager {
   constructor(WebSocket) {
     this.WebSocket = WebSocket;
-    this.clients = new Map();
-    this.lastClientData = new Map();
+    this.clients = new Map(); // Map of ws => clientInfo
+    this.lastClientData = new Map(); // Map of clientName => clientInfo
+    this.clientWsMap = new Map(); // Map of clientName => ws
   }
 
+  /**
+   * Adds or updates a client in the manager.
+   * @param {WebSocket} ws - The WebSocket connection.
+   * @param {object} clientInfo - Information about the client.
+   */
   addClient(ws, clientInfo) {
+    let ipAddress = ws._socket.remoteAddress;
+    clientInfo.ip = ipAddress.startsWith('::ffff:') ? ipAddress.split(':').pop() : ipAddress;
+    clientInfo.connected = true; // Mark as connected
+
+    // Check if the client is already connected via another ws
+    if (this.clientWsMap.has(clientInfo.name)) {
+      const existingWs = this.clientWsMap.get(clientInfo.name);
+      if (existingWs !== ws && existingWs.readyState === this.WebSocket.OPEN) {
+        console.log(`Déconnexion de l'ancien client ${clientInfo.name} pour établir une nouvelle connexion.`);
+        existingWs.close(); // Fermer l'ancienne connexion
+      }
+    }
+
+    // Update the maps with the new connection
     this.clients.set(ws, clientInfo);
     this.lastClientData.set(clientInfo.name, clientInfo);
+    this.clientWsMap.set(clientInfo.name, ws);
+
+    console.log(`Client enregistré/mis à jour : ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
   }
 
+  /**
+   * Marks a client as disconnected without removing it from the manager.
+   * @param {WebSocket} ws - The WebSocket connection.
+   */
   removeClient(ws) {
     const clientInfo = this.clients.get(ws);
     if (clientInfo) {
+      clientInfo.connected = false; // Mark as disconnected
       this.clients.delete(ws);
-      this.lastClientData.delete(clientInfo.name);
+      this.lastClientData.set(clientInfo.name, clientInfo);
+
+      // Remove from clientWsMap if this ws was the current one
+      if (this.clientWsMap.get(clientInfo.name) === ws) {
+        this.clientWsMap.delete(clientInfo.name);
+      }
+
+      console.log(`Client déconnecté : ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
     }
   }
 
+  /**
+   * Removes all clients of a specific type except for an excluded WebSocket.
+   * @param {string} clientType - The type of clients to remove.
+   * @param {WebSocket} excludeWs - The WebSocket connection to exclude.
+   */
   removeClientsByType(clientType, excludeWs = null) {
     for (const [ws, clientInfo] of this.clients.entries()) {
       if (clientInfo.clientType === clientType && ws !== excludeWs) {
-        console.log(`Removing client of type ${clientType} with name ${clientInfo.name}`);
-        this.clients.delete(ws); // Remove client from the map
-        this.lastClientData.delete(clientInfo.name); // Remove last client data
+        console.log(`Marquage du client de type ${clientType} comme déconnecté : ${clientInfo.name}`);
+        clientInfo.connected = false; // Mark as disconnected
+        this.clients.delete(ws);
+        this.lastClientData.set(clientInfo.name, clientInfo);
+
+        // Remove from clientWsMap if necessary
+        if (this.clientWsMap.get(clientInfo.name) === ws) {
+          this.clientWsMap.delete(clientInfo.name);
+        }
       }
     }
   }
 
+  /**
+   * Updates client information with new data.
+   * @param {WebSocket} ws - The WebSocket connection.
+   * @param {object} updates - The data to update.
+   */
   updateClient(ws, updates) {
     const clientInfo = this.clients.get(ws);
     if (clientInfo) {
       Object.assign(clientInfo, updates);
       this.clients.set(ws, clientInfo);
       this.lastClientData.set(clientInfo.name, clientInfo);
+      console.log(`Client mis à jour : ${clientInfo.name}, Updates: ${JSON.stringify(updates)}`);
     }
   }
 
+  /**
+   * Updates the heartbeat information for a client.
+   * @param {WebSocket} ws - The WebSocket connection.
+   * @param {object} heartbeatData - The heartbeat data sent by the client.
+   */
   updateHeartbeat(ws, heartbeatData) {
     const clientInfo = this.clients.get(ws);
     if (clientInfo) {
-      // Update all relevant data, including the 'state'
       clientInfo.lastHeartbeat = Date.now();
       clientInfo.cpuTemp = heartbeatData.cpuTemp;
       clientInfo.isDoorOpen = heartbeatData.isDoorOpen;
@@ -48,12 +107,18 @@ class ClientManager {
       clientInfo.maintenanceMode = heartbeatData.maintenanceMode;
       clientInfo.state = heartbeatData.state; // Assuming 'state' is provided in the heartbeatData
 
-      // Store updated information
       this.clients.set(ws, clientInfo);
       this.lastClientData.set(clientInfo.name, clientInfo);
+      console.log(`Heartbeat reçu pour ${clientInfo.name}: ${JSON.stringify(heartbeatData)}, Connected: ${clientInfo.connected}`);
+    } else {
+      console.warn(`Heartbeat reçu pour un client non enregistré : ${heartbeatData.name}`);
     }
   }
 
+  /**
+   * Broadcasts a message to all connected clients.
+   * @param {string} message - The message to broadcast.
+   */
   broadcast(message) {
     this.clients.forEach((clientInfo, client) => {
       if (client.readyState === this.WebSocket.OPEN) {
@@ -62,16 +127,18 @@ class ClientManager {
     });
   }
 
+  /**
+   * Broadcasts a message to clients of a specific type and name.
+   * @param {string} message - The message to broadcast.
+   * @param {string} type - The type of clients to broadcast to (e.g., 'panel', 'user').
+   * @param {string} name - The specific name of the client to broadcast to.
+   */
   broadcastToAppropriateClients(message, type, name) {
     this.clients.forEach((clientInfo, client) => {
       if (client.readyState === this.WebSocket.OPEN) {
-        // Check if the client matches the type, or if we're broadcasting to all types
         const typeMatches = clientInfo.clientType === type || type === 'all';
-
-        // Check if the name matches, or if we're broadcasting to all names
         const nameMatches = !name || clientInfo.name === name || name === 'all';
 
-        // If both type and name match, send the message
         if (typeMatches && nameMatches) {
           client.send(message);
         }
@@ -79,6 +146,10 @@ class ClientManager {
     });
   }
 
+  /**
+   * Broadcasts a message to all clients.
+   * @param {string} message - The message to broadcast.
+   */
   broadcastToAllClients(message) {
     for (const [clientWs, clientInfo] of this.clients.entries()) {
       if (clientWs.readyState === this.WebSocket.OPEN) {
@@ -87,18 +158,35 @@ class ClientManager {
     }
   }
 
+  /**
+   * Retrieves an array of all client information objects.
+   * @returns {Array}
+   */
   getClients() {
-    return Array.from(this.clients.values());
+    return Array.from(this.lastClientData.values()); // Return all clients
   }
 
+  /**
+   * Retrieves an array of all last client data.
+   * @returns {Array}
+   */
   getLastClientData() {
     return Array.from(this.lastClientData.values());
   }
 
+  /**
+   * Retrieves client information based on the WebSocket connection.
+   * @param {WebSocket} ws - The WebSocket connection.
+   * @returns {object|null}
+   */
   getClientInfo(ws) {
-    return this.clients.get(ws); // Corrected line
+    return this.clients.get(ws);
   }
 
+  /**
+   * Retrieves the settings of all panels.
+   * @returns {object}
+   */
   getPanelSettings() {
     const panelSettings = {};
     this.lastClientData.forEach((data, name) => {
@@ -107,7 +195,7 @@ class ClientManager {
         cpuTemp: data.cpuTemp,
         isDoorOpen: data.isDoorOpen,
         sectorStatus: data.sectorStatus,
-        maintenanceMode: data.maintenanceMode
+        maintenanceMode: data.maintenanceMode,
       };
     });
     return panelSettings;

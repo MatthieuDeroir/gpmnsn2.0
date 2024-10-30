@@ -1,0 +1,120 @@
+/* src/components/AllPanel.css */
+
+.all-panel-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la fenêtre */
+}
+
+.all-panel-content {
+  flex: 1; /* Prend tout l'espace disponible */
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Label du Heartbeat Timer */
+.heartbeat-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.heartbeat-label input {
+  padding: 12px; /* Augmentation du padding */
+  font-size: 1.1em; /* Augmentation de la taille de la police */
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Coins légèrement plus arrondis */
+}
+
+/* Boutons de Changement de Rôle */
+.all-panel-role-switch {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Augmentation de l'espacement */
+}
+
+.all-panel-role-switch .role-switch-button {
+  /* Styles spécifiques pour les boutons de changement de rôle gérés par Button.css */
+  /* Vous pouvez ajouter des classes supplémentaires si nécessaire */
+}
+
+.all-panel-role-switch span {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Barre de Navigation Fixe en Bas */
+.all-panel-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95); /* Légèrement moins transparent pour une meilleure lisibilité */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  padding: 25px 40px; /* Augmentation du padding pour agrandir la navbar */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+/* Groupe de Boutons dans la Barre de Navigation */
+.all-panel-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Augmentation de l'espacement entre les boutons */
+}
+
+/* Groupe d'actions */
+.all-panel-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px; /* Augmentation de l'espacement */
+}
+
+/* Effet de Clignotement */
+.blinking {
+  animation: blinkingAnimation 1s infinite;
+}
+
+@keyframes blinkingAnimation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Désactivation des Boutons */
+.all-panel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .all-panel-bottom-nav {
+    padding: 20px 25px; /* Ajustement du padding pour petits écrans */
+  }
+
+  .all-panel-button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Augmentation de l'espacement */
+  }
+
+  .all-panel-btn {
+    width: 100%;
+    max-width: 280px; /* Largeur maximale ajustée */
+    justify-content: center;
+    font-size: 1.1em;
+    padding: 14px 35px; /* Ajustement du padding */
+  }
+
+  /* Boutons de changement de rôle responsifs */
+  .all-panel-role-switch .role-switch-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}

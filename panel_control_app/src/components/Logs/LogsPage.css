@@ -1,0 +1,316 @@
+/* LogPage.css */
+
+.log-page {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.log-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Flexbox for control container */
+.control-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-bottom: 20px;
+}
+
+.selector {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .log-table th, .log-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .search-input {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .control-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .selector {
+    width: 100%;
+  }
+}
+
+.search-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.reset-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reset-button:hover {
+  background-color: #5a6268;
+}
+
+/* Same style for search input */
+.search-input {
+  width: 100%;
+  max-width: 600px; /* Wider search bar */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Styling for the panel selector */
+.panel-selector {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Suppression ou ajustement de .table-container si non utilisé */
+/* .table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+
+/* CSS for rounding the table edges */
+.log-table {
+  width: 100%;
+  /* Remove height: 80vh from .log-table */
+  border-collapse: separate;
+  border-spacing: 0;
+  /* Remove height: 80vh to avoid conflict */
+  /* border-radius: 10px; */ /* Border radius should be applied to the container */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the thead sticky */
+.log-table thead {
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Suppression des bordures arrondies des lignes */
+.log-table tbody tr:last-child {
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+}
+
+.log-table th, .log-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Row colors based on conditions */
+.log-red {
+  background-color: #ff3f3f; /* Rouge */
+}
+
+.log-light-red {
+  background-color: #ffcccc; /* Rouge clair */
+}
+
+.log-orange {
+  background-color: #ffcc99; /* Orange pâle */
+}
+
+.log-blue {
+  background-color: #cce5ff; /* Bleu pâle */
+}
+
+.log-green {
+  background-color: #ccffcc; /* Vert pâle */
+}
+
+.log-grey {
+  background-color: #f0f0f0; /* Gris pâle */
+}
+
+.log-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Adjust border rounding for rows */
+.log-table td {
+  text-align: left;
+  word-wrap: break-word;
+  padding: 10px;
+  border: none; /* Remove borders */
+}
+
+/* Rounded corners for the entire table container */
+.log-table-container {
+  height: 80vh; /* Changer de max-height:400px à height:80vh */
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background-color: #28a745;
+}
+
+.pagination span {
+  margin: 0 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Export button styles */
+.export-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.export-button:hover {
+  background-color: #218838;
+}
+
+/* Toggle Container */
+.date-toggle-container {
+  margin-bottom: 20px;
+}
+
+.date-toggle-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.date-toggle-header span {
+  font-size: 1.2rem;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.arrow-down {
+  transform: rotate(0deg);
+}
+
+/* Hidden Date Picker */
+.date-picker-container {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Additional styles */
+
+.date-picker-component {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.date-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #007bff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+.date-toggle-button:hover {
+  color: #0056b3;
+}

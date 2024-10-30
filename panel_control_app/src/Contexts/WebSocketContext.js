@@ -1,94 +1,117 @@
+// src/Contexts/WebSocketContext.js
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const WebSocketContext = createContext(null);
 
+export const useWebSocket = () => {
+    return useContext(WebSocketContext);
+};
+
 export const WebSocketProvider = ({ children }) => {
     const [socket, setSocket] = useState(null);
-    const [panelStatus, setPanelStatus] = useState({});
     const [isConnected, setIsConnected] = useState(false);
-    const [latency, setLatency] = useState(null);
+    const [panelStatus, setPanelStatus] = useState({});
+    const [logs, setLogs] = useState({});
     const [isAnyPanelInDysfunction, setIsAnyPanelInDysfunction] = useState(false);
-    let startTime = 0;
 
     useEffect(() => {
-        let ws;
-        let latencyInterval;
+        // Establish WebSocket connection
+        const ws = new WebSocket('ws://localhost:8080');
+        setSocket(ws);
 
-        const connectWebSocket = () => {
-            if (ws) {
-                ws.close()
-            }
-
-            ws = new WebSocket('ws://100.122.230.86:8080');
-
-            ws.onopen = () => {
-                console.log('WebSocket connected');
-                setIsConnected(true);
-
-                // Send the registration only once when connected
-                ws.send(JSON.stringify({ type: "register", clientType: "user", name: "user" }));
-            };
-
-            ws.onmessage = (message) => {
-                console.log('WebSocket message', message.data);
-                const data = JSON.parse(message.data);
-                if (data.type === 'pong') {
-                    setLatency(Date.now() - startTime);
-                } else if (data.type === 'status') {
-                    const statusUpdate = {
-                        amont: data.panelStatus.amont || { connected: false },
-                        aval: data.panelStatus.aval || { connected: false },
-                        indret: data.panelStatus.indret || { connected: false }
-                    };
-                    setPanelStatus(statusUpdate);
-                }
-            };
-
-            ws.onclose = () => {
-                console.log('WebSocket disconnected. Attempting to reconnect...');
-                setIsConnected(false);
-                clearInterval(latencyInterval);
-
-                // Delay before reconnecting to avoid creating too many connections in a short time
-                setTimeout(connectWebSocket, 3000); // Attempt to reconnect after 3 seconds
-            };
-
-            ws.onerror = (error) => {
-                console.log('WebSocket error', error);
-            };
-
-            setSocket(ws);
+        ws.onopen = () => {
+            setIsConnected(true);
+            console.log('WebSocket connection established');
         };
 
-        connectWebSocket(); // Connect when the component mounts
+        ws.onmessage = (event) => {
+            try {
+                const data = JSON.parse(event.data);
 
-        return () => {
-            if (ws) {
-                ws.close(); // Clean up the WebSocket connection when the component unmounts
+                switch (data.type) {
+                    case 'status':
+                        setPanelStatus((prevStatus) => ({
+                            ...prevStatus,
+                            [data.name]: data.panelStatus,
+                        }));
+                        break;
+
+                    case 'log':
+                        setLogs((prevLogs) => ({
+                            ...prevLogs,
+                            [data.name]: [...(prevLogs[data.name] || []), data.log],
+                        }));
+                        break;
+
+                    case 'panel_registered':
+                        setPanelStatus((prevStatus) => ({
+                            ...prevStatus,
+                            [data.name]: {
+                                ...prevStatus[data.name],
+                                connected: true,
+                            },
+                        }));
+                        break;
+
+                    // Handle other message types as needed
+                    default:
+                        break;
+                }
+            } catch (error) {
+                console.error('Error parsing message data:', error);
             }
-            clearInterval(latencyInterval); // Clear the interval when the component unmounts
+        };
+
+        ws.onclose = () => {
+            setIsConnected(false);
+            console.log('WebSocket connection closed');
+        };
+
+        // Clean up WebSocket connection
+        return () => {
+            ws.close();
         };
     }, []);
 
+    // Update isAnyPanelInDysfunction based on panelStatus
     useEffect(() => {
-        const checkDysfunction = () => {
-            const panelsToCheck = ['amont', 'aval', 'indret'];
-            const dysfunction = panelsToCheck.some(panelKey => {
-                const panel = panelStatus[panelKey];
-                return panel ? (!panel.connected || !panel.sectorStatus) : false;
-            });
-            setIsAnyPanelInDysfunction(dysfunction);
-        };
-        checkDysfunction();
+        const anyDysfunction = Object.values(panelStatus).some(
+            (panel) => !panel.connected || !panel.sectorStatus
+        );
+        setIsAnyPanelInDysfunction(anyDysfunction);
     }, [panelStatus]);
 
+    // Fetch logs for a specific panel
+    const fetchLogsForPanel = async (panelName) => {
+        try {
+            const response = await fetch(`http://localhost:4000/logs/panel/${panelName}?limit=10`);
+            const data = await response.json();
+            if (data && Array.isArray(data.logs)) {
+                setLogs((prevLogs) => ({
+                    ...prevLogs,
+                    [panelName]: data.logs,
+                }));
+            } else {
+                console.warn('Invalid log data received:', data);
+                setLogs((prevLogs) => ({
+                    ...prevLogs,
+                    [panelName]: [],
+                }));
+            }
+        } catch (error) {
+            console.error('Error fetching logs:', error);
+            setLogs((prevLogs) => ({
+                ...prevLogs,
+                [panelName]: [],
+            }));
+        }
+    };
+
     return (
-        <WebSocketContext.Provider value={{ socket, panelStatus, isConnected, latency, isAnyPanelInDysfunction }}>
+        <WebSocketContext.Provider
+            value={{ socket, isConnected, panelStatus, logs, isAnyPanelInDysfunction, fetchLogsForPanel }}
+        >
             {children}
         </WebSocketContext.Provider>
     );
 };
-
-export const useWebSocket = () => useContext(WebSocketContext);
-
-

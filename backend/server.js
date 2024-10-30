@@ -3,7 +3,7 @@ import bodyparser from 'body-parser';
 import cors from 'cors';
 import routes from './routes';
 import wss from './websocket/Websocket';
-import Database from './Database/Database';
+import Database from './Database/database';
 const Logger = require('./websocket/logger'); // Import your logger
 
 require('dotenv').config();
@@ -70,6 +70,10 @@ app.get('/logs/:type/:value', (req, res) => {
       res.status(500).json({ error: 'Internal server error' });
     }
   });
+
+  // app.get('/api/auth/login'
+  // , (req, res) => {
+  //   const { username, password } = req.body;
   
   
 

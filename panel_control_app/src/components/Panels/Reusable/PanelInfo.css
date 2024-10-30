@@ -1,0 +1,204 @@
+/* PanelInfo.css */
+
+/* Container Styles */
+.panel-info {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    overflow: hidden; /* Pour éviter les débordements lors des animations */
+    min-height: 300px; /* Hauteur minimale pour éviter les sauts de mise en page */
+}
+
+/* Hover Effect */
+.panel-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Blinking green border when panel state is 'on' */
+.panel-info.blinking-green {
+    border: 2px solid #28a745;
+    animation: blinkingBorder 2s infinite;
+}
+
+@keyframes blinkingBorder {
+    0% {
+        border-color: #28a745;
+    }
+    50% {
+        border-color: #ffffff;
+    }
+    100% {
+        border-color: #28a745;
+    }
+}
+
+/* Panel Title */
+.panel-info h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Image Styles */
+.panel-info img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.panel-info img.greyed-out {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+/* Information Table for Mode 1 */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.info-table th,
+.info-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.info-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    width: 40%; /* Ajustez la largeur selon vos besoins */
+}
+
+.info-table td {
+    color: #555;
+}
+
+/* Log Table Container */
+.panel-info-log-table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    padding-bottom: 10px; /* Espace supplémentaire en bas */
+}
+
+/* Log Table Styles */
+.panel-info-log-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    table-layout: fixed; /* Fixe la disposition des colonnes */
+    word-wrap: break-word; /* Permet le retour à la ligne du texte long */
+}
+
+.panel-info-log-table th,
+.panel-info-log-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Empêche le texte de s'étendre sur plusieurs lignes */
+}
+
+.panel-info-log-table th {
+    background-color: #007bff;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Assure que les en-têtes restent au-dessus des autres lignes */
+}
+
+.panel-info-log-table tr {
+    transition: background-color 0.3s ease;
+}
+
+.panel-info-log-table tr:hover {
+    background-color: #e2e6ea;
+}
+
+/* Row background colors based on status */
+.panel-info-log-green {
+    background-color: #d4edda;
+}
+
+.panel-info-log-red {
+    background-color: #f8d7da;
+}
+
+.panel-info-log-orange {
+    background-color: #fff3cd;
+}
+
+.panel-info-log-blue {
+    background-color: #d1ecf1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .panel-info {
+        margin: 10px;
+        padding: 15px;
+        min-height: auto; /* Ajuster la hauteur minimale sur petits écrans */
+    }
+
+    .panel-info h3 {
+        font-size: 1.5em;
+    }
+
+    /* Ajustement des tables sur petits écrans */
+    .info-table th,
+    .info-table td {
+        padding: 8px 10px;
+        font-size: 0.95em;
+    }
+
+    .panel-info-log-table th,
+    .panel-info-log-table td {
+        padding: 10px 8px;
+        font-size: 0.9em;
+        white-space: normal; /* Permet le retour à la ligne sur petits écrans */
+    }
+
+    .panel-info-log-table {
+        table-layout: auto; /* Ajuste automatiquement la disposition des colonnes */
+    }
+}
+
+/* Styles pour les modes d'affichage */
+.display-mode-0,
+.display-mode-1,
+.display-mode-2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Animation complémentaire pour les contenus */
+.display-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Transitions supplémentaires pour les éléments internes */
+.panel-info .panel-info-log-table-container,
+.panel-info .panel-info-log-table {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Animation des lignes de log */
+.panel-info-log-table tr {
+    transition: background-color 0.3s ease;
+}

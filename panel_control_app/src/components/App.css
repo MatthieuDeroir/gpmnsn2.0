@@ -1,79 +1,186 @@
+/* src/components/App.css */
+
+/* Variables CSS pour une meilleure maintenance */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --active-color: #0056b3;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --nav-height: 60px;
+  --transition-speed: 0.3s;
+  --nav-link-padding: 10px 15px;
+}
+
+/* Réinitialisation des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux de l'application */
 .App {
   text-align: center;
-}
-
-.App h1 {
-  margin-bottom: 20px;
-}
-
-.panel-controls {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  min-height: 100vh;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.panel-control {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.panel-control.problem {
-  background-color: #ffe6e6;
-}
-
-img.greyed-out {
-  filter: grayscale(80%);
-}
-
-.blinking-text {
-  animation: blink 1s linear infinite;
-}
-
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.all-control {
-  display: flex;
-  justify-content: center;
+/* Barre de Navigation */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
   width: 100%;
-  margin-top: 20px;
+  z-index: 999;
 }
 
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-height);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-logo .material-icons {
+  margin-right: 8px;
+  font-size: 1.8rem;
+}
+
+/* Icône du Menu Hamburger */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Menu de Navigation */
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-links {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  padding: var(--nav-link-padding);
+  transition: color var(--transition-speed), background-color var(--transition-speed);
+  border-radius: 4px;
+}
+
+.nav-links .material-icons {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.nav-links:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.nav-links.active {
+  color: white;
+  background-color: var(--secondary-color);
+  border-bottom: none;
+}
+
+/* Boutons de Navigation */
 .log-button, .home-button {
   padding: 10px 20px;
   margin: 10px;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: white;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition-speed);
 }
 
 .log-button:hover, .home-button:hover {
-  background-color: #0056b3;
+  background-color: var(--secondary-color);
 }
 
-.App nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+/* Contenu Principal */
+.health-controls {
+  padding: 20px;
 }
-.App nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  transition: color 0.3s ease;
+
+.loading-fallback {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: 50px;
+}
+
+/* Flex Layout pour les contrôles */
+.panel-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Réactivité */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: var(--nav-height);
+    left: -100%;
+    width: 100%;
+    transition: left var(--transition-speed);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
 }
