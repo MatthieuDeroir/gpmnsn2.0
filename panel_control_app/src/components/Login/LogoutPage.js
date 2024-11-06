@@ -1,16 +1,18 @@
 // src/components/Logout.jsx
 import React, { useEffect } from 'react';
-import { useAuth } from '../../contexts/AuthorizationContext';
+import { useDispatch } from 'react-redux'; // Import useDispatch
 import { useNavigate } from 'react-router-dom';
+import { logout } from '../../actions/authActions'; // Import the logout action
 
 function Logout() {
-    const { logout } = useAuth();
+    const dispatch = useDispatch(); // Use dispatch from Redux
     const navigate = useNavigate();
 
     useEffect(() => {
-        logout();
+        // Dispatch the logout action to update auth state in Redux
+        dispatch(logout());
         navigate('/login');
-    }, [logout, navigate]);
+    }, [dispatch, navigate]);
 
     return null;
 }

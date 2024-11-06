@@ -19121,3 +19121,112 @@
 2024-11-06T08:03:58.203Z,indret,Status Change,status=online,message=Panel is online and fully operational.
 2024-11-06T08:04:14.915Z,indret,Register,panelName=indret,role=unknown
 2024-11-06T08:04:15.049Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:41:16.132Z,indret,Register,panelName=indret,role=unknown
+2024-11-06T08:41:16.703Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:41:46.638Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:41:46.638Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:41:46.663Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:42:04.651Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:42:04.652Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:05.654Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:06.652Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:07.652Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:08.652Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:09.653Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:10.653Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:11.653Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:12.654Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:13.655Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:14.655Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:15.657Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:16.661Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:17.659Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:18.665Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:19.662Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:20.667Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:21.665Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:22.664Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:23.666Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:24.665Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:25.667Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:26.665Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:27.668Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:28.674Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:29.669Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:30.676Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:31.674Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:32.671Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:42:33.164Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-06T08:42:33.171Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-06T08:42:33.199Z,indret,Register,panelName=indret,role=unknown
+2024-11-06T08:42:33.703Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:42:41.847Z,indret,Disconnected,message=WebSocket connection closed.
+2024-11-06T08:44:34.257Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:44:34.258Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:44:34.749Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:44:35.745Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:44:35.745Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:44:35.754Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:44:53.766Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:44:53.767Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:44:53.788Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:46:15.816Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:46:15.816Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:46:15.835Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:50:24.981Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:50:24.981Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:50:24.992Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:51:28.025Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:51:28.025Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:51:28.053Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:52:40.069Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:52:40.069Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:52:40.101Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:55:46.185Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:55:46.185Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:55:46.195Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:56:13.202Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:56:13.202Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:56:13.211Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:56:41.217Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:56:41.217Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:56:41.233Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:57:56.438Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:57:56.439Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:57:58.272Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:57:59.257Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:57:59.258Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:58:00.276Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:58:01.258Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:58:01.258Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:58:01.264Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:58:10.261Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:58:10.261Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:58:10.276Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:59:55.322Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:59:55.323Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:59:55.336Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:00:41.354Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:00:41.355Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:00:41.367Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:01:31.374Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:01:31.375Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:01:31.387Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:02:39.410Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:02:39.411Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:02:39.424Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:03:59.452Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:03:59.453Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:03:59.477Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:04:07.459Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:04:07.459Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:04:07.472Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:04:55.487Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:04:55.488Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:04:55.499Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:05:37.511Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:05:37.512Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:05:37.528Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:07:51.592Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:07:51.592Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:07:51.598Z,indret,Status Change,status=online,message=Panel is online and fully operational.

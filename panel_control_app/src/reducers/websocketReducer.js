@@ -1,73 +1,59 @@
-// src/reducers/authReducer.js
+// src/reducers/websocketReducer.js
 
-import { LOGIN, LOGOUT, SET_ROLE } from '../actions/actionTypes';
+import {
+    CONNECT_WEBSOCKET,
+    DISCONNECT_WEBSOCKET,
+    SET_PANEL_STATUS,
+    SET_LOGS,
+    SET_DYSFUNCTION_STATUS,
+} from '../actions/actionTypes';
 
 const initialState = {
-    token: localStorage.getItem('token') || null,
-    role: localStorage.getItem('role') || null,
-    isAuthenticated: !!localStorage.getItem('token'),
-    permissions: {},
+    socket: null,
+    isConnected: false,
+    panelStatus: {}, // This should be initialized as an empty object
+    logs: {},
+    isAnyPanelInDysfunction: false,
 };
 
-const permissionsByRole = {
-    Maintenance: {
-        canRefreshIndividualPanel: true,
-        canStartIndividualPanel: true,
-        canShutdownIndividualPanel: true,
-        canRebootIndividualPanel: true,
-        canRefreshMultiplePanel: true,
-        canStartMultiplePanel: true,
-        canShutdownMultiplePanel: true,
-        canRebootMultiplePanel: true,
-    },
-    Operateur: {
-        canRefreshIndividualPanel: true,
-        canStartIndividualPanel: false,
-        canShutdownIndividualPanel: false,
-        canRebootIndividualPanel: false,
-        canRefreshMultiplePanel: true,
-        canStartMultiplePanel: true,
-        canShutdownMultiplePanel: true,
-        canRebootMultiplePanel: false,
-    },
-    Visualisation: {
-        canRefreshIndividualPanel: true,
-        canStartIndividualPanel: false,
-        canShutdownIndividualPanel: false,
-        canRebootIndividualPanel: false,
-        canRefreshMultiplePanel: true,
-        canStartMultiplePanel: false,
-        canShutdownMultiplePanel: false,
-        canRebootMultiplePanel: false,
-    },
-};
-
-const authReducer = (state = initialState, action) => {
+const websocketReducer = (state = initialState, action) => {
     switch (action.type) {
-        case LOGIN:
-            const { token, role } = action.payload;
+        case CONNECT_WEBSOCKET:
             return {
                 ...state,
-                token,
-                role,
-                isAuthenticated: true,
-                permissions: permissionsByRole[role] || {},
+                socket: action.payload,
+                isConnected: true,
             };
 
-        case LOGOUT:
+        case DISCONNECT_WEBSOCKET:
             return {
                 ...state,
-                token: null,
-                role: null,
-                isAuthenticated: false,
-                permissions: {},
+                socket: null,
+                isConnected: false,
             };
 
-        case SET_ROLE:
+        case SET_PANEL_STATUS:
             return {
                 ...state,
-                role: action.payload,
-                permissions: permissionsByRole[action.payload] || {},
+                panelStatus: {
+                    ...state.panelStatus,
+                    ...action.payload,
+                },
+            };
+
+        case SET_LOGS:
+            return {
+                ...state,
+                logs: {
+                    ...state.logs,
+                    ...action.payload,
+                },
+            };
+
+        case SET_DYSFUNCTION_STATUS:
+            return {
+                ...state,
+                isAnyPanelInDysfunction: action.payload,
             };
 
         default:
@@ -75,4 +61,4 @@ const authReducer = (state = initialState, action) => {
     }
 };
 
-export default authReducer;
+export default websocketReducer;

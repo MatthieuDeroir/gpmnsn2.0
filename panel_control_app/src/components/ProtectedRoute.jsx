@@ -1,16 +1,19 @@
 // src/components/ProtectedRoute.jsx
+
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthorizationContext';
+import { useSelector } from 'react-redux';
 
-function ProtectedRoute({ children }) {
-    const { isAuthenticated } = useAuth();
+const ProtectedRoute = ({ children }) => {
+    const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
     if (!isAuthenticated) {
+        // Not authenticated, redirect to login
         return <Navigate to="/login" replace />;
     }
 
+    // Authenticated, render the children
     return children;
-}
+};
 
 export default ProtectedRoute;

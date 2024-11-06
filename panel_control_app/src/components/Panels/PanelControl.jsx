@@ -123,12 +123,11 @@ const PanelControl = ({ name }) => {
               <PanelInfo
                   name={name}
                   displayMode={displayMode}
-                  panelInfo={panelInfo}
-                  logs={logs}
                   imageSrc={imageSrc}
                   handlePanelInfoClick={handlePanelInfoClick}
                   handlePanelInfoRightClick={handlePanelInfoRightClick}
               />
+
 
               {shouldDisplayButtons && (
                   <div className="button-group">
