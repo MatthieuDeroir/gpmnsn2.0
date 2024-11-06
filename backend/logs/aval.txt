@@ -26106,3 +26106,9 @@
 2024-11-06T10:24:27.407Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
 2024-11-06T10:24:28.175Z,aval,Status Change,status=online,message=Panel is online and fully operational.
 2024-11-06T10:24:28.986Z,aval,Disconnected,message=WebSocket connection closed.
+2024-11-06T10:28:13.521Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:28:13.521Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:28:14.510Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:28:20.497Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:28:20.497Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:28:20.520Z,aval,Status Change,status=online,message=Panel is online and fully operational.

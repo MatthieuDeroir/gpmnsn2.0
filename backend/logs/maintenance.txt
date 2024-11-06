@@ -674,3 +674,8 @@
 2024-11-06T10:23:47.519Z,Unknown Panel,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
 2024-11-06T10:23:51.279Z,Unknown Panel,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
 2024-11-06T10:23:51.280Z,Unknown Panel,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-11-06T10:27:18.140Z,Unknown Panel,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-11-06T10:27:28.221Z,Unknown Panel,Maintenance a envoyé l'instruction refresh,instruction=refresh,role=Maintenance,heartbeatTimer=5
+2024-11-06T10:27:35.365Z,Unknown Panel,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-11-06T10:27:37.708Z,Unknown Panel,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-11-06T10:27:49.237Z,Unknown Panel,Maintenance a envoyé l'instruction refresh,instruction=refresh,role=Maintenance,heartbeatTimer=5
