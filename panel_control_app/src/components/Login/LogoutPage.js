@@ -1,6 +1,6 @@
 // src/components/Logout.jsx
 import React, { useEffect } from 'react';
-import { useAuth } from '../../Contexts/AuthorizationContext';
+import { useAuth } from '../../contexts/AuthorizationContext';
 import { useNavigate } from 'react-router-dom';
 
 function Logout() {

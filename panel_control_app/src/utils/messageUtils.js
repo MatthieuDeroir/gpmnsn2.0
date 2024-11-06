@@ -1,53 +1,22 @@
 // src/utils/messageUtils.js
-import websocketClient from './websocketClient';
 
-export const sendInstructionMessage = ({
-  instruction,
-  to = 'panel',
-  name = 'all',
-  role,
-  heartbeatTimer,
-}) => {
-  const message = {
-    type: 'instruction',
-    to,
-    name,
-    from: role,
-    role: role,
-    instruction,
-    heartbeatTimer,
-  };
-  websocketClient.sendMessage(message);
+import { store } from '../stores/store';
+
+export const sendInstructionMessage = ({ instruction, role, name, heartbeatTimer }) => {
+  const { websocket } = store.getState();
+  const { socket } = websocket;
+  if (socket && socket.readyState === WebSocket.OPEN) {
+    socket.send(
+        JSON.stringify({
+          type: 'instruction',
+          to: 'panel',
+          role,
+          name,
+          instruction,
+          heartbeatTimer,
+        })
+    );
+  }
 };
 
-export const sendRebootMessage = ({
-  to = 'panel',
-  name = 'all',
-  role,
-  heartbeatTimer,
-}) => {
-  const message = {
-    type: 'reboot',
-    to,
-    name,
-    from: role,
-    heartbeatTimer,
-  };
-  websocketClient.sendMessage(message);
-};
-
-export const sendRefreshMessage = ({
-  to = 'panel',
-  name = 'all',
-  role,
-  heartbeatTimer,
-}) => {
-  const message = {
-    type: 'refresh',
-    to,
-    name,
-    from: role,
-    heartbeatTimer,
-  };
-  websocketClient.sendMessage(message);
-};
+// Add other message utilities as needed
