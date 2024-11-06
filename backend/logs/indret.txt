@@ -19420,3 +19420,9 @@
 2024-11-06T10:24:24.483Z,indret,Register,panelName=indret,role=unknown
 2024-11-06T10:24:25.356Z,indret,Status Change,status=online,message=Panel is online and fully operational.
 2024-11-06T10:24:29.757Z,indret,Disconnected,message=WebSocket connection closed.
+2024-11-06T10:27:08.420Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:27:08.421Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:27:08.430Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:29:24.504Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:29:24.505Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:29:24.516Z,indret,Status Change,status=online,message=Panel is online and fully operational.
