@@ -668,3 +668,6 @@
 2024-11-06T08:03:26.905Z,all,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
 2024-11-06T08:04:03.432Z,all,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
 2024-11-06T08:04:16.696Z,all,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-11-06T08:41:51.145Z,all,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-11-06T08:41:59.959Z,all,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-11-06T08:41:59.960Z,all,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5

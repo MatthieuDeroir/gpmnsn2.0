@@ -8,6 +8,7 @@ import {
     SET_DYSFUNCTION_STATUS,
 } from './actionTypes';
 
+// Action to connect to the WebSocket
 export const connectWebSocket = () => {
     return (dispatch) => {
         const ws = new WebSocket('ws://localhost:8080');
@@ -23,39 +24,65 @@ export const connectWebSocket = () => {
         ws.onmessage = (event) => {
             try {
                 const data = JSON.parse(event.data);
+                console.log('WebSocket message received:', data);
 
                 switch (data.type) {
+                    case 'instruction':
+                        if (data.panels) {
+                            // Update panel status for all panels
+                            dispatch({
+                                type: SET_PANEL_STATUS,
+                                payload: data.panels,
+                            });
+                        } else {
+                            console.warn('Received instruction message without panels data:', data);
+                        }
+                        break;
+
                     case 'status':
-                        dispatch({
-                            type: SET_PANEL_STATUS,
-                            payload: { [data.name]: data.panelStatus },
-                        });
+                        if (data.name && data.panelStatus) {
+                            dispatch({
+                                type: SET_PANEL_STATUS,
+                                payload: { [data.name]: data.panelStatus },
+                            });
+                        } else {
+                            console.warn('Received status message without name or panelStatus:', data);
+                        }
                         break;
 
                     case 'log':
-                        dispatch({
-                            type: SET_LOGS,
-                            payload: { [data.name]: [data.log] },
-                        });
+                        if (data.name && data.log) {
+                            dispatch({
+                                type: SET_LOGS,
+                                payload: { [data.name]: [data.log] },
+                            });
+                        } else {
+                            console.warn('Received log message without name or log data:', data);
+                        }
                         break;
 
                     case 'panel_registered':
-                        dispatch({
-                            type: SET_PANEL_STATUS,
-                            payload: {
-                                [data.name]: {
-                                    connected: true,
+                        if (data.name) {
+                            dispatch({
+                                type: SET_PANEL_STATUS,
+                                payload: {
+                                    [data.name]: {
+                                        connected: true,
+                                    },
                                 },
-                            },
-                        });
+                            });
+                        } else {
+                            console.warn('Received panel_registered message without name:', data);
+                        }
                         break;
 
                     // Handle other message types as needed
                     default:
+                        console.warn('Unhandled message type:', data.type);
                         break;
                 }
             } catch (error) {
-                console.error('Error parsing message data:', error);
+                console.error('Error parsing WebSocket message data:', error);
             }
         };
 
@@ -65,9 +92,15 @@ export const connectWebSocket = () => {
             });
             console.log('WebSocket connection closed');
         };
+
+        // Optional: Handle WebSocket errors
+        ws.onerror = (error) => {
+            console.error('WebSocket error:', error);
+        };
     };
 };
 
+// Action to disconnect from the WebSocket
 export const disconnectWebSocket = () => {
     return (dispatch, getState) => {
         const { websocket } = getState();
@@ -80,11 +113,34 @@ export const disconnectWebSocket = () => {
     };
 };
 
+// Action to fetch logs for a specific panel
 export const fetchLogsForPanel = (panelName) => {
-    return async (dispatch) => {
+    return async (dispatch, getState) => {
         try {
-            const response = await fetch(`http://localhost:4000/logs/panel/${panelName}?limit=10`);
+            const state = getState();
+            const token = state.auth.token;
+
+            const response = await fetch(
+                `http://localhost:4000/api/logs/panel/${panelName}?limit=10`,
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${token}`,
+                    },
+                }
+            );
+
+            if (!response.ok) {
+                console.error('Error fetching logs:', response.statusText);
+                dispatch({
+                    type: SET_LOGS,
+                    payload: { [panelName]: [] },
+                });
+                return;
+            }
+
             const data = await response.json();
+
             if (data && Array.isArray(data.logs)) {
                 dispatch({
                     type: SET_LOGS,

@@ -1,26 +1,27 @@
 // src/components/LoginPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthorizationContext';
+import { useDispatch } from 'react-redux'; // Import useDispatch
 import axios from 'axios';
+import { login } from '../../actions/authActions'; // Import the login action
 
 function LoginPage() {
     const [credentials, setCredentials] = useState({ username: '', password: '' });
-    const { login } = useAuth(); // Utiliser la fonction login du contexte
+    const dispatch = useDispatch(); // Use dispatch from Redux
     const navigate = useNavigate();
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // Envoyer la requête de connexion au backend
+            // Send login request to backend
             const response = await axios.post('http://localhost:4000/api/auth/login', credentials);
             const { token, role } = response.data;
 
-            // Mettre à jour l'état d'authentification en utilisant la fonction login
-            login(token, role);
+            // Dispatch the login action to update auth state in Redux
+            dispatch(login(token, role));
 
-            // Rediriger vers la page d'accueil
+            // Redirect to home page
             navigate('/');
         } catch (error) {
             console.error('Login failed', error);

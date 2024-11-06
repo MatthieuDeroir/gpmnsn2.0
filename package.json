@@ -7,9 +7,13 @@
     "@mui/material": "^5.11.0",
     "@mui/styles": "^5.11.0",
     "@mui/x-data-grid": "^5.17.14",
+    "axios": "^1.7.7",
     "pm2": "^5.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1",
+    "redux-thunk": "^3.1.0",
     "x-data-grid": "^2.1.0"
   }
 }
