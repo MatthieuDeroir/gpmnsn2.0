@@ -6,7 +6,7 @@ class ClientManager {
     this.WebSocket = WebSocket;
     this.clients = new Map(); // Map of ws => clientInfo
     this.lastClientData = new Map(); // Map of clientName => clientInfo
-    this.clientWsMap = new Map(); // Map of clientName => ws
+    this.clientWsMap = new Map(); // Map of clientName => { ws, clientInfo }
   }
 
   /**
@@ -17,23 +17,26 @@ class ClientManager {
   addClient(ws, clientInfo) {
     let ipAddress = ws._socket.remoteAddress;
     clientInfo.ip = ipAddress.startsWith('::ffff:') ? ipAddress.split(':').pop() : ipAddress;
-    clientInfo.connected = true; // Mark as connected
+    clientInfo.connected = true;
 
     // Check if the client is already connected via another ws
     if (this.clientWsMap.has(clientInfo.name)) {
-      const existingWs = this.clientWsMap.get(clientInfo.name);
+      const existingWs = this.clientWsMap.get(clientInfo.name).ws;
       if (existingWs !== ws && existingWs.readyState === this.WebSocket.OPEN) {
-        console.log(`Déconnexion de l'ancien client ${clientInfo.name} pour établir une nouvelle connexion.`);
-        existingWs.close(); // Fermer l'ancienne connexion
+        console.log(`Disconnecting old client ${clientInfo.name} to establish a new connection.`);
+        existingWs.close(); // Close the old connection
+      } else {
+        console.log(`Existing client ${clientInfo.name} is the same as the current connection. Not disconnecting.`);
       }
     }
+
 
     // Update the maps with the new connection
     this.clients.set(ws, clientInfo);
     this.lastClientData.set(clientInfo.name, clientInfo);
-    this.clientWsMap.set(clientInfo.name, ws);
+    this.clientWsMap.set(clientInfo.name, { ws, clientInfo });
 
-    console.log(`Client enregistré/mis à jour : ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
+    console.log(`Client registered/updated: ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
   }
 
   /**
@@ -43,16 +46,17 @@ class ClientManager {
   removeClient(ws) {
     const clientInfo = this.clients.get(ws);
     if (clientInfo) {
-      clientInfo.connected = false; // Mark as disconnected
+      clientInfo.connected = false;
       this.clients.delete(ws);
       this.lastClientData.set(clientInfo.name, clientInfo);
 
       // Remove from clientWsMap if this ws was the current one
-      if (this.clientWsMap.get(clientInfo.name) === ws) {
+      const currentClient = this.clientWsMap.get(clientInfo.name);
+      if (currentClient && currentClient.ws === ws) {
         this.clientWsMap.delete(clientInfo.name);
       }
 
-      console.log(`Client déconnecté : ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
+      console.log(`Client disconnected: ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
     }
   }
 
@@ -70,7 +74,7 @@ class ClientManager {
         this.lastClientData.set(clientInfo.name, clientInfo);
 
         // Remove from clientWsMap if necessary
-        if (this.clientWsMap.get(clientInfo.name) === ws) {
+        if (this.clientWsMap.get(clientInfo.name).ws === ws) {
           this.clientWsMap.delete(clientInfo.name);
         }
       }
@@ -146,6 +150,27 @@ class ClientManager {
     });
   }
 
+
+  sendToPanel(panelName, message) {
+    const clientEntry = this.clientWsMap.get(panelName);
+    if (clientEntry && clientEntry.ws.readyState === this.WebSocket.OPEN) {
+      clientEntry.ws.send(JSON.stringify(message));
+    } else {
+      console.warn(`Panel ${panelName} is not connected.`);
+    }
+  }
+
+  sendToFrontend(message) {
+    this.clients.forEach((clientInfo, client) => {
+      if (
+          (clientInfo.clientType === 'user' || clientInfo.clientType === 'frontend') &&
+          client.readyState === this.WebSocket.OPEN
+      ) {
+        client.send(message);
+      }
+    });
+  }
+
   /**
    * Broadcasts a message to all clients.
    * @param {string} message - The message to broadcast.
@@ -164,6 +189,11 @@ class ClientManager {
    */
   getClients() {
     return Array.from(this.lastClientData.values()); // Return all clients
+  }
+
+  getClientByName(name) {
+    const clientEntry = this.clientWsMap.get(name);
+    return clientEntry ? clientEntry : null;
   }
 
   /**
@@ -202,4 +232,4 @@ class ClientManager {
   }
 }
 
-module.exports = ClientManager;
+module.exports = ClientManager;// src/actions/websocketActions.js

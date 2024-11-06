@@ -1,90 +1,91 @@
 // webSocketServer.js
-const WebsocketController = require('ws');
+const WebSocket = require('ws');
+const redis = require('redis');
+const moment = require('moment');
 const ClientManager = require('../websocket/clientManager');
 const Logger = require('../utils/logger');
 const HealthChecker = require('../websocket/healthChecker');
-const moment = require('moment');
 
-const HEARTBEAT_INTERVAL = 1000; // 1 secondes
-const STATUS_UPDATE_INTERVAL = 1000; // 1 seconde pour les mises à jour de statut
+const HEARTBEAT_INTERVAL = 1000; // 1 second
+const STATUS_UPDATE_INTERVAL = 1000; // 1 second for status updates
 
 class WebSocketServer {
   constructor() {
     this.expectedPanels = ['indret', 'aval', 'amont'];
-    this.wss = new WebsocketController.Server({ port: 8080 });
-    this.clientManager = new ClientManager(WebsocketController);
-    this.setupServer();
+    this.wss = new WebSocket.Server({ port: 8080 });
+    this.clientManager = new ClientManager(WebSocket);
+    this.redisClient = redis.createClient();
+
+    this.redisClient.on('error', (err) => console.error('Redis Client Error', err));
+
+    // Initialize the server after connecting to Redis
+    this.init();
   }
 
-  /**
-   * Configure les écouteurs d'événements pour le serveur WebSocket.
-   */
-  setupServer() {
-    this.wss.on('listening', () => {
-      console.log('Le serveur WebSocket fonctionne sur le port 8080');
-      this.healthCheckIntervalId = setInterval(() => this.checkProblems(), HEARTBEAT_INTERVAL);
-      this.statusUpdateIntervalId = setInterval(() => this.sendStatusUpdates(), STATUS_UPDATE_INTERVAL);
-    });
+  async init() {
+    try {
+      this.setupServer();
+      await this.redisClient.connect();
+      console.log('Redis client connected');
 
-    this.wss.on('connection', ws => this.handleConnection(ws));
+
+      this.processQueues();
+    } catch (err) {
+      console.error('Failed to connect to Redis:', err);
+    }
+  }
+
+
+  // TODO: Implement the new INTERVALS logic
+  setupServer() {
+
+    console.log('WebSocket server is running on port 8080');
+    console.log('Starting health check interval...');
+    this.healthCheckIntervalId = setInterval(() => this.checkProblems(), HEARTBEAT_INTERVAL);
+    this.statusUpdateIntervalId = setInterval(() => this.sendStatusUpdates(), STATUS_UPDATE_INTERVAL);
+
+
+    this.wss.on('connection', (ws) => this.handleConnection(ws));
 
     this.wss.on('error', (error) => {
-      console.error('Erreur du serveur WebSocket:', error);
+      console.error('WebSocket server error:', error);
     });
   }
 
-
-  /**
-   * Gère une nouvelle connexion WebSocket.
-   * @param {WebsocketController} ws - La connexion WebSocket.
-   */
   handleConnection(ws) {
-    console.log('[WebSocketServer] Nouvelle connexion établie.');
-    
+    console.log('[WebSocketServer] New connection established.');
+
     ws.on('message', (message) => {
       this.handleMessage(ws, message);
     });
 
     ws.on('close', () => {
-      console.log('[WebSocketServer] Connexion fermée.');
+      console.log('[WebSocketServer] Connection closed.');
       this.handleClose(ws);
     });
 
     ws.on('error', (error) => {
-      console.error(`[WebSocketServer] Erreur de connexion: ${error}`);
+      console.error(`[WebSocketServer] Connection error: ${error}`);
       this.handleClose(ws);
     });
 
-    const clientAddress = ws._socket.remoteAddress.startsWith('::ffff:')
-      ? ws._socket.remoteAddress.split(':').pop()
-      : ws._socket.remoteAddress;
-    const clientAddressMessage = JSON.stringify({ message: `Adresse IP du client : ${clientAddress}` });
-    ws.send(clientAddressMessage);
-
-    // Envoyer les instructions initiales discrètement
+    // Send initial instructions (if any)
     this.sendInitialInstructions(ws);
   }
 
-  /**
-   * Gère les messages entrants des clients.
-   * @param {WebsocketController} ws - La connexion WebSocket.
-   * @param {string} message - Le message reçu.
-   */
-  handleMessage(ws, message) {
+  async handleMessage(ws, message) {
     try {
       message = JSON.parse(message);
     } catch (e) {
-      console.log('JSON invalide reçu.');
-      ws.send(JSON.stringify({ error: 'JSON invalide' }));
-      Logger.appendLog('Unknown Panel', 'Error', { error: 'JSON invalide' });
+      console.log('Invalid JSON received.');
+      ws.send(JSON.stringify({ error: 'Invalid JSON' }));
+      Logger.appendLog('Unknown Client', 'Error', { error: 'Invalid JSON' });
       return;
     }
 
     switch (message.type) {
-      case 'reboot':
-      case 'refresh':
       case 'instruction':
-        this.handleInstruction(message);
+        await this.handleInstruction(message);
         break;
 
       case 'register':
@@ -93,19 +94,14 @@ class WebSocketServer {
 
       case 'heartbeat':
         this.clientManager.updateHeartbeat(ws, message);
-        // Logger.appendLog(message.name, 'Heartbeat', message);
         break;
 
-      case 'maintenanceMode':
-        this.clientManager.updateClient(ws, { maintenanceMode: message.state });
-        Logger.appendLog(message.name, 'Maintenance Mode', { state: message.state, role: message.from });
+      case 'acknowledgement':
+        await this.handleAcknowledgement(message);
         break;
 
-      case 'logs':
-        // Assuming Logger.getLogs() exists and returns logs
-        // You might need to implement this method to support fetching logs
-        const logs = Logger.getLogs();
-        ws.send(JSON.stringify({ type: 'logs', logs }));
+      case 'modify_queue':
+        await this.handleModifyQueue(message);
         break;
 
       case 'ping':
@@ -113,138 +109,110 @@ class WebSocketServer {
         break;
 
       default:
-        console.log(`Type de message inconnu : ${message.type}`);
-        Logger.appendLog(message.name || 'Unknown Panel', `Unknown Event: ${message.type}`, message);
+        console.log(`Unknown message type: ${message.type}`);
+        Logger.appendLog(message.name || 'Unknown Client', `Unknown Event: ${message.type}`, message);
     }
   }
 
-  /**
-   * Gère les messages de type instruction.
-   * @param {object} message - Le message d'instruction.
-   */
-  handleInstruction(message) {
+  async handleInstruction(message) {
     if (message.to === 'panel') {
-      this.clientManager.broadcastToAppropriateClients(JSON.stringify({
-        type: 'instruction',
-        to: 'panel',
-        instruction: message.instruction,
-        heartbeatTimer: message.heartbeatTimer,
-      }), 'panel', message.name);
+      // Enqueue the instruction
+      await this.enqueueInstruction(message.name, message.instruction, message.role);
 
-      // Logger l'instruction avec les informations de rôle et de panneau
+      // Notify the frontend that the instruction has been queued
+      this.clientManager.sendToFrontend(JSON.stringify({
+        type: 'queue_update',
+        panelName: message.name,
+        queue: await this.getQueue(message.name),
+      }));
+
+      // Log the instruction
       const role = message.role || message.from || 'unknown';
-      Logger.appendLog(message.name, `${role} a envoyé l'instruction ${message.instruction}`, {
+      Logger.appendLog(message.name, `${role} enqueued instruction ${message.instruction}`, {
         instruction: message.instruction,
         role: role,
-        heartbeatTimer: message.heartbeatTimer,
       });
 
-      console.log(`[WebSocketServer] Instruction envoyée à ${message.name}: ${message.instruction}`);
+      console.log(`[WebSocketServer] Instruction enqueued for ${message.name}: ${message.instruction}`);
     } else {
-      console.log('Cible d\'instruction invalide :', message.to);
+      console.log('Invalid instruction target:', message.to);
     }
   }
 
-  /**
-   * Gère les messages de registre des clients.
-   * @param {WebsocketController} ws - La connexion WebSocket.
-   * @param {object} message - Le message de registre.
-   */
   handleRegister(ws, message) {
     const { clientType, name } = message;
 
     if (clientType === 'user') {
-      // Supprimer tous les autres clients de type 'user' sauf le courant
+      // Remove all other clients of type 'user' except the current one
       this.clientManager.removeClientsByType('user', ws);
     }
 
-    // Enregistrer ou mettre à jour le client
+    // Register or update the client
     this.clientManager.addClient(ws, {
       clientType: clientType,
       name: name,
       lastHeartbeat: Date.now(),
-      sectorStatus: message.sectorStatus !== undefined ? message.sectorStatus : true, // Default to true if not provided
-      state: message.state || 'off', // Default to 'off' if not provided
+      sectorStatus: message.sectorStatus !== undefined ? message.sectorStatus : true,
+      state: message.state || 'off',
       cpuTemp: message.cpuTemp || null,
       isDoorOpen: message.isDoorOpen || false,
       maintenanceMode: message.maintenanceMode || false,
     });
 
-    this.clientManager.broadcastToAppropriateClients(JSON.stringify({
+    this.clientManager.sendToFrontend(JSON.stringify({
       type: 'panel_registered',
-      name: name
-    }), 'user', "frontend");
+      name: name,
+    }));
 
-    // Logger l'événement d'enregistrement
+    // Log the registration event
     const role = message.from || 'unknown';
     Logger.appendLog(name, 'Register', { panelName: name, role: role });
     console.log(`[WebSocketServer] Panel registered: ${name}`);
   }
 
-  /**
-   * Gère la fermeture d'une connexion WebSocket.
-   * @param {WebsocketController} ws - La connexion WebSocket.
-   */
   handleClose(ws) {
     const clientInfo = this.clientManager.getClientInfo(ws);
     if (clientInfo && clientInfo.name) {
       const panelName = clientInfo.name;
 
-      // Marquer le client comme déconnecté dans ClientManager
+      // Mark the client as disconnected in ClientManager
       this.clientManager.removeClient(ws);
 
       console.log(`[WebSocketServer] Panel disconnected: ${panelName}`);
       Logger.appendLog(panelName, 'Disconnected', { message: 'WebSocket connection closed.' });
     } else {
-      console.log('Client déconnecté sans enregistrement.');
-      Logger.appendLog('Unknown Panel', 'Client déconnecté sans enregistrement.');
+      console.log('Disconnected client without registration.');
+      Logger.appendLog('Unknown Client', 'Disconnected client without registration.');
     }
   }
 
-  /**
-   * Envoie les instructions initiales à un panneau nouvellement connecté.
-   * @param {WebsocketController} ws - La connexion WebSocket.
-   */
   sendInitialInstructions(ws) {
-    const panelSettings = this.clientManager.getPanelSettings();
-    const instructions = {
-      type: 'instruction',
-      panels: panelSettings
-    };
-    ws.send(JSON.stringify(instructions));
-    console.log('[WebSocketServer] Instructions initiales envoyées.');
+    // Implement if necessary
   }
 
-  /**
-   * Effectue des vérifications de santé périodiques et diffuse des instructions si nécessaire.
-   */
   async checkProblems() {
     const clients = this.clientManager.getClients();
     const allOk = await HealthChecker.checkProblems(
-      clients,
-      this.clientManager.broadcastToAppropriateClients.bind(this.clientManager),
-      this.expectedPanels
+        clients,
+        this.clientManager.broadcastToAppropriateClients.bind(this.clientManager),
+        this.expectedPanels
     );
 
     if (!allOk) {
       this.clientManager.broadcastToAppropriateClients(
-        JSON.stringify({ type: 'instruction', to: 'panel', instruction: 'off' }),
-        'panel'
+          JSON.stringify({ type: 'instruction', to: 'panel', instruction: 'off' }),
+          'panel'
       );
-      console.log('[WebSocketServer] Instructions "off" envoyées aux panneaux.');
+      console.log('[WebSocketServer] "Off" instructions sent to panels due to detected problems.');
     }
   }
 
-  /**
-   * Envoie des mises à jour de statut aux clients utilisateur.
-   * Cette méthode est découplée des messages des panneaux et repose uniquement sur les données de HealthChecker.
-   */
   async sendStatusUpdates() {
     const panelStatus = {};
 
-    this.clientManager.getLastClientData().forEach(clientInfo => {
+    this.clientManager.getLastClientData().forEach((clientInfo) => {
       const panelName = clientInfo.name;
-      const currentStatus = clientInfo.currentStatus || 'offline'; // HealthChecker définit cela
+      const currentStatus = clientInfo.currentStatus || 'offline';
       const lastHeartbeatTime = moment(clientInfo.lastHeartbeat);
 
       panelStatus[panelName] = {
@@ -256,14 +224,14 @@ class WebSocketServer {
         sectorStatus: clientInfo.sectorStatus,
         maintenanceMode: clientInfo.maintenanceMode,
         lastHeartbeat: Math.floor((Date.now() - lastHeartbeatTime) / 1000),
-        lastHeartbeatTimestamp: lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss')
+        lastHeartbeatTimestamp: lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss'),
       };
     });
 
-    // Gérer les panneaux attendus qui pourraient ne pas être dans le clientManager
-    this.expectedPanels.forEach(panel => {
+    // Handle expected panels not in clientManager
+    this.expectedPanels.forEach((panel) => {
       if (!panelStatus[panel]) {
-        const lastClientInfo = this.clientManager.getLastClientData().find(info => info.name === panel);
+        const lastClientInfo = this.clientManager.getLastClientData().find((info) => info.name === panel);
         const lastHeartbeatTime = lastClientInfo ? moment(lastClientInfo.lastHeartbeat) : null;
 
         panelStatus[panel] = {
@@ -275,14 +243,115 @@ class WebSocketServer {
           sectorStatus: lastClientInfo ? lastClientInfo.sectorStatus : null,
           maintenanceMode: lastClientInfo ? lastClientInfo.maintenanceMode : null,
           lastHeartbeat: lastHeartbeatTime ? Math.floor((Date.now() - lastHeartbeatTime) / 1000) : null,
-          lastHeartbeatTimestamp: lastHeartbeatTime ? lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss') : null
+          lastHeartbeatTimestamp: lastHeartbeatTime ? lastHeartbeatTime.format('YYYY-MM-DD HH:mm:ss') : null,
         };
       }
     });
 
     const statusMessage = JSON.stringify({ type: 'status', panelStatus });
-    this.clientManager.broadcastToAppropriateClients(statusMessage, 'user');
-    // console.log('[WebSocketServer] Mises à jour de statut envoyées aux utilisateurs.');
+    console.log('[WebSocketServer] Sending status updates to frontend...');
+    this.clientManager.sendToFrontend(statusMessage);
+    console.log('[WebSocketServer] Status updates sent to frontend.');
+  }
+
+  // Instruction Queue Management with Redis
+
+  async enqueueInstruction(panelName, instruction, role) {
+    const instructionItem = {
+      id: this.generateUniqueId(),
+      instruction,
+      timestamp: Date.now(),
+      status: 'pending',
+      role,
+    };
+    await this.redisClient.lPush(`queue:${panelName}`, JSON.stringify(instructionItem));
+  }
+
+  async getQueue(panelName) {
+    const queueItems = await this.redisClient.lRange(`queue:${panelName}`, 0, -1);
+    return queueItems.map((item) => JSON.parse(item)).reverse(); // Reverse to maintain FIFO order
+  }
+
+  async removeInstruction(panelName, instructionId) {
+    const queueItems = await this.redisClient.lRange(`queue:${panelName}`, 0, -1);
+    for (const item of queueItems) {
+      const instruction = JSON.parse(item);
+      if (instruction.id === instructionId) {
+        await this.redisClient.lRem(`queue:${panelName}`, 0, item);
+        break;
+      }
+    }
+  }
+
+  async processQueues() {
+    setInterval(async () => {
+      for (const panelName of this.expectedPanels) {
+        const queue = await this.getQueue(panelName);
+        if (queue.length === 0) continue;
+
+        const nextInstruction = queue[0]; // Get the next instruction (FIFO)
+        if (nextInstruction.status === 'pending') {
+          // Send instruction to panel
+          const panelClient = this.clientManager.getClientByName(panelName);
+          if (panelClient && panelClient.ws && panelClient.ws.readyState === WebSocket.OPEN) {
+            const instructionMessage = {
+              type: 'instruction',
+              instruction: nextInstruction.instruction,
+              instructionId: nextInstruction.id,
+              to: 'panel',
+              panelName: panelName,
+            };
+            panelClient.ws.send(JSON.stringify(instructionMessage));
+
+            // Update instruction status to 'sent'
+            nextInstruction.status = 'sent';
+            await this.removeInstruction(panelName, nextInstruction.id);
+            // Re-add the updated instruction to the queue
+            await this.redisClient.lPush(`queue:${panelName}`, JSON.stringify(nextInstruction));
+          } else {
+            console.warn(`Panel ${panelName} is not connected. Cannot send instruction.`);
+          }
+        }
+      }
+    }, 1000); // Adjust the interval as needed
+  }
+
+  async handleAcknowledgement(message) {
+    const { panelName, instructionId, status } = message;
+
+    // Remove the instruction from the queue
+    await this.removeInstruction(panelName, instructionId);
+
+    // Notify frontend about updated queue
+    const updatedQueue = await this.getQueue(panelName);
+    this.clientManager.sendToFrontend(JSON.stringify({
+      type: 'queue_update',
+      panelName: panelName,
+      queue: updatedQueue,
+    }));
+
+    // Log the acknowledgement
+    Logger.appendLog(panelName, `Instruction ${instructionId} acknowledged with status: ${status}`);
+    console.log(`[WebSocketServer] Instruction ${instructionId} acknowledged by ${panelName} with status: ${status}`);
+  }
+
+  async handleModifyQueue(message) {
+    const { action, panelName, instructionId } = message;
+    if (action === 'delete') {
+      await this.removeInstruction(panelName, instructionId);
+      // Notify frontend about updated queue
+      const updatedQueue = await this.getQueue(panelName);
+      this.clientManager.sendToFrontend(JSON.stringify({
+        type: 'queue_update',
+        panelName: panelName,
+        queue: updatedQueue,
+      }));
+      console.log(`[WebSocketServer] Instruction ${instructionId} removed from queue for ${panelName}`);
+    }
+  }
+
+  generateUniqueId() {
+    return Math.random().toString(36).substr(2, 9);
   }
 }
 
