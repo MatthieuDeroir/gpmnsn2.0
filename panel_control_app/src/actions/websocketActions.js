@@ -102,6 +102,11 @@ export const connectWebSocket = () => {
                 type: DISCONNECT_WEBSOCKET,
             });
             console.log('WebSocket connection closed');
+
+            // Attempt to reconnect
+            setTimeout(() => {
+                dispatch(connectWebSocket());
+            }, 5000);
         };
 
         // Optional: Handle WebSocket errors
