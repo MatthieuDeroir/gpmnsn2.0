@@ -6,25 +6,25 @@ import axios from 'axios';
 
 function LoginPage() {
     const [credentials, setCredentials] = useState({ username: '', password: '' });
-    const { setToken, setRole } = useAuth();
+    const { login } = useAuth(); // Utiliser la fonction login du contexte
     const navigate = useNavigate();
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // Send login request to the backend
-            const response = await axios.post('/api/auth/login', credentials);
+            // Envoyer la requête de connexion au backend
+            const response = await axios.post('http://localhost:4000/api/auth/login', credentials);
             const { token, role } = response.data;
 
-            // Update context with token and role
-            setToken(token);
-            setRole(role);
+            // Mettre à jour l'état d'authentification en utilisant la fonction login
+            login(token, role);
 
-            // Redirect to the home page
+            // Rediriger vers la page d'accueil
             navigate('/');
         } catch (error) {
             console.error('Login failed', error);
-            // Handle login error (e.g., show a message to the user)
+            setErrorMessage('Nom d\'utilisateur ou mot de passe incorrect.');
         }
     };
 
@@ -47,6 +47,7 @@ function LoginPage() {
                     required
                 />
                 <button type="submit">Se connecter</button>
+                {errorMessage && <p className="error-message">{errorMessage}</p>}
             </form>
         </div>
     );

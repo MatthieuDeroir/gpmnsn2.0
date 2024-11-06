@@ -1,14 +1,15 @@
-// src/api/axiosConfig.js
+// src/api/axiosInstance.js
+
 import axios from 'axios';
-import { useAuth } from '../Contexts/AuthorizationContext';
 
 const axiosInstance = axios.create({
-    baseURL: '/api', // Set your API base URL
+    baseURL: 'http://localhost:4000',
 });
 
+// Intercepteur pour ajouter le jeton JWT à chaque requête
 axiosInstance.interceptors.request.use(
     (config) => {
-        const { token } = useAuth();
+        const token = localStorage.getItem('token'); // Récupérer le jeton depuis le localStorage
         if (token) {
             config.headers['Authorization'] = `Bearer ${token}`;
         }
