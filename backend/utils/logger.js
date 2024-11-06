@@ -34,20 +34,20 @@ class Logger {
     logMessage += '\n';
 
     // Log to the general log file (all.txt)
-    fs.appendFile('logs/all.txt', logMessage, (err) => {
+    /*fs.appendFile('logs/all.txt', logMessage, (err) => {
       if (err) {
         console.error('Failed to append to all.txt:', err);
       }
-    });
+    });*/
 
-    // Log to the specific panel's log file
+    // Log to the specific panel's log filel
     if (panelName !== 'Unknown Panel') {
       const panelLogPath = path.join('logs', `${panelName.toLowerCase()}.txt`);
-      fs.appendFile(panelLogPath, logMessage, (err) => {
+      /*fs.appendFile(panelLogPath, logMessage, (err) => {
         if (err) {
           console.error(`Failed to append to ${panelName}.txt:`, err);
         }
-      });
+      });*/
     }
 
     // Log to the specific role's log file
