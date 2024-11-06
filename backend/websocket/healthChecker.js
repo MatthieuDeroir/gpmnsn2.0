@@ -1,8 +1,9 @@
 // healthChecker.js
 const http = require('http');
-const Logger = require('./logger');
+const Logger = require('../utils/logger');
 const ping = require('ping'); // Ensure you've installed this package using `npm install ping`
 
+//TODO: Update the following constants with the appropriate values and put them in a .env file
 const FRONTEND_PORT = 3000;
 const DATABASE_PORT = 27017;
 const HEARTBEAT_INTERVAL = 5000; // 5 seconds
@@ -80,10 +81,10 @@ class HealthChecker {
       const isHeartbeatValid = now - clientInfo.lastHeartbeat <= HealthChecker.HEARTBEAT_THRESHOLD;
       const isPingable = await this.pingPanel(clientInfo.ip);
 
-      console.log(`[HealthChecker] Panel: ${clientInfo.name}`);
-      console.log(` - WebSocket Connected: ${isWebSocketConnected}`);
-      console.log(` - Heartbeat Valid: ${isHeartbeatValid}`);
-      console.log(` - Pingable: ${isPingable}`);
+      // console.log(`[HealthChecker] Panel: ${clientInfo.name}`);
+      // console.log(` - WebSocket Connected: ${isWebSocketConnected}`);
+      // console.log(` - Heartbeat Valid: ${isHeartbeatValid}`);
+      // console.log(` - Pingable: ${isPingable}`);
 
       // Determine current status based on the three checks
       let currentStatus = 'offline';
@@ -95,8 +96,8 @@ class HealthChecker {
         currentStatus = 'offline';
       }
 
-      console.log(` - Current Status: ${currentStatus}`);
-      console.log(` - Previous Status: ${clientInfo.previousStatus || 'offline'}`);
+      // console.log(` - Current Status: ${currentStatus}`);
+      // console.log(` - Previous Status: ${clientInfo.previousStatus || 'offline'}`);
 
       const previousStatus = clientInfo.previousStatus || 'offline';
 
@@ -168,7 +169,7 @@ class HealthChecker {
       }
     });
 
-    console.log(`[HealthChecker] All Panels OK: ${allPanelsOk}`);
+    // console.log(`[HealthChecker] All Panels OK: ${allPanelsOk}`);
 
     return { allPanelsOk, problems };
   }

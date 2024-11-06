@@ -17747,3 +17747,1377 @@
 2024-10-30T08:57:03.209Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
 2024-10-30T08:57:03.292Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
 2024-10-30T08:57:04.028Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:18.120Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:12:18.327Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:18.799Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:12:19.015Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:23.590Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:28.762Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:33.917Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:39.153Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:44.480Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:49.487Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:54.718Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:12:59.869Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:05.162Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:10.257Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:13.113Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:15.453Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:17.043Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:18.064Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:19.089Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:20.044Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:20.641Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:24.807Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:13:24.807Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:24.988Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:13:25.337Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:25.815Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:26.062Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:31.017Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:31.818Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:13:31.818Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:31.838Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:13:32.060Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:36.198Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:41.394Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:46.584Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:51.835Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:13:57.032Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:02.301Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:07.524Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:12.645Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:17.847Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:23.009Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:28.311Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:33.536Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:38.763Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:43.775Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:48.974Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:54.217Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:14:59.440Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:04.548Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:09.786Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:14.931Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:20.228Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:25.347Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:30.674Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:35.792Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:40.909Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:46.135Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:51.357Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:15:56.579Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:01.687Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:06.883Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:12.146Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:17.370Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:22.555Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:27.708Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:32.907Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:38.154Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:43.376Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:48.516Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:53.718Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:16:58.888Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:04.163Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:09.386Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:14.507Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:19.658Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:24.934Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:30.048Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:35.242Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:40.428Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:45.629Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:50.834Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:17:56.019Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:01.201Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:06.390Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:11.646Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:16.870Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:21.969Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:27.209Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:32.432Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:37.586Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:42.969Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:47.971Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:53.123Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:18:58.441Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:03.564Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:04.217Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:08.714Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:13.911Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:19.106Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:24.299Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:29.499Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:34.702Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:40.019Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:45.115Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:50.363Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:19:55.484Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:00.654Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:05.929Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:11.040Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:16.272Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:21.496Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:26.825Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:31.942Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:37.029Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:42.222Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:47.510Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:52.616Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:20:57.855Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:03.043Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:08.202Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:13.391Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:18.646Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:23.973Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:28.980Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:34.175Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:39.435Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:44.583Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:49.781Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:21:54.954Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:00.139Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:05.450Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:10.570Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:15.897Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:21.071Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:26.154Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:31.463Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:36.536Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:42.012Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:46.934Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:52.108Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:22:57.373Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:02.596Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:07.691Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:12.889Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:18.101Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:23.281Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:28.471Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:33.667Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:38.860Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:44.055Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:49.245Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:54.519Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:23:59.741Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:04.862Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:10.196Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:15.212Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:20.441Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:25.654Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:30.794Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:36.096Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:41.182Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:46.442Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:51.561Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:24:56.888Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:02.006Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:07.141Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:12.455Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:17.538Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:22.727Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:26.439Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:27.425Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:28.017Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:33.142Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:33.415Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:38.300Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:43.489Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:48.705Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:53.927Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:25:59.073Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:04.281Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:09.494Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:14.717Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:19.857Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:25.052Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:30.239Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:33.447Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:35.503Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:40.689Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:45.949Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:51.155Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:26:56.212Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:01.411Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:06.634Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:11.857Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:16.977Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:22.200Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:27.355Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:32.647Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:37.741Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:42.988Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:48.125Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:53.314Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:27:58.535Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:03.751Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:08.896Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:14.092Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:19.283Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:24.565Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:29.791Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:35.267Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:40.078Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:45.265Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:50.473Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:28:55.697Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:00.919Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:06.043Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:11.269Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:16.415Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:21.710Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:26.827Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:31.991Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:37.273Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:42.370Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:47.563Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:52.751Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:29:58.060Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:03.287Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:03.539Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:08.326Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:13.627Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:18.747Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:23.968Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:29.111Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:34.311Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:39.534Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:44.757Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:49.980Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:30:55.103Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:00.322Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:05.466Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:10.745Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:15.887Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:21.110Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:26.229Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:31.421Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:36.675Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:41.827Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:47.019Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:31:52.189Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:03.967Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:32:04.191Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:04.692Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:32:09.381Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:14.669Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:19.767Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:25.010Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:30.233Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:35.455Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:40.690Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:43.947Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:45.748Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:50.942Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:51.941Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:32:56.145Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:33:01.364Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:33:01.967Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:33:02.981Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:33:03.960Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:33:05.951Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:33:06.523Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:50:56.432Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:50:56.499Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:50:56.705Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:04.687Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:51:04.887Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:51:04.904Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:10.120Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:15.341Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:20.565Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:25.765Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:30.867Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:36.129Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:41.351Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:46.444Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:51.695Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:51:56.846Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:02.025Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:07.221Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:12.484Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:17.707Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:22.796Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:28.037Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:33.270Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:38.390Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:43.612Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:48.829Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:53.949Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:52:59.135Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:04.407Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:09.627Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:14.747Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:19.903Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:25.102Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:30.298Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:35.640Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:40.694Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:45.988Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:51.096Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:53:56.321Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:01.469Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:06.763Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:11.886Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:17.047Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:22.332Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:27.451Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:32.651Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:37.819Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:43.018Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:48.208Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:53.406Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:54:58.603Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:55:03.911Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:55:08.994Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:55:14.249Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:55:19.388Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:55:24.694Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:55:50.486Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:55:50.689Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:55:50.859Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:55:55.893Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:01.151Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:06.375Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:11.479Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:16.714Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:24.858Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:56:25.064Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:25.271Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:56:30.265Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:35.455Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:40.651Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:46.559Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:56:46.772Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:48.349Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:56:49.560Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:52.044Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:56:57.267Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:02.359Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:12.368Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:57:12.547Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:57:12.587Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:17.788Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:23.072Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:28.189Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:33.412Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:38.563Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:43.857Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:48.978Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:54.407Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:57:59.423Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:05.596Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:58:05.814Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:06.037Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:58:11.016Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:16.209Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:21.441Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:26.665Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:35.980Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:58:36.187Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:36.356Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:58:41.372Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:46.733Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:51.860Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:58:57.181Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:02.199Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:07.402Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:12.644Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:17.864Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:23.126Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:28.367Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:33.372Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:41.992Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T10:59:42.174Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:59:42.200Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:47.465Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:52.691Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T10:59:57.804Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:03.028Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:08.167Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:13.469Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:18.593Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:23.816Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:29.141Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:34.161Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:39.380Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:44.520Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:49.720Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:00:54.941Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:00.167Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:05.308Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:10.507Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:15.729Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:20.953Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:26.155Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:31.265Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:36.517Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:41.651Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:46.962Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:52.183Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:01:57.221Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:02.423Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:07.646Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:13.075Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:18.221Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:23.189Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:28.435Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:33.659Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:38.884Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:44.000Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:49.240Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:54.357Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:02:59.565Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:04.791Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:10.012Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:15.256Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:20.362Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:25.581Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:30.728Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:35.917Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:41.188Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:46.293Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:51.605Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:03:56.704Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:01.928Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:07.150Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:12.289Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:17.465Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:22.716Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:27.907Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:33.050Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:38.242Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:43.430Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:48.628Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:53.826Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:04:59.067Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:04.295Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:09.399Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:14.589Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:19.854Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:25.078Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:30.197Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:35.366Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:40.556Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:45.762Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:50.985Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:05:56.208Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:01.334Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:06.556Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:11.777Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:16.996Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:22.217Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:27.338Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:32.465Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:37.659Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:43.006Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:48.334Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:53.315Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:06:58.511Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:03.793Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:08.915Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:14.086Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:19.358Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:24.481Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:29.673Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:34.923Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:40.249Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:45.265Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:50.443Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:07:55.639Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:00.933Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:06.057Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:11.251Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:16.417Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:21.722Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:26.811Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:32.066Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:37.185Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:41.453Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T11:08:41.453Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T11:08:41.458Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T11:08:41.791Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:42.431Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:47.563Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:52.953Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:53.715Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:57.971Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:08:59.450Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T11:08:59.450Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T11:08:59.465Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T11:08:59.674Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:03.195Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:08.340Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:12.819Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:13.630Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:18.862Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:24.086Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:29.271Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:34.413Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:39.650Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:44.871Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:50.094Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:09:55.419Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:00.436Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=43,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:03.766Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:05.522Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:10.711Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:12.827Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:16.001Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:21.121Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:26.296Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:31.503Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:36.687Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:41.876Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:47.131Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:52.354Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:10:57.481Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:11:02.669Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:11:07.921Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:11:13.144Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:11:18.365Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:11:23.486Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:11:28.643Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T11:11:33.843Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=true,maintenanceMode=false,name=indret
+2024-10-30T12:42:16.140Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:42:16.141Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:16.149Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:18.171Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:18.171Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:19.133Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:19.133Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:20.172Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:20.172Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:21.136Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.137Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:21.176Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.215Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.471Z,indret,Disconnected,message=WebSocket connection closed.
+2024-10-30T12:42:22.145Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:22.145Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:25.278Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T12:42:25.485Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:26.159Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:42:28.204Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:30.612Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:35.881Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:41.103Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:46.257Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:51.459Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:54.438Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:56.670Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:42:58.334Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:01.996Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:06.972Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:12.170Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:17.458Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:22.580Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:27.803Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:33.002Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:38.153Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:43.367Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:48.533Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:53.720Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:43:58.933Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:04.155Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:09.312Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:14.600Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:19.726Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:24.948Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:30.168Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:35.270Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:40.463Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:45.660Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:51.058Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:44:56.136Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:01.226Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:06.522Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:11.606Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:16.808Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:22.001Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:27.206Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:32.736Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:37.651Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:43.259Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:44.275Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:45:44.275Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:45:44.716Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:45.282Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:45:46.263Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:45:46.263Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:45:46.286Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:45:46.505Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:48.200Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:53.181Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:45:58.374Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:03.662Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:09.092Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:14.018Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:19.227Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:24.407Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:29.674Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:34.793Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:40.120Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:45.239Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:50.372Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:46:55.581Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:00.803Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:05.948Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:11.162Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:16.336Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:21.592Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:26.815Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:31.915Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:37.259Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:42.301Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:47.489Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:52.722Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:47:57.945Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:03.089Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:08.289Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:13.479Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:18.736Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:23.955Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:29.069Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:34.298Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:34.359Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:48:34.359Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:48:34.386Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:48:34.593Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:39.472Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:44.744Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:50.071Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:48:55.049Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:00.248Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:05.441Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:10.754Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:15.876Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:21.099Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:26.240Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:31.424Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:36.662Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:41.885Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:47.107Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:52.227Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:49:57.407Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:02.672Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:07.895Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:13.323Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:18.340Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:23.450Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:28.684Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:33.906Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:39.032Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:44.225Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:49.418Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:54.696Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:50:59.803Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:05.137Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:10.361Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:15.440Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:19.430Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:51:19.430Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:19.452Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:51:19.660Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:20.702Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:24.461Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:51:24.461Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:24.715Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:25.926Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:26.449Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:51:27.439Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:51:27.439Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:27.451Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:51:27.676Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:31.020Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:36.270Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:38.441Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:51:38.441Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:38.483Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:51:38.676Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:41.696Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:42.445Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:51:42.445Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:42.457Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:51:42.678Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:46.631Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:47.457Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:51:47.457Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:48.250Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:49.455Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:50.439Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:50.460Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:50.523Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:51:50.699Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:51.452Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:51:51.452Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:51:51.570Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:51:51.687Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:52.461Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:51:57.145Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:00.455Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:52:00.455Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:52:00.471Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:52:00.687Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:02.331Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:08.467Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:52:08.467Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:52:08.922Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:52:08.941Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:08.984Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:09.461Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:52:09.461Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:52:09.496Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:52:09.705Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:12.708Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:17.946Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:23.106Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:28.391Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:33.482Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:38.733Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:43.957Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:49.078Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:54.304Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:52:59.452Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:53:03.500Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:53:03.500Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:53:03.506Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:53:03.726Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:53:04.847Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:53:09.968Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:53:15.140Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:53:54.803Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T12:53:55.035Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:53:55.702Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:53:59.673Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:53:59.673Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:53:59.690Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:53:59.938Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:00.246Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:05.469Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:08.677Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:54:08.677Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:54:08.710Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:54:08.892Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:10.655Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:14.833Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:16.018Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:21.142Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:26.309Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:31.714Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:36.690Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:41.924Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:47.147Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:54:52.369Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:11.318Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T12:55:11.531Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:12.100Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:55:16.717Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:21.964Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:27.101Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:32.296Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:37.492Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:42.963Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:47.975Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:53.417Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T12:55:53.588Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:55:53.639Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:55:58.931Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:04.051Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:09.237Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:14.496Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:19.615Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:24.805Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:30.010Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:35.282Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:40.390Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:45.582Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:49.657Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:56:49.658Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:56:49.877Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:51.007Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:51.613Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:56:51.828Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:52.613Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:56:52.613Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:56:52.833Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:56:53.627Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:56:56.079Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:01.319Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:01.610Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:57:01.611Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:57:01.616Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:57:01.823Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:02.624Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:57:02.625Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:57:02.835Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:03.615Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:57:06.390Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:08.608Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:57:08.609Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:57:08.628Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:57:08.826Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:11.617Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:16.859Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:22.082Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:27.185Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:36.860Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T12:57:36.981Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:57:37.073Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:44.959Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:57:44.960Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:57:45.948Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:57:46.947Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:57:46.977Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:57:47.403Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:47.410Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:47.410Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:47.411Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:47.478Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:52.663Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:57:57.851Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:03.055Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:08.238Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:11.196Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:13.490Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:18.620Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:22.012Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:58:22.012Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:58:22.031Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:58:22.230Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:22.981Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:58:22.982Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:58:23.032Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:58:23.313Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:23.831Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:26.202Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:28.993Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:34.186Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:34.480Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:39.395Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:44.619Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:49.842Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:58:54.981Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:00.186Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:05.330Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:10.529Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:15.749Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:20.908Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:26.104Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:31.415Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:36.537Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:41.686Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:46.888Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:52.080Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T12:59:57.329Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:02.548Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:07.770Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:12.890Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:18.039Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:23.335Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:28.455Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:33.678Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:39.056Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:44.073Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:49.347Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:54.569Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:00:59.689Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:04.910Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:10.083Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:15.229Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:20.434Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:25.617Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:30.822Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:36.041Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:41.187Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:46.486Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:51.606Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:01:56.832Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:02.051Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:07.157Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:12.344Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:17.535Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:22.846Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:27.941Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:33.136Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:38.328Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:43.628Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:48.713Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:53.974Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:02:59.157Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:01.292Z,indret,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:02.984Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:04.216Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:09.432Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:14.655Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:19.877Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:25.172Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:30.197Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:35.394Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:40.665Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:45.784Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:50.978Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:03:56.203Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:01.453Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:06.574Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:11.752Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:17.019Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:22.219Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:27.339Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:32.585Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:37.806Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:43.032Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:48.150Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:53.324Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:04:58.593Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:03.820Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:08.902Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:14.093Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:19.289Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:24.483Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:29.724Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:34.949Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:40.266Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:45.251Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:50.453Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:05:55.645Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:00.840Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:06.079Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:11.297Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:16.465Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:21.743Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:26.856Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:32.048Z,indret,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=indret
+2024-10-30T13:06:40.436Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:06:41.310Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:07:20.193Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:07:20.873Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:12:06.139Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:12:07.129Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:18:14.631Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:18:15.555Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:18:29.105Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:18:30.096Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:19:17.902Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:19:18.259Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:29:32.377Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:29:32.948Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:29:41.931Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:29:41.932Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:29:41.955Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:29:47.400Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:29:47.770Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:40:05.560Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:40:05.660Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:40:47.650Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:40:48.638Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:41:03.440Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:41:03.768Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:41:57.788Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:41:58.125Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:17.535Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:42:17.672Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:27.999Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:42:28.103Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:42.320Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:42:42.722Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:44:57.797Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:44:58.348Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:45:06.291Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:45:06.472Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:49:57.674Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:49:57.675Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:49:58.685Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:50:16.739Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:50:16.740Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:50:17.820Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:50:31.697Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:50:31.698Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:50:31.706Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:52:36.592Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:52:36.973Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:52:55.186Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:52:56.031Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:53:03.012Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:53:03.013Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:53:03.020Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:54:49.083Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:54:50.002Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:55:23.999Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:55:24.000Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:55:24.039Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:56:49.672Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:56:49.903Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:57:37.853Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:57:37.854Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:57:37.863Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:57:48.856Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:57:48.857Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:57:48.919Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:58:17.591Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T13:58:18.592Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:03:55.820Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:03:55.821Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:03:55.844Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:04:23.841Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:04:23.841Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:23.849Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:04:24.840Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:04:24.841Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:24.859Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:04:29.845Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:04:29.845Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:30.845Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:30.856Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:04:31.846Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:04:31.847Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:31.862Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:04:36.851Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:04:36.851Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:37.969Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:04:38.851Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:04:38.851Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:38.866Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:12:31.161Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:12:31.161Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:12:31.465Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:12:46.169Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:12:46.169Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:12:46.186Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:14:17.219Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:14:17.220Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:14:17.231Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:14:23.221Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:14:23.222Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:14:23.253Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:14:27.222Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:14:27.222Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:14:27.330Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:17:56.331Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:17:56.331Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:17:56.371Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:18:03.336Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:18:03.337Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:18:03.347Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:18:13.340Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:18:13.341Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:18:13.361Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:18:14.341Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:18:14.341Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:18:14.352Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:18:38.353Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:18:38.354Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:18:38.368Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:18:44.356Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:18:44.357Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:18:44.367Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:21:16.441Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:21:16.441Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:21:16.460Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:21:48.456Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:21:48.456Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:21:48.464Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:22:55.490Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:22:55.490Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:22:55.514Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:23:08.493Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:23:08.493Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:23:08.534Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:24:34.545Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:24:34.545Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:24:35.546Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:24:35.724Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:24:36.546Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:24:36.546Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:24:36.566Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:24:41.550Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:24:41.551Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:24:41.568Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:25:31.573Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:25:31.573Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:25:31.610Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:25:57.589Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:25:57.590Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:25:57.736Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:26:00.592Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:26:00.593Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:26:01.604Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:26:02.591Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:26:02.591Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:26:02.601Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:26:57.655Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:26:57.656Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:26:57.664Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:03.657Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:03.658Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:03.805Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:12.660Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:12.661Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:13.682Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:14.661Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:14.662Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:14.670Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:20.663Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:20.664Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:20.945Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:21.665Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:21.666Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:21.681Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:44.674Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:44.675Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:44.696Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:47.674Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:47.674Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:47.698Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:33:28.717Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T14:33:28.928Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:33:38.048Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T14:33:38.499Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:34:49.467Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:34:49.467Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:34:49.574Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:34:50.467Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:34:50.468Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:34:50.473Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:34:53.482Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:34:53.482Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:34:53.576Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:34:54.470Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:34:54.471Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:34:54.480Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:34:57.470Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:34:57.470Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:34:57.521Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:35:05.471Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:35:05.472Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:35:05.490Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:35:10.484Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:35:10.485Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:35:11.487Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:37:59.597Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:37:59.598Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:37:59.628Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:38:00.604Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:38:00.605Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:38:00.828Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:38:04.601Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:38:04.602Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:38:04.608Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:38:07.613Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:38:07.613Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:38:08.605Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:38:09.267Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:38:09.614Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:38:09.615Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:38:10.401Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:40:54.720Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:40:54.721Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:40:54.759Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:41:20.751Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:41:20.752Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:41:20.760Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:41:41.751Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:41:41.752Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:41:41.763Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:42:05.779Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:42:05.779Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:42:06.804Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:42:07.781Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:42:07.781Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:42:07.909Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:42:11.902Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:42:11.902Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:42:11.935Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:42:12.778Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:42:12.779Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:42:12.803Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:42:15.782Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:42:15.782Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:42:15.790Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:42:20.785Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:42:20.786Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:42:20.806Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:42:25.798Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:42:25.799Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:42:25.806Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:43:44.847Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:43:44.848Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:43:44.881Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:44:05.875Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:44:05.876Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:44:06.004Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:44:06.867Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:44:06.867Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:44:06.911Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:51:03.473Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T14:51:04.731Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:55:45.268Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:55:45.268Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:55:45.274Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:56:19.282Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:56:19.283Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:56:19.291Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:57:43.304Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:57:43.305Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:57:43.339Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:58:03.308Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:58:03.309Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:58:03.327Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:58:04.297Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:58:04.297Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:58:04.315Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:58:17.299Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:58:17.299Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:58:18.301Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:58:18.325Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:58:19.440Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:58:19.441Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:58:20.310Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:59:45.346Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:59:45.348Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:59:46.556Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:00:52.409Z,indret,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:06:15.805Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:06:15.806Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:06:16.607Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:06:53.479Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:06:53.646Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:10:33.757Z,indret,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:10:36.781Z,indret,Disconnected,message=WebSocket connection closed.
+2024-10-30T15:10:38.847Z,indret,Status Change,status=offline,message=Panel is disconnected and not pingable. Possible network disconnection.
+2024-10-30T15:10:38.848Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:39.918Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:40.887Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:41.888Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:44.838Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:45.840Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:46.841Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:47.841Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:48.843Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:49.843Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:50.865Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:51.855Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:52.889Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:53.874Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:54.853Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:55.874Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:56.876Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:57.880Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:58.863Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:59.905Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:00.856Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:01.888Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:02.869Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:03.872Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:04.861Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:05.891Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:06.855Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:07.895Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:08.173Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:08.855Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:08.882Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:09.894Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:10.882Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:11.559Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:11:11.881Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:11.894Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:12:04.915Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:12:04.916Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:06.881Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:06.895Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:07.242Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:07.255Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:07.916Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:08.405Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:16:15.391Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:16:16.380Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:18:18.434Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:18:18.435Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:18:18.452Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:08.090Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:19:08.486Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:37.058Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:19:37.277Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:42.202Z,indret,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:21:13.379Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:21:14.284Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:25:16.424Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:25:16.425Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:25:16.434Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:28:06.435Z,indret,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:13.654Z,indret,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:23.690Z,indret,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:26.194Z,indret,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:31.534Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:28:31.534Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:32.535Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:33.534Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:34.536Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:35.536Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:36.537Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:37.537Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:38.538Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:39.538Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:40.539Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:41.538Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:42.539Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:43.539Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:44.540Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:45.540Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:46.541Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:47.542Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:48.542Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:49.544Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:50.543Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:51.547Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:52.547Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:53.547Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:54.549Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:55.552Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:56.553Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:57.554Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:58.554Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:28:58.555Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:59.594Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:28:59.595Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:00.555Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:00.555Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:00.574Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:01.580Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:01.580Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:01.599Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:02.568Z,indret,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:02.583Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:29:03.574Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:29:26.953Z,indret,Disconnected,message=WebSocket connection closed.
+2024-10-30T15:30:11.599Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:30:11.599Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:30:12.598Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:30:13.601Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:30:13.612Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:30:14.603Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:30:14.604Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:30:14.621Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:51:42.600Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:51:43.076Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:53:12.508Z,indret,Register,panelName=indret,role=unknown
+2024-10-30T15:53:13.274Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:55:02.315Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:55:02.316Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:55:02.322Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T16:00:00.495Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T16:00:00.496Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-10-30T16:00:01.509Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T16:15:21.389Z,indret,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-11-04T08:34:39.409Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-04T08:34:39.409Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:39.416Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:58.092Z,indret,Register,panelName=indret,role=unknown
+2024-11-06T07:54:58.891Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T07:55:27.946Z,indret,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-11-06T08:03:58.194Z,indret,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T08:03:58.195Z,indret,Ping Failure,message=Unable to ping the panel.
+2024-11-06T08:03:58.203Z,indret,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T08:04:14.915Z,indret,Register,panelName=indret,role=unknown
+2024-11-06T08:04:15.049Z,indret,Status Change,status=online,message=Panel is online and fully operational.

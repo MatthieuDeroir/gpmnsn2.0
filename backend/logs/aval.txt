@@ -24548,3 +24548,1165 @@
 2024-10-30T08:57:02.901Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
 2024-10-30T08:57:02.969Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
 2024-10-30T08:57:03.209Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:18.102Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:12:18.212Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:18.786Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:12:18.943Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:23.384Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:28.506Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:33.728Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:38.582Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:43.761Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:48.778Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:53.894Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:12:59.057Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:04.132Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:09.361Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:13.025Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:16.794Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:13:16.795Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:17.793Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:18.799Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:18.816Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:13:19.645Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:19.664Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:19.664Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:19.793Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:13:19.793Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:19.799Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:19.805Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:13:19.937Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:20.080Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:24.604Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:25.010Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:25.798Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:13:25.798Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:25.818Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:13:25.975Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:29.722Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:31.999Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:34.833Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:39.955Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:45.075Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:50.222Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:13:55.331Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:00.420Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:05.581Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:10.802Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:15.848Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:20.961Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:26.161Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:31.284Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:36.317Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:41.433Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:46.550Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:51.862Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:14:56.862Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:01.891Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:07.120Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:12.137Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:17.258Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:22.383Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:27.501Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:32.825Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:37.739Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:42.887Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:47.923Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:53.099Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:15:58.169Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:03.285Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:08.463Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:13.553Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:18.904Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:23.821Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:28.837Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:33.994Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:39.057Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:44.198Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:49.298Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:54.435Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:16:59.560Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:04.592Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:09.683Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:14.815Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:19.932Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:25.033Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:30.108Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:35.213Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:40.412Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:45.540Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:50.755Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:17:55.775Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:00.819Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:05.949Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:11.053Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:16.253Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:21.372Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:26.391Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:31.483Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:36.630Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:41.750Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:46.870Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:51.929Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:18:57.056Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:02.170Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:03.973Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:19:03.973Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:19:03.983Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:19:04.148Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:07.452Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:12.471Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:17.590Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:22.651Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:27.831Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:32.950Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:38.009Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:43.134Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:48.312Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:53.360Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:19:58.554Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:03.674Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:09.003Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:13.917Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:19.014Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:24.082Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:29.284Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:34.325Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:39.525Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:44.566Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:49.691Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:20:55.043Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:00.011Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:05.055Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:10.178Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:15.370Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:20.488Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:25.544Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:30.671Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:35.955Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:40.895Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:45.975Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:51.094Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:21:56.217Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:01.352Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:06.473Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:11.598Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:16.700Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:21.835Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:26.939Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:32.068Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:37.173Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:42.320Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:47.439Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:52.559Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:22:57.680Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:02.800Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:07.921Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:12.992Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:18.110Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:23.229Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:28.404Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:33.473Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:38.645Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:43.666Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:48.994Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:53.911Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:23:59.127Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:04.156Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:09.368Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:14.488Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:19.609Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:24.935Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:29.852Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:34.979Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:40.003Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:45.148Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:50.239Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:24:55.452Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:00.481Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:05.693Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:10.723Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:15.933Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:20.965Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:26.168Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:25:26.168Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:25:26.176Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:26.195Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:25:26.379Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:27.168Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:25:27.168Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:25:27.185Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:25:27.354Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:31.195Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:33.350Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:36.319Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:41.545Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:46.657Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:51.880Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:25:57.105Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:02.019Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:07.194Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:12.195Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:17.275Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:22.497Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:27.515Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:32.635Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:33.199Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:26:33.199Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:26:33.210Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:26:33.368Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:37.688Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:42.786Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:48.100Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:53.035Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:26:58.220Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:03.226Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:08.342Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:13.497Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:18.616Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:23.635Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:28.753Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:33.822Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:39.100Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:44.013Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:49.235Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:54.212Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:27:59.324Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:04.494Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:09.615Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:14.734Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:19.724Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:24.873Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:29.992Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:35.267Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:40.115Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:45.263Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:50.347Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:28:55.491Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:00.611Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:05.737Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:10.773Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:16.180Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:21.094Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:26.109Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:31.235Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:36.363Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:41.479Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:46.693Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:51.814Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:29:57.039Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:01.952Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:03.295Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:30:03.296Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:30:03.306Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:30:03.470Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:07.072Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:12.294Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:17.313Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:22.393Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:27.552Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:32.673Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:37.691Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:42.781Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:47.899Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:53.052Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:30:58.177Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:03.297Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:08.311Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:13.391Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:18.467Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:23.674Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:28.749Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:33.885Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:39.036Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:44.076Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:31:49.198Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:03.969Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:32:04.133Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:04.722Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:32:09.344Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:14.361Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:19.450Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:24.600Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:29.691Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:34.813Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:39.961Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:43.723Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:32:43.723Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:32:43.738Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:32:43.875Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:45.083Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:50.698Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:51.723Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:32:51.723Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:32:51.739Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:32:51.878Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:32:55.321Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:33:00.445Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:33:01.736Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:33:01.736Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:33:02.749Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:33:02.913Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:33:03.737Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:33:03.737Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:33:04.776Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:33:05.055Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:33:05.080Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:33:05.080Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:33:05.536Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:33:05.738Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:33:05.738Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:33:05.759Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:33:05.873Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:50:54.419Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:50:54.485Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:50:54.583Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:50:54.765Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:50:55.616Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:04.654Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:51:04.830Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:04.840Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:51:09.921Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:14.995Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:20.127Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:25.379Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:30.348Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:35.467Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:40.594Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:45.755Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:50.834Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:51:55.953Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:01.115Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:06.195Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:11.355Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:16.387Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:21.595Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:26.721Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:31.819Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:36.819Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:41.932Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:47.049Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:52.214Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:52:57.340Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:02.411Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:07.537Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:12.699Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:17.816Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:22.905Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:28.021Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:33.179Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:38.296Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:43.422Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:48.536Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:53.625Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:53:58.779Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:03.882Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:08.994Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:14.123Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:19.248Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:24.481Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:29.485Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:34.619Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:39.739Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:44.864Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:49.959Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:54:55.053Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:55:00.223Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:55:05.342Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:55:10.395Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:55:15.520Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:55:20.700Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:55:50.470Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:55:50.602Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:55:50.811Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:55:55.674Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:00.795Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:05.924Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:11.081Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:16.202Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:24.858Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:56:25.016Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:25.287Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:56:30.164Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:35.202Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:40.317Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:46.553Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:56:46.710Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:48.327Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:56:49.317Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:56:49.317Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:56:49.322Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:56:49.488Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:51.836Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:56:56.960Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:02.077Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:12.368Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:57:12.523Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:12.562Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:57:17.644Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:22.866Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:27.891Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:33.106Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:38.125Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:43.347Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:48.535Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:53.484Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:57:58.509Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:05.589Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:58:05.755Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:05.998Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:58:10.871Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:16.038Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:21.170Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:26.356Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:35.971Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:58:36.130Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:36.327Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:58:41.306Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:46.326Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:51.442Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:58:56.563Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:01.684Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:06.810Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:11.925Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:16.945Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:22.270Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:27.182Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:32.309Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:41.999Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T10:59:42.143Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:42.217Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:59:47.210Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:52.375Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T10:59:57.602Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:02.527Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:07.735Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:12.963Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:17.998Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:23.098Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:28.146Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:33.182Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:38.294Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:43.473Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:48.595Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:53.608Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:00:58.730Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:03.850Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:08.970Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:14.092Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:19.107Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:24.181Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:29.299Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:34.414Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:39.529Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:44.708Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:49.829Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:54.951Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:01:59.910Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:05.087Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:10.216Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:15.267Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:20.454Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:25.514Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:30.625Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:35.808Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:40.890Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:46.237Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:51.168Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:02:56.238Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:01.352Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:06.536Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:11.585Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:16.701Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:21.895Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:26.905Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:32.030Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:37.150Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:42.275Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:47.251Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:52.371Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:03:57.525Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:02.644Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:07.662Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:12.884Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:18.004Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:23.024Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:28.244Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:33.302Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:38.374Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:43.491Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:48.622Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:53.654Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:04:58.864Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:03.983Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:09.107Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:14.122Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:19.198Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:24.318Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:29.438Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:34.559Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:39.682Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:44.843Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:49.919Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:05:55.187Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:00.159Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:05.287Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:10.404Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:15.561Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:20.647Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:25.802Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:30.886Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:36.046Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:41.236Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:46.367Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:51.370Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:06:56.491Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:01.615Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:06.766Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:11.863Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:17.003Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:22.096Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:27.243Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:32.339Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:37.461Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:42.583Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:47.825Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:52.827Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:07:58.065Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:03.063Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:08.205Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:13.307Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:18.423Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:23.540Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:28.656Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:33.773Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:38.929Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:41.555Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:44.009Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:49.371Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:53.467Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T11:08:53.467Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T11:08:53.553Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T11:08:53.641Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:54.240Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:59.361Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:08:59.608Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:04.479Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:09.599Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:12.517Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:14.727Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:18.674Z,aval,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T11:09:18.880Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:19.885Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:24.983Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:30.231Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:35.272Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:40.368Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:45.471Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:50.589Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:09:55.705Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:00.846Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:03.519Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T11:10:03.519Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T11:10:03.525Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T11:10:03.662Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:05.940Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:11.087Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:12.608Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:16.181Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:21.326Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:26.414Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:31.539Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:36.647Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:41.808Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:46.886Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:52.047Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:10:57.100Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:11:02.288Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:11:07.311Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:11:12.390Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:11:17.510Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:11:22.625Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:11:27.741Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T11:11:32.906Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:18.175Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:42:18.176Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:18.176Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:20.178Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:20.178Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:21.154Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.154Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:21.175Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.225Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.230Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.472Z,aval,Disconnected,message=WebSocket connection closed.
+2024-10-30T12:42:22.180Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:22.180Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:24.723Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T12:42:24.882Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:25.172Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:42:25.312Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:28.177Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:30.008Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:35.120Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:40.387Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:45.508Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:50.571Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:54.417Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:55.748Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:42:58.352Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:00.868Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:05.990Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:11.007Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:16.127Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:21.184Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:26.259Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:31.380Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:36.608Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:41.728Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:46.850Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:51.969Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:43:56.996Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:02.126Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:07.236Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:12.357Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:17.572Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:22.611Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:27.811Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:32.934Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:38.045Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:43.082Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:48.189Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:53.270Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:44:58.430Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:03.654Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:08.671Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:14.098Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:18.911Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:24.031Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:29.143Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:34.254Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:39.339Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:44.439Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:44.549Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:46.433Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:49.708Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:45:54.855Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:00.184Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:05.096Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:10.216Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:15.277Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:20.399Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:25.516Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:30.697Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:35.818Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:40.938Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:46.058Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:51.181Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:46:56.227Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:01.309Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:06.418Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:11.557Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:16.676Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:21.797Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:26.889Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:31.990Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:37.260Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:42.278Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:47.340Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:52.518Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:47:57.639Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:02.697Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:07.810Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:12.934Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:18.056Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:23.182Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:28.342Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:33.416Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:34.498Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:38.537Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:43.720Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:48.841Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:53.902Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:48:59.080Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:04.143Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:09.320Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:14.368Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:19.441Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:24.578Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:29.700Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:34.818Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:39.939Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:45.060Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:50.207Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:49:55.301Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:00.364Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:05.479Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:10.660Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:15.781Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:21.006Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:25.950Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:31.066Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:36.260Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:41.317Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:46.432Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:51.550Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:50:56.741Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:01.794Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:06.984Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:12.028Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:17.119Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:19.588Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:22.239Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:24.613Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:27.359Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:27.613Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:32.450Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:37.529Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:38.607Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:42.600Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:42.704Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:47.719Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:47.820Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:49.572Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:50.624Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:51.607Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:52.960Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:51:58.080Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:00.626Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:03.200Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:08.248Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:08.619Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:09.632Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:13.366Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:18.452Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:23.563Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:28.699Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:33.819Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:38.922Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:43.997Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:49.116Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:54.305Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:52:59.419Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:53:03.662Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:53:04.480Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:53:09.599Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:53:14.780Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:53:54.773Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T12:53:54.924Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:53:55.656Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:53:59.785Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:00.035Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:05.165Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:08.822Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:10.384Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:14.685Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:15.403Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:20.625Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:25.675Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:30.770Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:35.895Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:41.104Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:46.145Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:54:51.344Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:11.316Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T12:55:11.465Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:12.078Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:55:16.638Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:21.711Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:26.830Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:31.948Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:37.083Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:42.188Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:47.309Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:53.415Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T12:55:53.562Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:55:53.565Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:55:58.726Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:03.848Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:08.967Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:14.050Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:19.315Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:24.326Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:29.447Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:34.533Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:39.654Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:44.807Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:49.760Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:49.890Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:51.764Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:52.754Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:56:55.013Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:00.169Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:01.754Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:02.770Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:05.291Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:08.752Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:10.408Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:15.528Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:20.623Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:25.742Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:35.747Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T12:57:35.914Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:35.941Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:57:36.083Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:41.021Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:45.081Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:46.092Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:46.249Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:47.105Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:51.342Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:57:56.489Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:01.609Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:06.730Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:10.965Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:58:10.966Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:58:10.973Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:58:11.122Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:11.850Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:16.950Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:22.043Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:22.173Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:23.130Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:26.126Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:27.214Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:32.277Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:34.143Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:37.453Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:42.570Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:47.691Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:52.812Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:58:57.934Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:02.999Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:08.117Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:13.291Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:18.411Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:23.537Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:28.652Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:33.772Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:38.894Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:44.012Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:49.081Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:54.207Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T12:59:59.317Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:04.493Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:09.615Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:14.733Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:19.854Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:24.975Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:30.049Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:35.174Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:40.336Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:45.454Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:50.575Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=37,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:00:55.669Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:00.919Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:06.078Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:11.059Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:16.146Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:21.294Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:26.399Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:31.474Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:36.656Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:41.665Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:46.895Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:52.016Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:01:57.116Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:02.145Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:07.259Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:12.378Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:17.514Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:20.061Z,aval,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:02:20.465Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:22.845Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:23.222Z,aval,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:02:23.445Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:27.426Z,aval,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:02:27.858Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:27.906Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:33.085Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:38.150Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:43.281Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:44.714Z,aval,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:02:44.901Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:48.397Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:53.559Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:02:58.680Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:01.246Z,aval,Heartbeat,type=heartbeat,state=on,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:02.982Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:03.805Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:09.025Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:14.167Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:19.163Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:24.182Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:29.300Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:34.523Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:39.641Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:44.762Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:49.883Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:03:55.105Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:00.205Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:05.210Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:10.250Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:15.327Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:20.443Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:25.568Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:30.741Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:35.860Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:40.980Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:46.100Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:51.221Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:04:56.259Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:01.371Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:06.488Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:11.606Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:16.826Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:21.941Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:26.962Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:32.181Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:37.266Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:42.287Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:47.410Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=39,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:52.540Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:05:57.655Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:02.771Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:08.125Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:13.041Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:18.264Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:23.370Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:28.375Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:33.492Z,aval,Heartbeat,type=heartbeat,state=off,cpuTemp=38,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=aval
+2024-10-30T13:06:40.439Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:06:41.321Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:07:20.155Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:07:20.858Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:12:05.961Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:12:06.098Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:18:14.600Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:18:15.511Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:18:29.111Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:18:30.130Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:19:17.921Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:19:18.289Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:29:32.371Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:29:32.907Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:29:47.397Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:29:47.734Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:33:59.141Z,aval,Maintenance a envoyé l'instruction refresh,instruction=refresh,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:34:01.193Z,aval,Maintenance a envoyé l'instruction refresh,instruction=refresh,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:40:05.649Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:40:06.694Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:40:47.644Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:40:48.619Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:41:03.405Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:41:03.752Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:41:57.785Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:41:58.109Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:17.533Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:42:17.658Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:27.892Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:42:28.073Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:42.325Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:42:42.738Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:44:57.800Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:44:58.390Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:45:06.282Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:45:06.427Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:49:51.630Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:49:51.631Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:49:51.655Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:49:54.633Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:49:54.633Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:49:54.664Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:50:12.644Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:50:12.644Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:50:12.704Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:50:18.648Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:50:18.648Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:50:18.657Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:50:25.655Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:50:25.656Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:50:25.794Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:50:26.653Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:50:26.654Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:50:26.678Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:51:23.692Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:51:23.692Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:51:23.703Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:51:28.693Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:51:28.693Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:51:28.708Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:51:44.708Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:51:44.709Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:51:44.788Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:52:21.734Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:52:21.734Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:52:21.746Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:52:36.584Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:52:36.941Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:52:55.190Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:52:56.047Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:54:49.023Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:54:49.953Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:56:33.019Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:56:33.020Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:56:33.025Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:56:38.025Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:56:38.025Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:56:38.103Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:56:49.667Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:56:49.886Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:58:17.595Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T13:58:18.631Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:04:47.896Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:04:47.897Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:04:47.929Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:14:00.247Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:14:00.248Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:14:00.368Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:33:27.667Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T14:33:27.934Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:33:38.029Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T14:33:38.464Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:51:01.759Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T14:51:04.696Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:59:47.327Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:59:47.328Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:59:47.389Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:03:08.426Z,aval,Operateur a envoyé l'instruction refresh,instruction=refresh,role=Operateur,heartbeatTimer=5
+2024-10-30T15:06:53.476Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:06:53.621Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:07:37.594Z,aval,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-10-30T15:10:27.421Z,aval,Maintenance a envoyé l'instruction refresh,instruction=refresh,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:10:28.943Z,aval,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:10:33.845Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:10:33.845Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:34.848Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:35.858Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:36.841Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:37.913Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:38.880Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:39.882Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:42.834Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:43.834Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:44.833Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:45.835Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:46.835Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:47.835Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:48.837Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:49.838Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:50.879Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:51.839Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:52.848Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:53.863Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:54.871Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:55.862Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:56.844Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:57.887Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:58.847Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:59.879Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:00.862Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:01.867Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:02.855Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:03.850Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:03.850Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:04.850Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:04.851Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:05.850Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:05.851Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:06.168Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:06.850Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:06.851Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:06.876Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:07.664Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:11:07.888Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:08.878Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:09.876Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:11:31.660Z,aval,Disconnected,message=WebSocket connection closed.
+2024-10-30T15:16:15.395Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:16:16.399Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:08.078Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:19:08.472Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:37.053Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:19:37.263Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:21:13.383Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:21:14.306Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:27:09.496Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:27:09.497Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:27:09.518Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:28:11.269Z,aval,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:12.786Z,aval,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:21.435Z,aval,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:30.411Z,aval,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:35.378Z,aval,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:35.541Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:28:35.541Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:36.542Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:37.543Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:38.544Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:39.543Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:40.545Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:41.544Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:42.545Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:43.544Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:44.545Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:45.545Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:46.546Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:47.547Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:48.546Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:49.550Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:50.548Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:51.554Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:52.557Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:53.554Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:54.556Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:55.557Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:56.560Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:57.560Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:58.560Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:59.583Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:00.564Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:01.608Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:02.562Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:02.586Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:03.588Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:03.605Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:04.578Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:05.581Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:05.582Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:06.580Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:06.580Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:07.576Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:07.576Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:08.471Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:08.581Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:08.582Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:08.742Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:29:08.797Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:29:09.584Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:29:21.809Z,aval,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:29:33.003Z,aval,Disconnected,message=WebSocket connection closed.
+2024-10-30T15:37:25.090Z,aval,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:43:41.161Z,aval,Maintenance a envoyé l'instruction off,instruction=off,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:51:42.603Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:51:43.095Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:53:12.496Z,aval,Register,panelName=aval,role=unknown
+2024-10-30T15:53:13.234Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T16:15:20.030Z,aval,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-10-30T16:15:41.210Z,aval,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-11-04T08:34:35.394Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-04T08:34:35.394Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:35.405Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:37.422Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-04T08:34:37.422Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:38.400Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-04T08:34:38.401Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:39.401Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-04T08:34:39.401Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:40.403Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-04T08:34:40.403Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:17.237Z,aval,Register,panelName=aval,role=unknown
+2024-11-06T07:53:17.782Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T07:57:19.285Z,aval,Operateur a envoyé l'instruction refresh,instruction=refresh,role=Operateur,heartbeatTimer=5
+2024-11-06T08:04:14.911Z,aval,Register,panelName=aval,role=unknown
+2024-11-06T08:04:15.016Z,aval,Status Change,status=online,message=Panel is online and fully operational.

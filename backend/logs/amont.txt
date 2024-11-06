@@ -28279,3 +28279,1210 @@
 2024-10-30T08:57:02.645Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
 2024-10-30T08:57:02.688Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
 2024-10-30T08:57:03.700Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:19.037Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:12:19.103Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:19.783Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:12:24.204Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:29.221Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=40,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:34.238Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:39.239Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:44.480Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:49.394Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:54.403Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:12:59.429Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:04.447Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:09.438Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:12.864Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:13:12.864Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:13:12.895Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:13:12.926Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:14.471Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:16.876Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:17.880Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:18.904Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:19.517Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:19.884Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:24.531Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:24.937Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:25.909Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:29.564Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:31.903Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:34.599Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:39.672Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:44.667Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:49.816Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:54.817Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:13:59.761Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:04.796Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:09.830Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:14.922Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:19.897Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:24.932Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:29.968Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:35.001Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:40.086Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:45.104Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:50.123Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:14:55.242Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:00.260Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:05.277Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:10.295Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:15.314Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:20.306Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:25.348Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:30.674Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:35.588Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:40.429Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:45.464Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:50.493Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:15:55.556Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:00.557Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:05.634Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:10.625Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:15.835Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:20.756Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:25.763Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:30.781Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:35.800Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:40.823Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:45.854Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:50.930Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:16:55.925Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:00.964Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:06.005Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:11.037Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:16.144Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:21.100Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:26.181Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:31.168Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:36.205Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:41.334Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:46.352Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:51.370Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:17:56.348Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:01.405Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:06.403Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:11.438Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:16.482Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:21.503Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:26.594Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:31.572Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:36.635Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:41.750Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:46.669Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:51.892Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:18:56.804Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:01.771Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:04.067Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:06.801Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:11.958Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:16.874Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:21.911Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:26.987Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:31.992Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:37.011Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:42.040Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:47.084Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:52.111Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:19:57.145Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:02.241Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:07.258Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:12.278Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:17.286Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:22.317Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:27.441Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:32.454Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:37.473Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:42.456Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:47.512Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:52.616Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:20:57.855Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:02.771Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:07.639Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:12.667Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:17.724Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:22.741Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:27.863Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:32.883Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:37.900Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:43.022Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:47.915Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:52.947Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:21:57.989Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:03.066Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:08.071Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:13.089Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:18.120Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:23.165Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:28.191Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:33.306Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:38.327Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:43.342Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:48.361Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:53.363Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:22:58.396Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:03.519Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:08.486Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:13.554Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:18.574Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:23.590Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:28.646Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:33.640Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:38.675Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:43.711Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:48.994Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:53.903Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:23:58.921Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:03.944Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:08.960Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:14.001Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:19.106Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:24.014Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:29.027Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:34.061Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:39.147Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:44.149Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:49.166Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:54.198Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:24:59.234Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:04.272Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:09.379Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:14.399Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:19.414Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:24.434Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:26.278Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:27.278Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:29.556Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:33.204Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T10:25:33.203Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T10:25:33.218Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:25:33.269Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:34.575Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:39.593Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:44.547Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:49.585Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:54.644Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:25:59.768Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:04.691Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:09.806Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:14.760Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:19.796Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:24.852Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:29.975Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:33.293Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:34.991Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:40.009Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:44.960Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:50.045Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:26:55.052Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:00.070Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:05.110Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:10.220Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:15.173Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:20.226Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:25.244Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:30.285Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:35.307Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:40.348Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:45.753Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:50.466Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:27:55.482Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:00.499Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:05.620Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:10.566Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:15.659Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:20.674Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:25.694Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:30.694Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:35.830Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:40.762Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:45.923Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:50.885Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:28:55.902Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:00.919Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:06.042Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:11.065Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:16.179Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:21.094Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:26.083Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:31.112Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:36.147Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:41.266Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:46.287Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:51.300Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:29:56.298Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:01.320Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:03.387Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:06.356Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:11.388Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:16.433Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:21.453Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:26.508Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:31.546Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:36.669Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:41.595Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:46.702Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:51.720Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:30:56.737Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:01.743Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:06.767Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:11.875Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:16.835Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:21.930Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:27.056Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:31.968Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:37.067Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:42.107Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:47.043Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:31:52.075Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:03.968Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:32:04.038Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:04.708Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:32:09.140Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:14.125Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:19.145Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:24.176Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:29.211Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:34.330Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:39.552Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:43.793Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:44.364Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:49.382Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:51.780Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:54.608Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:32:59.525Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:33:01.804Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:33:02.807Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:33:03.804Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:33:04.443Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:33:05.797Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:50:52.762Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:50:52.828Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:50:53.461Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:50:53.518Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:50:54.540Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:50:55.528Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:50:57.932Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:04.641Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:51:04.715Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:04.810Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:51:09.744Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:14.783Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:19.813Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:24.838Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:29.876Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:34.912Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:39.946Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:44.978Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:50.021Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:51:55.079Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:00.194Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:05.111Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:10.145Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:15.249Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:20.265Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:25.282Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:30.302Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:35.319Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:40.350Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:45.662Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:50.422Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:52:55.452Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:00.714Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:05.515Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:10.647Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:15.772Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:20.687Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:25.706Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:30.718Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:35.728Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:40.773Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:45.988Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:50.872Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:53:55.891Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:00.894Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:05.925Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:10.965Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:15.998Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:21.032Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:26.061Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:31.100Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:36.133Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:41.275Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:46.207Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:51.314Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:54:56.329Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:55:01.347Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:55:06.369Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:55:11.388Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:55:16.407Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:55:21.520Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:55:50.481Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:55:50.542Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:55:50.838Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:55:55.575Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:00.637Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:05.757Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:10.674Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:15.792Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:24.856Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:56:24.924Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:25.253Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:56:30.164Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:35.088Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:40.064Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:46.573Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:56:46.639Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:48.363Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:56:49.399Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:51.735Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:56:56.710Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:01.771Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:06.776Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:12.367Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:57:12.436Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:12.525Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:57:17.469Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:22.501Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:27.541Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:32.566Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:37.612Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:42.636Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:47.667Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:52.699Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:57:57.887Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:05.596Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:58:05.670Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:06.020Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:58:10.790Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:15.809Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:20.828Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:25.797Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:30.860Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:35.979Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:58:36.044Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:36.341Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:58:41.081Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:46.221Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:51.249Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:58:56.178Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:01.251Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:06.251Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:11.315Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:16.325Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:21.369Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:26.397Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:31.422Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:36.447Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:41.991Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T10:59:42.062Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:42.159Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T10:59:47.127Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:52.137Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T10:59:57.168Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:02.221Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:07.233Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:12.271Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:17.464Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:22.328Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:27.400Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:32.416Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:37.536Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:42.466Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:47.499Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:52.538Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:00:57.603Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:02.598Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:07.632Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:12.681Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:17.778Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:22.795Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:27.812Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:32.833Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:37.848Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:42.870Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:47.985Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:53.003Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:01:58.022Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:03.039Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:08.057Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:13.075Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:18.221Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:23.169Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:28.228Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:33.234Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:38.240Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:43.268Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:48.307Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:53.343Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:02:58.386Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:03.416Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:08.473Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:13.493Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:18.612Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:23.543Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:28.577Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:33.664Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:38.683Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:43.678Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:48.822Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:53.748Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:03:58.784Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:03.820Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:08.892Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:13.908Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:19.031Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:24.252Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:29.172Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:34.083Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:39.099Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:44.204Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:49.120Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:54.167Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:04:59.209Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:04.315Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:09.308Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:14.289Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:19.321Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:24.354Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:29.389Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:34.424Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:39.457Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:44.492Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:49.551Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:54.671Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:05:59.593Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:04.630Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:09.725Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:14.742Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:19.761Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:24.880Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:29.899Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:34.834Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:40.039Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:44.955Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:49.968Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:06:54.979Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:00.107Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:05.124Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:10.143Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:15.106Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:20.195Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:25.195Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:30.211Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:35.244Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:40.277Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:45.311Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:50.347Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:07:55.383Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:00.421Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:05.450Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:10.507Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:15.518Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:20.551Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:25.586Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:30.633Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:35.661Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:40.693Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:41.524Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:45.785Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:50.803Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:53.552Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:55.821Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:08:59.520Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:00.940Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:05.958Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:10.976Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:12.342Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:15.994Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:21.013Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:26.029Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:31.150Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:36.116Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:41.109Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:46.209Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:51.426Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:09:56.238Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:01.256Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:03.580Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:06.379Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:11.302Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:12.478Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T11:10:12.479Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T11:10:12.489Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T11:10:12.557Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:16.411Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:21.378Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:26.412Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:31.504Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:36.504Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:41.518Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:46.545Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:51.585Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:10:56.622Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:11:01.654Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:11:06.691Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:11:11.814Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:11:16.829Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:11:21.846Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:11:26.827Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T11:11:31.886Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:14.125Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:42:14.125Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:14.137Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:16.158Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:16.158Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:17.128Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:17.129Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:18.128Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:18.128Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:19.127Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:19.127Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:20.136Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:20.136Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:21.145Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.145Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:21.183Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:21.473Z,amont,Disconnected,message=WebSocket connection closed.
+2024-10-30T12:42:22.138Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T12:42:22.138Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:25.265Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T12:42:25.334Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:26.138Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:42:27.851Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:30.454Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:35.471Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:40.436Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:45.507Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:50.510Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:54.160Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:54.159Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:42:54.170Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:42:55.441Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:56.997Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:42:58.153Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:42:58.153Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:42:58.172Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:42:58.251Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:00.664Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:05.681Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:10.700Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:15.670Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:20.735Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:25.753Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:30.769Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:36.098Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:40.909Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:45.928Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:51.047Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:43:56.067Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:00.996Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:05.999Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:11.119Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:16.069Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:21.157Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:26.136Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:31.171Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:36.216Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:41.296Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:46.273Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:51.499Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:44:56.342Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:01.377Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:06.522Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:11.538Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:16.557Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:21.574Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:26.591Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:31.610Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:36.627Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:41.748Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:44.348Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:46.349Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:46.766Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:51.783Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:45:56.801Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:01.819Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:06.940Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:11.845Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:17.077Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:21.997Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:27.218Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:32.131Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:37.016Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:42.062Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:47.158Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:52.124Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:46:57.220Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:02.193Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:07.225Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:12.273Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:17.305Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:22.322Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:27.351Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:32.455Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:37.424Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:42.487Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:47.490Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:52.524Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:47:57.640Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:02.655Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:07.676Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:12.691Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:17.709Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:22.729Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:27.847Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:32.796Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:34.432Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:37.883Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:42.968Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:47.898Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:53.038Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:48:57.959Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:03.282Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:08.027Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:13.110Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:18.094Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:23.197Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:28.163Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:33.282Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:38.225Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:43.263Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:48.299Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:53.355Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:49:58.372Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:03.395Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:08.426Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:13.463Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:18.500Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:23.535Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:28.684Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:33.700Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:38.718Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:43.740Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:48.753Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:53.742Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:50:58.789Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:03.809Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:08.847Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:13.944Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:18.962Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:19.502Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:23.946Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:24.529Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:27.524Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:28.977Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:34.017Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:38.520Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:39.042Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:42.516Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:44.226Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:47.532Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:49.171Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:49.536Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:50.536Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:51.525Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:54.141Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:51:59.206Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:00.536Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:04.209Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:08.536Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:09.344Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:09.544Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:14.278Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:19.311Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:24.397Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:29.418Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:34.433Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:39.468Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:44.484Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:49.519Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:54.554Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:52:59.585Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:53:03.576Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:53:04.641Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:53:09.648Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:53:14.780Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:53:54.793Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T12:53:54.862Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:53:55.676Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:53:59.741Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:53:59.939Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:04.962Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:08.750Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:09.961Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:14.481Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:15.003Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:20.112Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:25.132Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:30.149Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:35.165Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:40.170Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:45.303Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:50.527Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:54:55.339Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:11.319Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T12:55:11.381Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:12.115Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:55:16.435Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:21.453Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:26.571Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:31.520Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:36.607Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:41.625Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:46.624Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:53.413Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T12:55:53.485Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:55:53.544Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:55:58.520Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:03.552Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:08.591Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:13.621Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:18.655Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:23.689Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:28.833Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:33.850Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:38.788Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:43.885Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:48.857Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:49.739Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:51.570Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:56:51.571Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:56:51.583Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:56:51.674Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:52.685Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:53.923Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:56:58.928Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:01.668Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:02.683Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:03.961Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:08.661Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:09.077Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:14.095Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:19.117Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:24.130Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:29.390Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:35.744Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T12:57:35.814Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:35.927Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:57:35.995Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:40.849Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:45.021Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:45.880Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:46.004Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:47.007Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:50.927Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:57:55.943Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:00.985Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:06.016Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:11.041Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:11.073Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:16.150Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:21.293Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:22.084Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:23.047Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:25.954Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:58:25.954Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:58:25.962Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:58:26.039Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:26.164Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:31.203Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:33.967Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T12:58:33.968Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T12:58:33.975Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T12:58:34.078Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:36.229Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:41.267Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:46.299Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:51.335Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:58:56.363Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:01.418Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:06.532Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:11.467Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:16.568Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:21.571Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:26.603Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:31.724Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:36.631Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:41.665Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:46.780Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:51.733Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T12:59:56.812Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:01.934Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:07.032Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:12.039Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:16.987Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:22.003Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:27.023Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:32.042Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:37.058Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:42.065Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:47.102Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:52.136Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:00:57.168Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:02.201Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:07.232Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:12.270Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:17.352Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:22.425Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:27.443Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:32.406Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:37.475Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:42.495Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:47.614Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:52.632Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:01:57.648Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:02.666Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:07.643Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:12.701Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:17.822Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:22.843Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:27.860Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:33.083Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:37.870Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:42.912Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:47.929Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:53.050Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:02:58.066Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:00.925Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:02.827Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:03.002Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:08.049Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:13.165Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:18.119Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:23.173Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:28.187Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:33.223Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:38.252Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:43.294Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:48.319Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:53.353Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:03:58.484Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:03.502Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:08.454Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:13.541Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:18.555Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:23.575Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:28.695Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:33.712Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:38.657Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:43.745Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:48.763Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:53.886Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:04:58.901Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:03.829Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:08.863Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:13.899Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:18.933Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:23.989Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:29.110Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:34.038Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:39.068Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:44.164Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:49.272Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:54.176Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:05:59.201Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:04.284Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:09.291Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:14.301Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:19.339Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:24.375Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=42,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:29.408Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:34.452Z,amont,Heartbeat,type=heartbeat,state=off,cpuTemp=41,sectorStatus=true,isDoorOpen=false,maintenanceMode=false,name=amont
+2024-10-30T13:06:40.431Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:06:41.287Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:07:20.220Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:07:20.890Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:12:05.974Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:12:06.125Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:13:08.883Z,amont,Maintenance a envoyé l'instruction refresh,instruction=refresh,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:13:11.741Z,amont,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T13:13:16.155Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:13:16.156Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:17.167Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:18.169Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:19.166Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:20.171Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:21.164Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:22.158Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:23.162Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:24.169Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:25.203Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:26.168Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:27.175Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:28.162Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:29.176Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:30.161Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:31.168Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:32.179Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:33.172Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:34.174Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:35.173Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:36.176Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:37.172Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:38.198Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:39.173Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:40.197Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:41.197Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:42.185Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:43.180Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:44.186Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T13:13:44.187Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:45.183Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T13:13:45.184Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:46.179Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T13:13:46.180Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:13:47.137Z,amont,Disconnected,message=WebSocket connection closed.
+2024-10-30T13:13:47.140Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T13:13:47.147Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T13:13:47.188Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:13:48.198Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:18:14.549Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:18:15.473Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:18:29.108Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:18:30.113Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:19:17.907Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:19:18.274Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:29:32.374Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:29:32.923Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:29:47.403Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:29:47.792Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:40:05.622Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:40:05.686Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:40:47.744Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:40:48.665Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:41:03.400Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:41:03.715Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:41:57.780Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:41:58.092Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:17.529Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:42:17.642Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:27.904Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:42:28.088Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:42:42.327Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:42:42.753Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:44:57.792Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:44:58.314Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:45:06.287Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:45:06.454Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:52:36.588Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:52:36.958Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:52:55.170Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:52:56.013Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:54:49.030Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:54:49.983Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:55:36.000Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T13:55:36.000Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T13:55:36.006Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:56:49.660Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:56:49.871Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T13:58:17.593Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T13:58:18.615Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:13:44.224Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:13:44.225Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:13:44.245Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:27:39.689Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:27:39.689Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:27:39.699Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:33:27.656Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T14:33:27.921Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:33:38.053Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T14:33:38.517Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:51:01.722Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T14:51:04.635Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:51:25.084Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:51:25.085Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:51:26.103Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T14:51:27.084Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T14:51:27.085Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T14:51:27.104Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:06:53.473Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:06:53.586Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:07:39.306Z,amont,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-10-30T15:10:35.718Z,amont,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:10:40.828Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:10:40.829Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:41.829Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:42.829Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:43.829Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:44.829Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:45.830Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:46.831Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:47.831Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:48.833Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:49.833Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:50.838Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:51.848Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:52.865Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:53.849Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:54.838Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:55.850Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:56.839Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:57.852Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:58.855Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:10:59.859Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:00.846Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:01.845Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:02.846Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:03.843Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:04.844Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:05.845Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:06.845Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:07.847Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:08.845Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:09.846Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:11:10.577Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:10.583Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:11:10.639Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:11:10.857Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:11:37.802Z,amont,Disconnected,message=WebSocket connection closed.
+2024-10-30T15:12:02.890Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:12:02.890Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:04.846Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:04.882Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:12:05.221Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:16:15.400Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:16:16.419Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:08.092Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:19:08.510Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:37.042Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:19:37.238Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:19:47.430Z,amont,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:19:52.238Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:19:52.239Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:19:53.238Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:19:54.238Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:19:55.236Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:19:56.237Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:19:57.236Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:19:58.238Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:19:59.240Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:00.240Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:01.244Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:02.242Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:03.245Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:04.243Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:05.242Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:06.243Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:07.243Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:08.243Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:09.245Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:10.252Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:11.246Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:12.252Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:13.247Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:14.249Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:15.252Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:16.252Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:17.252Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:18.255Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:19.251Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:20.256Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:20:20.256Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:21.252Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:20:21.253Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:20:22.249Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:20:22.254Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:20:22.284Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-10-30T15:20:22.290Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:20:23.262Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:20:48.723Z,amont,Disconnected,message=WebSocket connection closed.
+2024-10-30T15:21:15.206Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:21:15.308Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:28:14.515Z,amont,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:32.210Z,amont,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:37.551Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:28:37.552Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:38.387Z,amont,Maintenance a envoyé l'instruction reboot,instruction=reboot,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:28:38.588Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:39.550Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:40.586Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:41.549Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:42.553Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:43.550Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:44.554Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:45.552Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:46.553Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:47.553Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:48.552Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:49.555Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:50.554Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:51.559Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:52.555Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:53.560Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:54.563Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:55.562Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:56.566Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:57.566Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:58.566Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:28:59.578Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:00.583Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:01.606Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:02.573Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:03.614Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:04.569Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:04.591Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:05.593Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:05.612Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:05.832Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:29:06.586Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:29:06.586Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-10-30T15:29:06.599Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:29:06.716Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:29:06.894Z,amont,Disconnected,message=WebSocket connection closed.
+2024-10-30T15:29:07.600Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-10-30T15:29:08.761Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:29:15.410Z,amont,Maintenance a envoyé l'instruction refresh,instruction=refresh,role=Maintenance,heartbeatTimer=5
+2024-10-30T15:51:42.588Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:51:43.061Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T15:53:12.505Z,amont,Register,panelName=amont,role=unknown
+2024-10-30T15:53:13.254Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-10-30T16:15:20.589Z,amont,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-11-04T08:34:37.404Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-04T08:34:37.404Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:37.411Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:39.426Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-04T08:34:39.427Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-04T08:34:40.408Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-04T08:34:40.409Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:21.231Z,amont,Register,panelName=amont,role=unknown
+2024-11-06T07:53:21.784Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T07:53:44.789Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T07:53:44.791Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:45.790Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:46.816Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:47.799Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:48.790Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:49.792Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:50.832Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:51.810Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:52.798Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:53.796Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:54.798Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:55.809Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:56.800Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:57.815Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:58.816Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:53:59.817Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:00.817Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:01.799Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:02.800Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:03.799Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:04.810Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:05.800Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:06.819Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:07.812Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:08.844Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:09.824Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:10.810Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:11.813Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:12.466Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T07:54:12.811Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T07:54:12.812Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T07:54:12.830Z,amont,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-06T07:54:13.241Z,amont,Disconnected,message=WebSocket connection closed.
+2024-11-06T07:54:14.008Z,amont,Register,panelName=amont,role=unknown
+2024-11-06T07:54:14.829Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T07:55:38.282Z,amont,Maintenance a envoyé l'instruction on,instruction=on,role=Maintenance,heartbeatTimer=5
+2024-11-06T08:04:14.904Z,amont,Register,panelName=amont,role=unknown
+2024-11-06T08:04:15.001Z,amont,Status Change,status=online,message=Panel is online and fully operational.

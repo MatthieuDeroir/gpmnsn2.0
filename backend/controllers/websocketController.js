@@ -1,8 +1,8 @@
 // webSocketServer.js
-const WebSocket = require('ws');
-const ClientManager = require('./clientManager');
-const Logger = require('./logger');
-const HealthChecker = require('./healthChecker');
+const WebsocketController = require('ws');
+const ClientManager = require('../websocket/clientManager');
+const Logger = require('../utils/logger');
+const HealthChecker = require('../websocket/healthChecker');
 const moment = require('moment');
 
 const HEARTBEAT_INTERVAL = 1000; // 1 secondes
@@ -11,8 +11,8 @@ const STATUS_UPDATE_INTERVAL = 1000; // 1 seconde pour les mises à jour de stat
 class WebSocketServer {
   constructor() {
     this.expectedPanels = ['indret', 'aval', 'amont'];
-    this.wss = new WebSocket.Server({ port: 8080 });
-    this.clientManager = new ClientManager(WebSocket);
+    this.wss = new WebsocketController.Server({ port: 8080 });
+    this.clientManager = new ClientManager(WebsocketController);
     this.setupServer();
   }
 
@@ -33,15 +33,15 @@ class WebSocketServer {
     });
   }
 
+
   /**
    * Gère une nouvelle connexion WebSocket.
-   * @param {WebSocket} ws - La connexion WebSocket.
+   * @param {WebsocketController} ws - La connexion WebSocket.
    */
   handleConnection(ws) {
     console.log('[WebSocketServer] Nouvelle connexion établie.');
     
     ws.on('message', (message) => {
-      console.log(`[WebSocketServer] Message reçu: ${message}`);
       this.handleMessage(ws, message);
     });
 
@@ -60,7 +60,6 @@ class WebSocketServer {
       : ws._socket.remoteAddress;
     const clientAddressMessage = JSON.stringify({ message: `Adresse IP du client : ${clientAddress}` });
     ws.send(clientAddressMessage);
-    console.log(`[WebSocketServer] Adresse IP envoyée au client : ${clientAddress}`);
 
     // Envoyer les instructions initiales discrètement
     this.sendInitialInstructions(ws);
@@ -68,7 +67,7 @@ class WebSocketServer {
 
   /**
    * Gère les messages entrants des clients.
-   * @param {WebSocket} ws - La connexion WebSocket.
+   * @param {WebsocketController} ws - La connexion WebSocket.
    * @param {string} message - Le message reçu.
    */
   handleMessage(ws, message) {
@@ -94,7 +93,7 @@ class WebSocketServer {
 
       case 'heartbeat':
         this.clientManager.updateHeartbeat(ws, message);
-        Logger.appendLog(message.name, 'Heartbeat', message);
+        // Logger.appendLog(message.name, 'Heartbeat', message);
         break;
 
       case 'maintenanceMode':
@@ -148,7 +147,7 @@ class WebSocketServer {
 
   /**
    * Gère les messages de registre des clients.
-   * @param {WebSocket} ws - La connexion WebSocket.
+   * @param {WebsocketController} ws - La connexion WebSocket.
    * @param {object} message - Le message de registre.
    */
   handleRegister(ws, message) {
@@ -184,7 +183,7 @@ class WebSocketServer {
 
   /**
    * Gère la fermeture d'une connexion WebSocket.
-   * @param {WebSocket} ws - La connexion WebSocket.
+   * @param {WebsocketController} ws - La connexion WebSocket.
    */
   handleClose(ws) {
     const clientInfo = this.clientManager.getClientInfo(ws);
@@ -204,7 +203,7 @@ class WebSocketServer {
 
   /**
    * Envoie les instructions initiales à un panneau nouvellement connecté.
-   * @param {WebSocket} ws - La connexion WebSocket.
+   * @param {WebsocketController} ws - La connexion WebSocket.
    */
   sendInitialInstructions(ws) {
     const panelSettings = this.clientManager.getPanelSettings();
@@ -283,7 +282,7 @@ class WebSocketServer {
 
     const statusMessage = JSON.stringify({ type: 'status', panelStatus });
     this.clientManager.broadcastToAppropriateClients(statusMessage, 'user');
-    console.log('[WebSocketServer] Mises à jour de statut envoyées aux utilisateurs.');
+    // console.log('[WebSocketServer] Mises à jour de statut envoyées aux utilisateurs.');
   }
 }
 
