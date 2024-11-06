@@ -36,7 +36,7 @@ sequelize.authenticate()
     .then(() => {
         console.log('All models were synchronized successfully.');
         // Initialize the WebSocket server
-        websocketController.initializeWebsocket();
+        // websocketController.initializeWebsocket();
     })
     .catch((err) => {
         console.error('Unable to connect to the database:', err);

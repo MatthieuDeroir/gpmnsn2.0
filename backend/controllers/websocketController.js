@@ -2,6 +2,7 @@
 const WebSocket = require('ws');
 const redis = require('redis');
 const moment = require('moment');
+const { v4: uuidv4 } = require('uuid');
 const ClientManager = require('../websocket/clientManager');
 const Logger = require('../utils/logger');
 const HealthChecker = require('../websocket/healthChecker');
@@ -16,6 +17,8 @@ class WebSocketServer {
     this.clientManager = new ClientManager(WebSocket);
     this.redisClient = redis.createClient();
 
+    this.sentInstructions = {}; // Object to store sent instructions per panel
+
     this.redisClient.on('error', (err) => console.error('Redis Client Error', err));
 
     // Initialize the server after connecting to Redis
@@ -28,22 +31,25 @@ class WebSocketServer {
       await this.redisClient.connect();
       console.log('Redis client connected');
 
+      // Clear Redis queues before starting the server
+      await this.clearRedisQueues();
 
       this.processQueues();
+
+      // Start the cleanup interval to check for unacknowledged instructions
+      this.startCleanupInterval();
+
     } catch (err) {
       console.error('Failed to connect to Redis:', err);
     }
   }
 
-
-  // TODO: Implement the new INTERVALS logic
   setupServer() {
 
     console.log('WebSocket server is running on port 8080');
     console.log('Starting health check interval...');
     this.healthCheckIntervalId = setInterval(() => this.checkProblems(), HEARTBEAT_INTERVAL);
     this.statusUpdateIntervalId = setInterval(() => this.sendStatusUpdates(), STATUS_UPDATE_INTERVAL);
-
 
     this.wss.on('connection', (ws) => this.handleConnection(ws));
 
@@ -116,24 +122,29 @@ class WebSocketServer {
 
   async handleInstruction(message) {
     if (message.to === 'panel') {
-      // Enqueue the instruction
-      await this.enqueueInstruction(message.name, message.instruction, message.role);
+      const targetPanels = message.name === 'all' ? this.expectedPanels : [message.name];
 
-      // Notify the frontend that the instruction has been queued
-      this.clientManager.sendToFrontend(JSON.stringify({
-        type: 'queue_update',
-        panelName: message.name,
-        queue: await this.getQueue(message.name),
-      }));
+      for (const panelName of targetPanels) {
+        // Enqueue the instruction for each panel and get the instruction item
+        const instructionItem = await this.enqueueInstruction(panelName, message.instruction, message.role);
 
-      // Log the instruction
-      const role = message.role || message.from || 'unknown';
-      Logger.appendLog(message.name, `${role} enqueued instruction ${message.instruction}`, {
-        instruction: message.instruction,
-        role: role,
-      });
+        // Notify the frontend about the queued instruction
+        this.clientManager.sendToFrontend(JSON.stringify({
+          type: 'queue_update',
+          panelName: panelName,
+          queue: await this.getQueue(panelName),
+        }));
 
-      console.log(`[WebSocketServer] Instruction enqueued for ${message.name}: ${message.instruction}`);
+        // Log the instruction, including the instruction ID
+        const role = message.role || message.from || 'unknown';
+        Logger.appendLog(panelName, `${role} enqueued instruction ${message.instruction} with id ${instructionItem.id}`, {
+          instruction: message.instruction,
+          instructionId: instructionItem.id,
+          role: role,
+        });
+
+        console.log(`[WebSocketServer] Instruction enqueued for ${panelName}: ${message.instruction} with id ${instructionItem.id}`);
+      }
     } else {
       console.log('Invalid instruction target:', message.to);
     }
@@ -185,6 +196,34 @@ class WebSocketServer {
       Logger.appendLog('Unknown Client', 'Disconnected client without registration.');
     }
   }
+
+  startCleanupInterval() {
+    const MAX_WAIT_TIME = 60000; // Maximum wait time in milliseconds (e.g., 60 seconds)
+    const CLEANUP_INTERVAL = 10000; // Interval at which to check (e.g., every 10 seconds)
+
+    setInterval(() => {
+      const now = Date.now();
+      for (const panelName in this.sentInstructions) {
+        this.sentInstructions[panelName] = this.sentInstructions[panelName].filter((instruction) => {
+          if (now - instruction.timestamp > MAX_WAIT_TIME) {
+            console.warn(`Instruction ${instruction.id} to ${panelName} has not been acknowledged after ${MAX_WAIT_TIME}ms`);
+            // Optionally, re-send the instruction
+            this.resendInstruction(panelName, instruction);
+            return false; // Remove instruction from tracking
+          }
+          return true; // Keep instruction in tracking
+        });
+      }
+    }, CLEANUP_INTERVAL);
+  }
+
+  async clearRedisQueues() {
+    for (const panelName of this.expectedPanels) {
+      await this.redisClient.del(`queue:${panelName}`);
+      console.log(`[Redis] Cleared queue for panel: ${panelName}`);
+    }
+  }
+
 
   sendInitialInstructions(ws) {
     // Implement if necessary
@@ -249,9 +288,7 @@ class WebSocketServer {
     });
 
     const statusMessage = JSON.stringify({ type: 'status', panelStatus });
-    console.log('[WebSocketServer] Sending status updates to frontend...');
     this.clientManager.sendToFrontend(statusMessage);
-    console.log('[WebSocketServer] Status updates sent to frontend.');
   }
 
   // Instruction Queue Management with Redis
@@ -264,7 +301,11 @@ class WebSocketServer {
       status: 'pending',
       role,
     };
+
     await this.redisClient.lPush(`queue:${panelName}`, JSON.stringify(instructionItem));
+    console.log(`[Redis] Enqueued instruction for ${panelName}:`, instructionItem);
+
+    return instructionItem; // Return the instruction item to get the ID
   }
 
   async getQueue(panelName) {
@@ -290,10 +331,12 @@ class WebSocketServer {
         if (queue.length === 0) continue;
 
         const nextInstruction = queue[0]; // Get the next instruction (FIFO)
+        console.log(`[ProcessQueues] Next instruction for ${panelName}:`, nextInstruction);
+
         if (nextInstruction.status === 'pending') {
           // Send instruction to panel
           const panelClient = this.clientManager.getClientByName(panelName);
-          if (panelClient && panelClient.ws && panelClient.ws.readyState === WebSocket.OPEN) {
+          if (panelClient) {
             const instructionMessage = {
               type: 'instruction',
               instruction: nextInstruction.instruction,
@@ -305,22 +348,40 @@ class WebSocketServer {
 
             // Update instruction status to 'sent'
             nextInstruction.status = 'sent';
+
+            // Remove the instruction from the queue
             await this.removeInstruction(panelName, nextInstruction.id);
-            // Re-add the updated instruction to the queue
-            await this.redisClient.lPush(`queue:${panelName}`, JSON.stringify(nextInstruction));
+
+            // Store the sent instruction for tracking
+            this.storeSentInstruction(panelName, nextInstruction);
           } else {
             console.warn(`Panel ${panelName} is not connected. Cannot send instruction.`);
           }
         }
       }
-    }, 1000); // Adjust the interval as needed
+    }, 1000);
+  }
+
+  storeSentInstruction(panelName, instruction) {
+    if (!this.sentInstructions[panelName]) {
+      this.sentInstructions[panelName] = [];
+    }
+    this.sentInstructions[panelName].push(instruction);
   }
 
   async handleAcknowledgement(message) {
     const { panelName, instructionId, status } = message;
 
-    // Remove the instruction from the queue
-    await this.removeInstruction(panelName, instructionId);
+    let acknowledgedInstruction = null;
+
+    // Remove the instruction from sentInstructions and retrieve it
+    if (this.sentInstructions[panelName]) {
+      const instructionIndex = this.sentInstructions[panelName].findIndex(instr => instr.id === instructionId);
+      if (instructionIndex !== -1) {
+        acknowledgedInstruction = this.sentInstructions[panelName][instructionIndex];
+        this.sentInstructions[panelName].splice(instructionIndex, 1);
+      }
+    }
 
     // Notify frontend about updated queue
     const updatedQueue = await this.getQueue(panelName);
@@ -330,9 +391,31 @@ class WebSocketServer {
       queue: updatedQueue,
     }));
 
-    // Log the acknowledgement
-    Logger.appendLog(panelName, `Instruction ${instructionId} acknowledged with status: ${status}`);
-    console.log(`[WebSocketServer] Instruction ${instructionId} acknowledged by ${panelName} with status: ${status}`);
+    // Log the acknowledgement, including the instruction
+    const instruction = acknowledgedInstruction ? acknowledgedInstruction.instruction : 'unknown';
+    Logger.appendLog(panelName, `Instruction (${instruction}) ${instructionId}  acknowledged with status: ${status}`);
+    console.log(`[WebSocketServer] Instruction (${instruction})  ${instructionId} acknowledged by ${panelName} with status: ${status}`);
+  }
+
+  resendInstruction(panelName, instruction) {
+    const panelClient = this.clientManager.getClientByName(panelName);
+    if (panelClient) {
+      const instructionMessage = {
+        type: 'instruction',
+        instruction: instruction.instruction,
+        instructionId: instruction.id,
+        to: 'panel',
+        panelName: panelName,
+      };
+      panelClient.ws.send(JSON.stringify(instructionMessage));
+      console.log(`[WebSocketServer] Resent instruction ${instruction.id} to ${panelName}`);
+      // Update timestamp
+      instruction.timestamp = Date.now();
+      // Re-store the instruction for tracking
+      this.storeSentInstruction(panelName, instruction);
+    } else {
+      console.warn(`Cannot resend instruction to ${panelName} as it is not connected.`);
+    }
   }
 
   async handleModifyQueue(message) {
@@ -351,7 +434,7 @@ class WebSocketServer {
   }
 
   generateUniqueId() {
-    return Math.random().toString(36).substr(2, 9);
+    return uuidv4();
   }
 }
 
