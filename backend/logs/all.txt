@@ -100653,3 +100653,6 @@
 2024-11-06T09:08:59.649Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
 2024-11-06T09:08:59.650Z,amont,Ping Failure,message=Unable to ping the panel.
 2024-11-06T09:08:59.693Z,amont,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:09:23.679Z,amont,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:09:23.680Z,amont,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:09:23.715Z,amont,Status Change,status=online,message=Panel is online and fully operational.
