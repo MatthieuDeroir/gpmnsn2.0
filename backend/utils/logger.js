@@ -52,12 +52,12 @@ class Logger {
 
     // Log to the specific role's log file
     if (role !== 'unknown') {
-      const roleLogPath = path.join('logs', `${role.toLowerCase()}.txt`);
-      fs.appendFile(roleLogPath, logMessage, (err) => {
-        if (err) {
-          console.error(`Failed to append to ${role}.txt:`, err);
-        }
-      });
+      // const roleLogPath = path.join('logs', `${role.toLowerCase()}.txt`);
+      // fs.appendFile(roleLogPath, logMessage, (err) => {
+      //   if (err) {
+      //     console.error(`Failed to append to ${role}.txt:`, err);
+      //   }
+      // });
     }
 
     // **Add code to save the log to the database**
