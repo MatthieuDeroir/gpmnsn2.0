@@ -1,7 +1,7 @@
 // src/components/LoginPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../Contexts/AuthorizationContext';
+import { useAuth } from '../../contexts/AuthorizationContext';
 import axios from 'axios';
 
 function LoginPage() {

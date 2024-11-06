@@ -1,7 +1,7 @@
 // src/components/ProtectedRoute.jsx
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../Contexts/AuthorizationContext';
+import { useAuth } from '../contexts/AuthorizationContext';
 
 function ProtectedRoute({ children }) {
     const { isAuthenticated } = useAuth();
