@@ -111,15 +111,16 @@ const PanelControl = ({ name }) => {
         ) : (
             <>
               <PanelStatusIndicator
-                  isConnected={panelInfo.connected}
+                  isConnected={panelInfo.connected ?? true}
                   isRebooting={isRebooting}
-                  maintenanceMode={panelInfo.maintenanceMode}
-                  sectorStatus={panelInfo.sectorStatus}
-                  state={panelInfo.state}
-                  isDoorOpen={panelInfo.isDoorOpen}
-                  problem={panelInfo.problem}
-                  status={panelInfo.state}
+                  maintenanceMode={panelInfo.maintenanceMode ?? false}
+                  sectorStatus={panelInfo.sectorStatus ?? false}
+                  state={panelInfo.state ?? 'unknown'}
+                  isDoorOpen={panelInfo.isDoorOpen ?? false}
+                  problem={panelInfo.problem ?? false}
+                  status={panelInfo.state ?? 'unknown'}
               />
+
               <PanelInfo
                   name={name}
                   displayMode={displayMode}

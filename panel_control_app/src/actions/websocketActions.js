@@ -14,6 +14,15 @@ export const connectWebSocket = () => {
         const ws = new WebSocket('ws://localhost:8080');
 
         ws.onopen = () => {
+            // Send registration message
+            const registrationMessage = {
+                type: 'register',
+                clientType: 'user', // or 'frontend' based on your backend's expectation
+                name: 'frontend',   // Ensure this matches the expected client name
+            };
+            ws.send(JSON.stringify(registrationMessage));
+            console.log('Registration message sent:', registrationMessage);
+
             dispatch({
                 type: CONNECT_WEBSOCKET,
                 payload: ws,
@@ -40,13 +49,15 @@ export const connectWebSocket = () => {
                         break;
 
                     case 'status':
-                        if (data.name && data.panelStatus) {
+                        if (data.panelStatus) {
+                            // Update panel status for all panels
                             dispatch({
                                 type: SET_PANEL_STATUS,
-                                payload: { [data.name]: data.panelStatus },
+                                payload: data.panelStatus,
                             });
+                            console.log('Panel status updated:', data.panelStatus);
                         } else {
-                            console.warn('Received status message without name or panelStatus:', data);
+                            console.warn('Received status message without panelStatus data:', data);
                         }
                         break;
 
