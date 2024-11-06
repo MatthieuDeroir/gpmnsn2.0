@@ -1,5 +1,5 @@
 const { broadcastToSpecificClients } = require('./networking');
-const logger = require('./logger');
+const logger = require('../utils/logger');
 
 function processInstruction(instruction, clients) {
     logger.appendLog(`Processing instruction: ${JSON.stringify(instruction)}`);

@@ -1,12 +1,8 @@
 // Fonction pour ajouter les données essentielles à la base de données (roles,panels)
 // De-commenter pour première utilisation
-
-
-
-
-const Role = require('./Models/Login/RoleModel');
-const Panel = require('./Models/panel/PanelModel');
-const Instruction = require('./Models/Instructions/InstructionModel');
+const Role = require('./models/Login/RoleModel');
+const Panel = require('./models/panel/PanelModel');
+const Instruction = require('./models/Instructions/InstructionModel');
 
 export function initialization() {
 
@@ -19,6 +15,7 @@ export function initialization() {
         }
         console.log("added user to role collection");
     })
+
     new Role({
         name: "admin"
     }).save(err => {

@@ -109,7 +109,7 @@ class ClientManager {
 
       this.clients.set(ws, clientInfo);
       this.lastClientData.set(clientInfo.name, clientInfo);
-      console.log(`Heartbeat reçu pour ${clientInfo.name}: ${JSON.stringify(heartbeatData)}, Connected: ${clientInfo.connected}`);
+      // console.log(`Heartbeat reçu pour ${clientInfo.name}: ${JSON.stringify(heartbeatData)}, Connected: ${clientInfo.connected}`);
     } else {
       console.warn(`Heartbeat reçu pour un client non enregistré : ${heartbeatData.name}`);
     }
