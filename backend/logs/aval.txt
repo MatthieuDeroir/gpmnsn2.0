@@ -25869,3 +25869,240 @@
 2024-11-06T09:05:10.564Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
 2024-11-06T09:05:10.564Z,aval,Ping Failure,message=Unable to ping the panel.
 2024-11-06T09:05:11.565Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:14:01.878Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:14:01.878Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:14:02.995Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:16:21.943Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:16:21.943Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:16:21.965Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:17:36.972Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:17:36.972Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:17:38.029Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:17:38.108Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:17:38.109Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:17:38.995Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:17:49.996Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:17:49.997Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:17:51.025Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:18:00.015Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:18:00.016Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:18:00.070Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:18:22.039Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:18:22.039Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:18:22.136Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:18:45.473Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:18:45.474Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:18:46.034Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:19:41.070Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:19:41.071Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:19:41.090Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:20:32.214Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:20:32.214Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:20:33.163Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:20:34.215Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:20:34.216Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:20:35.232Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:21:14.287Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:21:14.288Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:21:15.191Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:21:18.144Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:21:18.144Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:21:18.159Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:21:19.236Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:21:19.237Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:21:20.161Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:21:26.160Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:21:26.160Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:21:26.183Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:21:27.157Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:21:27.157Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:21:27.232Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:21:57.154Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:21:57.154Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:21:57.245Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:23:05.317Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:23:05.317Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:23:05.362Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:23:06.175Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:23:06.176Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:23:06.212Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:24:40.246Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:24:40.246Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:24:40.307Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:25:11.280Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:25:11.280Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:25:12.242Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:25:12.335Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:25:47.274Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:25:47.274Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:25:48.302Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:25:49.287Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:25:49.288Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:25:49.307Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:26:16.298Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:26:16.299Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:26:16.319Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:27:42.339Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:27:42.339Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:27:42.384Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:29:56.429Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:29:56.429Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:29:56.443Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:30:17.449Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:30:17.449Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:30:17.455Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:30:17.466Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:31:11.490Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:31:11.491Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:31:12.501Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:33:07.549Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:33:07.549Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:33:07.565Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:33:08.549Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:33:08.550Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:33:08.574Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:33:38.572Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:33:38.573Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:33:38.588Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:33:59.564Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:33:59.565Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:33:59.590Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:34:47.586Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:34:47.587Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:34:47.634Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:35:37.653Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:35:37.654Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:35:38.666Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:36:06.647Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:36:06.648Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:36:06.667Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:36:09.671Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:36:09.671Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:36:10.683Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:39:19.788Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:39:19.789Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:39:20.806Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:40:47.819Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:40:47.820Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:40:47.870Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:40:56.831Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:40:56.831Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:40:56.893Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:42:10.879Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:42:10.880Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:42:10.899Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:42:19.881Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:42:19.881Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:42:19.885Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:43:23.935Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:43:23.936Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:43:23.957Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:43:47.935Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:43:47.936Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:43:47.979Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:48:22.099Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:48:22.100Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:48:22.134Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:48:38.679Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:48:38.680Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:48:39.114Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:51:05.204Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:51:05.205Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:51:05.260Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:53:51.313Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:53:51.313Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:53:52.300Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:55:25.363Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:55:25.363Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:55:25.387Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:55:40.380Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:55:40.381Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:55:41.421Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:56:35.405Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:56:35.406Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:56:35.426Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:58:21.461Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:58:21.462Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:58:21.484Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:58:28.561Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:58:28.562Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:58:29.483Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T09:59:42.523Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T09:59:42.523Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T09:59:42.538Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:04:42.681Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:04:42.681Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:04:42.955Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:04:45.692Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:04:45.693Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:04:46.708Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:05:07.808Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:05:07.808Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:05:07.819Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:06:34.742Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:06:34.743Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:06:34.768Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:07:33.767Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:07:33.768Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:07:33.810Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:09:08.826Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:09:08.827Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:09:08.850Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:09:55.882Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:09:55.883Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:09:57.881Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:09:58.861Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:09:58.861Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:09:58.889Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:12:32.971Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:12:32.972Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:12:33.963Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:16:58.083Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:16:58.084Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:16:58.114Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:18:15.268Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:18:15.269Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:18:16.162Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:18:43.154Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:18:43.154Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:18:43.328Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:19:52.202Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:19:52.202Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:19:52.222Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:23:31.919Z,aval,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=Unknown
+2024-11-06T10:24:00.309Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:24:00.310Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:01.313Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:02.310Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:03.312Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:04.311Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:05.312Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:06.312Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:07.313Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:08.319Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:09.315Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:10.318Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:11.316Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:12.318Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:13.319Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:14.319Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:15.323Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:16.320Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:17.324Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:18.322Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:19.325Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:20.334Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:21.325Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:22.329Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:23.335Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:24.331Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:25.334Z,aval,Ping Failure,message=Unable to ping the panel.
+2024-11-06T10:24:26.083Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:24:26.132Z,aval,Register,panelName=aval,role=unknown
+2024-11-06T10:24:26.339Z,aval,Status Change,status=offline,message=Panel is disconnected. Possible app crash.
+2024-11-06T10:24:26.340Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-06T10:24:26.490Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-06T10:24:26.492Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-06T10:24:27.407Z,aval,Heartbeat Issue,message=Heartbeat not received within threshold.
+2024-11-06T10:24:28.175Z,aval,Status Change,status=online,message=Panel is online and fully operational.
+2024-11-06T10:24:28.986Z,aval,Disconnected,message=WebSocket connection closed.

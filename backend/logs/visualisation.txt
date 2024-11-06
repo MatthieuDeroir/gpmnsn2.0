@@ -15,3 +15,7 @@
 2024-10-30T16:15:20.589Z,amont,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
 2024-10-30T16:15:21.389Z,indret,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
 2024-10-30T16:15:41.210Z,aval,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-11-06T10:23:29.178Z,indret,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=Unknown
+2024-11-06T10:23:31.919Z,aval,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=Unknown
+2024-11-06T10:23:34.071Z,Unknown Panel,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
+2024-11-06T10:23:40.710Z,Unknown Panel,Visualisation a envoyé l'instruction refresh,instruction=refresh,role=Visualisation,heartbeatTimer=5
