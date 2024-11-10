@@ -123,7 +123,7 @@ const PanelInfo = ({
                                 </tr>
                                 <tr>
                                     <th>Alimentation Secteur :</th>
-                                    <td>{panelInfo.sectorStatus ? 'Actif' : 'Inactif'}</td>
+                                    <td>{panelInfo.sectorStatus === 'false' ?  'Inactif' : 'Actif'}</td>
                                 </tr>
                                 <tr>
                                     <th>Mode Maintenance :</th>
