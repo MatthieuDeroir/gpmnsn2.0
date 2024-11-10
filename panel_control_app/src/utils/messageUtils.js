@@ -2,7 +2,7 @@
 
 import { store } from '../stores/store';
 
-export const sendInstructionMessage = ({ instruction, role, name, heartbeatTimer }) => {
+export const sendInstructionMessage = ({ instruction, role, name = "all", heartbeatTimer }) => {
   const { websocket } = store.getState();
   const { socket } = websocket;
   if (socket && socket.readyState === WebSocket.OPEN) {
