@@ -2,10 +2,10 @@
 const WebSocket = require('ws');
 const redis = require('redis');
 const moment = require('moment');
-const { v4: uuidv4 } = require('uuid');
 const ClientManager = require('../websocket/clientManager');
 const Logger = require('../utils/logger');
 const HealthChecker = require('../websocket/healthChecker');
+const QueueManager = require('../websocket/queueManager'); // Import QueueManager
 
 const HEARTBEAT_INTERVAL = 1000; // 1 second
 const STATUS_UPDATE_INTERVAL = 1000; // 1 second for status updates
@@ -16,6 +16,9 @@ class WebSocketServer {
     this.wss = new WebSocket.Server({ port: 8080 });
     this.clientManager = new ClientManager(WebSocket);
     this.redisClient = redis.createClient();
+
+    // Initialize QueueManager
+    this.queueManager = new QueueManager(this.redisClient, this.expectedPanels);
 
     this.sentInstructions = {}; // Object to store sent instructions per panel
 
@@ -32,7 +35,7 @@ class WebSocketServer {
       console.log('Redis client connected');
 
       // Clear Redis queues before starting the server
-      await this.clearRedisQueues();
+      await this.queueManager.clearAllQueues();
 
       this.processQueues();
 
@@ -41,17 +44,6 @@ class WebSocketServer {
 
     } catch (err) {
       console.error('Failed to connect to Redis:', err);
-    }
-  }
-
-  async clearRedisQueues() {
-    try {
-      for (const panelName of this.expectedPanels) {
-        await this.redisClient.del(`queue:${panelName}`);
-        console.log(`[Redis] Cleared queue for panel: ${panelName}`);
-      }
-    } catch (error) {
-      console.error('Error clearing Redis queues:', error);
     }
   }
 
@@ -101,6 +93,7 @@ class WebSocketServer {
 
     switch (message.type) {
       case 'instruction':
+        console.log('[WebSocketServer] Instruction received:', message);
         await this.handleInstruction(message);
         break;
 
@@ -131,18 +124,21 @@ class WebSocketServer {
   }
 
   async handleInstruction(message) {
+    console.log('[WebSocketServer] Instruction received:', message);
     if (message.to === 'panel') {
       const targetPanels = message.name === 'all' ? this.expectedPanels : [message.name];
 
+      console.log(`[WebSocketServer] Instruction received for ${targetPanels}: ${message.instruction}`);
+
       for (const panelName of targetPanels) {
         // Enqueue the instruction for each panel and get the instruction item
-        const instructionItem = await this.enqueueInstruction(panelName, message.instruction, message.role);
+        const instructionItem = await this.queueManager.enqueueInstruction(panelName, message.instruction, message.role);
 
         // Notify the frontend about the queued instruction
         this.clientManager.sendToFrontend(JSON.stringify({
           type: 'queue_update',
           panelName: panelName,
-          queue: await this.getQueue(panelName),
+          queue: await this.queueManager.getQueue(panelName),
         }));
 
         // Log the instruction, including the instruction ID
@@ -232,12 +228,13 @@ class WebSocketServer {
   }
 
   async checkProblems() {
+
     const clients = this.clientManager.getClients();
     const allOk = await HealthChecker.checkProblems(
         clients,
         this.expectedPanels,
-        this.enqueueInstruction.bind(this),
-        this.getQueue.bind(this),
+        this.queueManager.enqueueInstruction.bind(this.queueManager),
+        this.queueManager.getQueue.bind(this.queueManager),
         this.getSentInstructions.bind(this) // Pass the method
     );
 
@@ -289,43 +286,12 @@ class WebSocketServer {
     this.clientManager.sendToFrontend(statusMessage);
   }
 
-  // Instruction Queue Management with Redis
-
-  async enqueueInstruction(panelName, instruction, role) {
-    const instructionItem = {
-      id: this.generateUniqueId(),
-      instruction,
-      timestamp: Date.now(),
-      status: 'pending',
-      role,
-    };
-
-    await this.redisClient.lPush(`queue:${panelName}`, JSON.stringify(instructionItem));
-    console.log(`[Redis] Enqueued instruction for ${panelName}:`, instructionItem);
-
-    return instructionItem; // Return the instruction item to get the ID
-  }
-
-  async getQueue(panelName) {
-    const queueItems = await this.redisClient.lRange(`queue:${panelName}`, 0, -1);
-    return queueItems.map((item) => JSON.parse(item)).reverse(); // Reverse to maintain FIFO order
-  }
-
-  async removeInstruction(panelName, instructionId) {
-    const queueItems = await this.redisClient.lRange(`queue:${panelName}`, 0, -1);
-    for (const item of queueItems) {
-      const instruction = JSON.parse(item);
-      if (instruction.id === instructionId) {
-        await this.redisClient.lRem(`queue:${panelName}`, 0, item);
-        break;
-      }
-    }
-  }
+  // Instruction Queue Management with QueueManager
 
   async processQueues() {
     setInterval(async () => {
       for (const panelName of this.expectedPanels) {
-        const queue = await this.getQueue(panelName);
+        const queue = await this.queueManager.getQueue(panelName);
         if (queue.length === 0) continue;
 
         const nextInstruction = queue[0]; // Get the next instruction (FIFO)
@@ -348,7 +314,7 @@ class WebSocketServer {
             nextInstruction.status = 'sent';
 
             // Remove the instruction from the queue
-            await this.removeInstruction(panelName, nextInstruction.id);
+            await this.queueManager.removeInstruction(panelName, nextInstruction.id);
 
             // Store the sent instruction for tracking
             this.storeSentInstruction(panelName, nextInstruction);
@@ -386,7 +352,7 @@ class WebSocketServer {
     }
 
     // Notify frontend about updated queue
-    const updatedQueue = await this.getQueue(panelName);
+    const updatedQueue = await this.queueManager.getQueue(panelName);
     this.clientManager.sendToFrontend(JSON.stringify({
       type: 'queue_update',
       panelName: panelName,
@@ -423,9 +389,9 @@ class WebSocketServer {
   async handleModifyQueue(message) {
     const { action, panelName, instructionId } = message;
     if (action === 'delete') {
-      await this.removeInstruction(panelName, instructionId);
+      await this.queueManager.removeInstruction(panelName, instructionId);
       // Notify frontend about updated queue
-      const updatedQueue = await this.getQueue(panelName);
+      const updatedQueue = await this.queueManager.getQueue(panelName);
       this.clientManager.sendToFrontend(JSON.stringify({
         type: 'queue_update',
         panelName: panelName,
@@ -433,10 +399,6 @@ class WebSocketServer {
       }));
       console.log(`[WebSocketServer] Instruction ${instructionId} removed from queue for ${panelName}`);
     }
-  }
-
-  generateUniqueId() {
-    return uuidv4();
   }
 }
 
