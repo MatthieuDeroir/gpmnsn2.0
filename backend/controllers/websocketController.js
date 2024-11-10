@@ -44,8 +44,18 @@ class WebSocketServer {
     }
   }
 
-  setupServer() {
+  async clearRedisQueues() {
+    try {
+      for (const panelName of this.expectedPanels) {
+        await this.redisClient.del(`queue:${panelName}`);
+        console.log(`[Redis] Cleared queue for panel: ${panelName}`);
+      }
+    } catch (error) {
+      console.error('Error clearing Redis queues:', error);
+    }
+  }
 
+  setupServer() {
     console.log('WebSocket server is running on port 8080');
     console.log('Starting health check interval...');
     this.healthCheckIntervalId = setInterval(() => this.checkProblems(), HEARTBEAT_INTERVAL);
@@ -217,14 +227,6 @@ class WebSocketServer {
     }, CLEANUP_INTERVAL);
   }
 
-  async clearRedisQueues() {
-    for (const panelName of this.expectedPanels) {
-      await this.redisClient.del(`queue:${panelName}`);
-      console.log(`[Redis] Cleared queue for panel: ${panelName}`);
-    }
-  }
-
-
   sendInitialInstructions(ws) {
     // Implement if necessary
   }
@@ -233,17 +235,13 @@ class WebSocketServer {
     const clients = this.clientManager.getClients();
     const allOk = await HealthChecker.checkProblems(
         clients,
-        this.clientManager.broadcastToAppropriateClients.bind(this.clientManager),
-        this.expectedPanels
+        this.expectedPanels,
+        this.enqueueInstruction.bind(this),
+        this.getQueue.bind(this),
+        this.getSentInstructions.bind(this) // Pass the method
     );
 
-    if (!allOk) {
-      this.clientManager.broadcastToAppropriateClients(
-          JSON.stringify({ type: 'instruction', to: 'panel', instruction: 'off' }),
-          'panel'
-      );
-      console.log('[WebSocketServer] "Off" instructions sent to panels due to detected problems.');
-    }
+    // Removed direct broadcasting of "off" instructions
   }
 
   async sendStatusUpdates() {
@@ -369,6 +367,10 @@ class WebSocketServer {
     this.sentInstructions[panelName].push(instruction);
   }
 
+  getSentInstructions(panelName) {
+    return this.sentInstructions[panelName] || [];
+  }
+
   async handleAcknowledgement(message) {
     const { panelName, instructionId, status } = message;
 
@@ -393,8 +395,8 @@ class WebSocketServer {
 
     // Log the acknowledgement, including the instruction
     const instruction = acknowledgedInstruction ? acknowledgedInstruction.instruction : 'unknown';
-    Logger.appendLog(panelName, `Instruction (${instruction}) ${instructionId}  acknowledged with status: ${status}`);
-    console.log(`[WebSocketServer] Instruction (${instruction})  ${instructionId} acknowledged by ${panelName} with status: ${status}`);
+    Logger.appendLog(panelName, `Instruction ${instructionId} (${instruction}) acknowledged with status: ${status}`);
+    console.log(`[WebSocketServer] Instruction ${instructionId} (${instruction}) acknowledged by ${panelName} with status: ${status}`);
   }
 
   resendInstruction(panelName, instruction) {
