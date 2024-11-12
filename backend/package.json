@@ -29,6 +29,7 @@
     "nodemon": "^2.0.16",
     "npm-build": "^0.0.1",
     "ping": "^0.4.4",
+    "readline-sync": "^1.4.10",
     "redis": "^4.7.0",
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7",

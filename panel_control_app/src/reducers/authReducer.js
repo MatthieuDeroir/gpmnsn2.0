@@ -6,8 +6,9 @@ const initialState = {
     token: localStorage.getItem('token') || null,
     role: localStorage.getItem('role') || null,
     isAuthenticated: !!localStorage.getItem('token'),
-    permissions: {},
+    permissions: JSON.parse(localStorage.getItem('permissions')) || {},
 };
+
 
 const permissionsByRole = {
     Maintenance: {
@@ -46,12 +47,14 @@ const authReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOGIN:
             const { token, role } = action.payload;
+            const permissions = permissionsByRole[role] || {};
+            localStorage.setItem('permissions', JSON.stringify(permissions));
             return {
                 ...state,
                 token,
                 role,
                 isAuthenticated: true,
-                permissions: permissionsByRole[role] || {},
+                permissions,
             };
 
         case LOGOUT:
@@ -64,10 +67,12 @@ const authReducer = (state = initialState, action) => {
             };
 
         case SET_ROLE:
+            const updatedPermissions = permissionsByRole[action.payload] || {};
+            localStorage.setItem('permissions', JSON.stringify(updatedPermissions));
             return {
                 ...state,
                 role: action.payload,
-                permissions: permissionsByRole[action.payload] || {},
+                permissions: updatedPermissions,
             };
 
         default:

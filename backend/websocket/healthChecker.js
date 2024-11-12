@@ -7,7 +7,8 @@ const ping = require('ping'); // Ensure you've installed this package using `npm
 const FRONTEND_PORT = 3000;
 const DATABASE_PORT = 27017;
 const HEARTBEAT_INTERVAL = 5000; // 5 seconds
-const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 6; // 30 seconds
+const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 12; // 60 seconds
+const PING_TIMEOUT = 5; // 5 seconds
 
 class HealthChecker {
   static HEARTBEAT_THRESHOLD = HEARTBEAT_THRESHOLD;
@@ -52,7 +53,7 @@ class HealthChecker {
   static async pingPanel(ip) {
     try {
       const response = await ping.promise.probe(ip, {
-        timeout: 2, // Timeout in seconds
+        timeout: PING_TIMEOUT, // Timeout in seconds
       });
       return response.alive; // Returns true if the ping was successful, false otherwise
     } catch (error) {
@@ -110,7 +111,7 @@ class HealthChecker {
           } else {
             Logger.appendLog(clientInfo.name, 'Status Change', {
               status: currentStatus,
-              message: 'Panel is disconnected. Possible app crash.'
+              message: 'Panel is not reachable by ping bu still connected to websocket. Possible that ICMP protocol is blocked but not the 8080 port.'
             });
           }
         } else if (currentStatus === 'online') {
@@ -131,9 +132,9 @@ class HealthChecker {
 
       // Log ping failures
       if (!isPingable) {
-        Logger.appendLog(clientInfo.name, 'Ping Failure', {
-          message: 'Unable to ping the panel.'
-        });
+        // Logger.appendLog(clientInfo.name, 'Ping Failure', {
+        //   message: 'Unable to ping the panel.'
+        // });
       }
 
       // Determine if there's a problem with the panel
@@ -174,7 +175,11 @@ class HealthChecker {
    * @param {Function} getSentInstructions - Function to get sent instructions for a panel.
    * @returns {Promise<boolean>} - Resolves to true if all systems are OK, false otherwise.
    */
-  static async checkProblems(clients, expectedPanels, enqueueInstruction, getQueue, getSentInstructions) {
+  static currentFailures = new Set(); // Garde en mémoire les panneaux en panne
+  static offSentToAllPanels = false; // Indique si l'instruction "off" a été envoyée aux panneaux fonctionnels pour l'événement de panne actuel
+
+  // healthChecker.js
+  static async checkProblems(clients, expectedPanels, queueManager) {
     const [frontendOk, databaseOk] = await Promise.all([
       this.checkFrontend(),
       this.checkDatabase()
@@ -182,52 +187,52 @@ class HealthChecker {
 
     const { allPanelsOk, problems } = await this.checkPanels(clients, expectedPanels);
 
-    if (!frontendOk || !databaseOk || !allPanelsOk) {
-      let offInstructionExists = true;
+    const failingPanels = expectedPanels.filter(panelName => problems[panelName] === false);
 
-      for (const panelName of expectedPanels) {
-        const queue = await getQueue(panelName);
-        const sentInstructions = await getSentInstructions(panelName);
+    if (failingPanels.length > 0 || !frontendOk || !databaseOk) {
+      this.currentFailures = new Set(failingPanels);
 
-        const hasOffInstructionInQueue = queue.some(
-            instr => instr.instruction === 'off' && (instr.status === 'pending' || instr.status === 'sent')
-        );
-
-        const hasOffInstructionSent = sentInstructions.some(
-            instr => instr.instruction === 'off' && (instr.status === 'pending' || instr.status === 'sent')
-        );
-
-        if (!hasOffInstructionInQueue && !hasOffInstructionSent) {
-          offInstructionExists = false;
-          break;
-        }
-      }
-
-      if (!offInstructionExists) {
-        // Enqueue an "off" instruction for all panels
+      if (!this.offSentToAllPanels) {
         for (const panelName of expectedPanels) {
-          try {
-            const instructionItem = await enqueueInstruction(panelName, 'off', 'HealthChecker');
-            Logger.appendLog(panelName, 'Auto-Off Instruction Enqueued', {
-              instruction: 'off',
-              instructionId: instructionItem.id,
-              reason: 'Health check failed',
-            });
-            console.log(`[HealthChecker] Enqueued "off" instruction for ${panelName} with id ${instructionItem.id}`);
-          } catch (error) {
-            console.error(`Error enqueuing "off" instruction for ${panelName}:`, error);
-            Logger.appendLog(panelName, 'Error Enqueuing Instruction', {
-              error: error.message,
-            });
+          // Correct call to queueManager.getLastQueuedInstructions
+          console.log(`[HealthChecker] Checking for existing auto-off instruction in queue for ${panelName}`);
+          const hasOffInstruction = await queueManager.getLastQueuedInstructions(panelName, 1, 'auto-off-queue');
+          console.log(`[HealthChecker] Last queued instructions for ${panelName}:`, hasOffInstruction);
+
+
+
+          if (hasOffInstruction.length === 0) {
+            try {
+              console.log(`[HealthChecker] Attempting to enqueue auto-off instruction for ${panelName}`);
+              const instructionItem = await queueManager.enqueueAutoOffInstruction(panelName);
+
+              if (instructionItem) {
+                console.log(`[HealthChecker] Successfully enqueued auto-off instruction for ${panelName}`);
+              } else {
+                console.log(`[HealthChecker] Skipped duplicate auto-off instruction for ${panelName}`);
+              }
+            } catch (error) {
+              console.error(`Error enqueuing auto-off instruction for ${panelName}:`, error);
+            }
+          } else {
+            console.log(`[HealthChecker] Auto-off instruction already enqueued for ${panelName}. Skipping.`);
           }
         }
-      } else {
-        console.log('[HealthChecker] "Off" instruction already enqueued or sent for all panels. Not enqueuing again.');
+
+        this.offSentToAllPanels = true;
       }
     }
+    if (allPanelsOk && frontendOk && databaseOk) {
+      this.currentFailures.clear();
+      this.offSentToAllPanels = false; // Reset the flag here
+    }
+
 
     return frontendOk && databaseOk && allPanelsOk;
   }
+
+
+
 }
 
 module.exports = HealthChecker;
