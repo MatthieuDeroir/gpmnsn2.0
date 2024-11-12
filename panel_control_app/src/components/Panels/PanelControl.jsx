@@ -85,7 +85,13 @@ const PanelControl = ({ name }) => {
   );
 
   const shouldDisplayButtons =
-      (!isAnyPanelInDysfunction && panelInfo && panelInfo.connected && permissions && !isLoading && !isRebooting);
+      panelInfo &&
+      panelInfo.sectorStatus !== false &&
+      panelInfo.connected &&
+      permissions &&
+      !isLoading &&
+      !isRebooting;
+
 
   const sendInstruction = (instruction) => {
     sendInstructionMessage({

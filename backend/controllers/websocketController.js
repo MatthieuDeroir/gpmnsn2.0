@@ -228,18 +228,11 @@ class WebSocketServer {
   }
 
   async checkProblems() {
-
     const clients = this.clientManager.getClients();
-    const allOk = await HealthChecker.checkProblems(
-        clients,
-        this.expectedPanels,
-        this.queueManager.enqueueInstruction.bind(this.queueManager),
-        this.queueManager.getQueue.bind(this.queueManager),
-        this.getSentInstructions.bind(this) // Pass the method
-    );
+    await HealthChecker.checkProblems(clients, this.expectedPanels, this.queueManager);
 
-    // Removed direct broadcasting of "off" instructions
   }
+
 
   async sendStatusUpdates() {
     const panelStatus = {};
