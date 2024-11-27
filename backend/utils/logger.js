@@ -42,7 +42,7 @@ class Logger {
 
     // Log to the specific panel's log filel
     if (panelName !== 'Unknown Panel') {
-      const panelLogPath = path.join('logs', `${panelName.toLowerCase()}.txt`);
+      const panelLogPath = path.join('logs', `${panelName.toLowerCase()}.txt`) ;
       /*fs.appendFile(panelLogPath, logMessage, (err) => {
         if (err) {
           console.error(`Failed to append to ${panelName}.txt:`, err);

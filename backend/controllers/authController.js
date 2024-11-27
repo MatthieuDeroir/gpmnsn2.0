@@ -1,31 +1,43 @@
-
 // controllers/authController.js
 const bcrypt = require('bcryptjs');
 const User = require('../models/userModel');
 const { signToken } = require('../utils/jwtUtils');
-
+const Logger = require('../utils/logger'); // Import du Logger
+const jwt = require('jsonwebtoken'); // Assurez-vous d'importer jwt si nécessaire
 exports.login = async (req, res) => {
     const { username, password } = req.body;
 
     try {
-        // Find user
+        // Trouver l'utilisateur
         const user = await User.findOne({ where: { username } });
         if (!user) return res.status(401).json({ message: 'Invalid credentials' });
 
-        // Check password
+        // Vérifier le mot de passe
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) return res.status(401).json({ message: 'Invalid credentials' });
 
-        // **Create a simple payload**
+        // Créer une charge utile simple
         const payload = {
             id: user.id,
             role: user.role,
+            username: user.username, // Inclure le nom d'utilisateur dans le token
         };
 
-        // **Sign token with the simple payload**
+        // Signer le token avec la charge utile
         const token = signToken(payload); // Génère le JWT
 
-        // Définir le cookie 'token' avec le JWT
+        // Enregistrer la connexion dans les journaux
+        await Logger.appendLog(
+            'frontend', // Nom du panneau (ou null si pas applicable)
+            'User Login', // Type d'événement
+            {
+                username: user.username,
+                role: user.role,
+                message: 'User logged in',
+            }
+        );
+
+        // Retourner le token et le rôle
         res.json({ token, role: user.role });
     } catch (err) {
         console.error('Error during login:', err);
@@ -33,15 +45,39 @@ exports.login = async (req, res) => {
     }
 };
 
+exports.logout = async (req, res) => {
+    try {
+        const user = req.user;
+
+        // Effacer le cookie 'token'
+        res.clearCookie('token');
+
+        // Enregistrer la déconnexion dans les journaux
+        await Logger.appendLog(
+            'frontend', // Nom du panneau (ou null si pas applicable)
+            'User Logout', // Type d'événement
+            {
+                username: user.username,
+                role: user.role,
+                message: 'User logged out',
+            }
+        );
+
+        res.json({ message: 'Déconnexion réussie' });
+    } catch (err) {
+        console.error('Error during logout:', err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
 
 exports.register = async (req, res) => {
     const { username, password, role } = req.body;
 
     try {
-        // Hash password
+        // Hasher le mot de passe
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // Create new user
+        // Créer un nouvel utilisateur
         const newUser = await User.create({
             username,
             password: hashedPassword,
@@ -59,7 +95,6 @@ exports.register = async (req, res) => {
     }
 };
 
-
 exports.checkAuth = (req, res) => {
     const token = req.cookies.token;
     if (!token) {
@@ -72,10 +107,3 @@ exports.checkAuth = (req, res) => {
         res.status(403).json({ message: 'Jeton invalide' });
     }
 };
-
-
-exports.logout = (req, res) => {
-    res.clearCookie('token');
-    res.json({ message: 'Déconnexion réussie' });
-};
-

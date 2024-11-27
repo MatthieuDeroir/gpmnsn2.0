@@ -7,7 +7,7 @@ const ping = require('ping'); // Ensure you've installed this package using `npm
 const FRONTEND_PORT = 3000;
 const DATABASE_PORT = 27017;
 const HEARTBEAT_INTERVAL = 5000; // 5 seconds
-const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 12; // 60 seconds
+const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 2; // 60 seconds
 const PING_TIMEOUT = 5; // 5 seconds
 
 class HealthChecker {
@@ -98,24 +98,20 @@ class HealthChecker {
       // Log status changes only if there's an actual change
       if (previousStatus !== currentStatus) {
         if (currentStatus === 'pingable') {
-          Logger.appendLog(clientInfo.name, 'Status Change', {
+          Logger.appendLog(clientInfo.name, 'Panel App Crash', {
             status: currentStatus,
             message: 'Panel is pingable but not connected via WebSocket. Possible app crash; manual reboot may be required.'
           });
         } else if (currentStatus === 'offline') {
           if (!isPingable && !isWebSocketConnected) {
-            Logger.appendLog(clientInfo.name, 'Status Change', {
+            Logger.appendLog(clientInfo.name, 'Offline', {
               status: currentStatus,
               message: 'Panel is disconnected and not pingable. Possible network disconnection.'
             });
-          } else {
-            Logger.appendLog(clientInfo.name, 'Status Change', {
-              status: currentStatus,
-              message: 'Panel is not reachable by ping bu still connected to websocket. Possible that ICMP protocol is blocked but not the 8080 port.'
-            });
           }
+
         } else if (currentStatus === 'online') {
-          Logger.appendLog(clientInfo.name, 'Status Change', {
+          Logger.appendLog(clientInfo.name, 'Online', {
             status: currentStatus,
             message: 'Panel is online and fully operational.'
           });
@@ -138,7 +134,7 @@ class HealthChecker {
       }
 
       // Determine if there's a problem with the panel
-      if (!isPingable || !isHeartbeatValid || !clientInfo.sectorStatus || !clientInfo.state) {
+      if (!isPingable || !isHeartbeatValid || !clientInfo.sectorStatus || !clientInfo.state || currentStatus !== 'online') {
         problems[clientInfo.name] = false;
         allPanelsOk = false;
       } else {
@@ -184,6 +180,18 @@ class HealthChecker {
       this.checkFrontend(),
       this.checkDatabase()
     ]);
+
+    if (!frontendOk) {
+      Logger.appendLog('Frontend', 'Offline', {
+        message: 'Frontend service is down.'
+      });
+    }
+
+    if (!databaseOk) {
+        Logger.appendLog('Database', 'Offline', {
+            message: 'Database service is down.'
+        });
+    }
 
     const { allPanelsOk, problems } = await this.checkPanels(clients, expectedPanels);
 

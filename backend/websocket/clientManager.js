@@ -1,5 +1,6 @@
 // clientManager.js
 const WebSocket = require('ws');
+const Logger = require('../utils/logger');
 
 class ClientManager {
   constructor(WebSocket) {
@@ -29,7 +30,6 @@ class ClientManager {
         console.log(`Existing client ${clientInfo.name} is the same as the current connection. Not disconnecting.`);
       }
     }
-
 
     // Update the maps with the new connection
     this.clients.set(ws, clientInfo);
@@ -74,7 +74,8 @@ class ClientManager {
         this.lastClientData.set(clientInfo.name, clientInfo);
 
         // Remove from clientWsMap if necessary
-        if (this.clientWsMap.get(clientInfo.name).ws === ws) {
+        const currentClient = this.clientWsMap.get(clientInfo.name);
+        if (currentClient && currentClient.ws === ws) {
           this.clientWsMap.delete(clientInfo.name);
         }
       }
@@ -101,15 +102,103 @@ class ClientManager {
    * @param {WebSocket} ws - The WebSocket connection.
    * @param {object} heartbeatData - The heartbeat data sent by the client.
    */
+
+// clientManager.js
+
   updateHeartbeat(ws, heartbeatData) {
     const clientInfo = this.clients.get(ws);
     if (clientInfo) {
       clientInfo.lastHeartbeat = Date.now();
+
+      // Champs à surveiller
+      const fieldsToMonitor = ['isDoorOpen', 'sectorStatus', 'maintenanceMode', 'state'];
+
+      // Parcourir les champs à surveiller et détecter les changements
+      fieldsToMonitor.forEach((field) => {
+        if (heartbeatData.hasOwnProperty(field)) {
+          const oldValue = clientInfo[field];
+          const newValue = heartbeatData[field];
+
+          if (oldValue !== newValue) {
+            // Générer un message personnalisé et un eventType court basé sur le champ et la nouvelle valeur
+            let message = '';
+            let eventType = '';
+
+            switch (field) {
+              case 'maintenanceMode':
+                if (newValue) {
+                  message = 'Maintenance Mode has been activated';
+                  eventType = 'Maintenance On';
+                } else {
+                  message = 'Maintenance Mode has been deactivated';
+                  eventType = 'Maintenance Off';
+                }
+                break;
+
+              case 'isDoorOpen':
+                if (newValue) {
+                  message = 'The door has been opened';
+                  eventType = 'Door Open';
+                } else {
+                  message = 'The door has been closed';
+                  eventType = 'Door Closed';
+                }
+                break;
+
+              case 'sectorStatus':
+                if (!newValue) {
+                  message = 'Main power supply lost, battery backup activated';
+                  eventType = 'Power Lost';
+                } else {
+                  message = 'Main power supply restored';
+                  eventType = 'Power Restored';
+                }
+                break;
+
+              case 'state':
+                if (newValue === 'on') {
+                  message = 'Panel screen is On';
+                  eventType = 'Screen On';
+                } else if (newValue === 'off') {
+                  message = 'Panel screen is Off';
+                  eventType = 'Screen Off';
+                } else {
+                  message = `Panel screen state changed to '${newValue}'`;
+                  eventType = `Screen ${newValue}`;
+                }
+                break;
+
+              default:
+                message = `Field '${field}' changed from '${oldValue}' to '${newValue}'`;
+                eventType = `Change in ${field}`;
+                break;
+            }
+
+            // Enregistrer le changement
+            Logger.appendLog(
+                clientInfo.name, // Nom du panneau
+                eventType,       // Type d'événement (court et spécifique)
+                {
+                  field: field,
+                  oldValue: oldValue,
+                  newValue: newValue,
+                  message: message,
+                }
+            );
+
+            console.log(
+                `Field '${field}' for panel '${clientInfo.name}' changed from '${oldValue}' to '${newValue}'`
+            );
+          }
+        }
+      });
+
+      // Mettre à jour les valeurs dans clientInfo
       clientInfo.cpuTemp = heartbeatData.cpuTemp;
       clientInfo.isDoorOpen = heartbeatData.isDoorOpen;
       clientInfo.sectorStatus = heartbeatData.sectorStatus;
       clientInfo.maintenanceMode = heartbeatData.maintenanceMode;
-      clientInfo.state = heartbeatData.state; // Assuming 'state' is provided in the heartbeatData
+      clientInfo.state = heartbeatData.state;
 
       this.clients.set(ws, clientInfo);
       this.lastClientData.set(clientInfo.name, clientInfo);
@@ -118,6 +207,7 @@ class ClientManager {
       console.warn(`Heartbeat reçu pour un client non enregistré : ${heartbeatData.name}`);
     }
   }
+
 
   /**
    * Broadcasts a message to all connected clients.
@@ -149,7 +239,6 @@ class ClientManager {
       }
     });
   }
-
 
   sendToPanel(panelName, message) {
     const clientEntry = this.clientWsMap.get(panelName);
@@ -214,6 +303,15 @@ class ClientManager {
   }
 
   /**
+   * Retrieves client information based on the client name.
+   * @param {string} name - The name of the client.
+   * @returns {object|null}
+   */
+  getClientInfoByName(name) {
+    return this.lastClientData.get(name) || null;
+  }
+
+  /**
    * Retrieves the settings of all panels.
    * @returns {object}
    */
@@ -232,4 +330,4 @@ class ClientManager {
   }
 }
 
-module.exports = ClientManager;// src/actions/websocketActions.js
+module.exports = ClientManager;

@@ -8,6 +8,7 @@ const authRoutes = require('./routes/authRoutes');
 const logRoutes = require('./routes/logRoutes');
 const websocketController = require('./controllers/websocketController');
 const cookieParser = require('cookie-parser');
+const Logger = require('./utils/logger');
 
 // Initialize environment variables
 dotenv.config();
@@ -51,4 +52,18 @@ app.get('/', (req, res) => res.send(`Server is running on port: ${process.env.PO
 
 // Start the server
 const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Server is running on port: ${PORT}`);
+
+    // Enregistrer que le serveur Express a démarré
+    Logger.appendLog(
+        'backend',
+        'Server Started',
+        {
+            message: `Express server started on port ${PORT}`,
+        }
+    );
+});
+
+
+

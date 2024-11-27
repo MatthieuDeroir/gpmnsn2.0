@@ -34,6 +34,14 @@ class WebSocketServer {
       await this.redisClient.connect();
       console.log('Redis client connected');
 
+      Logger.appendLog(
+          'backend',
+          'WebSocket Server Started',
+          {
+            message: 'WebSocket server started and Redis client connected',
+          }
+      );
+
       // Clear Redis queues before starting the server
       await this.queueManager.clearAllQueues();
 
@@ -44,6 +52,14 @@ class WebSocketServer {
 
     } catch (err) {
       console.error('Failed to connect to Redis:', err);
+
+      Logger.appendLog(
+          'Backend',
+          'WebSocket Server Start Failed',
+          {
+            error: err.message,
+          }
+      );
     }
   }
 
@@ -118,6 +134,7 @@ class WebSocketServer {
         break;
 
       default:
+        console.log(message)
         console.log(`Unknown message type: ${message.type}`);
         Logger.appendLog(message.name || 'Unknown Client', `Unknown Event: ${message.type}`, message);
     }
@@ -143,7 +160,7 @@ class WebSocketServer {
 
         // Log the instruction, including the instruction ID
         const role = message.role || message.from || 'unknown';
-        Logger.appendLog(panelName, `${role} enqueued instruction ${message.instruction} with id ${instructionItem.id}`, {
+        Logger.appendLog(panelName, `User ${role} enqueued instruction (${message.instruction})`, {
           instruction: message.instruction,
           instructionId: instructionItem.id,
           role: role,
@@ -183,7 +200,7 @@ class WebSocketServer {
 
     // Log the registration event
     const role = message.from || 'unknown';
-    Logger.appendLog(name, 'Register', { panelName: name, role: role });
+    Logger.appendLog(name, 'Panel connection', { panelName: name, role: role });
     console.log(`[WebSocketServer] Panel registered: ${name}`);
   }
 
@@ -229,10 +246,30 @@ class WebSocketServer {
 
   async checkProblems() {
     const clients = this.clientManager.getClients();
-    await HealthChecker.checkProblems(clients, this.expectedPanels, this.queueManager);
+    const problem = await HealthChecker.checkProblems(clients, this.expectedPanels, this.queueManager);
+
+    if (!problem) {
+      for (const client of clients) {
+        console.log(`[HealthChecker] Checking client ${client.name} with state: ${client.connected}`);
+        if (client.state === 'on' ) {
+          const panelName = client.name;
+          const instruction = 'off';
+          const instructionItem = await this.queueManager.enqueueInstruction(panelName, instruction, 'auto');
+          console.log(`[HealthChecker] Enqueued auto-off instruction for ${panelName}: ${instruction} with id ${instructionItem.id}`);
+
+          // Log the auto-off instruction
+          Logger.appendLog(panelName, 'Auto-Off Instruction Enqueued', {
+            instruction: instruction,
+            instructionId: instructionItem.id,
+            role: 'auto',
+          });
+        }
+
+
+      }
+    }
 
   }
-
 
   async sendStatusUpdates() {
     const panelStatus = {};
@@ -311,6 +348,34 @@ class WebSocketServer {
 
             // Store the sent instruction for tracking
             this.storeSentInstruction(panelName, nextInstruction);
+
+            // **Log the instruction along with panel status**
+            const panelClientInfo = this.clientManager.getClientInfoByName(panelName);
+            const panelStatus = panelClientInfo
+                ? {
+                  status: panelClientInfo.currentStatus || 'unknown',
+                  state: panelClientInfo.state || 'unknown',
+                  cpuTemp: panelClientInfo.cpuTemp || null,
+                  isDoorOpen: panelClientInfo.isDoorOpen || false,
+                  sectorStatus: panelClientInfo.sectorStatus || null,
+                  maintenanceMode: panelClientInfo.maintenanceMode || false,
+                }
+                : { status: 'unknown' };
+
+            Logger.appendLog(
+                panelName,
+                `Serveur transmitted instruction (${nextInstruction.instruction}) to ${panelName}`,
+                {
+                  instruction: nextInstruction.instruction,
+                  instructionId: nextInstruction.id,
+                  panelStatus: panelStatus,
+                }
+            );
+
+            console.log(
+                `[WebSocketServer] Sent instruction ${nextInstruction.id} (${nextInstruction.instruction}) to ${panelName}, panel status:`,
+                panelStatus
+            );
           } else {
             console.warn(`Panel ${panelName} is not connected. Cannot send instruction.`);
           }
@@ -337,7 +402,9 @@ class WebSocketServer {
 
     // Remove the instruction from sentInstructions and retrieve it
     if (this.sentInstructions[panelName]) {
-      const instructionIndex = this.sentInstructions[panelName].findIndex(instr => instr.id === instructionId);
+      const instructionIndex = this.sentInstructions[panelName].findIndex(
+          (instr) => instr.id === instructionId
+      );
       if (instructionIndex !== -1) {
         acknowledgedInstruction = this.sentInstructions[panelName][instructionIndex];
         this.sentInstructions[panelName].splice(instructionIndex, 1);
@@ -346,16 +413,43 @@ class WebSocketServer {
 
     // Notify frontend about updated queue
     const updatedQueue = await this.queueManager.getQueue(panelName);
-    this.clientManager.sendToFrontend(JSON.stringify({
-      type: 'queue_update',
-      panelName: panelName,
-      queue: updatedQueue,
-    }));
+    this.clientManager.sendToFrontend(
+        JSON.stringify({
+          type: 'queue_update',
+          panelName: panelName,
+          queue: updatedQueue,
+        })
+    );
 
-    // Log the acknowledgement, including the instruction
+    // **Log the acknowledgement along with panel status**
     const instruction = acknowledgedInstruction ? acknowledgedInstruction.instruction : 'unknown';
-    Logger.appendLog(panelName, `Instruction ${instructionId} (${instruction}) acknowledged with status: ${status}`);
-    console.log(`[WebSocketServer] Instruction ${instructionId} (${instruction}) acknowledged by ${panelName} with status: ${status}`);
+    const panelClientInfo = this.clientManager.getClientInfoByName(panelName);
+    const panelStatus = panelClientInfo
+        ? {
+          status: panelClientInfo.currentStatus || 'unknown',
+          state: panelClientInfo.state || 'unknown',
+          cpuTemp: panelClientInfo.cpuTemp || null,
+          isDoorOpen: panelClientInfo.isDoorOpen || false,
+          sectorStatus: panelClientInfo.sectorStatus || null,
+          maintenanceMode: panelClientInfo.maintenanceMode || false,
+        }
+        : { status: 'unknown' };
+
+    Logger.appendLog(
+        panelName,
+        `Instruction  (${instruction}) acknowledged by ${panelName}`,
+        {
+          instruction: instruction,
+          instructionId: instructionId,
+          status: status,
+          panelStatus: panelStatus,
+        }
+    );
+
+    console.log(
+        `[WebSocketServer] Instruction ${instructionId} (${instruction}) acknowledged by ${panelName} with status: ${status}, panel status:`,
+        panelStatus
+    );
   }
 
   resendInstruction(panelName, instruction) {
