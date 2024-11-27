@@ -39,6 +39,7 @@
   z-index: 999;
 }
 
+/* Ajustez le padding pour créer un espace entre le contenu et les bords */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -46,22 +47,34 @@
   height: var(--nav-height);
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px; /* Padding gauche et droite de 20px */
 }
 
-/* Logo */
-.navbar-logo {
+/* Conteneur pour le logo */
+.navbar-logo-container {
   display: flex;
   align-items: center;
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-.navbar-logo .material-icons {
-  margin-right: 8px;
-  font-size: 1.8rem;
+/* Ajoutez un padding à gauche pour éloigner le logo du bord */
+.navbar-logo-container {
+  padding-left: 10px; /* Ajustez cette valeur selon vos préférences */
+}
+
+/* Image du logo */
+.navbar-logo-image-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-image {
+  height: 9vh; /* Ajustez la hauteur selon vos besoins */
+  width: auto;
+}
+
+.navbar-logo-image-link {
+  /* Vous pouvez ajouter du padding supplémentaire si nécessaire */
+  /* padding: 5px 0; */
 }
 
 /* Icône du Menu Hamburger */
@@ -109,24 +122,6 @@
   border-bottom: none;
 }
 
-/* Boutons de Navigation */
-.log-button, .home-button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color var(--transition-speed);
-}
-
-.log-button:hover, .home-button:hover {
-  background-color: var(--secondary-color);
-}
-
 /* Contenu Principal */
 .health-controls {
   padding: 20px;
@@ -136,15 +131,6 @@
   font-size: 1.5rem;
   color: var(--text-color);
   margin-top: 50px;
-}
-
-/* Flex Layout pour les contrôles */
-.panel-controls {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 20px;
 }
 
 /* Réactivité */
@@ -173,8 +159,14 @@
     position: relative;
   }
 
-  .navbar-logo {
-    margin-bottom: 10px;
+  .navbar-logo-container {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px; /* Assurez-vous que le padding est également appliqué en mode mobile */
+  }
+
+  .navbar-logo-image {
+    height: 9vh; /* Ajustez la taille du logo sur les petits écrans */
   }
 
   .menu-icon {

@@ -25,26 +25,26 @@ const DatePickerComponent = ({ dateRange, setDateRange, showDatePicker, toggleDa
   ]);
 
   return (
-    <div className="date-picker-component">
-      <button className="date-toggle-button" onClick={toggleDatePicker}>
-        <FaCalendarAlt />
-      </button>
-      {showDatePicker && (
-        <div className="date-picker-container">
-          <DateRangePicker
-            onChange={item => setDateRange([item.selection])}
-            showSelectionPreview={true}
-            moveRangeOnFirstSelection={false}
-            months={2}
-            ranges={dateRange}
-            direction="horizontal"
-            locale={fr}
-            staticRanges={customStaticRanges}
-            inputRanges={[]}
-          />
-        </div>
-      )}
-    </div>
+      <div className="date-picker-component">
+        <button className="date-toggle-button" onClick={toggleDatePicker}>
+          <FaCalendarAlt />
+        </button>
+        {showDatePicker && (
+            <div className="date-picker-container">
+              <DateRangePicker
+                  onChange={(item) => setDateRange([item.selection])}
+                  showSelectionPreview={true}
+                  moveRangeOnFirstSelection={false}
+                  months={2}
+                  ranges={dateRange}
+                  direction="horizontal"
+                  locale={fr}
+                  staticRanges={customStaticRanges}
+                  inputRanges={[]}
+              />
+            </div>
+        )}
+      </div>
   );
 };
 

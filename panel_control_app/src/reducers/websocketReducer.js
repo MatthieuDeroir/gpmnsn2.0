@@ -33,13 +33,24 @@ const websocketReducer = (state = initialState, action) => {
             };
 
         case SET_PANEL_STATUS:
+            const updatedPanelStatus = {
+                ...state.panelStatus,
+                ...action.payload,
+            };
+
+            // Determine if any panel has dysfunction
+            const isAnyPanelInDysfunction = Object.values(updatedPanelStatus).some(
+                (panel) => panel.dysfunction || panel.sectorStatus === false || !panel.connected
+            );
+
+
+
             return {
                 ...state,
-                panelStatus: {
-                    ...state.panelStatus,
-                    ...action.payload,
-                },
+                panelStatus: updatedPanelStatus,
+                isAnyPanelInDysfunction, // Automatically update this based on panel statuses
             };
+
 
         case SET_LOGS:
             return {

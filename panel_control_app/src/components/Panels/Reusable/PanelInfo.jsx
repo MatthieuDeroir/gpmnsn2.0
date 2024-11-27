@@ -1,6 +1,6 @@
 // src/components/Panel/PanelInfo.jsx
-import React from 'react';
-import { useSelector } from 'react-redux'; // Import useSelector
+import React, {useCallback} from 'react';
+import { useSelector } from 'react-redux';
 import { motion, AnimatePresence } from 'framer-motion';
 import './PanelInfo.css';
 
@@ -11,32 +11,42 @@ const PanelInfo = ({
                        handlePanelInfoClick,
                        handlePanelInfoRightClick,
                    }) => {
-    // Access Redux state
+    // Accéder à l'état Redux
     const panelInfo = useSelector((state) => state.websocket.panelStatus[name]);
     const logs = useSelector((state) => state.websocket.logs[name] || []);
 
+    const getDisplayName = useCallback((name) => {
+        const upperName = name.toUpperCase();
+        if (upperName === 'AVAL') {
+            return 'UB AVAL';
+        } else if (upperName === 'AMONT') {
+            return 'UB AMONT';
+        } else {
+            return upperName;
+        }
+    }, []);
+
+    // Extraire l'eventType directement du log
     const parseLogEntry = (log) => {
         if (!log || typeof log !== 'object') {
             return {
                 timestamp: 'Invalid',
-                details: {},
+                eventType: 'Unknown',
             };
         }
 
-        const { timestamp, ...details } = log;
+        const { timestamp, eventType } = log;
 
         return {
             timestamp,
-            details,
+            eventType,
         };
     };
 
-    const formatDate = (dateString) => {
+    // Formater l'heure uniquement
+    const formatTime = (dateString) => {
         if (!dateString) return 'N/A';
         const options = {
-            year: 'numeric',
-            month: 'numeric',
-            day: 'numeric',
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
@@ -45,12 +55,15 @@ const PanelInfo = ({
         return new Intl.DateTimeFormat('fr-FR', options).format(new Date(dateString));
     };
 
-    // Variants for animations
+    // Variants pour les animations
     const variants = {
         initial: { opacity: 0, y: 20 },
         animate: { opacity: 1, y: 0 },
         exit: { opacity: 0, y: -20 },
     };
+
+    // Obtenir les 10 derniers logs
+    const lastTenLogs = logs.slice(-20).reverse();
 
     return (
         <div
@@ -58,10 +71,10 @@ const PanelInfo = ({
             onClick={handlePanelInfoClick}
             onContextMenu={handlePanelInfoRightClick}
         >
-            <h3>{name.toUpperCase()}</h3>
+            <h3>{getDisplayName(name)}</h3>
 
             <AnimatePresence mode="wait">
-                {displayMode === 0 && (
+            {displayMode === 0 && (
                     <motion.div
                         key="mode0"
                         initial="initial"
@@ -107,7 +120,7 @@ const PanelInfo = ({
                                 </tr>
                                 <tr>
                                     <th>Timestamp :</th>
-                                    <td>{formatDate(panelInfo.lastHeartbeatTimestamp)}</td>
+                                    <td>{formatTime(panelInfo.lastHeartbeatTimestamp)}</td>
                                 </tr>
                                 <tr>
                                     <th>État :</th>
@@ -123,7 +136,7 @@ const PanelInfo = ({
                                 </tr>
                                 <tr>
                                     <th>Alimentation Secteur :</th>
-                                    <td>{panelInfo.sectorStatus === 'false' ?  'Inactif' : 'Actif'}</td>
+                                    <td>{panelInfo.sectorStatus === 'false' ? 'Inactif' : 'Actif'}</td>
                                 </tr>
                                 <tr>
                                     <th>Mode Maintenance :</th>
@@ -152,48 +165,19 @@ const PanelInfo = ({
                                 <table className="panel-info-log-table">
                                     <thead>
                                     <tr>
-                                        <th>Date</th>
-                                        <th>Event</th>
-                                        <th>Status</th>
-                                        <th>État</th>
-                                        <th>Secteur</th>
-                                        <th>Porte</th>
-                                        <th>Maintenance</th>
+                                        <th style={{ width: '25%' }}>Heure</th>
+                                        <th style={{ width: '75%' }}>Événement</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {logs.map((log, index) => {
-                                        const { timestamp, details } = parseLogEntry(log);
+                                    {lastTenLogs.map((log, index) => {
+                                        const { timestamp, eventType } = parseLogEntry(log);
 
-                                        // Define row class based on conditions
-                                        let rowClass = '';
-                                        if (details.state === 'on') {
-                                            rowClass = 'panel-info-log-green'; // Green for "on"
-                                        } else if (details.sectorStatus === false) {
-                                            rowClass = 'panel-info-log-red'; // Red for inactive sector
-                                        } else if (details.maintenanceMode === true) {
-                                            rowClass = 'panel-info-log-orange'; // Orange for maintenance mode
-                                        } else if (details.instruction === 'refresh') {
-                                            rowClass = 'panel-info-log-blue'; // Blue for refresh
-                                        } else if (details.instruction === 'reboot') {
-                                            rowClass = 'panel-info-log-orange'; // Orange for reboot
-                                        }
-
+                                        // Pas besoin de définir des classes de ligne ici, sauf si vous voulez ajouter des styles spécifiques
                                         return (
-                                            <tr key={index} className={rowClass}>
-                                                <td>{formatDate(timestamp)}</td>
-                                                <td>{details.event}</td>
-                                                <td>{details.status}</td>
-                                                <td>
-                                                    {details.state === 'on'
-                                                        ? 'Allumé'
-                                                        : details.state === 'off'
-                                                            ? 'Éteint'
-                                                            : details.state}
-                                                </td>
-                                                <td>{details.sectorStatus ? 'Actif' : 'Inactif'}</td>
-                                                <td>{details.isDoorOpen ? 'Ouverte' : 'Fermée'}</td>
-                                                <td>{details.maintenanceMode ? 'Oui' : 'Non'}</td>
+                                            <tr key={index}>
+                                                <td>{formatTime(timestamp)}</td>
+                                                <td>{eventType}</td>
                                             </tr>
                                         );
                                     })}
