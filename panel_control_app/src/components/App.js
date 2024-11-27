@@ -13,6 +13,7 @@ import { connectWebSocket } from '../actions/websocketActions';
 import LoginPage from './Login/LoginPage';
 import ProtectedRoute from './ProtectedRoute';
 import Logout from './Login/LogoutPage';
+
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Navigation({ isMobileMenuOpen, setIsMobileMenuOpen }) {
@@ -20,7 +21,7 @@ function Navigation({ isMobileMenuOpen, setIsMobileMenuOpen }) {
 
     return (
         <ul className={isMobileMenuOpen ? 'nav-menu active' : 'nav-menu'}>
-            {isAuthenticated ? (
+            {isAuthenticated && (
                 <>
                     <li className="nav-item">
                         <NavLink
@@ -50,26 +51,17 @@ function Navigation({ isMobileMenuOpen, setIsMobileMenuOpen }) {
                         </NavLink>
                     </li>
                 </>
-            ) : (
-                <li className="nav-item">
-                    <NavLink
-                        to="/login"
-                        className={({ isActive }) => (isActive ? 'nav-links active' : 'nav-links')}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        <span className="material-icons">login</span> Connexion
-                    </NavLink>
-                </li>
             )}
         </ul>
     );
 }
 
-// Lazy load LogsPage
+// Chargement asynchrone de LogsPage
 const LogsPage = lazy(() => import('./Logs/LogsPage'));
 
 function App() {
     const dispatch = useDispatch();
+    const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
     const [isBackendUp, setIsBackendUp] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -77,7 +69,7 @@ function App() {
         dispatch(connectWebSocket());
         // Cleanup on unmount
         return () => {
-            // Optionally dispatch disconnectWebSocket()
+            // Optionnellement, vous pouvez déconnecter le WebSocket ici
         };
     }, [dispatch]);
 
@@ -85,21 +77,37 @@ function App() {
         <Router>
             <div className="App">
                 {/* Navigation Bar */}
-                <nav className="navbar">
-                    <div className="navbar-container">
-                        {/* Logo or Title */}
-                        <NavLink to="/" className="navbar-logo" onClick={() => setIsMobileMenuOpen(false)}>
-                            <span className="material-icons">dashboard</span> PanelManager
-                        </NavLink>
+                {isAuthenticated && (
+                    <nav className="navbar">
+                        <div className="navbar-container">
+                            {/* Logo et Titre */}
+                            <div className="navbar-logo-container">
+                                <NavLink
+                                    to="/"
+                                    className="navbar-logo-image-link"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    <img
+                                        src="/Stramatel_Logo_FR.png"
+                                        alt="Stramatel Logo"
+                                        className="navbar-logo-image"
+                                    />
+                                </NavLink>
+                            </div>
 
-                        <div className="health-controls">
-                            <HealthControl onBackendStatusChange={setIsBackendUp} />
+                            {/* Icône du Menu Hamburger */}
+                            <div className="menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                                {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+                            </div>
+
+                            {/* Navigation Links */}
+                            <Navigation
+                                isMobileMenuOpen={isMobileMenuOpen}
+                                setIsMobileMenuOpen={setIsMobileMenuOpen}
+                            />
                         </div>
-
-                        {/* Navigation Links */}
-                        <Navigation isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
-                    </div>
-                </nav>
+                    </nav>
+                )}
 
                 {/* Main Content */}
                 <Routes>
@@ -108,11 +116,22 @@ function App() {
                         element={
                             <ProtectedRoute>
                                 {isBackendUp === false ? (
-                                    <LoadingScreen />
+                                    <>
+                                        <PanelManager />
+                                        <ToastContainer />
+                                        <div className="health-controls">
+                                            <HealthControl onBackendStatusChange={setIsBackendUp} />
+                                        </div>
+                                        <LoadingScreen />
+
+                                    </>
                                 ) : (
                                     <>
                                         <PanelManager />
                                         <ToastContainer />
+                                        <div className="health-controls">
+                                            <HealthControl onBackendStatusChange={setIsBackendUp} />
+                                        </div>
                                     </>
                                 )}
                             </ProtectedRoute>
@@ -122,7 +141,9 @@ function App() {
                         path="/logs"
                         element={
                             <ProtectedRoute>
-                                <Suspense fallback={<div className="loading-fallback">Chargement des journaux...</div>}>
+                                <Suspense
+                                    fallback={<div className="loading-fallback">Chargement des journaux...</div>}
+                                >
                                     <LogsPage />
                                 </Suspense>
                             </ProtectedRoute>

@@ -45,10 +45,10 @@ const HealthControl = ({ onBackendStatusChange }) => {
     return (
         <div className="health-status">
             <span className={`connection-status ${isConnected ? 'connected' : 'disconnected'}`}>
-                WebSocket Connection: {isConnected ? 'Connected' : 'Disconnected'}
+                WebSocket: {isConnected ? 'UP' : 'DOWN'}
             </span>
             <span className={`connection-status ${backendStatus ? 'up' : 'down'}`}>
-                Backend Service: {backendStatus ? 'Up' : 'Down'}
+                API: {backendStatus ? 'UP' : 'DOWN'}
             </span>
         </div>
     );

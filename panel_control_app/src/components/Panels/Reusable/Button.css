@@ -1,123 +1,122 @@
-/* src/components/Button.css */
+/* src/components/Reusable/Button.css */
 
 .all-panel-btn {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centrage du contenu */
-    gap: 12px; /* Espacement entre l'icône et le texte */
-    padding: 16px 40px; /* Taille agrandie */
-    font-size: 1.4em; /* Texte plus grand */
-    border: 2px solid transparent; /* Bordure par défaut */
-    border-radius: 50px; /* Coins très arrondis */
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s, transform 0.2s;
-    color: #fff; /* Texte en blanc par défaut */
-    min-width: 260px; /* Largeur minimale */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombre pour la profondeur */
-    background-color: transparent; /* Fond transparent par défaut */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 1.4em;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s, transform 0.2s;
+  color: #fff;
+  min-width: 6vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+}
+
+.all-panel-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.all-panel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Ripple effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
   }
-  
-  .all-panel-btn:hover {
-    transform: translateY(-3px); /* Effet de soulèvement */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
-  }
-  
-  .all-panel-btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-  
-  /* Animation Ripple */
-  .ripple {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: scale(0);
-    animation: ripple 0.6s linear;
-    pointer-events: none;
-  }
-  
-  @keyframes ripple {
-    to {
-      transform: scale(4);
-      opacity: 0;
-    }
-  }
-  
-  /* Styles Spécifiques des Boutons */
-  .all-panel-btn.start-button {
-    background-color: #28a745; /* Vert */
-  }
-  
-  .all-panel-btn.start-button:hover {
-    background-color: #218838;
-  }
-  
-  .all-panel-btn.stop-button {
-    background-color: #dc3545; /* Rouge */
-  }
-  
-  .all-panel-btn.stop-button:hover {
-    background-color: #c82333;
-  }
-  
-  .all-panel-btn.refresh-button {
-    background-color: #17a2b8; /* Bleu */
-  }
-  
-  .all-panel-btn.refresh-button:hover {
-    background-color: #138496;
-  }
-  
-  .all-panel-btn.restart-button {
-    background-color: #fd7e14; /* Orange */
-  }
-  
-  .all-panel-btn.restart-button:hover {
-    background-color: #e8590c;
-  }
-  
-  /* Classes pour les États Actifs */
-  .all-panel-btn.active-green {
-    background-color: #28a745 !important; /* Vert */
-    border: none;
-    color: #fff;
-  }
-  
-  .all-panel-btn.active-dark-red {
-    background-color: #a71d2a !important; /* Rouge Foncé */
-    border: none;
-    color: #fff;
-  }
-  
-  .all-panel-btn.active-orange {
-    background-color: #fd7e14 !important; /* Orange */
-    border: none;
-    color: #fff;
-  }
-  
-  .all-panel-btn.active-blue {
-    background-color: #17a2b8 !important; /* Bleu */
-    border: none;
-    color: #fff;
-  }
-  
-  /* Classes pour les Boutons avec Bordure (État Mixte) */
-  .all-panel-btn.border-button {
-    background-color: transparent;
-    border: 2px solid #ccc;
-    color: #333;
-  }
-  
-  /* Effet de Clignotement */
-  .blinking {
-    animation: blinkingAnimation 1s infinite;
-  }
-  
-  @keyframes blinkingAnimation {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-  }
-  
+}
+
+/* Specific button styles */
+.all-panel-btn.start-button {
+  background-color: #28a745;
+}
+
+.all-panel-btn.start-button:hover {
+  background-color: #218838;
+}
+
+.all-panel-btn.stop-button {
+  background-color: #dc3545;
+}
+
+.all-panel-btn.stop-button:hover {
+  background-color: #c82333;
+}
+
+.all-panel-btn.refresh-button {
+  background-color: #17a2b8;
+}
+
+.all-panel-btn.refresh-button:hover {
+  background-color: #138496;
+}
+
+.all-panel-btn.restart-button {
+  background-color: #fd7e14;
+}
+
+.all-panel-btn.restart-button:hover {
+  background-color: #e8590c;
+}
+
+/* Active button styles */
+.all-panel-btn.active-green {
+  background-color: #28a745 !important;
+  border: none;
+  color: #fff;
+}
+
+.all-panel-btn.active-dark-red {
+  background-color: #a71d2a !important;
+  border: none;
+  color: #fff;
+}
+
+.all-panel-btn.active-orange {
+  background-color: #fd7e14 !important;
+  border: none;
+  color: #fff;
+}
+
+.all-panel-btn.active-blue {
+  background-color: #17a2b8 !important;
+  border: none;
+  color: #fff;
+}
+
+/* Border button for mixed state */
+.all-panel-btn.border-button {
+  background-color: transparent;
+  border: 2px solid #ccc;
+  color: #333;
+}
+
+/* Blinking effect */
+.blinking {
+  animation: blinkingAnimation 1s infinite;
+}
+
+@keyframes blinkingAnimation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

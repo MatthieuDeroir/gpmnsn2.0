@@ -50,12 +50,18 @@ export const connectWebSocket = () => {
 
                     case 'status':
                         if (data.panelStatus) {
-                            // Update panel status for all panels
+                            // console.log('Received panel status data:', data.panelStatus);
+                            //
+                            // // Log individual panel statuses for each panel to inspect `dysfunction` values
+                            // Object.keys(data.panelStatus).forEach(panel => {
+                            //     console.log(`Panel: ${panel}, Status:`, data.panelStatus[panel]);
+                            //     console.log(`Panel: ${panel}, Dysfunction type:`, data.panelStatus[panel]);
+                            // });
+
                             dispatch({
                                 type: SET_PANEL_STATUS,
                                 payload: data.panelStatus,
                             });
-                            console.log('Panel status updated:', data.panelStatus);
                         } else {
                             console.warn('Received status message without panelStatus data:', data);
                         }

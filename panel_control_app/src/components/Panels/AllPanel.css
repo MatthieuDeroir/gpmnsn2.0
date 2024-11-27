@@ -3,7 +3,7 @@
 .all-panel-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la fenêtre */
+  max-height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la fenêtre */
 }
 
 .all-panel-content {

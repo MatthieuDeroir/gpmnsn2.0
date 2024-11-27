@@ -1,4 +1,4 @@
-// src/components/Logs/LogPage.js
+// src/components/Logs/LogsPage.js
 
 import React, { useState, useEffect } from 'react';
 import { addDays } from 'date-fns';
@@ -8,6 +8,7 @@ import DatePickerComponent from './DatePickerComponent';
 import LogTable from './LogTable';
 import PaginationComponent from './PaginationComponent';
 import { saveAs } from 'file-saver';
+import axios from 'axios'; // Assurez-vous que axios est installé et importé
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
@@ -15,7 +16,7 @@ import {
   searchLogs as searchLogsService,
 } from '../../services/logService';
 
-const LogPage = () => {
+const LogsPage = () => {
   const [logs, setLogs] = useState([]);
   const [search, setSearch] = useState('');
   const [selectedOption, setSelectedOption] = useState('alllogs');
@@ -27,19 +28,16 @@ const LogPage = () => {
     },
   ]);
   const [page, setPage] = useState(1);
-  const [limit] = useState(100); // Fetch 100 logs per request
+  const [limit] = useState(100); // Nombre de logs par page
   const [totalPages, setTotalPages] = useState(0);
   const [loading, setLoading] = useState(false);
   const [showDatePicker, setShowDatePicker] = useState(false);
 
   const options = [
     { label: 'Tous les Journaux', value: 'alllogs' },
-    { label: 'Journaux des Panneaux', value: 'panels' },
-    { label: 'Journaux des Utilisateurs', value: 'users' },
   ];
 
   const panels = ['Aval', 'Amont', 'Indret'];
-  const users = ['Maintenance', 'Operateur', 'Visualisation'];
 
   const toggleDatePicker = () => setShowDatePicker(!showDatePicker);
 
@@ -48,7 +46,14 @@ const LogPage = () => {
 
     const startDate = dateRange[0].startDate.toISOString();
     const endDate = dateRange[0].endDate.toISOString();
-    const searchQuery = search.trim().toLowerCase();
+
+    let searchQuery = search.trim().toLowerCase();
+
+    // Si un utilisateur spécifique est sélectionné, définir la requête de recherche sur son nom de rôle
+    if (selectedOption.startsWith('user-')) {
+      const roleName = selectedOption.replace('user-', ''); // ex : 'maintenance', 'operateur'
+      searchQuery = roleName;
+    }
 
     let type = 'all';
     let value = 'all';
@@ -82,15 +87,11 @@ const LogPage = () => {
         setLogs(data.logs);
         setTotalPages(data.totalPages || 0);
       } else {
-        console.warn('Invalid log data received:', data);
+        console.warn('Données de journal invalides reçues:', data);
         setLogs([]);
       }
     } catch (error) {
       console.error('Erreur lors du chargement des journaux:', error);
-      if (error.response && error.response.status === 401) {
-        console.error('Utilisateur non authentifié');
-        // Handle unauthenticated user case
-      }
       setLogs([]);
     } finally {
       setLoading(false);
@@ -106,55 +107,66 @@ const LogPage = () => {
     if (!log || typeof log !== 'object') {
       return {
         timestamp: 'Invalid',
-        identifier: 'Unknown',
-        event: 'Unknown',
+        panelName: 'Unknown',
+        eventType: 'Unknown',
         details: {},
       };
     }
 
+    // Extraction des champs de base
+    const { timestamp, panelName, eventType, details } = log;
+
+    // Initialisation d'un objet pour contenir les détails analysés
+    const parsedDetails = {};
+
+    // En fonction du type d'événement, extraire les détails pertinents
+    if (eventType.includes('Instruction') && details) {
+      parsedDetails.instruction = details.instruction || 'Unknown';
+      parsedDetails.instructionId = details.instructionId || 'Unknown';
+      parsedDetails.status = details.status || 'Unknown';
+
+      // Si panelStatus est disponible, extraire ses champs
+      if (details.panelStatus) {
+        parsedDetails.panelStatus = details.panelStatus;
+      }
+    } else if (eventType === 'Status Change' && details) {
+      parsedDetails.status = details.status || 'Unknown';
+      parsedDetails.message = details.message || 'Unknown';
+    } else if (eventType === 'Register' && details) {
+      parsedDetails.panelName = details.panelName || 'Unknown';
+      parsedDetails.role = details.role || 'Unknown';
+    } else if (eventType === 'Disconnected' && details) {
+      parsedDetails.message = details.message || 'Unknown';
+    } else if (eventType === 'Auto-Off Instruction Enqueued' && details) {
+      parsedDetails.instruction = details.instruction || 'Unknown';
+      parsedDetails.instructionId = details.instructionId || 'Unknown';
+      parsedDetails.role = details.role || 'Unknown';
+    } else {
+      // Pour les autres types d'événements, inclure les détails tels quels
+      parsedDetails.details = details || {};
+    }
+
     return {
-      timestamp: log.timestamp,
-      identifier: log.panelName || 'N/A',
-      event: log.eventType,
-      details: log.details || {},
+      timestamp,
+      panelName: panelName || 'Unknown',
+      eventType,
+      details: parsedDetails,
     };
   };
 
-  const exportToCSV = () => {
-    if (!logs || logs.length === 0) {
-      alert('Aucun journal à exporter.');
-      return;
+  const exportToCSV = async () => {
+    try {
+      console.log('Exporting logs...');
+      const response = await axios.get('http://localhost:4000/api/logs/export', {
+        responseType: 'blob', // Important pour gérer les données binaires
+      });
+
+      const blob = new Blob([response.data], { type: 'text/csv;charset=utf-8;' });
+      saveAs(blob, 'logs.csv');
+    } catch (error) {
+      console.error('Erreur lors de l\'exportation des journaux:', error);
+      toast.error('Erreur lors de l\'exportation des journaux.');
     }
-
-    const headers = [
-      'Date',
-      'Panneau',
-      'Événement',
-      'Connectivité',
-      'État',
-      'Température CPU',
-      'État du Secteur',
-      'Porte ouverte',
-      'Maintenance',
-    ];
-    const rows = logs.map((log) => {
-      const { timestamp, identifier, event, details } = parseLogEntry(log);
-      return [
-        formatDate(timestamp),
-        identifier,
-        event,
-        details.status || 'Unknown',
-        details.state || 'Unknown',
-        details.cpuTemp || 'Unknown',
-        details.sectorStatus || 'Unknown',
-        details.isDoorOpen || 'Unknown',
-        details.maintenanceMode || 'Unknown',
-      ].join(',');
-    });
-
-    const csvContent = [headers.join(','), ...rows].join('\n');
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    saveAs(blob, 'logs.csv');
   };
 
   const handleSearch = async () => {
@@ -185,6 +197,36 @@ const LogPage = () => {
     setSearch('');
     setPage(1);
     fetchLogs();
+  };
+
+  const handleExportAndDelete = async () => {
+    if (!window.confirm('Êtes-vous sûr de vouloir exporter et supprimer tous les journaux ? Cette action est irréversible.')) {
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      console.log('Exporting and deleting logs...');
+      const response = await axios.get('http://localhost:4000/api/logs/export-and-delete', {
+        responseType: 'blob', // Important pour gérer les données binaires
+        withCredentials: true, // Inclure les cookies
+      });
+
+      const blob = new Blob([response.data], { type: 'text/csv;charset=utf-8;' });
+      saveAs(blob, 'logs.csv');
+
+      toast.success('Les journaux ont été exportés et supprimés avec succès.');
+
+      // Rafraîchir les logs
+      setPage(1);
+      fetchLogs();
+    } catch (error) {
+      console.error('Erreur lors de l\'exportation et de la suppression des journaux:', error);
+      toast.error('Erreur lors de l\'exportation et de la suppression des journaux.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const formatDate = (dateString) => {
@@ -241,16 +283,12 @@ const LogPage = () => {
               ))}
             </optgroup>
 
-            <optgroup label="Utilisateurs">
-              {users.map((user) => (
-                  <option key={user} value={`user-${user.toLowerCase()}`}>
-                    {user}
-                  </option>
-              ))}
-            </optgroup>
           </select>
           <button onClick={exportToCSV} className="export-button">
             Exporter CSV
+          </button>
+          <button onClick={handleExportAndDelete} className="export-delete-button">
+            Exporter & Supprimer les Journaux
           </button>
         </div>
 
@@ -285,4 +323,4 @@ const LogPage = () => {
   );
 };
 
-export default LogPage;
+export default LogsPage;

@@ -29,6 +29,8 @@ export const fetchLogs = (panelOrRole, selectedType, page, limit, startDate, end
                     },
                 }
             );
+
+            console.log('Fetched logs:', response.data);
             dispatch(fetchLogsSuccess(response.data));
         } catch (error) {
             dispatch(fetchLogsFailure(error));
