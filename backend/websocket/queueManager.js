@@ -1,25 +1,24 @@
-// websocket/queueManager.js
-const redis = require('redis');
+// queueManager.js
 const { v4: uuidv4 } = require('uuid');
-const readlineSync = require('readline-sync');
 const Logger = require("../utils/logger");
 
+/**
+ * Manages per-panel instruction queues using Redis lists.
+ */
 class QueueManager {
     constructor(redisClient, expectedPanels) {
         this.redisClient = redisClient;
         this.expectedPanels = expectedPanels;
-        this.lastAutoOffSent = {}; // Track the last "auto-off" sent time per panel
+        this.lastAutoOffSent = {}; // Track last "auto-off" timestamps per panel
     }
 
-    // Generate a unique ID for each instruction
+    // Generate a unique ID for instructions
     generateUniqueId() {
         return uuidv4();
     }
 
-    // General instruction enqueuing
+    // Push a generic instruction into the panel’s queue
     async enqueueInstruction(panelName, instruction, role) {
-        const lastInstructions = await this.getLastQueuedInstructions(panelName, 1);
-
         const instructionItem = {
             id: this.generateUniqueId(),
             instruction,
@@ -31,64 +30,59 @@ class QueueManager {
         await this.redisClient.lPush(`queue:${panelName}`, JSON.stringify(instructionItem));
         console.log(`[QueueManager] Enqueued instruction for ${panelName}:`, instructionItem);
 
-        return instructionItem; // Return the instruction item to get the ID
+        return instructionItem;
     }
 
-    // Enqueue a dedicated "auto-off" instruction for a panel with internal logging
-    // Enqueue a dedicated "auto-off" instruction for a panel with internal logging
+    // Dedicated "auto-off" instruction enqueuing to avoid duplicates
     async enqueueAutoOffInstruction(panelName) {
+        // Check if the last instruction is "off"
         const lastInstructions = await this.getLastQueuedInstructions(panelName, 1, 'queue');
 
-        // Avoid duplicate off instructions for auto-off
         if (lastInstructions.length > 0 && lastInstructions[0].instruction === 'off') {
             console.log(`[QueueManager] Skipping duplicate off instruction for ${panelName}`);
-            return null; // Skip duplicate
+            return null;
         }
 
-        // Create the "off" instruction but log it as "auto-off"
         const instructionItem = {
             id: this.generateUniqueId(),
-            instruction: 'off', // Enqueue as "off" instruction
+            instruction: 'off',
             timestamp: Date.now(),
             status: 'pending',
             role: 'HealthChecker',
         };
 
         await this.redisClient.lPush(`queue:${panelName}`, JSON.stringify(instructionItem));
-        console.log(`[QueueManager] Auto-off instruction (as 'off') enqueued for ${panelName}:`, instructionItem);
+        console.log(`[QueueManager] Auto-off instruction enqueued for ${panelName}:`, instructionItem);
 
-        // Log the auto-off as an "Auto-Off Instruction Enqueued"
         Logger.appendLog(panelName, 'Auto-Off Instruction Enqueued', {
-            instruction: 'off', // Log as auto-off but instruct as "off"
+            instruction: 'off',
             instructionId: instructionItem.id,
             timestamp: instructionItem.timestamp,
             role: instructionItem.role,
         });
-        console.log(`[QueueManager] Auto-Off Instruction Logged: ${instructionItem.id} for ${panelName}`);
 
-        this.lastAutoOffSent[panelName] = Date.now(); // Update last sent timestamp for "auto-off"
+        this.lastAutoOffSent[panelName] = Date.now();
         return instructionItem;
     }
 
-
-    // Get the last N instructions for a specific panel, supporting different queues
+    // Get the last N instructions from a given queue
     async getLastQueuedInstructions(panelName, count = 10, queueType = 'queue') {
-        const queueItems = await this.redisClient.lRange(`${queueType}:${panelName}`, 0, count - 1);
-        return queueItems.map((item) => JSON.parse(item)).reverse(); // Reverse to show oldest first
+        const items = await this.redisClient.lRange(`${queueType}:${panelName}`, 0, count - 1);
+        return items.map((item) => JSON.parse(item)).reverse();
     }
 
-    // Retrieve the entire queue for a specific panel
+    // Retrieve the entire queue for a panel
     async getQueue(panelName, queueType = 'queue') {
-        const queueItems = await this.redisClient.lRange(`${queueType}:${panelName}`, 0, -1);
-        return queueItems.map((item) => JSON.parse(item)).reverse(); // Reverse to maintain FIFO order
+        const items = await this.redisClient.lRange(`${queueType}:${panelName}`, 0, -1);
+        return items.map((item) => JSON.parse(item)).reverse();
     }
 
-    // Remove an instruction from the queue by its ID
+    // Remove a specific instruction by ID from the queue
     async removeInstruction(panelName, instructionId, queueType = 'queue') {
-        const queueItems = await this.redisClient.lRange(`${queueType}:${panelName}`, 0, -1);
-        for (const item of queueItems) {
-            const instruction = JSON.parse(item);
-            if (instruction.id === instructionId) {
+        const items = await this.redisClient.lRange(`${queueType}:${panelName}`, 0, -1);
+        for (const item of items) {
+            const parsed = JSON.parse(item);
+            if (parsed.id === instructionId) {
                 await this.redisClient.lRem(`${queueType}:${panelName}`, 0, item);
                 console.log(`[QueueManager] Removed instruction ${instructionId} from ${panelName}'s ${queueType}`);
                 break;
@@ -96,7 +90,7 @@ class QueueManager {
         }
     }
 
-    // Clear all queues for expected panels
+    // Clear all queues for expected panels (e.g., upon server startup)
     async clearAllQueues() {
         try {
             for (const panelName of this.expectedPanels) {

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=production && nodemon server.js --exec babel-node -e js",
+    "dev": "set NODE_ENV=production && nodemon server.js --exec babel-node -e js",
+    "start": "NODE_ENV=production babel-node server.js",
     "build": "babel ./ -d lib",
     "watch": "nodemon --exec \"npm run build && node lib/index.js\" -e js --ignore lib/"
   },

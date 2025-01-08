@@ -5,24 +5,34 @@ import './PanelControl.css';
 import ConfirmationModal from './Reusable/ConfirmationModal';
 import PanelInfo from './Reusable/PanelInfo';
 import PanelStatusIndicator from './Reusable/PanelStatusIndicator';
-import Button from './Reusable/Button'; // Import the Button component
+import Button from './Reusable/Button';
 import { useSelector, useDispatch } from 'react-redux';
 import { sendInstructionMessage } from '../../utils/messageUtils';
 import { fetchLogsForPanel } from '../../actions/websocketActions';
 import { toast } from 'react-toastify';
+import { setPendingState, clearPendingState } from '../../actions/panelActions';
 
 const PanelControl = ({ name }) => {
     const dispatch = useDispatch();
-    const panelInfo = useSelector((state) => state.websocket.panelStatus[name]);
+
+    const panelStatus = useSelector((state) => state.websocket.panelStatus[name]);
+    const panelState = useSelector((state) => state.panel[name]);
+
+    // Merge panelStatus and panelState
+    const panelInfo = {
+        ...panelStatus,
+        ...panelState,
+    };
+
     const logs = useSelector((state) => state.websocket.logs[name] || []);
     const isAnyPanelInDysfunction = useSelector(
         (state) => state.websocket.isAnyPanelInDysfunction
     );
     const role = useSelector((state) => state.auth.role);
     const permissions = useSelector((state) => state.auth.permissions);
+    const pendingState = panelInfo.pendingState;
 
     // State variables
-    const [pendingState, setPendingState] = useState(null);
     const [showRebootModal, setShowRebootModal] = useState(false);
     const [isRebooting, setIsRebooting] = useState(false);
     const [displayMode, setDisplayMode] = useState(1);
@@ -63,8 +73,10 @@ const PanelControl = ({ name }) => {
                 (pendingState === 'refresh') ||
                 (pendingState === 'reboot' && (panelInfo.state || '').toLowerCase() === 'rebooting')
             ) {
-                setPendingState(null);
-                toast.success(`Action "${pendingState}" terminée avec succès sur ${getDisplayName(name)}.`);
+                dispatch(clearPendingState(name));
+                toast.success(
+                    `Action "${pendingState}" terminée avec succès sur ${getDisplayName(name)}.`
+                );
             }
         }
 
@@ -73,7 +85,7 @@ const PanelControl = ({ name }) => {
         } else {
             setIsRebooting(false);
         }
-    }, [panelInfo, pendingState, name, getDisplayName]);
+    }, [panelInfo, pendingState, name, getDisplayName, dispatch]);
 
     const imageSrc = useMemo(() => {
         const imageMap = {
@@ -128,7 +140,7 @@ const PanelControl = ({ name }) => {
             role,
             name,
         });
-        setPendingState(instruction);
+        dispatch(setPendingState(name, instruction));
         toast.info(`Action "${instruction}" initiée sur ${getDisplayName(name)}.`);
 
         if (instruction === 'reboot') {
@@ -155,7 +167,7 @@ const PanelControl = ({ name }) => {
                         isDoorOpen={panelInfo.isDoorOpen ?? false}
                         problem={panelInfo.problem ?? false}
                         status={panelInfo.state ?? 'unknown'}
-                        pendingState={pendingState} // Pass pendingState here
+                        pendingState={pendingState} // Use pendingState from Redux
                     />
 
                     <PanelInfo

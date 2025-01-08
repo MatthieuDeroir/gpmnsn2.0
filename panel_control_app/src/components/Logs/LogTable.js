@@ -1,9 +1,9 @@
-// LogTable.js
 import React, { useState } from 'react';
 import './LogsPage.css';
 
 const LogTable = ({ logs, parseLogEntry, selectedOption, formatDate }) => {
   const [sortConfig, setSortConfig] = useState({ key: 'timestamp', direction: 'descending' });
+  const [expandedRows, setExpandedRows] = useState({}); // Track expanded rows
 
   const sortedLogs = React.useMemo(() => {
     let sortableLogs = [...logs];
@@ -38,6 +38,13 @@ const LogTable = ({ logs, parseLogEntry, selectedOption, formatDate }) => {
     return '';
   };
 
+  const toggleRow = (index) => {
+    setExpandedRows((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
   return (
       <div className="log-table-container">
         <table className="log-table">
@@ -54,7 +61,7 @@ const LogTable = ({ logs, parseLogEntry, selectedOption, formatDate }) => {
             </th>
             <th>Détails</th>
           </tr>
-            </thead>
+          </thead>
           <tbody>
           {(!sortedLogs || sortedLogs.length === 0) ? (
               <tr>
@@ -62,7 +69,7 @@ const LogTable = ({ logs, parseLogEntry, selectedOption, formatDate }) => {
               </tr>
           ) : (
               sortedLogs.map((log, index) => {
-                const {timestamp, panelName, eventType, details} = parseLogEntry(log);
+                const { timestamp, panelName, eventType, details } = parseLogEntry(log);
 
                 // Define row class based on certain conditions
                 let rowClass = '';
@@ -86,26 +93,38 @@ const LogTable = ({ logs, parseLogEntry, selectedOption, formatDate }) => {
                 }
 
                 return (
-                    <tr key={index} className={rowClass}>
-                      <td>{formatDate(timestamp)}</td>
-                      <td>{eventType}</td>
-
-                      <td>{panelName}</td>
-                      <td>
-                        {details ? (
-                            <pre>{JSON.stringify(details, null, 2)}</pre>
-                        ) : (
-                            'N/A'
-                        )}
-                      </td>
-                    </tr>
+                    <React.Fragment key={index}>
+                      <tr className={rowClass}>
+                        <td>{formatDate(timestamp)}</td>
+                        <td>{eventType}</td>
+                        <td>{panelName}</td>
+                        <td>
+                          <button
+                              className="expand-button"
+                              onClick={() => toggleRow(index)}
+                              aria-label="Toggle details"
+                          >
+                            {expandedRows[index] ? '-' : '+'}
+                          </button>
+                        </td>
+                      </tr>
+                      {expandedRows[index] && (
+                          <tr className="details-row">
+                            <td colSpan="4">
+                        <pre className="details-pre">
+                          {details ? JSON.stringify(details, null, 2) : 'N/A'}
+                        </pre>
+                            </td>
+                          </tr>
+                      )}
+                    </React.Fragment>
                 );
               })
           )}
           </tbody>
         </table>
       </div>
-);
+  );
 };
 
 export default LogTable;

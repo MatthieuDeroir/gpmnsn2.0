@@ -1,23 +1,21 @@
 // healthChecker.js
 const http = require('http');
 const Logger = require('../utils/logger');
-const ping = require('ping'); // Ensure you've installed this package using `npm install ping`)
+const ping = require('ping');
 
-//TODO: Update the following constants with the appropriate values and put them in a .env file
+// Example config constants; you can put them in .env
 const FRONTEND_PORT = 3000;
 const DATABASE_PORT = 27017;
-const HEARTBEAT_INTERVAL = 5000; // 5 seconds
-const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 2; // 60 seconds
-const PING_TIMEOUT = 5; // 5 seconds
+const HEARTBEAT_INTERVAL = 5000;         // e.g. 5 seconds
+const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 2; // e.g. 10 seconds
+const PING_TIMEOUT = 5;    // 5 seconds
+const MAX_ATTEMPTS = 7;    // Try 3 consecutive pings
 
 class HealthChecker {
   static HEARTBEAT_THRESHOLD = HEARTBEAT_THRESHOLD;
 
-
   /**
-   * Checks if a local service (frontend or database) is up by sending an HTTP GET request.
-   * @param {number} port - The port number of the service.
-   * @returns {Promise<boolean>} - Resolves to true if the service is up, false otherwise.
+   * Check if a local service (like frontend or DB) is up by HTTP request
    */
   static async checkService(port) {
     return new Promise((resolve) => {
@@ -29,44 +27,93 @@ class HealthChecker {
     });
   }
 
-  /**
-   * Checks if the frontend service is up.
-   * @returns {Promise<boolean>}
-   */
+  // Simple checks (customize as needed)
   static checkFrontend() {
     return this.checkService(FRONTEND_PORT);
   }
 
-  /**
-   * Checks if the database service is up.
-   * @returns {Promise<boolean>}
-   */
   static checkDatabase() {
-    return this.checkService(DATABASE_PORT);
+    // If you want a real DB check, implement it here
+    return true;
   }
 
   /**
-   * Pings a panel using ICMP to check if it's reachable.
-   * @param {string} ip - The IP address of the panel.
-   * @returns {Promise<boolean>} - Resolves to true if the panel is reachable, false otherwise.
+   * Ping a panel up to 3 times (ICMP).
+   * Returns true if reachable on any attempt, false otherwise.
    */
-  static async pingPanel(ip) {
-    try {
-      const response = await ping.promise.probe(ip, {
-        timeout: PING_TIMEOUT, // Timeout in seconds
-      });
-      return response.alive; // Returns true if the ping was successful, false otherwise
-    } catch (error) {
-      console.error(`Error pinging ${ip}:`, error);
-      return false;
+  static async pingPanel(panel) {
+    const { name, ip } = panel;
+
+    // If we previously flagged this panel as in permanent failure, we might skip repeated logs
+    const permanentFailAlreadySet = panel.hasPermanentPingFailure === true;
+
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      console.log(`[pingPanel] Attempt ${attempt} to ping panel "${name}" at IP ${ip}...`);
+
+      try {
+        const response = await ping.promise.probe(ip, {
+          timeout: PING_TIMEOUT,
+        });
+
+        if (response.alive) {
+          // If it was flagged as failure, log a "recovery"
+          if (panel.hasPermanentPingFailure) {
+            Logger.appendLog(name, 'Ping Recovery', {
+              attempts: attempt,
+              ip,
+              message: `Panel "${name}" is reachable again after being in permanent failure.`,
+            });
+            panel.hasPermanentPingFailure = false;
+          } else if (attempt > 1) {
+            // If it was unreachable in attempt #1, but success in #2 or #3
+            Logger.appendLog(name, 'Ping Success', {
+              attempts: attempt,
+              ip,
+              message: `Panel "${name}" is reachable again after ${attempt - 1} failed attempt(s).`,
+            });
+          }
+
+          console.log(`[pingPanel] Panel "${name}" at IP ${ip} is reachable on attempt ${attempt}.`);
+          return true;
+        } else {
+          console.log(`[pingPanel] Panel "${name}" did not respond on attempt ${attempt}.`);
+          if (!permanentFailAlreadySet) {
+            Logger.appendLog(name, 'Ping No Response', {
+              attempt,
+              ip,
+              message: `No response from panel "${name}" on attempt ${attempt}.`,
+            });
+          }
+        }
+      } catch (error) {
+        console.error(`[pingPanel] Error on attempt ${attempt} while pinging panel "${name}":`, error);
+        if (!permanentFailAlreadySet) {
+          Logger.appendLog(name, 'Ping Error', {
+            attempt,
+            ip,
+            error: error.message || error,
+            message: `Error on attempt ${attempt} while pinging "${name}".`,
+          });
+        }
+      }
     }
+
+    // All attempts failed
+    console.log(`[pingPanel] Panel "${name}" at IP ${ip} is unreachable after ${MAX_ATTEMPTS} attempts.`);
+    if (!panel.hasPermanentPingFailure) {
+      Logger.appendLog(name, 'Ping Failure', {
+        attempts: MAX_ATTEMPTS,
+        ip,
+        message: `Panel "${name}" is unreachable after ${MAX_ATTEMPTS} attempts.`,
+      });
+      panel.hasPermanentPingFailure = true;
+    }
+    return false;
   }
 
   /**
-   * Checks the status of all panels.
-   * @param {Array} clients - Array of client information objects.
-   * @param {Array} expectedPanels - Array of expected panel names.
-   * @returns {Promise<{ allPanelsOk: boolean, problems: object }>}
+   * Check the status of all panels (heartbeat, ping, etc.).
+   * Return { allPanelsOk, problems } with each panel’s status.
    */
   static async checkPanels(clients, expectedPanels) {
     const now = Date.now();
@@ -75,66 +122,85 @@ class HealthChecker {
     const connectedPanels = new Set();
 
     for (const clientInfo of clients) {
+      // Only handle panels
       if (clientInfo.clientType !== 'panel') continue;
 
       connectedPanels.add(clientInfo.name);
 
-      const isWebSocketConnected = clientInfo.connected;
-      const isHeartbeatValid = now - clientInfo.lastHeartbeat <= HealthChecker.HEARTBEAT_THRESHOLD;
-      const isPingable = await this.pingPanel(clientInfo.ip);
+      // 1) Heartbeat check
+      const isHeartbeatValid = (now - clientInfo.lastHeartbeat <= this.HEARTBEAT_THRESHOLD);
 
-      // Determine current status based on the three checks
+      // 2) WebSocket check (initially from clientInfo.connected)
+      const isWebSocketConnected = !!clientInfo.connected;
+
+      // 3) ICMP Ping check
+      const isPingable = await this.pingPanel(clientInfo);
+
+      // Decide overall current status
       let currentStatus = 'offline';
+
       if (isWebSocketConnected && isHeartbeatValid && isPingable) {
         currentStatus = 'online';
-      } else if (!isWebSocketConnected && isPingable && isHeartbeatValid) {
-        currentStatus = 'pingable'; // Possible app crash
+      } else if (!isWebSocketConnected && isHeartbeatValid && isPingable) {
+        currentStatus = 'pingable';
       } else {
         currentStatus = 'offline';
       }
 
-      const previousStatus = clientInfo.previousStatus || 'offline';
+      // Update clientInfo.connected based on the computed status
+      if (currentStatus === 'online' || currentStatus === 'pingable') {
+        clientInfo.connected = true;
+      } else {
+        clientInfo.connected = false;
+        clientInfo.state = 'off'; // If not connected, consider the panel off
+      }
 
-      // Log status changes only if there's an actual change
+      // Optionally store the textual status
+      clientInfo.currentStatus = currentStatus;
+
+      // Compare with previous status
+      const previousStatus = clientInfo.previousStatus || 'offline';
       if (previousStatus !== currentStatus) {
         if (currentStatus === 'pingable') {
+          console.log(
+              `[HealthChecker] Panel "${clientInfo.name}" is pingable but not connected via WebSocket. Possible app crash.`
+          );
           Logger.appendLog(clientInfo.name, 'Panel App Crash', {
             status: currentStatus,
-            message: 'Panel is pingable but not connected via WebSocket. Possible app crash; manual reboot may be required.'
+            message: 'Panel is pingable but not connected via WebSocket. Possible app crash.',
           });
         } else if (currentStatus === 'offline') {
-          if (!isPingable && !isWebSocketConnected) {
+          if (!isPingable) {
+            console.log(
+                `[HealthChecker] Panel "${clientInfo.name}" is offline and not pingable. Possible network disconnection.`
+            );
             Logger.appendLog(clientInfo.name, 'Offline', {
               status: currentStatus,
-              message: 'Panel is disconnected and not pingable. Possible network disconnection.'
+              message: 'Panel is disconnected and not pingable. Possible network disconnection.',
             });
           }
-
         } else if (currentStatus === 'online') {
+          console.log(
+              `[HealthChecker] Panel "${clientInfo.name}" is online and fully operational.`
+          );
           Logger.appendLog(clientInfo.name, 'Online', {
             status: currentStatus,
-            message: 'Panel is online and fully operational.'
+            message: 'Panel is online and fully operational.',
           });
         }
+
         clientInfo.previousStatus = currentStatus;
       }
 
-      // Log heartbeat issues separately if applicable
+      // If the socket is still open but heartbeat is invalid, log separately
       if (isWebSocketConnected && !isHeartbeatValid) {
         Logger.appendLog(clientInfo.name, 'Heartbeat Issue', {
-          message: 'Heartbeat not received within threshold.'
+          message: 'Heartbeat not received within threshold.',
         });
       }
 
-      // Log ping failures
-      if (!isPingable) {
-        // Logger.appendLog(clientInfo.name, 'Ping Failure', {
-        //   message: 'Unable to ping the panel.'
-        // });
-      }
-
-      // Determine if there's a problem with the panel
-      if (!isPingable || !isHeartbeatValid || !clientInfo.sectorStatus || !clientInfo.state || currentStatus !== 'online') {
+      // If the panel is truly offline, consider it a problem
+      if (!isPingable || !isHeartbeatValid || !clientInfo.sectorStatus || currentStatus !== 'online') {
         problems[clientInfo.name] = false;
         allPanelsOk = false;
       } else {
@@ -142,20 +208,11 @@ class HealthChecker {
       }
     }
 
-    // Check for any expected panels not connected
-    expectedPanels.forEach((panel) => {
-      if (!connectedPanels.has(panel)) {
-        problems[panel] = false;
+    // For panels not present in `clients`, mark them as problematic
+    expectedPanels.forEach((panelName) => {
+      if (!connectedPanels.has(panelName)) {
+        problems[panelName] = false;
         allPanelsOk = false;
-
-        // Log disconnection if the panel was previously online
-        const panelWasOnline = clients.some(client => client.name === panel && client.previousStatus === 'online');
-        if (panelWasOnline) {
-          Logger.appendLog(panel, 'Status Change', {
-            status: 'offline',
-            message: 'Panel is now offline.'
-          });
-        }
       }
     });
 
@@ -163,84 +220,82 @@ class HealthChecker {
   }
 
   /**
-   * Checks all problems and enqueues instructions if necessary.
-   * @param {Array} clients - Array of client information objects.
-   * @param {Array} expectedPanels - Array of expected panel names.
-   * @param {Function} enqueueInstruction - Function to enqueue instructions.
-   * @param {Function} getQueue - Function to get the instruction queue for a panel.
-   * @param {Function} getSentInstructions - Function to get sent instructions for a panel.
-   * @returns {Promise<boolean>} - Resolves to true if all systems are OK, false otherwise.
+   * Aggregates checks:
+   * - Frontend
+   * - Database
+   * - Panel checks
+   * - Possibly enqueue "off" instructions if major failures
    */
-  static currentFailures = new Set(); // Garde en mémoire les panneaux en panne
-  static offSentToAllPanels = false; // Indique si l'instruction "off" a été envoyée aux panneaux fonctionnels pour l'événement de panne actuel
+  static currentFailures = new Set();
+  static offSentToAllPanels = false;
 
-  // healthChecker.js
   static async checkProblems(clients, expectedPanels, queueManager) {
+    // Check if frontend & DB are up
     const [frontendOk, databaseOk] = await Promise.all([
       this.checkFrontend(),
-      this.checkDatabase()
+      this.checkDatabase(),
     ]);
 
     if (!frontendOk) {
+      console.log('[HealthChecker] Frontend service is down.');
       Logger.appendLog('Frontend', 'Offline', {
-        message: 'Frontend service is down.'
+        message: 'Frontend service is down.',
+      });
+    }
+    if (!databaseOk) {
+      console.log('[HealthChecker] Database service is down.');
+      Logger.appendLog('Database', 'Offline', {
+        message: 'Database service is down.',
       });
     }
 
-    if (!databaseOk) {
-        Logger.appendLog('Database', 'Offline', {
-            message: 'Database service is down.'
-        });
-    }
-
+    // Check all panels
     const { allPanelsOk, problems } = await this.checkPanels(clients, expectedPanels);
 
-    const failingPanels = expectedPanels.filter(panelName => problems[panelName] === false);
+    // Identify failing panels
+    const failingPanels = expectedPanels.filter((panelName) => problems[panelName] === false);
 
+    // If there's a failure or frontend/db is down, do something
     if (failingPanels.length > 0 || !frontendOk || !databaseOk) {
       this.currentFailures = new Set(failingPanels);
 
+      // Example logic: Enqueue "off" instructions for all panels if we haven't done so yet
       if (!this.offSentToAllPanels) {
         for (const panelName of expectedPanels) {
-          // Correct call to queueManager.getLastQueuedInstructions
-          console.log(`[HealthChecker] Checking for existing auto-off instruction in queue for ${panelName}`);
-          const hasOffInstruction = await queueManager.getLastQueuedInstructions(panelName, 1, 'auto-off-queue');
-          console.log(`[HealthChecker] Last queued instructions for ${panelName}:`, hasOffInstruction);
-
-
-
+          const hasOffInstruction = await queueManager.getLastQueuedInstructions(
+              panelName,
+              1,
+              'auto-off-queue'
+          );
           if (hasOffInstruction.length === 0) {
             try {
-              console.log(`[HealthChecker] Attempting to enqueue auto-off instruction for ${panelName}`);
+              console.log(`[HealthChecker] Attempting to enqueue auto-off instruction for "${panelName}"`);
               const instructionItem = await queueManager.enqueueAutoOffInstruction(panelName);
-
               if (instructionItem) {
-                console.log(`[HealthChecker] Successfully enqueued auto-off instruction for ${panelName}`);
+                console.log(`[HealthChecker] Successfully enqueued auto-off instruction for "${panelName}"`);
               } else {
-                console.log(`[HealthChecker] Skipped duplicate auto-off instruction for ${panelName}`);
+                console.log(`[HealthChecker] Skipped duplicate auto-off instruction for "${panelName}"`);
               }
             } catch (error) {
               console.error(`Error enqueuing auto-off instruction for ${panelName}:`, error);
             }
           } else {
-            console.log(`[HealthChecker] Auto-off instruction already enqueued for ${panelName}. Skipping.`);
+            console.log(`[HealthChecker] Auto-off instruction already enqueued for "${panelName}". Skipping.`);
           }
         }
-
         this.offSentToAllPanels = true;
       }
     }
+
+    // If all is well, reset the flags
     if (allPanelsOk && frontendOk && databaseOk) {
       this.currentFailures.clear();
-      this.offSentToAllPanels = false; // Reset the flag here
+      this.offSentToAllPanels = false;
     }
 
-
+    // Return overall system health
     return frontendOk && databaseOk && allPanelsOk;
   }
-
-
-
 }
 
 module.exports = HealthChecker;

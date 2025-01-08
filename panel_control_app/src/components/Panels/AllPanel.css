@@ -20,7 +20,12 @@
   margin-bottom: 20px;
   color: #333;
 }
-
+/* Inactive buttons */
+.inactive {
+  opacity: 0.5; /* Make the button appear faded */
+  cursor: not-allowed;
+  /* Optionally override color styles here if needed */
+}
 .heartbeat-label input {
   padding: 12px; /* Augmentation du padding */
   font-size: 1.1em; /* Augmentation de la taille de la police */
@@ -74,6 +79,12 @@
   flex-direction: row;
   justify-content: center;
   gap: 25px; /* Augmentation de l'espacement */
+}
+
+/* Effet de Clignotement */
+/* Grayscale effect for buttons */
+.grayscale {
+  filter: grayscale(100%);
 }
 
 /* Effet de Clignotement */

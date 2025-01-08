@@ -66,3 +66,32 @@ pre {
     font-size: 0.9rem;
     margin: 0;
 }
+/* src/components/LogsPage.css */
+
+.expand-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.expand-button:hover {
+    background-color: #0056b3;
+}
+
+.details-row {
+    background-color: #f9f9f9;
+}
+
+.details-pre {
+    margin: 0;
+    padding: 10px;
+    background-color: #eef2f7;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.4;
+}

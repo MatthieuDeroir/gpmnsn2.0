@@ -2,36 +2,41 @@
 const WebSocket = require('ws');
 const Logger = require('../utils/logger');
 
+/**
+ * Manages active clients (both panels and user/frontends).
+ */
 class ClientManager {
   constructor(WebSocket) {
     this.WebSocket = WebSocket;
-    this.clients = new Map(); // Map of ws => clientInfo
-    this.lastClientData = new Map(); // Map of clientName => clientInfo
-    this.clientWsMap = new Map(); // Map of clientName => { ws, clientInfo }
+    this.clients = new Map();        // Map<WebSocket, clientInfo>
+    this.lastClientData = new Map(); // Map<clientName, clientInfo>
+    this.clientWsMap = new Map();    // Map<clientName, { ws, clientInfo }>
   }
 
   /**
-   * Adds or updates a client in the manager.
-   * @param {WebSocket} ws - The WebSocket connection.
-   * @param {object} clientInfo - Information about the client.
+   * Add or update a client in the manager.
    */
   addClient(ws, clientInfo) {
+    // Determine the IP from the socket
     let ipAddress = ws._socket.remoteAddress;
-    clientInfo.ip = ipAddress.startsWith('::ffff:') ? ipAddress.split(':').pop() : ipAddress;
-    clientInfo.connected = true;
+    if (ipAddress.startsWith('::ffff:')) {
+      ipAddress = ipAddress.split(':').pop();
+    }
+    clientInfo.ip = ipAddress;
+    clientInfo.connected = true; // On registration, we consider them "connected"
 
-    // Check if the client is already connected via another ws
+    // If there's already a client of the same name, close the old connection
     if (this.clientWsMap.has(clientInfo.name)) {
       const existingWs = this.clientWsMap.get(clientInfo.name).ws;
       if (existingWs !== ws && existingWs.readyState === this.WebSocket.OPEN) {
         console.log(`Disconnecting old client ${clientInfo.name} to establish a new connection.`);
-        existingWs.close(); // Close the old connection
+        existingWs.close();
       } else {
         console.log(`Existing client ${clientInfo.name} is the same as the current connection. Not disconnecting.`);
       }
     }
 
-    // Update the maps with the new connection
+    // Update the Maps
     this.clients.set(ws, clientInfo);
     this.lastClientData.set(clientInfo.name, clientInfo);
     this.clientWsMap.set(clientInfo.name, { ws, clientInfo });
@@ -40,40 +45,36 @@ class ClientManager {
   }
 
   /**
-   * Marks a client as disconnected without removing it from the manager.
-   * @param {WebSocket} ws - The WebSocket connection.
+   * Mark a client as disconnected and remove from manager.
    */
   removeClient(ws) {
     const clientInfo = this.clients.get(ws);
-    if (clientInfo) {
-      clientInfo.connected = false;
-      this.clients.delete(ws);
-      this.lastClientData.set(clientInfo.name, clientInfo);
+    if (!clientInfo) return;
 
-      // Remove from clientWsMap if this ws was the current one
-      const currentClient = this.clientWsMap.get(clientInfo.name);
-      if (currentClient && currentClient.ws === ws) {
-        this.clientWsMap.delete(clientInfo.name);
-      }
+    clientInfo.connected = false;
+    this.clients.delete(ws);
+    this.lastClientData.set(clientInfo.name, clientInfo);
 
-      console.log(`Client disconnected: ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
+    // If this ws was the "current" one, remove it from clientWsMap
+    const currentClient = this.clientWsMap.get(clientInfo.name);
+    if (currentClient && currentClient.ws === ws) {
+      this.clientWsMap.delete(clientInfo.name);
     }
+
+    console.log(`Client disconnected: ${clientInfo.name}, Connected: ${clientInfo.connected}, IP: ${clientInfo.ip}`);
   }
 
   /**
-   * Removes all clients of a specific type except for an excluded WebSocket.
-   * @param {string} clientType - The type of clients to remove.
-   * @param {WebSocket} excludeWs - The WebSocket connection to exclude.
+   * Remove all clients of a certain type (except one).
    */
   removeClientsByType(clientType, excludeWs = null) {
     for (const [ws, clientInfo] of this.clients.entries()) {
       if (clientInfo.clientType === clientType && ws !== excludeWs) {
         console.log(`Marquage du client de type ${clientType} comme déconnecté : ${clientInfo.name}`);
-        clientInfo.connected = false; // Mark as disconnected
+        clientInfo.connected = false;
         this.clients.delete(ws);
         this.lastClientData.set(clientInfo.name, clientInfo);
 
-        // Remove from clientWsMap if necessary
         const currentClient = this.clientWsMap.get(clientInfo.name);
         if (currentClient && currentClient.ws === ws) {
           this.clientWsMap.delete(clientInfo.name);
@@ -83,135 +84,115 @@ class ClientManager {
   }
 
   /**
-   * Updates client information with new data.
-   * @param {WebSocket} ws - The WebSocket connection.
-   * @param {object} updates - The data to update.
+   * Update client fields in place.
    */
   updateClient(ws, updates) {
     const clientInfo = this.clients.get(ws);
-    if (clientInfo) {
-      Object.assign(clientInfo, updates);
-      this.clients.set(ws, clientInfo);
-      this.lastClientData.set(clientInfo.name, clientInfo);
-      console.log(`Client mis à jour : ${clientInfo.name}, Updates: ${JSON.stringify(updates)}`);
-    }
+    if (!clientInfo) return;
+
+    Object.assign(clientInfo, updates);
+    this.clients.set(ws, clientInfo);
+    this.lastClientData.set(clientInfo.name, clientInfo);
+
+    console.log(`Client mis à jour : ${clientInfo.name}, Updates: ${JSON.stringify(updates)}`);
   }
 
   /**
-   * Updates the heartbeat information for a client.
-   * @param {WebSocket} ws - The WebSocket connection.
-   * @param {object} heartbeatData - The heartbeat data sent by the client.
+   * Update heartbeat info. Logs changes in certain fields.
    */
-
-// clientManager.js
-
   updateHeartbeat(ws, heartbeatData) {
     const clientInfo = this.clients.get(ws);
-    if (clientInfo) {
-      clientInfo.lastHeartbeat = Date.now();
-
-      // Champs à surveiller
-      const fieldsToMonitor = ['isDoorOpen', 'sectorStatus', 'maintenanceMode', 'state'];
-
-      // Parcourir les champs à surveiller et détecter les changements
-      fieldsToMonitor.forEach((field) => {
-        if (heartbeatData.hasOwnProperty(field)) {
-          const oldValue = clientInfo[field];
-          const newValue = heartbeatData[field];
-
-          if (oldValue !== newValue) {
-            // Générer un message personnalisé et un eventType court basé sur le champ et la nouvelle valeur
-            let message = '';
-            let eventType = '';
-
-            switch (field) {
-              case 'maintenanceMode':
-                if (newValue) {
-                  message = 'Maintenance Mode has been activated';
-                  eventType = 'Maintenance On';
-                } else {
-                  message = 'Maintenance Mode has been deactivated';
-                  eventType = 'Maintenance Off';
-                }
-                break;
-
-              case 'isDoorOpen':
-                if (newValue) {
-                  message = 'The door has been opened';
-                  eventType = 'Door Open';
-                } else {
-                  message = 'The door has been closed';
-                  eventType = 'Door Closed';
-                }
-                break;
-
-              case 'sectorStatus':
-                if (!newValue) {
-                  message = 'Main power supply lost, battery backup activated';
-                  eventType = 'Power Lost';
-                } else {
-                  message = 'Main power supply restored';
-                  eventType = 'Power Restored';
-                }
-                break;
-
-              case 'state':
-                if (newValue === 'on') {
-                  message = 'Panel screen is On';
-                  eventType = 'Screen On';
-                } else if (newValue === 'off') {
-                  message = 'Panel screen is Off';
-                  eventType = 'Screen Off';
-                } else {
-                  message = `Panel screen state changed to '${newValue}'`;
-                  eventType = `Screen ${newValue}`;
-                }
-                break;
-
-              default:
-                message = `Field '${field}' changed from '${oldValue}' to '${newValue}'`;
-                eventType = `Change in ${field}`;
-                break;
-            }
-
-            // Enregistrer le changement
-            Logger.appendLog(
-                clientInfo.name, // Nom du panneau
-                eventType,       // Type d'événement (court et spécifique)
-                {
-                  field: field,
-                  oldValue: oldValue,
-                  newValue: newValue,
-                  message: message,
-                }
-            );
-
-            console.log(
-                `Field '${field}' for panel '${clientInfo.name}' changed from '${oldValue}' to '${newValue}'`
-            );
-          }
-        }
-      });
-
-      // Mettre à jour les valeurs dans clientInfo
-      clientInfo.cpuTemp = heartbeatData.cpuTemp;
-      clientInfo.isDoorOpen = heartbeatData.isDoorOpen;
-      clientInfo.sectorStatus = heartbeatData.sectorStatus;
-      clientInfo.maintenanceMode = heartbeatData.maintenanceMode;
-      clientInfo.state = heartbeatData.state;
-
-      this.clients.set(ws, clientInfo);
-      this.lastClientData.set(clientInfo.name, clientInfo);
-      // console.log(`Heartbeat reçu pour ${clientInfo.name}: ${JSON.stringify(heartbeatData)}, Connected: ${clientInfo.connected}`);
-    } else {
+    if (!clientInfo) {
       console.warn(`Heartbeat reçu pour un client non enregistré : ${heartbeatData.name}`);
+      return;
     }
+
+    // Update last heartbeat timestamp
+    clientInfo.lastHeartbeat = Date.now();
+
+    // Fields we want to monitor for changes (and log)
+    const fieldsToMonitor = ['isDoorOpen', 'sectorStatus', 'maintenanceMode', 'state'];
+
+    fieldsToMonitor.forEach((field) => {
+      if (heartbeatData.hasOwnProperty(field)) {
+        const oldValue = clientInfo[field];
+        const newValue = heartbeatData[field];
+
+        if (oldValue !== newValue) {
+          let message = '';
+          let eventType = '';
+
+          switch (field) {
+            case 'maintenanceMode':
+              message = newValue
+                  ? 'Maintenance Mode has been activated'
+                  : 'Maintenance Mode has been deactivated';
+              eventType = newValue ? 'Maintenance On' : 'Maintenance Off';
+              break;
+
+            case 'isDoorOpen':
+              message = newValue ? 'The door has been opened' : 'The door has been closed';
+              eventType = newValue ? 'Door Open' : 'Door Closed';
+              break;
+
+            case 'sectorStatus':
+              if (!newValue) {
+                message = 'Main power supply lost, battery backup activated';
+                eventType = 'Power Lost';
+              } else {
+                message = 'Main power supply restored';
+                eventType = 'Power Restored';
+              }
+              break;
+
+            case 'state':
+              if (newValue === 'on') {
+                message = 'Panel screen is On';
+                eventType = 'Screen On';
+              } else if (newValue === 'off') {
+                message = 'Panel screen is Off';
+                eventType = 'Screen Off';
+              } else {
+                message = `Panel screen state changed to '${newValue}'`;
+                eventType = `Screen ${newValue}`;
+              }
+              break;
+
+            default:
+              message = `Field '${field}' changed from '${oldValue}' to '${newValue}'`;
+              eventType = `Change in ${field}`;
+              break;
+          }
+
+          // Log the change
+          Logger.appendLog(clientInfo.name, eventType, {
+            field,
+            oldValue,
+            newValue,
+            message,
+          });
+
+          console.log(
+              `Field '${field}' for panel '${clientInfo.name}' changed from '${oldValue}' to '${newValue}'`
+          );
+        }
+      }
+    });
+
+    // Update the fields in clientInfo
+    clientInfo.cpuTemp = heartbeatData.cpuTemp;
+    clientInfo.isDoorOpen = heartbeatData.isDoorOpen;
+    clientInfo.sectorStatus = heartbeatData.sectorStatus;
+    clientInfo.maintenanceMode = heartbeatData.maintenanceMode;
+    clientInfo.state = heartbeatData.state;
+
+    // Re-store
+    this.clients.set(ws, clientInfo);
+    this.lastClientData.set(clientInfo.name, clientInfo);
   }
 
-
   /**
-   * Broadcasts a message to all connected clients.
-   * @param {string} message - The message to broadcast.
+   * Broadcast a message to all connected clients (any type).
    */
   broadcast(message) {
     this.clients.forEach((clientInfo, client) => {
@@ -222,16 +203,13 @@ class ClientManager {
   }
 
   /**
-   * Broadcasts a message to clients of a specific type and name.
-   * @param {string} message - The message to broadcast.
-   * @param {string} type - The type of clients to broadcast to (e.g., 'panel', 'user').
-   * @param {string} name - The specific name of the client to broadcast to.
+   * Broadcast a message to clients matching the specified type and name (or 'all').
    */
   broadcastToAppropriateClients(message, type, name) {
     this.clients.forEach((clientInfo, client) => {
       if (client.readyState === this.WebSocket.OPEN) {
-        const typeMatches = clientInfo.clientType === type || type === 'all';
-        const nameMatches = !name || clientInfo.name === name || name === 'all';
+        const typeMatches = (clientInfo.clientType === type || type === 'all');
+        const nameMatches = (!name || clientInfo.name === name || name === 'all');
 
         if (typeMatches && nameMatches) {
           client.send(message);
@@ -240,6 +218,9 @@ class ClientManager {
     });
   }
 
+  /**
+   * Send a message to a specific panel by name.
+   */
   sendToPanel(panelName, message) {
     const clientEntry = this.clientWsMap.get(panelName);
     if (clientEntry && clientEntry.ws.readyState === this.WebSocket.OPEN) {
@@ -249,71 +230,67 @@ class ClientManager {
     }
   }
 
+  /**
+   * Send a message to all "frontend" or "user" clients.
+   */
   sendToFrontend(message) {
     this.clients.forEach((clientInfo, client) => {
-      if (
-          (clientInfo.clientType === 'user' || clientInfo.clientType === 'frontend') &&
-          client.readyState === this.WebSocket.OPEN
-      ) {
+      if ((clientInfo.clientType === 'user' || clientInfo.clientType === 'frontend') &&
+          client.readyState === this.WebSocket.OPEN) {
         client.send(message);
       }
     });
   }
 
   /**
-   * Broadcasts a message to all clients.
-   * @param {string} message - The message to broadcast.
+   * Broadcast to all active WebSocket clients, regardless of type.
    */
   broadcastToAllClients(message) {
     for (const [clientWs, clientInfo] of this.clients.entries()) {
       if (clientWs.readyState === this.WebSocket.OPEN) {
-        clientWs.send(message); // Send the message to each open client
+        clientWs.send(message);
       }
     }
   }
 
   /**
-   * Retrieves an array of all client information objects.
-   * @returns {Array}
+   * Get an array of all clientInfo objects (the last known data).
    */
   getClients() {
-    return Array.from(this.lastClientData.values()); // Return all clients
+    return Array.from(this.lastClientData.values());
   }
 
+  /**
+   * Get a client (ws + info) by panel name.
+   */
   getClientByName(name) {
     const clientEntry = this.clientWsMap.get(name);
     return clientEntry ? clientEntry : null;
   }
 
   /**
-   * Retrieves an array of all last client data.
-   * @returns {Array}
+   * Get the last-known data for all clients.
    */
   getLastClientData() {
     return Array.from(this.lastClientData.values());
   }
 
   /**
-   * Retrieves client information based on the WebSocket connection.
-   * @param {WebSocket} ws - The WebSocket connection.
-   * @returns {object|null}
+   * Get the client info for a particular WebSocket.
    */
   getClientInfo(ws) {
     return this.clients.get(ws);
   }
 
   /**
-   * Retrieves client information based on the client name.
-   * @param {string} name - The name of the client.
-   * @returns {object|null}
+   * Get the client info for a particular client name (panel name).
    */
   getClientInfoByName(name) {
     return this.lastClientData.get(name) || null;
   }
 
   /**
-   * Retrieves the settings of all panels.
-   * @returns {object}
+   * Example function to gather certain panel settings
    */
   getPanelSettings() {
     const panelSettings = {};
