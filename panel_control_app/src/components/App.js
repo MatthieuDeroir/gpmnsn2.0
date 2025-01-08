@@ -105,6 +105,17 @@ function App() {
                                 isMobileMenuOpen={isMobileMenuOpen}
                                 setIsMobileMenuOpen={setIsMobileMenuOpen}
                             />
+                            <NavLink
+                                to="/"
+                                className="navbar-logo-image-link"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                <img
+                                    src="/logo_gpmnsn.gif"
+                                    alt="Stramatel Logo"
+                                    className="gpmnsn-logo-image"
+                                />
+                            </NavLink>
                         </div>
                     </nav>
                 )}

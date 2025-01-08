@@ -1,5 +1,4 @@
-// src/components/Panel/PanelInfo.jsx
-import React, {useCallback} from 'react';
+import React, { useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import { motion, AnimatePresence } from 'framer-motion';
 import './PanelInfo.css';
@@ -11,7 +10,7 @@ const PanelInfo = ({
                        handlePanelInfoClick,
                        handlePanelInfoRightClick,
                    }) => {
-    // Accéder à l'état Redux
+    // Access Redux state
     const panelInfo = useSelector((state) => state.websocket.panelStatus[name]);
     const logs = useSelector((state) => state.websocket.logs[name] || []);
 
@@ -26,7 +25,7 @@ const PanelInfo = ({
         }
     }, []);
 
-    // Extraire l'eventType directement du log
+    // Extract eventType and timestamp from the log
     const parseLogEntry = (log) => {
         if (!log || typeof log !== 'object') {
             return {
@@ -34,16 +33,14 @@ const PanelInfo = ({
                 eventType: 'Unknown',
             };
         }
-
         const { timestamp, eventType } = log;
-
         return {
             timestamp,
             eventType,
         };
     };
 
-    // Formater l'heure uniquement
+    // Format time only
     const formatTime = (dateString) => {
         if (!dateString) return 'N/A';
         const options = {
@@ -55,15 +52,15 @@ const PanelInfo = ({
         return new Intl.DateTimeFormat('fr-FR', options).format(new Date(dateString));
     };
 
-    // Variants pour les animations
+    // Variants for animations
     const variants = {
         initial: { opacity: 0, y: 20 },
         animate: { opacity: 1, y: 0 },
         exit: { opacity: 0, y: -20 },
     };
 
-    // Obtenir les 10 derniers logs
-    const lastTenLogs = logs.slice(-20).reverse();
+    // Display logs with the most recent first
+    const recentLogs = logs.slice(-20);
 
     return (
         <div
@@ -74,7 +71,7 @@ const PanelInfo = ({
             <h3>{getDisplayName(name)}</h3>
 
             <AnimatePresence mode="wait">
-            {displayMode === 0 && (
+                {displayMode === 0 && (
                     <motion.div
                         key="mode0"
                         initial="initial"
@@ -170,12 +167,12 @@ const PanelInfo = ({
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {lastTenLogs.map((log, index) => {
+                                    {recentLogs.map((log, index) => {
                                         const { timestamp, eventType } = parseLogEntry(log);
 
-                                        // Pas besoin de définir des classes de ligne ici, sauf si vous voulez ajouter des styles spécifiques
+                                        // Display logs in reverse order (most recent at the top)
                                         return (
-                                            <tr key={index}>
+                                            <tr key={recentLogs.length - index}>
                                                 <td>{formatTime(timestamp)}</td>
                                                 <td>{eventType}</td>
                                             </tr>

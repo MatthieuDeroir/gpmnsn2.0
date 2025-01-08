@@ -29,6 +29,8 @@ export const SET_DYSFUNCTION_STATUS = 'SET_DYSFUNCTION_STATUS';
  * @constant {string} UPDATE_PANEL - Action type for updating panel.
  */
 export const UPDATE_PANEL = 'UPDATE_PANEL';
+export const SET_PENDING_STATE = 'SET_PENDING_STATE';
+export const CLEAR_PENDING_STATE = 'CLEAR_PENDING_STATE';
 
 /**
  * Log Action Types

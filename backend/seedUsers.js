@@ -2,6 +2,9 @@
 const bcrypt = require('bcryptjs');
 const sequelize = require('./database/database'); // Adjust the path if necessary
 const User = require('./models/userModel');       // Adjust the path if necessary
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 async function seedUsers() {
     try {
@@ -9,24 +12,26 @@ async function seedUsers() {
         await sequelize.sync();
 
         // Hash the password
-        const hashedPassword = await bcrypt.hash('password', 10);
+        const MaintenanceHashedPassword = await bcrypt.hash(process.env.PSWD_MAINTENANCE, 10);
+        const OperateurHashedPassword = await bcrypt.hash(process.env.PSWD_OPERATEUR, 10);
+        const VisualisateurHashedPassword = await bcrypt.hash(process.env.PSWD_VISUALISATEUR, 10);
 
         // Create users
         await User.create({
             username: 'Maintenance',
-            password: hashedPassword,
+            password: MaintenanceHashedPassword,
             role: 'Maintenance',
         });
 
         await User.create({
             username: 'Operateur',
-            password: hashedPassword,
+            password: OperateurHashedPassword,
             role: 'Operateur',
         });
 
         await User.create({
             username: 'Visualisateur',
-            password: hashedPassword,
+            password: VisualisateurHashedPassword,
             role: 'Visualisation', // Assuming 'Visualisation' is the correct role name
         });
 

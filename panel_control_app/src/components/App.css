@@ -67,6 +67,11 @@
   align-items: center;
 }
 
+.gpmnsn-logo-image {
+  height: 5vh;
+}
+
+
 .navbar-logo-image {
   height: 9vh; /* Ajustez la hauteur selon vos besoins */
   width: auto;
