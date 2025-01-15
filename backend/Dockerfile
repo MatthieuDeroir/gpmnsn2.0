@@ -1,20 +1,20 @@
-# Utiliser Node.js 20
 FROM node:22-alpine
 
-# Définir le répertoire de travail
 WORKDIR /usr/src/app
 
-# Copier les fichiers de dépendances
+# Copier les dépendances
 COPY package*.json ./
-
-# Installer les dépendances
 RUN npm install
 
-# Copier le reste du code de l'application
+# Copier tout le reste
 COPY . .
 
-# Exposer les ports nécessaires
-EXPOSE 4000 8080
+# Exposer le port de l'application
+EXPOSE 4000
 
-# Démarrer l'application
-CMD ["npm", "start"]
+# Activez le mode de débogage
+ENV NODE_ENV=production
+ENV DEBUG=*
+
+# Démarrez l'application avec des options de traçage
+CMD ["npm", "start", "--", "--trace-warnings", "--inspect=0.0.0.0:9229"]

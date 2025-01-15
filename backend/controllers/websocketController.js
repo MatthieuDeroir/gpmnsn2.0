@@ -21,7 +21,7 @@ class WebSocketServer {
     this.expectedPanels = ['indret', 'aval', 'amont'];
 
     // Création du WebSocket server
-    this.wss = new WebSocket.Server({ port: 8080 });
+    this.wss = new WebSocket.Server({ port: 27017 });
 
     // Instancier le client manager
     this.clientManager = new ClientManager(WebSocket);
