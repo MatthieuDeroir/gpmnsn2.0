@@ -1,0 +1,183 @@
+/* src/components/App.css */
+
+/* Variables CSS pour une meilleure maintenance */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --active-color: #0056b3;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --nav-height: 60px;
+  --transition-speed: 0.3s;
+  --nav-link-padding: 10px 15px;
+}
+
+/* Réinitialisation des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux de l'application */
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barre de Navigation */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Ajustez le padding pour créer un espace entre le contenu et les bords */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-height);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Padding gauche et droite de 20px */
+}
+
+/* Conteneur pour le logo */
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajoutez un padding à gauche pour éloigner le logo du bord */
+.navbar-logo-container {
+  padding-left: 10px; /* Ajustez cette valeur selon vos préférences */
+}
+
+/* Image du logo */
+.navbar-logo-image-link {
+  display: flex;
+  align-items: center;
+}
+
+.gpmnsn-logo-image {
+  height: 5vh;
+}
+
+
+.navbar-logo-image {
+  height: 9vh; /* Ajustez la hauteur selon vos besoins */
+  width: auto;
+}
+
+.navbar-logo-image-link {
+  /* Vous pouvez ajouter du padding supplémentaire si nécessaire */
+  /* padding: 5px 0; */
+}
+
+/* Icône du Menu Hamburger */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Menu de Navigation */
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-links {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  padding: var(--nav-link-padding);
+  transition: color var(--transition-speed), background-color var(--transition-speed);
+  border-radius: 4px;
+}
+
+.nav-links .material-icons {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.nav-links:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.nav-links.active {
+  color: white;
+  background-color: var(--secondary-color);
+  border-bottom: none;
+}
+
+/* Contenu Principal */
+.health-controls {
+  padding: 20px;
+}
+
+.loading-fallback {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: 50px;
+}
+
+/* Réactivité */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: var(--nav-height);
+    left: -100%;
+    width: 100%;
+    transition: left var(--transition-speed);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .navbar-logo-container {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px; /* Assurez-vous que le padding est également appliqué en mode mobile */
+  }
+
+  .navbar-logo-image {
+    height: 9vh; /* Ajustez la taille du logo sur les petits écrans */
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+}
