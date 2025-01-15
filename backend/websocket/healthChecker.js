@@ -7,7 +7,7 @@ const ping = require('ping');
 const FRONTEND_PORT = 3000;
 const DATABASE_PORT = 27017;
 const HEARTBEAT_INTERVAL = 5000;         // e.g. 5 seconds
-const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 2; // e.g. 10 seconds
+const HEARTBEAT_THRESHOLD = HEARTBEAT_INTERVAL * 5; // e.g. 25 seconds
 const PING_TIMEOUT = 5;    // 5 seconds
 const MAX_ATTEMPTS = 7;    // Try 3 consecutive pings
 
