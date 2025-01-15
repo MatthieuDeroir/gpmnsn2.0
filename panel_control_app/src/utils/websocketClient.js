@@ -194,7 +194,7 @@ class WebSocketClient {
     }
   }
   
-  const websocketClient = new WebSocketClient('ws://localhost:8080');
+  const websocketClient = new WebSocketClient('ws://localhost:27017');
   websocketClient.connect();
   
   export default websocketClient;

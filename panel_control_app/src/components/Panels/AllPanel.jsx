@@ -15,6 +15,7 @@ const AllPanel = () => {
     const permissions = useSelector((state) => state.auth.permissions);
     const panelStatus = useSelector((state) => state.websocket.panelStatus);
     const isAnyPanelInDysfunction = useSelector((state) => state.websocket.isAnyPanelInDysfunction);
+    const isMaintenanceModeOn = useSelector((state) => state.websocket.isMaintenanceModeOn); //TODO: tester le state
 
     const [pendingState, setLocalPendingState] = useState(null);
     const [isRebooting, setIsRebooting] = useState(false);
@@ -83,7 +84,7 @@ const AllPanel = () => {
             {/* Fixed Bottom Navigation Bar */}
             <nav className="all-panel-bottom-nav">
                 <div className="all-panel-button-group">
-                    {!isAnyPanelInDysfunction && (
+                    {!isAnyPanelInDysfunction  &&  (
                         <div className="all-panel-actions">
                             {permissions.canStartMultiplePanel && (
                                 <Button

@@ -1,25 +1,10 @@
-services:
-  backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    container_name: backend
-    ports:
-      - "4000:4000"
-      - "8080:8080"
-    depends_on:
-      - redis
-    networks:
-      - app-network
-    environment:
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
+version: '3.8'
 
+services:
   frontend:
     build:
-      context: ./panel_control_app
+      context: ./frontend
       dockerfile: Dockerfile
-    container_name: frontend
     ports:
       - "3000:80"
     depends_on:
@@ -27,9 +12,23 @@ services:
     networks:
       - app-network
 
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    depends_on:
+      - redis
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    networks:
+      - app-network
+
   redis:
-    image: "redis:6-alpine"
-    container_name: redis
+    image: redis:alpine
+    container_name: redis-server
     ports:
       - "6379:6379"
     networks:

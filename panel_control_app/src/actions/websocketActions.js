@@ -11,7 +11,7 @@ import {
 // Action to connect to the WebSocket
 export const connectWebSocket = () => {
     return (dispatch) => {
-        const ws = new WebSocket('ws://localhost:8080');
+        const ws = new WebSocket('ws://localhost:27017');
 
         ws.onopen = () => {
             // Send registration message

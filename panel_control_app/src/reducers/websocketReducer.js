@@ -43,12 +43,17 @@ const websocketReducer = (state = initialState, action) => {
                 (panel) => panel.dysfunction || panel.sectorStatus === false || !panel.connected
             );
 
+            const isMaintenanceModeOn = Object.values(updatedPanelStatus).some(
+                (panel) => panel.maintenanceMode
+            )
+
 
 
             return {
                 ...state,
                 panelStatus: updatedPanelStatus,
                 isAnyPanelInDysfunction, // Automatically update this based on panel statuses
+                isMaintenanceModeOn
             };
 
 
