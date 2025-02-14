@@ -1,34 +1,24 @@
-// routes/panelRoutes.js
-
-const express = require('express');
-const router = express.Router();
-
+// Dans votre fichier de routes (par exemple routes/panelRoutes.js)
 module.exports = (clientManager) => {
-    // ... vos autres routes
+    const router = require('express').Router();
 
     router.get('/states', (req, res) => {
-        if (!clientManager) {
-            return res.status(500).json({ error: 'ClientManager is not initialized.' });
-        }
+        // Les panneaux attendus
+        const expectedPanels = ['amont', 'aval', 'indret'];
 
-        // Récupère la liste des panels et leurs infos
+        // Récupérer les réglages des panneaux depuis le clientManager
+        // On suppose que clientManager.getPanelSettings() renvoie un objet
+        // de la forme { amont: { state: 'on' }, aval: { state: 'off' }, ... }
         const panelSettings = clientManager.getPanelSettings();
-        // panelSettings ressemble à :
-        // {
-        //   aval:   { state: 'on' ou 'off', ... },
-        //   amont:  { state: 'on' ou 'off', ... },
-        //   indret: { state: 'on' ou 'off', ... }
-        // }
 
-        // Convertir l'état 'on'/'off' en booléen
-        const panelStates = {};
-        for (const [panelName, data] of Object.entries(panelSettings)) {
-            panelStates[panelName] = (data.state === 'on');
-        }
-        // panelStates ressemblera à :
-        // { aval: true/false, amont: true/false, indret: true/false }
+        // Préparer l'objet résultat pour n'inclure que les panneaux attendus
+        const result = {};
+        expectedPanels.forEach(panel => {
+            // Si le panneau existe et que son état est 'on', renvoyer true, sinon false
+            result[panel] = !!(panelSettings[panel] && panelSettings[panel].state === 'on');
+        });
 
-        return res.json(panelStates);
+        return res.json(result);
     });
 
     return router;
