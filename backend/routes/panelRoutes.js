@@ -29,6 +29,7 @@ function createPanelRoutes(clientManager) {
 
     // Autres endpoints si besoin
 
+
     return router;
 }
 
