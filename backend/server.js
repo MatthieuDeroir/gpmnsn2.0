@@ -35,35 +35,34 @@ app.use(bodyParser.json());
 // Initialiser la base de données
 sequelize
     .authenticate()
+    .then(() => sequelize.sync())
     .then(() => {
-        console.log('Connection to SQLite database established successfully.');
-        return sequelize.sync();
-    })
-    .then(() => {
-        console.log('All models were synchronized successfully.');
-
-        // *** Ici on démarre le WebSocketServer ***
+        console.log('All models synchronized successfully.');
+        // Démarrer le WebSocketServer
         createWebSocketServer();
-        // => Lancement du WS sur le port 8080
-
+        // À ce stade, le WebSocketServer est lancé.
+        const clientManager = getClientManager();
+        if (!clientManager) {
+            console.error('ClientManager is not initialized yet. Check the order of calls!');
+        } else {
+            // Créer et enregistrer les routes panel
+            const panelRoutes = createPanelRoutes(clientManager);
+            app.use('/api/panel', panelRoutes);
+        }
     })
     .catch((err) => {
         console.error('Unable to connect to the database:', err);
     });
+
 
 // Routes REST
 app.use('/api/auth', authRoutes);
 app.use('/api/logs', logRoutes);
 
 // Récupérer le clientManager (maintenant qu'on a lancé createWebSocketServer())
-const clientManager = getClientManager();
-if (!clientManager) {
-    console.error('ClientManager is not initialized yet. Check the order of calls!');
-}
 
-// Créer les routes "panel" et injecter clientManager
-const panelRoutes = createPanelRoutes(clientManager);
-app.use('/api/panel', panelRoutes);
+
+
 
 // Endpoint racine
 app.get('/', (req, res) => {
