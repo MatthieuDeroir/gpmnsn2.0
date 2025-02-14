@@ -1,36 +1,35 @@
 // routes/panelRoutes.js
+
 const express = require('express');
+const router = express.Router();
 
-/**
- * Fabrique un router Express pour gérer les panneaux,
- * en utilisant l'instance unique du clientManager
- */
-function createPanelRoutes(clientManager) {
-    const router = express.Router();
+module.exports = (clientManager) => {
+    // ... vos autres routes
 
-    // GET /export-csv
-    router.get('/export-csv', (req, res) => {
+    router.get('/states', (req, res) => {
         if (!clientManager) {
-            return res.status(500).send('ClientManager is not initialized.');
+            return res.status(500).json({ error: 'ClientManager is not initialized.' });
         }
-        const allClients = clientManager.getLastClientData();
-        const panels = allClients.filter(c => c.clientType === 'panel');
 
-        let csvContent = 'Panel,Etat\n';
-        panels.forEach((panel) => {
-            const etat = (panel.state === 'on') ? 'allumé' : 'éteint';
-            csvContent += `${panel.name},${etat}\n`;
-        });
+        // Récupère la liste des panels et leurs infos
+        const panelSettings = clientManager.getPanelSettings();
+        // panelSettings ressemble à :
+        // {
+        //   aval:   { state: 'on' ou 'off', ... },
+        //   amont:  { state: 'on' ou 'off', ... },
+        //   indret: { state: 'on' ou 'off', ... }
+        // }
 
-        res.setHeader('Content-Type', 'text/csv; charset=utf-8');
-        res.setHeader('Content-Disposition', 'attachment; filename="panels.csv"');
-        res.send(csvContent);
+        // Convertir l'état 'on'/'off' en booléen
+        const panelStates = {};
+        for (const [panelName, data] of Object.entries(panelSettings)) {
+            panelStates[panelName] = (data.state === 'on');
+        }
+        // panelStates ressemblera à :
+        // { aval: true/false, amont: true/false, indret: true/false }
+
+        return res.json(panelStates);
     });
 
-    // Autres endpoints si besoin
-
-
     return router;
-}
-
-module.exports = createPanelRoutes;
+};
