@@ -1,0 +1,51 @@
+/* src/components/PanelManager.css */
+
+/* Styles de base pour PanelManager */
+.panel-manager {
+    /* Ajoutez ici les styles de base pour PanelManager si nécessaire */
+}
+
+/* Styles pour l'état de dysfonctionnement avec fond rouge clignotant */
+.panel-manager.dysfunction {
+    animation: blinkRed 0.5s infinite;
+}
+
+/* Animation pour le clignotement du fond rouge */
+@keyframes blinkRed {
+    0%, 50% {
+        background-color: red;
+    }
+    50%, 100% {
+        background-color: transparent;
+    }
+}
+
+/* Styling for the panel control area */
+.panel-controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre subtile pour la profondeur */
+    margin-bottom: 20px; /* Espace entre cette zone et la zone all-control */
+}
+
+/* Styling for the all-control area */
+.all-control {
+    padding: 20px;
+    background-color: #fff; /* Fond blanc pour le contraste */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* General styling when loading card is displayed */
+.loading-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; /* Padding plus grand pour mettre en évidence l'état de chargement */
+    background-color: #ececec; /* Gris légèrement différent pour indiquer l'état de chargement */
+    border-radius: 8px;
+    font-size: 18px; /* Police plus grande pour la visibilité */
+    color: #333; /* Texte gris foncé pour la lisibilité */
+}

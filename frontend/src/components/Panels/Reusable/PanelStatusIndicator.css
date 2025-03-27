@@ -1,0 +1,107 @@
+/* src/components/PanelStatusIndicator.css */
+
+/* Title Styling */
+.panel-status-title {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Status Indicator Dots */
+.panel-status-green-circle,
+.panel-status-red-circle {
+    font-size: 32px; /* Adjusted size for visibility */
+    vertical-align: middle;
+}
+
+.panel-status-green-circle {
+    color: green;
+}
+
+.panel-status-red-circle {
+    color: red;
+}
+
+/* Common Banner Styles */
+.panel-status-banner {
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Specific Banner Styles */
+.panel-status-maintenance-banner {
+    background-color: orange;
+    animation: panel-status-blink-slow 2s linear infinite;
+}
+
+.panel-status-rebooting-banner {
+    background-color: rgba(70, 70, 70, 0.85);
+    animation: panel-status-blink-grey 1.7s linear infinite;
+}
+
+.panel-status-dysfunction-banner {
+    background-color: rgba(255, 76, 76, 0.85);
+    animation: panel-status-blink-red 1.7s linear infinite;
+}
+
+.panel-status-on-banner {
+    background-color: rgb(0, 150, 37);
+    color: black;
+    animation: panel-status-blink-green 2s linear infinite;
+}
+
+.panel-status-off-banner {
+    background-color: rgb(90, 0, 0);
+}
+
+.panel-status-door-open-banner {
+    background-color: #59c8ff;
+    animation: panel-status-blink-blue 2s ease-in-out infinite;
+}
+
+.panel-status-pending-banner {
+    background-color: #ffa500; /* Orange color for pending actions */
+    animation: panel-status-blink-orange 2s linear infinite;
+}
+
+/* Keyframes for Blinking Animations */
+@keyframes panel-status-blink-slow {
+    0% { background-color: rgb(255, 203, 107); }
+    50% { background-color: orange; }
+    100% { background-color: rgb(255, 203, 107); }
+}
+
+@keyframes panel-status-blink-grey {
+    0% { background-color: #c9c9c9; }
+    50% { background-color: #6e6e6e; }
+    100% { background-color: #c9c9c9; }
+}
+
+@keyframes panel-status-blink-red {
+    0% { background-color: rgba(255, 76, 76, 0.85); }
+    50% { background-color: red; }
+    100% { background-color: rgba(255, 76, 76, 0.85); }
+}
+
+@keyframes panel-status-blink-green {
+    0% { background-color: rgb(0, 150, 37); }
+    50% { background-color: rgb(0, 200, 50); }
+    100% { background-color: rgb(0, 150, 37); }
+}
+
+@keyframes panel-status-blink-blue {
+    0% { background-color: #cceeff; }
+    50% { background-color: #99ddff; }
+    100% { background-color: #cceeff; }
+}
+
+@keyframes panel-status-blink-orange {
+    0% { background-color: #ffa500; }
+    50% { background-color: #ffcc00; }
+    100% { background-color: #ffa500; }
+}

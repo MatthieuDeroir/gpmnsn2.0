@@ -176,6 +176,13 @@ class ClientManager {
   getClients() {
     return Array.from(this.lastClientData.values());
   }
+	getClientByName(name){
+		const clientEntry = this.clientWsMap.get(name);
+		if(clientEntry && clientEntry.length > 0) {
+			return clientEntry[0];
+		}
+		return null;
+	}
 
   /**
    * Get last-known data for all clients.

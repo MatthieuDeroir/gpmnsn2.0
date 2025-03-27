@@ -1,0 +1,49 @@
+/* src/components/LoadingScreen.css */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top of other components */
+}
+
+.loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.warning-icon {
+    width: 150px; /* Make the image larger */
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    width: 80px; /* Increase the spinner size */
+    height: 80px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 30px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.large-text {
+    margin-top: 10px;
+    color: white;
+    font-size: 28px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+}

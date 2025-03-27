@@ -201,9 +201,9 @@ class WebSocketServer {
     const { clientType, name } = message;
 
     // Un seul user possible ?
-    if (clientType === 'user') {
-      this.clientManager.removeClientsByType('user', ws);
-    }
+    //if (clientType === 'user') {
+    //  this.clientManager.removeClientsByType('user', ws);
+    //}
 
     this.clientManager.addClient(ws, {
       clientType: clientType,
